@@ -1,0 +1,50 @@
+  \documentclass[12pt]{article}
+
+% Set up data, if you need to add a package, go here
+\input{setup/packages.tex}
+
+
+\begin{document}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+\subsubsection{Single photon Mach-Zehnder}
+
+In this section we will study a single photon Mach-Zehnder, which will be the main object of concern in the rest of this thesis. for this part of the analysis we will assume mirrors that induce different phases in each path. This is done to analyze misalignment and as proven later is equivalent to considering phase-shifters inducing differences in the optical paths.
+
+\begin{equation}
+M_{i}= \begin{pmatrix} 0& e^{i\gamma_{i}} \\ e^{i\gamma_{i}} & 0 \end{pmatrix}.
+\end{equation}
+
+Once we have defined the main elements we can analyze the single photon Mach-Zehnder interferometer. A single photon is generated via SPDC and is sent in the horizontal path of the interferometer as input, so $\ket{1}$ is our initial state which encounters the first $BS$
+
+\begin{align}
+\ket{1}\xrightarrow{\text{BS}}\cos(\theta)\ket{1}+i\sin(\theta)\ket{2}.
+\numberthis
+\end{align}
+
+To study a general situation, we will consider two different $BS$ in our interferometer. Note that the action of optical elements is local. After the first $BS$, the photon encounters a mirror in each path, and then both paths are recombined in the second $BS$. The whole action of the interferometer on the initial state $\ket{1}$ is then:
+
+
+\begin{align*}
+&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\xrightarrow{\text{Mirrors}}\cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})e^{i\gamma_{2}}\ket{1} \\ \xrightarrow{\text{BS2}} 
+ &i(\cos(\theta_{1})\sin(\theta_{2})e^{i\gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i\gamma_{2}})\ket{1}+\\&(\cos(\theta_{1})\cos(\theta_{2})e^{i\gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i\gamma_{2}})\ket{2}. \numberthis
+\end{align*}
+
+
+To compare with the classical case where we did our calculations with two identical $BS$ we make $\theta_{1}=\theta_{2}=\frac{\pi}{4}$ then the state at the output of the interferometer is 
+
+\begin{align*}
+\ket{\psi}=\frac{i}{2}(e^{i\gamma_{1}}+e^{i\gamma_{2}})\ket{1}+\frac{1}{2}(e^{i\gamma_{1}}-e^{i\gamma_{2}})\ket{2} \\
+\ket{\psi}=\frac{e^{i(\gamma_{1}+\frac{\pi}{2})}}{2}(1+e^{i(\gamma_{2}-\gamma_{1})})\ket{1}+\frac{e^{i\gamma_{1}}}{2}(1-e^{i(\gamma_{2}-\gamma_{1})})\ket{2} \numberthis
+\end{align*}
+
+To obtain the probabilities at the output we simply compute:
+\begin{align}
+P_{D_{1}}&=|\bra{1}\ket{\psi}|^{2}, \qquad &&P_{D_{2}}=|\bra{2}\ket{\psi}|^{2}\\
+P_{D_{1}}&=\frac{1+\cos(\gamma_{2}-\gamma_{1})}{2}, \qquad &&P_{D_{2}}=\frac{1-\cos(\gamma_{2}-\gamma_{1})}{2}
+\end{align}
+
+Perfect alignment means no difference in the optical path so that $\gamma_{2}-\gamma_{1}=0$, then the probability to detect in $D_{1}$ is one and in $D_{2}$ is zero, perfectly compatible with the result obtained in the classical case, we expect a similar result because the classical case is basically many repetitions of this case.
+
+\end{document}
+

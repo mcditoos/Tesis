@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  22 JUN 2020 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  22 JUN 2020 22:46
 entering extended mode
 **./esta_correcciones.tex
 (esta_correcciones.tex
@@ -1740,15 +1740,22 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [12 <./images/bS.png>]
+! Missing } inserted.
+<inserted text> 
+                }
+l.512 ...by $I=\frac{c n \epsilon_{0}}{2} |E|^{2]$
+                                                  , where $c$ is the speed o...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [13]
-
-LaTeX Warning: Citation `Leonhardt_2003' on page 14 undefined on input line 542
-.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
@@ -1758,97 +1765,13 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 [15]
 ! Double superscript.
-l.619 ...qrt{n_{1}! n_{2}!}} \mathbf{a}^{\dagger}^
+l.620 ...qrt{n_{1}! n_{2}!}} \mathbf{a}^{\dagger}^
                                                   {n_{1}}_{1}\mathbf{a}^{\da...
 I treat `x^1^2' essentially like `x^1{}^2'.
 
 ! Double superscript.
-l.619 ...\dagger}^{n_{1}}_{1}\mathbf{a}^{\dagger}^
+l.620 ...\dagger}^{n_{1}}_{1}\mathbf{a}^{\dagger}^
                                                   {n_{2}}_{2} \ket{0,0}.
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}'^{\...
-l.635 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} \ket {0,0}. 
-l.635 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}'^{\...
-l.635 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} \ket {0,0}. 
-l.635 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}'^{\...
-l.642 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} U^{\dagger }_{...
-l.642 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...1}! n_{2}!}} \mathbf {a}^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}^{\d...
-l.642 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}^{n_{1}}_{1}\mathbf {a}^{\dagger }^
-                                                  {n_{2}}_{2}\ket {0,0}'. 
-l.642 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}'^{\...
-l.642 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} U^{\dagger }_{...
-l.642 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...1}! n_{2}!}} \mathbf {a}^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}^{\d...
-l.642 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}^{n_{1}}_{1}\mathbf {a}^{\dagger }^
-                                                  {n_{2}}_{2}\ket {0,0}'. 
-l.642 \end{align}
-                 
 I treat `x^1^2' essentially like `x^1{}^2'.
 
 
@@ -1856,75 +1779,277 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [16]
+! Double superscript.
+<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
+                                                  {n_{1}}_{1}\mathbf {a}'^{\...
+l.640 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
+                                                  {n_{2}}_{2} \ket {0,0}. 
+l.640 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
+                                                  {n_{1}}_{1}\mathbf {a}'^{\...
+l.640 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
+                                                  {n_{2}}_{2} \ket {0,0}. 
+l.640 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
+                                                  {n_{1}}_{1}\mathbf {a}'^{\...
+l.647 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
+                                                  {n_{2}}_{2} U^{\dagger }_{...
+l.647 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...1}! n_{2}!}} \mathbf {a}^{\dagger }^
+                                                  {n_{1}}_{1}\mathbf {a}^{\d...
+l.647 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...}^{n_{1}}_{1}\mathbf {a}^{\dagger }^
+                                                  {n_{2}}_{2}\ket {0,0}'. 
+l.647 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
+                                                  {n_{1}}_{1}\mathbf {a}'^{\...
+l.647 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
+                                                  {n_{2}}_{2} U^{\dagger }_{...
+l.647 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...1}! n_{2}!}} \mathbf {a}^{\dagger }^
+                                                  {n_{1}}_{1}\mathbf {a}^{\d...
+l.647 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...}^{n_{1}}_{1}\mathbf {a}^{\dagger }^
+                                                  {n_{2}}_{2}\ket {0,0}'. 
+l.647 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Misplaced \cr.
+\math@cr@@@ ->\cr 
+                  
+l.664 \end{align}
+                 
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \noalign.
+\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
+                                                  {\vskip #1\relax }
+l.664 \end{align}
+                 
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.664 \end{align}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.664 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \vskip 
+l.664 \end{align}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Extra }, or forgotten \endgroup.
+\math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
+                                                  
+l.664 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced \noalign.
+\black@ #1->\noalign 
+                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
+l.664 \end{align}
+                 
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (303.30087pt too wide) detected at line 664
+[]
+ []
+
+! Extra }, or forgotten \endgroup.
+\endalign ->\math@cr \black@ \totwidth@ \egroup 
+                                                \ifingather@ \restorealignst...
+l.664 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{equation} on input line 662 ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.664 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.664 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.664 \end{align}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [17]
+
+LaTeX Warning: Reference `basis2' on page 18 undefined on input line 675.
+
+
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [18]
-Chapter 3.
-
-Overfull \vbox (6.44444pt too high) has occurred while \output is active []
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [19]
-<images/machzenhdercla.png, id=634, 845.40843pt x 597.73312pt>
+Chapter 3.
+
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[20]
+<images/machzenhdercla.png, id=643, 845.40843pt x 597.73312pt>
 File: images/machzenhdercla.png Graphic file (type png)
 <use images/machzenhdercla.png>
-Package pdftex.def Info: images/machzenhdercla.png  used on input line 704.
+Package pdftex.def Info: images/machzenhdercla.png  used on input line 715.
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[20 <./images/machzenhdercla.png>]
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[21]
+[21 <./images/machzenhdercla.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [22]
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[23]
 Chapter 4.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[23]
-Overfull \hbox (0.79959pt too wide) in paragraph at lines 827--827
+[24]
+Overfull \hbox (0.79959pt too wide) in paragraph at lines 838--838
 |[]\OT1/cmr/bx/n/14.4 Single-photon Mach-Zehnder in-ter-fer-o-meter
  []
 
-<images/machzenhderbomb.png, id=674, 1127.21124pt x 796.9775pt>
+<images/machzenhderbomb.png, id=684, 1127.21124pt x 796.9775pt>
 File: images/machzenhderbomb.png Graphic file (type png)
 <use images/machzenhderbomb.png>
-Package pdftex.def Info: images/machzenhderbomb.png  used on input line 834.
+Package pdftex.def Info: images/machzenhderbomb.png  used on input line 845.
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+Overfull \vbox (6.44444pt too high) has occurred while \output is active []
+
+
+[25]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[24]
+[26 <./images/machzenhderbomb.png>]
 Overfull \hbox (109.2766pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/10 4.1.  SINGLE-PHOTON MACH-ZEHNDER INTERFEROMETER WITH A PERFECT
- ABSORBER \OT1/cmr/m/n/10 25
+ ABSORBER \OT1/cmr/m/n/10 27
  []
 
 
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[25 <./images/machzenhderbomb.png>]
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[26]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
@@ -1937,167 +2062,171 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [29]
-<images/machzenhderbs.png, id=734, 845.40843pt x 597.73312pt>
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[30]
+<images/machzenhderbs.png, id=744, 845.40843pt x 597.73312pt>
 File: images/machzenhderbs.png Graphic file (type png)
 <use images/machzenhderbs.png>
-Package pdftex.def Info: images/machzenhderbs.png  used on input line 964.
+Package pdftex.def Info: images/machzenhderbs.png  used on input line 975.
 (pdftex.def)             Requested size: 344.99431pt x 213.3961pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[30 <./images/machzenhderbs.png>]
-<images/P1abs.png, id=743, 414.54875pt x 182.6825pt>
+[31 <./images/machzenhderbs.png>]
+<images/P1abs.png, id=752, 414.54875pt x 182.6825pt>
 File: images/P1abs.png Graphic file (type png)
 <use images/P1abs.png>
-Package pdftex.def Info: images/P1abs.png  used on input line 1000.
+Package pdftex.def Info: images/P1abs.png  used on input line 1011.
 (pdftex.def)             Requested size: 155.24664pt x 79.66693pt.
-<images/P1d1.png, id=744, 388.45125pt x 210.7875pt>
+<images/P1d1.png, id=753, 388.45125pt x 210.7875pt>
 File: images/P1d1.png Graphic file (type png)
 <use images/P1d1.png>
-Package pdftex.def Info: images/P1d1.png  used on input line 1005.
+Package pdftex.def Info: images/P1d1.png  used on input line 1016.
 (pdftex.def)             Requested size: 155.25327pt x 79.66908pt.
-<images/P1d2.png, id=745, 432.61626pt x 316.18124pt>
+<images/P1d2.png, id=754, 432.61626pt x 316.18124pt>
 File: images/P1d2.png Graphic file (type png)
 <use images/P1d2.png>
-Package pdftex.def Info: images/P1d2.png  used on input line 1010.
+Package pdftex.def Info: images/P1d2.png  used on input line 1021.
 (pdftex.def)             Requested size: 155.24664pt x 79.66748pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[31 <./images/P1abs.png (PNG copy)> <./images/P1d1.png (PNG copy)> <./images/P1
+[32 <./images/P1abs.png (PNG copy)> <./images/P1d1.png (PNG copy)> <./images/P1
 d2.png (PNG copy)>]
-<images/P11abs.png, id=756, 367.3725pt x 167.62625pt>
+<images/P11abs.png, id=765, 367.3725pt x 167.62625pt>
 File: images/P11abs.png Graphic file (type png)
 <use images/P11abs.png>
-Package pdftex.def Info: images/P11abs.png  used on input line 1037.
+Package pdftex.def Info: images/P11abs.png  used on input line 1048.
 (pdftex.def)             Requested size: 155.24895pt x 70.8399pt.
-<images/P11d1.png, id=757, 438.63875pt x 281.05pt>
+<images/P11d1.png, id=766, 438.63875pt x 281.05pt>
 File: images/P11d1.png Graphic file (type png)
 <use images/P11d1.png>
-Package pdftex.def Info: images/P11d1.png  used on input line 1042.
+Package pdftex.def Info: images/P11d1.png  used on input line 1053.
 (pdftex.def)             Requested size: 155.25267pt x 85.35774pt.
-<images/P11d2.png, id=758, 334.24875pt x 186.6975pt>
+<images/P11d2.png, id=767, 334.24875pt x 186.6975pt>
 File: images/P11d2.png Graphic file (type png)
 <use images/P11d2.png>
-Package pdftex.def Info: images/P11d2.png  used on input line 1047.
+Package pdftex.def Info: images/P11d2.png  used on input line 1058.
 (pdftex.def)             Requested size: 155.24895pt x 86.71657pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1062.
+(hyperref)                removing `math shift' on input line 1073.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1062.
+(hyperref)                removing `math shift' on input line 1073.
 
-<images/machzenhderBSS.png, id=761, 1127.21124pt x 796.9775pt>
+<images/machzenhderBSS.png, id=770, 1127.21124pt x 796.9775pt>
 File: images/machzenhderBSS.png Graphic file (type png)
 <use images/machzenhderBSS.png>
-Package pdftex.def Info: images/machzenhderBSS.png  used on input line 1067.
+Package pdftex.def Info: images/machzenhderBSS.png  used on input line 1078.
 (pdftex.def)             Requested size: 344.99432pt x 227.61522pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[32 <./images/P11abs.png (PNG copy)> <./images/P11d1.png (PNG copy)> <./images/
+[33 <./images/P11abs.png (PNG copy)> <./images/P11d1.png (PNG copy)> <./images/
 P11d2.png (PNG copy)>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[33 <./images/machzenhderBSS.png>]
+[34 <./images/machzenhderBSS.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[34]
+[35]
 Chapter 5.
 
-Overfull \hbox (2.01822pt too wide) in paragraph at lines 1120--1120
+Overfull \hbox (2.01822pt too wide) in paragraph at lines 1131--1131
 |\OT1/cmr/bx/n/24.88 A Time-dependent trans-mit-
  []
 
-<images/machzenhderchopper.png, id=787, 1127.21124pt x 796.9775pt>
+<images/machzenhderchopper.png, id=796, 1127.21124pt x 796.9775pt>
 File: images/machzenhderchopper.png Graphic file (type png)
 <use images/machzenhderchopper.png>
-Package pdftex.def Info: images/machzenhderchopper.png  used on input line 1128
+Package pdftex.def Info: images/machzenhderchopper.png  used on input line 1139
 .
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \vbox (6.44444pt too high) has occurred while \output is active []
-
-
-[35]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[36 <./images/machzenhderchopper.png>]
-<images/Pc2Abs.png, id=805, 361.35pt x 244.915pt>
+[36]
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[37 <./images/machzenhderchopper.png>]
+<images/Pc2Abs.png, id=814, 361.35pt x 244.915pt>
 File: images/Pc2Abs.png Graphic file (type png)
 <use images/Pc2Abs.png>
-Package pdftex.def Info: images/Pc2Abs.png  used on input line 1185.
+Package pdftex.def Info: images/Pc2Abs.png  used on input line 1196.
 (pdftex.def)             Requested size: 155.25066pt x 85.35529pt.
-<images/Pc2D21.png, id=806, 383.4325pt x 245.91875pt>
+<images/Pc2D21.png, id=815, 383.4325pt x 245.91875pt>
 File: images/Pc2D21.png Graphic file (type png)
 <use images/Pc2D21.png>
-Package pdftex.def Info: images/Pc2D21.png  used on input line 1190.
+Package pdftex.def Info: images/Pc2D21.png  used on input line 1201.
 (pdftex.def)             Requested size: 155.24835pt x 85.35612pt.
-<images/Pc2D22.png, id=807, 379.4175pt x 221.82875pt>
+<images/Pc2D22.png, id=816, 379.4175pt x 221.82875pt>
 File: images/Pc2D22.png Graphic file (type png)
 <use images/Pc2D22.png>
-Package pdftex.def Info: images/Pc2D22.png  used on input line 1195.
+Package pdftex.def Info: images/Pc2D22.png  used on input line 1206.
 (pdftex.def)             Requested size: 155.24954pt x 85.35524pt.
-<images/Pc2D11.png, id=808, 376.40625pt x 230.8625pt>
+<images/Pc2D11.png, id=817, 376.40625pt x 230.8625pt>
 File: images/Pc2D11.png Graphic file (type png)
 <use images/Pc2D11.png>
-Package pdftex.def Info: images/Pc2D11.png  used on input line 1200.
+Package pdftex.def Info: images/Pc2D11.png  used on input line 1211.
 (pdftex.def)             Requested size: 155.25226pt x 85.3579pt.
-<images/Pc2D12.png, id=809, 376.40625pt x 230.8625pt>
+<images/Pc2D12.png, id=818, 376.40625pt x 230.8625pt>
 File: images/Pc2D12.png Graphic file (type png)
 <use images/Pc2D12.png>
-Package pdftex.def Info: images/Pc2D12.png  used on input line 1205.
+Package pdftex.def Info: images/Pc2D12.png  used on input line 1216.
 (pdftex.def)             Requested size: 155.25226pt x 85.3579pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[37]
+[38]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[38 <./images/Pc2Abs.png (PNG copy)> <./images/Pc2D21.png (PNG copy)> <./images
+[39 <./images/Pc2Abs.png (PNG copy)> <./images/Pc2D21.png (PNG copy)> <./images
 /Pc2D22.png (PNG copy)> <./images/Pc2D11.png (PNG copy)> <./images/Pc2D12.png (
 PNG copy)>]
-<images/Pc1Abs.png, id=833, 361.35pt x 244.915pt>
+<images/Pc1Abs.png, id=842, 361.35pt x 244.915pt>
 File: images/Pc1Abs.png Graphic file (type png)
 <use images/Pc1Abs.png>
-Package pdftex.def Info: images/Pc1Abs.png  used on input line 1234.
+Package pdftex.def Info: images/Pc1Abs.png  used on input line 1245.
 (pdftex.def)             Requested size: 120.75111pt x 85.35529pt.
-<images/Pc1D21.png, id=834, 361.35pt x 285.065pt>
+<images/Pc1D21.png, id=843, 361.35pt x 285.065pt>
 File: images/Pc1D21.png Graphic file (type png)
 <use images/Pc1D21.png>
-Package pdftex.def Info: images/Pc1D21.png  used on input line 1239.
+Package pdftex.def Info: images/Pc1D21.png  used on input line 1250.
 (pdftex.def)             Requested size: 120.75111pt x 85.35486pt.
-<images/Pc1D22.png, id=835, 361.35pt x 285.065pt>
+<images/Pc1D22.png, id=844, 361.35pt x 285.065pt>
 File: images/Pc1D22.png Graphic file (type png)
 <use images/Pc1D22.png>
-Package pdftex.def Info: images/Pc1D22.png  used on input line 1244.
+Package pdftex.def Info: images/Pc1D22.png  used on input line 1255.
 (pdftex.def)             Requested size: 120.75111pt x 85.35486pt.
-<images/Pc1D11.png, id=836, 354.32375pt x 168.63pt>
+<images/Pc1D11.png, id=845, 354.32375pt x 168.63pt>
 File: images/Pc1D11.png Graphic file (type png)
 <use images/Pc1D11.png>
-Package pdftex.def Info: images/Pc1D11.png  used on input line 1249.
+Package pdftex.def Info: images/Pc1D11.png  used on input line 1260.
 (pdftex.def)             Requested size: 120.74962pt x 85.35945pt.
-<images/Pc1D12.png, id=837, 348.30125pt x 214.8025pt>
+<images/Pc1D12.png, id=846, 348.30125pt x 214.8025pt>
 File: images/Pc1D12.png Graphic file (type png)
 <use images/Pc1D12.png>
-Package pdftex.def Info: images/Pc1D12.png  used on input line 1254.
+Package pdftex.def Info: images/Pc1D12.png  used on input line 1265.
 (pdftex.def)             Requested size: 120.74867pt x 85.359pt.
 
-Overfull \hbox (34.92851pt too wide) detected at line 1275
+Overfull \hbox (34.92851pt too wide) detected at line 1286
 []
  []
 
@@ -2105,10 +2234,10 @@ Overfull \hbox (34.92851pt too wide) detected at line 1275
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[39 <./images/Pc1Abs.png (PNG copy)> <./images/Pc1D21.png (PNG copy)> <./images
+[40 <./images/Pc1Abs.png (PNG copy)> <./images/Pc1D21.png (PNG copy)> <./images
 /Pc1D22.png (PNG copy)> <./images/Pc1D11.png (PNG copy)> <./images/Pc1D12.png (
 PNG copy)>]
-Overfull \hbox (101.18561pt too wide) detected at line 1282
+Overfull \hbox (101.18561pt too wide) detected at line 1293
 []
  []
 
@@ -2116,31 +2245,31 @@ Overfull \hbox (101.18561pt too wide) detected at line 1282
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[40]
-<images/p1cabs.png, id=854, 361.35pt x 244.915pt>
+[41]
+<images/p1cabs.png, id=863, 361.35pt x 244.915pt>
 File: images/p1cabs.png Graphic file (type png)
 <use images/p1cabs.png>
-Package pdftex.def Info: images/p1cabs.png  used on input line 1332.
+Package pdftex.def Info: images/p1cabs.png  used on input line 1343.
 (pdftex.def)             Requested size: 137.99812pt x 85.35529pt.
-<images/p1cd21.png, id=855, 348.30125pt x 196.735pt>
+<images/p1cd21.png, id=864, 348.30125pt x 196.735pt>
 File: images/p1cd21.png Graphic file (type png)
 <use images/p1cd21.png>
-Package pdftex.def Info: images/p1cd21.png  used on input line 1337.
+Package pdftex.def Info: images/p1cd21.png  used on input line 1348.
 (pdftex.def)             Requested size: 137.99467pt x 85.35687pt.
-<images/p1cd22.png, id=856, 348.30125pt x 196.735pt>
+<images/p1cd22.png, id=865, 348.30125pt x 196.735pt>
 File: images/p1cd22.png Graphic file (type png)
 <use images/p1cd22.png>
-Package pdftex.def Info: images/p1cd22.png  used on input line 1342.
+Package pdftex.def Info: images/p1cd22.png  used on input line 1353.
 (pdftex.def)             Requested size: 137.99467pt x 85.35687pt.
-<images/p1cd11.png, id=857, 328.22626pt x 155.58125pt>
+<images/p1cd11.png, id=866, 328.22626pt x 155.58125pt>
 File: images/p1cd11.png Graphic file (type png)
 <use images/p1cd11.png>
-Package pdftex.def Info: images/p1cd11.png  used on input line 1347.
+Package pdftex.def Info: images/p1cd11.png  used on input line 1358.
 (pdftex.def)             Requested size: 137.99933pt x 85.35866pt.
-<images/p1cd12.png, id=858, 328.22626pt x 155.58125pt>
+<images/p1cd12.png, id=867, 328.22626pt x 155.58125pt>
 File: images/p1cd12.png Graphic file (type png)
 <use images/p1cd12.png>
-Package pdftex.def Info: images/p1cd12.png  used on input line 1352.
+Package pdftex.def Info: images/p1cd12.png  used on input line 1363.
 (pdftex.def)             Requested size: 137.99933pt x 85.35866pt.
 
 
@@ -2150,37 +2279,37 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[41]
-<images/pcabs.png, id=873, 365.365pt x 197.73875pt>
+[42]
+<images/pcabs.png, id=883, 365.365pt x 197.73875pt>
 File: images/pcabs.png Graphic file (type png)
 <use images/pcabs.png>
-Package pdftex.def Info: images/pcabs.png  used on input line 1375.
+Package pdftex.def Info: images/pcabs.png  used on input line 1386.
 (pdftex.def)             Requested size: 137.9983pt x 85.3579pt.
-<images/pcd21.png, id=874, 361.35pt x 285.065pt>
+<images/pcd21.png, id=884, 361.35pt x 285.065pt>
 File: images/pcd21.png Graphic file (type png)
 <use images/pcd21.png>
-Package pdftex.def Info: images/pcd21.png  used on input line 1380.
+Package pdftex.def Info: images/pcd21.png  used on input line 1391.
 (pdftex.def)             Requested size: 137.99812pt x 85.35486pt.
-<images/pcd22.png, id=875, 361.35pt x 285.065pt>
+<images/pcd22.png, id=885, 361.35pt x 285.065pt>
 File: images/pcd22.png Graphic file (type png)
 <use images/pcd22.png>
-Package pdftex.def Info: images/pcd22.png  used on input line 1385.
+Package pdftex.def Info: images/pcd22.png  used on input line 1396.
 (pdftex.def)             Requested size: 137.99812pt x 85.35486pt.
-<images/pcd11.png, id=876, 360.34625pt x 200.75pt>
+<images/pcd11.png, id=886, 360.34625pt x 200.75pt>
 File: images/pcd11.png Graphic file (type png)
 <use images/pcd11.png>
-Package pdftex.def Info: images/pcd11.png  used on input line 1390.
+Package pdftex.def Info: images/pcd11.png  used on input line 1401.
 (pdftex.def)             Requested size: 137.99419pt x 85.35896pt.
-<images/pcd12.png, id=877, 360.34625pt x 200.75pt>
+<images/pcd12.png, id=887, 360.34625pt x 200.75pt>
 File: images/pcd12.png Graphic file (type png)
 <use images/pcd12.png>
-Package pdftex.def Info: images/pcd12.png  used on input line 1395.
+Package pdftex.def Info: images/pcd12.png  used on input line 1406.
 (pdftex.def)             Requested size: 137.99419pt x 85.35896pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[42 <./images/p1cabs.png (PNG copy)> <./images/p1cd21.png (PNG copy)> <./images
+[43 <./images/p1cabs.png (PNG copy)> <./images/p1cd21.png (PNG copy)> <./images
 /p1cd22.png (PNG copy)> <./images/p1cd11.png (PNG copy)> <./images/p1cd12.png (
 PNG copy)>]
 Chapter 6.
@@ -2188,121 +2317,121 @@ Chapter 6.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[43 <./images/pcabs.png (PNG copy)> <./images/pcd21.png (PNG copy)> <./images/p
+[44 <./images/pcabs.png (PNG copy)> <./images/pcd21.png (PNG copy)> <./images/p
 cd22.png (PNG copy)> <./images/pcd11.png (PNG copy)> <./images/pcd12.png (PNG c
 opy)>]
-<images/nmach.png, id=895, 845.40843pt x 597.73312pt>
+<images/nmach.png, id=904, 845.40843pt x 597.73312pt>
 File: images/nmach.png Graphic file (type png)
 <use images/nmach.png>
-Package pdftex.def Info: images/nmach.png  used on input line 1422.
+Package pdftex.def Info: images/nmach.png  used on input line 1433.
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[44 <./images/nmach.png>]
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
-[45]
-<images/BS_Azuna.png, id=911, 642.4pt x 481.8pt>
-File: images/BS_Azuna.png Graphic file (type png)
-<use images/BS_Azuna.png>
-Package pdftex.def Info: images/BS_Azuna.png  used on input line 1490.
-(pdftex.def)             Requested size: 155.24759pt x 142.26208pt.
-<images/BS_AzunaD2.png, id=912, 642.4pt x 481.8pt>
-File: images/BS_AzunaD2.png Graphic file (type png)
-<use images/BS_AzunaD2.png>
-Package pdftex.def Info: images/BS_AzunaD2.png  used on input line 1495.
-(pdftex.def)             Requested size: 155.24759pt x 142.26208pt.
-<images/absorbido_azuna.png, id=913, 642.4pt x 481.8pt>
-File: images/absorbido_azuna.png Graphic file (type png)
-<use images/absorbido_azuna.png>
-Package pdftex.def Info: images/absorbido_azuna.png  used on input line 1500.
-(pdftex.def)             Requested size: 155.24759pt x 142.26208pt.
-
+[45 <./images/nmach.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [46]
+<images/BS_Azuna.png, id=920, 642.4pt x 481.8pt>
+File: images/BS_Azuna.png Graphic file (type png)
+<use images/BS_Azuna.png>
+Package pdftex.def Info: images/BS_Azuna.png  used on input line 1501.
+(pdftex.def)             Requested size: 155.24759pt x 142.26208pt.
+<images/BS_AzunaD2.png, id=921, 642.4pt x 481.8pt>
+File: images/BS_AzunaD2.png Graphic file (type png)
+<use images/BS_AzunaD2.png>
+Package pdftex.def Info: images/BS_AzunaD2.png  used on input line 1506.
+(pdftex.def)             Requested size: 155.24759pt x 142.26208pt.
+<images/absorbido_azuna.png, id=922, 642.4pt x 481.8pt>
+File: images/absorbido_azuna.png Graphic file (type png)
+<use images/absorbido_azuna.png>
+Package pdftex.def Info: images/absorbido_azuna.png  used on input line 1511.
+(pdftex.def)             Requested size: 155.24759pt x 142.26208pt.
+
+Overfull \vbox (6.44444pt too high) has occurred while \output is active []
+
+
+[47]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1510.
+(hyperref)                than one, level fixed on input line 1521.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1510.
+(hyperref)                removing `math shift' on input line 1521.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1510.
+(hyperref)                removing `math shift' on input line 1521.
 
 
-Overfull \vbox (6.44444pt too high) has occurred while \output is active []
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[47 <./images/BS_Azuna.png> <./images/BS_AzunaD2.png> <./images/absorbido_azuna
+[48 <./images/BS_Azuna.png> <./images/BS_AzunaD2.png> <./images/absorbido_azuna
 .png>]
-<images/BsFijo_azumaD1.png, id=933, 642.4pt x 481.8pt>
+<images/BsFijo_azumaD1.png, id=943, 642.4pt x 481.8pt>
 File: images/BsFijo_azumaD1.png Graphic file (type png)
 <use images/BsFijo_azumaD1.png>
-Package pdftex.def Info: images/BsFijo_azumaD1.png  used on input line 1518.
+Package pdftex.def Info: images/BsFijo_azumaD1.png  used on input line 1529.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-<images/BsFijo_azumaD2.png, id=934, 642.4pt x 481.8pt>
+<images/BsFijo_azumaD2.png, id=944, 642.4pt x 481.8pt>
 File: images/BsFijo_azumaD2.png Graphic file (type png)
 <use images/BsFijo_azumaD2.png>
-Package pdftex.def Info: images/BsFijo_azumaD2.png  used on input line 1523.
+Package pdftex.def Info: images/BsFijo_azumaD2.png  used on input line 1534.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-<images/BsFijo_azumaabs.png, id=935, 642.4pt x 481.8pt>
+<images/BsFijo_azumaabs.png, id=945, 642.4pt x 481.8pt>
 File: images/BsFijo_azumaabs.png Graphic file (type png)
 <use images/BsFijo_azumaabs.png>
-Package pdftex.def Info: images/BsFijo_azumaabs.png  used on input line 1528.
+Package pdftex.def Info: images/BsFijo_azumaabs.png  used on input line 1539.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[48 <./images/BsFijo_azumaD1.png> <./images/BsFijo_azumaD2.png> <./images/BsFij
-o_azumaabs.png>]
-<images/alonso_idea.png, id=947, 642.4pt x 563.10374pt>
-File: images/alonso_idea.png Graphic file (type png)
-<use images/alonso_idea.png>
-Package pdftex.def Info: images/alonso_idea.png  used on input line 1579.
-(pdftex.def)             Requested size: 345.0pt x 302.42178pt.
 
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
-[49]
+[49 <./images/BsFijo_azumaD1.png> <./images/BsFijo_azumaD2.png> <./images/BsFij
+o_azumaabs.png>]
+<images/alonso_idea.png, id=956, 642.4pt x 563.10374pt>
+File: images/alonso_idea.png Graphic file (type png)
+<use images/alonso_idea.png>
+Package pdftex.def Info: images/alonso_idea.png  used on input line 1590.
+(pdftex.def)             Requested size: 345.0pt x 302.42178pt.
+
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[50 <./images/alonso_idea.png>]
-Overfull \hbox (2.66867pt too wide) in paragraph at lines 1598--1599
+[50]
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[51 <./images/alonso_idea.png>]
+Overfull \hbox (2.66867pt too wide) in paragraph at lines 1609--1610
 []\OT1/cmr/m/n/10 In the pos-it-ive cycle we have $\OML/cmm/m/it/10 f[] \OT1/cm
 r/m/n/10 = 1$. While on the neg-at-ive cycle $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n
 /10 =
  []
 
-<images/ChopperD1.png, id=962, 642.4pt x 481.8pt>
+<images/ChopperD1.png, id=971, 642.4pt x 481.8pt>
 File: images/ChopperD1.png Graphic file (type png)
 <use images/ChopperD1.png>
-Package pdftex.def Info: images/ChopperD1.png  used on input line 1604.
+Package pdftex.def Info: images/ChopperD1.png  used on input line 1615.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-<images/ChopperD2.png, id=963, 642.4pt x 481.8pt>
+<images/ChopperD2.png, id=972, 642.4pt x 481.8pt>
 File: images/ChopperD2.png Graphic file (type png)
 <use images/ChopperD2.png>
-Package pdftex.def Info: images/ChopperD2.png  used on input line 1609.
+Package pdftex.def Info: images/ChopperD2.png  used on input line 1620.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-<images/Chopper_abs.png, id=964, 642.4pt x 481.8pt>
+<images/Chopper_abs.png, id=973, 642.4pt x 481.8pt>
 File: images/Chopper_abs.png Graphic file (type png)
 <use images/Chopper_abs.png>
-Package pdftex.def Info: images/Chopper_abs.png  used on input line 1614.
+Package pdftex.def Info: images/Chopper_abs.png  used on input line 1625.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1615 \caption{$P_{abs}}
+l.1626 \caption{$P_{abs}}
                          $}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2310,7 +2439,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1615 \caption{$P_{abs}}
+l.1626 \caption{$P_{abs}}
                          $}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2318,7 +2447,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <recently read> }
                  
-l.1615 \caption{$P_{abs}}$}
+l.1626 \caption{$P_{abs}}$}
                            
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2329,7 +2458,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1617 \end{subfigure}
+l.1628 \end{subfigure}
                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2338,314 +2467,308 @@ you left one out. Proceed, with fingers crossed.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[51 <./images/ChopperD1.png> <./images/ChopperD2.png> <./images/Chopper_abs.png
+[52 <./images/ChopperD1.png> <./images/ChopperD2.png> <./images/Chopper_abs.png
 >]
-<images/Azuma_phases2.png, id=978, 757.83125pt x 638.385pt>
+<images/Azuma_phases2.png, id=987, 757.83125pt x 638.385pt>
 File: images/Azuma_phases2.png Graphic file (type png)
 <use images/Azuma_phases2.png>
-Package pdftex.def Info: images/Azuma_phases2.png  used on input line 1640.
+Package pdftex.def Info: images/Azuma_phases2.png  used on input line 1651.
 (pdftex.def)             Requested size: 103.50105pt x 87.18156pt.
-<images/Azuma_phases5.png, id=979, 755.82375pt x 629.35126pt>
+<images/Azuma_phases5.png, id=988, 755.82375pt x 629.35126pt>
 File: images/Azuma_phases5.png Graphic file (type png)
 <use images/Azuma_phases5.png>
-Package pdftex.def Info: images/Azuma_phases5.png  used on input line 1644.
+Package pdftex.def Info: images/Azuma_phases5.png  used on input line 1655.
 (pdftex.def)             Requested size: 103.50105pt x 86.17834pt.
-<images/Azuma_phases10.png, id=980, 813.0375pt x 683.55376pt>
+<images/Azuma_phases10.png, id=989, 813.0375pt x 683.55376pt>
 File: images/Azuma_phases10.png Graphic file (type png)
 <use images/Azuma_phases10.png>
-Package pdftex.def Info: images/Azuma_phases10.png  used on input line 1649.
+Package pdftex.def Info: images/Azuma_phases10.png  used on input line 1660.
 (pdftex.def)             Requested size: 103.50105pt x 87.00853pt.
-<images/Azuma_phases100.png, id=981, 798.985pt x 690.58pt>
+<images/Azuma_phases100.png, id=990, 798.985pt x 690.58pt>
 File: images/Azuma_phases100.png Graphic file (type png)
 <use images/Azuma_phases100.png>
-Package pdftex.def Info: images/Azuma_phases100.png  used on input line 1654.
+Package pdftex.def Info: images/Azuma_phases100.png  used on input line 1665.
 (pdftex.def)             Requested size: 103.50105pt x 89.45189pt.
-<images/Azuma_phases1000.png, id=982, 790.955pt x 660.4675pt>
+<images/Azuma_phases1000.png, id=991, 790.955pt x 660.4675pt>
 File: images/Azuma_phases1000.png Graphic file (type png)
 <use images/Azuma_phases1000.png>
-Package pdftex.def Info: images/Azuma_phases1000.png  used on input line 1658.
+Package pdftex.def Info: images/Azuma_phases1000.png  used on input line 1669.
 (pdftex.def)             Requested size: 103.50105pt x 86.41806pt.
 
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[52]
-<images/wheeler1.png, id=991, 845.40843pt x 597.73312pt>
+[53]
+<images/wheeler1.png, id=1000, 845.40843pt x 597.73312pt>
 File: images/wheeler1.png Graphic file (type png)
 <use images/wheeler1.png>
-Package pdftex.def Info: images/wheeler1.png  used on input line 1675.
+Package pdftex.def Info: images/wheeler1.png  used on input line 1686.
 (pdftex.def)             Requested size: 344.99431pt x 184.93964pt.
 
-Overfull \vbox (6.94444pt too high) has occurred while \output is active []
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[53 <./images/Azuma_phases2.png> <./images/Azuma_phases5.png> <./images/Azuma_p
+[54 <./images/Azuma_phases2.png> <./images/Azuma_phases5.png> <./images/Azuma_p
 hases10.png> <./images/Azuma_phases100.png> <./images/Azuma_phases1000.png>]
-<images/wheeler2.png, id=1004, 845.40843pt x 597.73312pt>
+<images/wheeler2.png, id=1014, 845.40843pt x 597.73312pt>
 File: images/wheeler2.png Graphic file (type png)
 <use images/wheeler2.png>
-Package pdftex.def Info: images/wheeler2.png  used on input line 1684.
+Package pdftex.def Info: images/wheeler2.png  used on input line 1695.
 (pdftex.def)             Requested size: 344.99431pt x 184.93964pt.
 
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[54 <./images/wheeler1.png> <./images/wheeler2.png>]
-<images/wheeler3.png, id=1014, 845.40843pt x 597.73312pt>
+[55 <./images/wheeler1.png> <./images/wheeler2.png>]
+<images/wheeler3.png, id=1023, 845.40843pt x 597.73312pt>
 File: images/wheeler3.png Graphic file (type png)
 <use images/wheeler3.png>
-Package pdftex.def Info: images/wheeler3.png  used on input line 1697.
+Package pdftex.def Info: images/wheeler3.png  used on input line 1708.
 (pdftex.def)             Requested size: 344.99431pt x 213.3961pt.
 
-Overfull \vbox (6.94444pt too high) has occurred while \output is active []
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[55 <./images/wheeler3.png>]
-<images/pd1_2.png, id=1030, 883.3pt x 662.475pt>
+[56 <./images/wheeler3.png>]
+<images/pd1_2.png, id=1039, 883.3pt x 662.475pt>
 File: images/pd1_2.png Graphic file (type png)
 <use images/pd1_2.png>
-Package pdftex.def Info: images/pd1_2.png  used on input line 1712.
+Package pdftex.def Info: images/pd1_2.png  used on input line 1723.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_2.png, id=1031, 883.3pt x 662.475pt>
+<images/pd2_2.png, id=1040, 883.3pt x 662.475pt>
 File: images/pd2_2.png Graphic file (type png)
 <use images/pd2_2.png>
-Package pdftex.def Info: images/pd2_2.png  used on input line 1716.
+Package pdftex.def Info: images/pd2_2.png  used on input line 1727.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_2.png, id=1032, 883.3pt x 662.475pt>
+<images/pabs_2.png, id=1041, 883.3pt x 662.475pt>
 File: images/pabs_2.png Graphic file (type png)
 <use images/pabs_2.png>
-Package pdftex.def Info: images/pabs_2.png  used on input line 1721.
+Package pdftex.def Info: images/pabs_2.png  used on input line 1732.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
 
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[56 <./images/pd1_2.png> <./images/pd2_2.png> <./images/pabs_2.png>]
-<images/pd1_2_pi3.png, id=1044, 883.3pt x 662.475pt>
+[57 <./images/pd1_2.png> <./images/pd2_2.png> <./images/pabs_2.png>]
+<images/pd1_2_pi3.png, id=1053, 883.3pt x 662.475pt>
 File: images/pd1_2_pi3.png Graphic file (type png)
 <use images/pd1_2_pi3.png>
-Package pdftex.def Info: images/pd1_2_pi3.png  used on input line 1734.
+Package pdftex.def Info: images/pd1_2_pi3.png  used on input line 1745.
 (pdftex.def)             Requested size: 137.9979pt x 103.49124pt.
-<images/pd2_2_pi3.png, id=1045, 883.3pt x 662.475pt>
+<images/pd2_2_pi3.png, id=1054, 883.3pt x 662.475pt>
 File: images/pd2_2_pi3.png Graphic file (type png)
 <use images/pd2_2_pi3.png>
-Package pdftex.def Info: images/pd2_2_pi3.png  used on input line 1738.
+Package pdftex.def Info: images/pd2_2_pi3.png  used on input line 1749.
 (pdftex.def)             Requested size: 137.9979pt x 103.49124pt.
-<images/pd1_3_pi4.png, id=1047, 883.3pt x 662.475pt>
+<images/pd1_3_pi4.png, id=1056, 883.3pt x 662.475pt>
 File: images/pd1_3_pi4.png Graphic file (type png)
 <use images/pd1_3_pi4.png>
-Package pdftex.def Info: images/pd1_3_pi4.png  used on input line 1752.
+Package pdftex.def Info: images/pd1_3_pi4.png  used on input line 1763.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_3_pi4.png, id=1048, 883.3pt x 662.475pt>
+<images/pd2_3_pi4.png, id=1057, 883.3pt x 662.475pt>
 File: images/pd2_3_pi4.png Graphic file (type png)
 <use images/pd2_3_pi4.png>
-Package pdftex.def Info: images/pd2_3_pi4.png  used on input line 1756.
+Package pdftex.def Info: images/pd2_3_pi4.png  used on input line 1767.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_3_pi4.png, id=1049, 883.3pt x 662.475pt>
+<images/pabs_3_pi4.png, id=1058, 883.3pt x 662.475pt>
 File: images/pabs_3_pi4.png Graphic file (type png)
 <use images/pabs_3_pi4.png>
-Package pdftex.def Info: images/pabs_3_pi4.png  used on input line 1761.
+Package pdftex.def Info: images/pabs_3_pi4.png  used on input line 1772.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd1_5_pi4.png, id=1050, 883.3pt x 662.475pt>
+<images/pd1_5_pi4.png, id=1059, 883.3pt x 662.475pt>
 File: images/pd1_5_pi4.png Graphic file (type png)
 <use images/pd1_5_pi4.png>
-Package pdftex.def Info: images/pd1_5_pi4.png  used on input line 1766.
+Package pdftex.def Info: images/pd1_5_pi4.png  used on input line 1777.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_5_pi4.png, id=1051, 883.3pt x 662.475pt>
+<images/pd2_5_pi4.png, id=1060, 883.3pt x 662.475pt>
 File: images/pd2_5_pi4.png Graphic file (type png)
 <use images/pd2_5_pi4.png>
-Package pdftex.def Info: images/pd2_5_pi4.png  used on input line 1771.
+Package pdftex.def Info: images/pd2_5_pi4.png  used on input line 1782.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_5_pi4.png, id=1052, 883.3pt x 662.475pt>
+<images/pabs_5_pi4.png, id=1061, 883.3pt x 662.475pt>
 File: images/pabs_5_pi4.png Graphic file (type png)
 <use images/pabs_5_pi4.png>
-Package pdftex.def Info: images/pabs_5_pi4.png  used on input line 1776.
+Package pdftex.def Info: images/pabs_5_pi4.png  used on input line 1787.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
 
-Overfull \vbox (6.94444pt too high) has occurred while \output is active []
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[57 <./images/pd1_2_pi3.png> <./images/pd2_2_pi3.png>]
-<images/pd1_3.png, id=1060, 883.3pt x 662.475pt>
+[58 <./images/pd1_2_pi3.png> <./images/pd2_2_pi3.png>]
+<images/pd1_3.png, id=1069, 883.3pt x 662.475pt>
 File: images/pd1_3.png Graphic file (type png)
 <use images/pd1_3.png>
-Package pdftex.def Info: images/pd1_3.png  used on input line 1788.
+Package pdftex.def Info: images/pd1_3.png  used on input line 1799.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_3.png, id=1061, 883.3pt x 662.475pt>
+<images/pd2_3.png, id=1070, 883.3pt x 662.475pt>
 File: images/pd2_3.png Graphic file (type png)
 <use images/pd2_3.png>
-Package pdftex.def Info: images/pd2_3.png  used on input line 1792.
+Package pdftex.def Info: images/pd2_3.png  used on input line 1803.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_3.png, id=1062, 883.3pt x 662.475pt>
+<images/pabs_3.png, id=1071, 883.3pt x 662.475pt>
 File: images/pabs_3.png Graphic file (type png)
 <use images/pabs_3.png>
-Package pdftex.def Info: images/pabs_3.png  used on input line 1797.
+Package pdftex.def Info: images/pabs_3.png  used on input line 1808.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd1_5.png, id=1063, 883.3pt x 662.475pt>
+<images/pd1_5.png, id=1072, 883.3pt x 662.475pt>
 File: images/pd1_5.png Graphic file (type png)
 <use images/pd1_5.png>
-Package pdftex.def Info: images/pd1_5.png  used on input line 1802.
+Package pdftex.def Info: images/pd1_5.png  used on input line 1813.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_5.png, id=1064, 883.3pt x 662.475pt>
+<images/pd2_5.png, id=1073, 883.3pt x 662.475pt>
 File: images/pd2_5.png Graphic file (type png)
 <use images/pd2_5.png>
-Package pdftex.def Info: images/pd2_5.png  used on input line 1807.
+Package pdftex.def Info: images/pd2_5.png  used on input line 1818.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_5.png, id=1065, 883.3pt x 662.475pt>
+<images/pabs_5.png, id=1074, 883.3pt x 662.475pt>
 File: images/pabs_5.png Graphic file (type png)
 <use images/pabs_5.png>
-Package pdftex.def Info: images/pabs_5.png  used on input line 1812.
+Package pdftex.def Info: images/pabs_5.png  used on input line 1823.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
 
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[58 <./images/pd1_3_pi4.png> <./images/pd2_3_pi4.png> <./images/pabs_3_pi4.png>
- <./images/pd1_5_pi4.png> <./images/pd2_5_pi4.png> <./images/pabs_5_pi4.png>]
 Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[59 <./images/pd1_3.png> <./images/pd2_3.png> <./images/pabs_3.png> <./images/p
-d1_5.png> <./images/pd2_5.png> <./images/pabs_5.png>]
+[59 <./images/pd1_3_pi4.png> <./images/pd2_3_pi4.png> <./images/pabs_3_pi4.png>
+ <./images/pd1_5_pi4.png> <./images/pd2_5_pi4.png> <./images/pabs_5_pi4.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[60]
-Chapter 7.
-<images/SPDC_exp.png, id=1112, 845.40843pt x 597.73312pt>
-File: images/SPDC_exp.png Graphic file (type png)
-<use images/SPDC_exp.png>
-Package pdftex.def Info: images/SPDC_exp.png  used on input line 1864.
-(pdftex.def)             Requested size: 345.0pt x 243.92296pt.
-
-Overfull \vbox (6.44444pt too high) has occurred while \output is active []
+[60 <./images/pd1_3.png> <./images/pd2_3.png> <./images/pabs_3.png> <./images/p
+d1_5.png> <./images/pd2_5.png> <./images/pabs_5.png>]
+Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
 [61]
+Chapter 7.
+<images/SPDC_exp.png, id=1119, 845.40843pt x 597.73312pt>
+File: images/SPDC_exp.png Graphic file (type png)
+<use images/SPDC_exp.png>
+Package pdftex.def Info: images/SPDC_exp.png  used on input line 1875.
+(pdftex.def)             Requested size: 345.0pt x 243.92296pt.
+
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[62 <./images/SPDC_exp.png>]
+[62]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[63]
-<images/machzehnder_single.png, id=1136, 791.95876pt x 560.0925pt>
+[63 <./images/SPDC_exp.png>]
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[64]
+<images/machzehnder_single.png, id=1142, 791.95876pt x 560.0925pt>
 File: images/machzehnder_single.png Graphic file (type png)
 <use images/machzehnder_single.png>
-Package pdftex.def Info: images/machzehnder_single.png  used on input line 1913
+Package pdftex.def Info: images/machzehnder_single.png  used on input line 1924
 .
 (pdftex.def)             Requested size: 345.0pt x 243.99721pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[64 <./images/machzehnder_single.png>]
+[65 <./images/machzehnder_single.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1924.
+               Default added (so using `tbp') on input line 1935.
 
-<images/first_step.png, id=1145, 845.40843pt x 597.73312pt>
+<images/first_step.png, id=1150, 845.40843pt x 597.73312pt>
 File: images/first_step.png Graphic file (type png)
 <use images/first_step.png>
-Package pdftex.def Info: images/first_step.png  used on input line 1927.
+Package pdftex.def Info: images/first_step.png  used on input line 1938.
 (pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
 
-Overfull \hbox (37.86728pt too wide) in paragraph at lines 1927--1928
+Overfull \hbox (37.86728pt too wide) in paragraph at lines 1938--1939
 [][] 
  []
 
-<images/second_step.png, id=1146, 845.40843pt x 597.73312pt>
+<images/second_step.png, id=1151, 845.40843pt x 597.73312pt>
 File: images/second_step.png Graphic file (type png)
 <use images/second_step.png>
-Package pdftex.def Info: images/second_step.png  used on input line 1932.
+Package pdftex.def Info: images/second_step.png  used on input line 1943.
 (pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
 
-Overfull \hbox (37.86728pt too wide) in paragraph at lines 1932--1933
+Overfull \hbox (37.86728pt too wide) in paragraph at lines 1943--1944
 [][] 
  []
 
-<images/third_step.png, id=1147, 845.40843pt x 597.73312pt>
+<images/third_step.png, id=1152, 845.40843pt x 597.73312pt>
 File: images/third_step.png Graphic file (type png)
 <use images/third_step.png>
-Package pdftex.def Info: images/third_step.png  used on input line 1937.
+Package pdftex.def Info: images/third_step.png  used on input line 1948.
 (pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
 
-Overfull \hbox (37.86728pt too wide) in paragraph at lines 1937--1938
+Overfull \hbox (37.86728pt too wide) in paragraph at lines 1948--1949
 [][] 
  []
 
-<images/last_step.png, id=1148, 845.40843pt x 597.73312pt>
+<images/last_step.png, id=1153, 845.40843pt x 597.73312pt>
 File: images/last_step.png Graphic file (type png)
 <use images/last_step.png>
-Package pdftex.def Info: images/last_step.png  used on input line 1942.
+Package pdftex.def Info: images/last_step.png  used on input line 1953.
 (pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
 
-Overfull \hbox (37.86728pt too wide) in paragraph at lines 1942--1943
+Overfull \hbox (37.86728pt too wide) in paragraph at lines 1953--1954
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 12.23035pt on input line 1948.
+LaTeX Warning: Float too large for page by 12.23035pt on input line 1959.
 
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[65]
+[66]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[66 <./images/first_step.png> <./images/second_step.png> <./images/third_step.p
+[67 <./images/first_step.png> <./images/second_step.png> <./images/third_step.p
 ng> <./images/last_step.png>]
 
-LaTeX Warning: Citation `Leonhardt_2003' on page 67 undefined on input line 198
-5.
+LaTeX Warning: Citation `Leonhardt_2003' on page 68 undefined on input line 199
+6.
 
-<images/polarizeranalogy.png, id=1170, 845.40843pt x 597.73312pt>
+<images/polarizeranalogy.png, id=1174, 845.40843pt x 597.73312pt>
 File: images/polarizeranalogy.png Graphic file (type png)
 <use images/polarizeranalogy.png>
-Package pdftex.def Info: images/polarizeranalogy.png  used on input line 1989.
+Package pdftex.def Info: images/polarizeranalogy.png  used on input line 2000.
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[67]
+[68]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[68 <./images/polarizeranalogy.png>]
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[69]
-Chapter 8.
-
+[69 <./images/polarizeranalogy.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [70]
-Chapter 9.
+Chapter 8.
 
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
-[71] (esta_correcciones.bbl
+[71]
+Chapter 9.
+
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[72]
+[72] (esta_correcciones.bbl
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [73]
-Underfull \hbox (badness 1057) in paragraph at lines 154--157
-\OT1/cmr/m/n/10 Mod-el-ing the Delayed-Choice Ex-per-i-ment.  \OT1/cmr/m/it/10 
-Phys-ical Re-view Let-ters\OT1/cmr/m/n/10 ,
- []
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
-)
+
+[74])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
@@ -2655,12 +2778,12 @@ This document will not have a glossary.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[74]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2043.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2043.
+[75]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2054.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2054.
  (esta_correcciones.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2043.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2043.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2054.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2054.
 
 Package rerunfilecheck Info: File `esta_correcciones.out' has not changed.
 (rerunfilecheck)             Checksum: 6D896808E34FA0BEFFF727D1769AD788;2670.
@@ -2671,77 +2794,59 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2043.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2054.
  ) 
 Here is how much of TeX's memory you used:
- 29867 strings out of 480797
- 559351 string characters out of 2895576
- 895287 words of memory out of 3000000
- 44750 multiletter control sequences out of 15000+200000
+ 29865 strings out of 480797
+ 559270 string characters out of 2895576
+ 895346 words of memory out of 3000000
+ 44752 multiletter control sequences out of 15000+200000
  548214 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,18n,85p,1208b,618s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.81} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.80} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.78} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.77} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.76} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.73} has been referenced but does not
- exist, replaced by a fixed one
-
- <C:\Users\gerar\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tc
-rm1000.pk><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gerar/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C:/Users/gerar/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/gerar/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Use
-rs/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxt
-i10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmex10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/gerar/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gerar/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/gerar
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:
-/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mmi6.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/gerar/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gerar/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
-gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb
+ <C:\Users\gerar\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1000.pk><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gerar/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C:/Users/gerar/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/gerar/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/U
+sers/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+xti10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/gerar/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gerar/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ger
+ar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
+C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi6.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/gerar/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gerar/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.p
+fb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr6.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gerar/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/gerar/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/gerar/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
+ers/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+5.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/gerar/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/gerar/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ge
+rar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
 ><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr6.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/gerar/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/gerar/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/User
-s/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.
-pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy6.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/gerar/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/gerar/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/gera
-r/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><
-C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
-mbols/msbm10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/rsfs/rsfs10.pfb>
-Output written on esta_correcciones.pdf (87 pages, 7530111 bytes).
+symbols/msbm10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/rsfs/rsfs10.pfb>
+Output written on esta_correcciones.pdf (88 pages, 7533687 bytes).
 PDF statistics:
- 1409 PDF objects out of 1440 (max. 8388607)
- 393 named destinations out of 1000 (max. 500000)
+ 1411 PDF objects out of 1440 (max. 8388607)
+ 389 named destinations out of 1000 (max. 500000)
  815 words of extra memory for PDF output out of 10000 (max. 10000000)
 

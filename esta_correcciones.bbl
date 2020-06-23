@@ -13,13 +13,13 @@ Z.~Ou.
 \newblock Springer US, 2007.
 
 \bibitem{grynberg}
-Gilbert Grynberg, Alain Aspect, and Claude Fabre.
+G.~Grynberg, A.~Aspect, and C.~Fabre.
 \newblock {\em {Introduction to quantum optics: from the semi-classical
   approach to quantized light}}.
 \newblock Cambridge Univ. Press, New York, NY, 2010.
 
 \bibitem{jackson}
-John~David Jackson.
+J.~Jackson.
 \newblock {\em {Classical electrodynamics; 2nd ed.}}
 \newblock Wiley, New York, NY, 1975.
 
@@ -44,6 +44,11 @@ G.~Molina-Terriza, S.~Minardi, Y.~Deyanova, C.~Osorio, M.~Hendrych, and
 R.~Loudon.
 \newblock {\em The {Quantum} {Theory} of {Light}}.
 \newblock OUP Oxford, Oxford ; New York, edición: 3 edition, November 2000.
+
+\bibitem{2003}
+U.~Leonhardt.
+\newblock Quantum physics of simple optical instruments.
+\newblock {\em Reports on Progress in Physics}, 66(7):1207--1249, jun 2003.
 
 \bibitem{10}
 R.~Chevalerias, Y.~Latron, and C.~Veret.
@@ -79,7 +84,7 @@ L.~Vaidman~and A.~C.~Elitzur.
 \newblock {\em L. Found Phys}, 23:987, (1993).
 
 \bibitem{paper_vaidman}
-Lev Vaidman.
+L.~Vaidman.
 \newblock The meaning of the interaction-free measurements.
 \newblock {\em Foundations of Physics}, 33(3):491--510, Mar 2003.
 
@@ -89,7 +94,7 @@ T.~Maudlin.
 \newblock Princeton University Press, 2019.
 
 \bibitem{imaging}
-Andrew~G. White, Jay~R. Mitchell, Olaf Nairz, and Paul~G. Kwiat.
+A.~White, J.~Mitchell, O.~Nairz, and P.~Kwiat.
 \newblock ``interaction-free'' imaging.
 \newblock {\em Phys. Rev. A}, 58:605--613, Jul 1998.
 
@@ -113,18 +118,19 @@ H.~Azuma.
 \newblock Interaction-free measurement with an imperfect absorber.
 \newblock {\em Phys. Rev. A}, 74:054301, Nov 2006.
 
-\bibitem{leonhardt2003}
-U.~Leonhardt.
-\newblock Quantum physics of simple optical instruments.
-\newblock {\em Reports on Progress in Physics}, 66(7):1207--1249, jun 2003.
+\bibitem{exp}
+P.~Kwiat, H.~Weinfurter, T.~Herzog, A.~Zeilinger, and M.~Kasevich.
+\newblock Experimental realization of interaction-free measurementsa.
+\newblock {\em Annals of the New York Academy of Sciences}, 755(1):383--393,
+  1995.
 
 \bibitem{delayed}
-Wheeler John and Zurek Wojciech.
+J.~Wheeler and W.~Zurek.
 \newblock {\em Quantum theory and measurement}.
 \newblock Princeton Univ Press, Place of publication not identified, 2014.
 
 \bibitem{Ma}
-Xiao~Song Ma, Johannes Kofler, and Anton Zeilinger.
+X.~Ma, J.~Kofler, and A.~Zeilinger.
 \newblock {Delayed-choice gedanken experiments and their realizations}.
 \newblock {\em Reviews of Modern Physics}, 88(1):1--25, 2016.
 
@@ -139,8 +145,8 @@ F.~Kaiser, T.~Coudreau, P.~Milman, D.~B. Ostrowsky, and S.~Tanzilli.
 \newblock {\em Science}, 338(6107):637--640, 2012.
 
 \bibitem{Polino}
-Emanuele Polino, Iris Agresti, Davide Poderini, Gonzalo Carvacho, Giorgio
-  Milani, Gabriela~Barreto Lemos, Rafael Chaves, and Fabio Sciarrino.
+E.~Polino, I.~Agresti, D.~Poderini, G.~Carvacho, G.~Milani, G.~Lemos,
+  R.~Chaves, and F.~Sciarrino.
 \newblock {Device-independent test of a delayed choice experiment}.
 \newblock {\em Physical Review A}, 100(2):22111, 2019.
 
@@ -151,7 +157,7 @@ R.~Rossi.
 \newblock {\em Physical Review A}, 96(1):1--5, 2017.
 
 \bibitem{Chaves}
-Rafael Chaves, Gabriela~Barreto Lemos, and Jacques Pienaar.
+R.~Chaves, G.~Lemos, and J.~Pienaar.
 \newblock {Causal Modeling the Delayed-Choice Experiment}.
 \newblock {\em Physical Review Letters}, 120(19):190401, 2018.
 
@@ -173,15 +179,9 @@ E.~Hecht.
 \newblock Pearson, Boston, edición: 5th revised ed. edition, 2016.
 
 \bibitem{malus}
-Krzysztof W\'odkiewicz.
+K.~W\'odkiewicz.
 \newblock Classical and quantum malus laws.
 \newblock {\em Phys. Rev. A}, 51:2785--2788, Apr 1995.
-
-\bibitem{exp}
-P.~KWIAT, H.~WEINFURTER, T.~HERZOG, A.~ZEILINGER, and M.~KASEVICH.
-\newblock Experimental realization of interaction-free measurementsa.
-\newblock {\em Annals of the New York Academy of Sciences}, 755(1):383--393,
-  1995.
 
 \bibitem{zeno}
 B.~Misra and E.~C.~G. Sudarshan.

@@ -17,7 +17,7 @@ Warning--empty journal in maestria_procopio
 Warning--empty year in maestria_procopio
 You've used 36 entries,
             1791 wiz_defined-function locations,
-            681 strings with 8483 characters,
+            680 strings with 8332 characters,
 and the built_in function-call counts, 7392 in all, are:
 = -- 640
 > -- 315

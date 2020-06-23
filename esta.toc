@@ -17,19 +17,21 @@
 \contentsline {chapter}{\numberline {4}``Interaction-free measurements''}{23}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Single-photon Mach-Zehnder interferometer with a perfect absorber}{23}{section.4.1}%
 \contentsline {section}{\numberline {4.2}The single-photon Mach-Zehnder interferometer with an imperfect transmitter}{25}{section.4.2}%
-\contentsline {chapter}{\numberline {5}$BS$ as imperfect trasmitter}{28}{chapter.5}%
-\contentsline {section}{\numberline {5.1}$N$ Beam Splitters as imperfect transmitter }{31}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Analysis with phase retarders }{33}{subsection.5.1.1}%
-\contentsline {chapter}{\numberline {6}A Time-dependent transmitter}{34}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Optical chopper as perfect absorber }{34}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Optical chopper as imperfect absorber}{40}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Analysis of $N$ interferometers }{43}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Optical chopper as imperfect absorber in $N$ interferometers}{46}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Does the phase matter?}{47}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Towards Wheeler's Gedanken experiment}{48}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Experimental Setup}{56}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Single photon source}{56}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Single photon Mach-Zehnder interferometer}{58}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Alignment of the Interferometer}{59}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Single-photon interference}{62}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Varying optical paths}{64}{subsection.8.2.3}%
+\contentsline {chapter}{\numberline {5}BS as imperfect transmitter}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}$N$ Beam Splitters as imperfect transmitter }{32}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Analysis with phase retarders }{34}{subsection.5.1.1}%
+\contentsline {chapter}{\numberline {6}A Time-dependent transmitter}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Optical chopper as perfect absorber }{35}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Optical chopper as imperfect absorber}{41}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Analysis of $N$ interferometers }{44}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Optical chopper as imperfect absorber in $N$ interferometers}{47}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Does the phase matter?}{48}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Towards Wheeler's Gedanken experiment}{49}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Experimental Setup}{57}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Single photon source}{57}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Single photon Mach-Zehnder interferometer}{59}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Alignment of the Interferometer}{60}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Single-photon interference}{63}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Varying optical paths}{65}{subsection.8.2.3}%
+\contentsline {chapter}{\numberline {9}Conclusions}{66}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Appendices}{67}{chapter.10}%

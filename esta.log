@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  5 JUN 2020 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  10 JUN 2020 12:37
 entering extended mode
 **./esta.tex
 (esta.tex
@@ -1513,7 +1513,7 @@ LaTeX Info: Redefining \nameref on input line 15.
 \@outlinefile=\write7
 \openout7 = `esta.out'.
 
-<images/logo.jpg, id=158, 819.06pt x 179.67125pt>
+<images/logo.jpg, id=166, 819.06pt x 179.67125pt>
 File: images/logo.jpg Graphic file (type jpg)
 <use images/logo.jpg>
 Package pdftex.def Info: images/logo.jpg  used on input line 29.
@@ -1591,18 +1591,12 @@ Overfull \hbox (18.83835pt too wide) in paragraph at lines 106--106
 |\OT1/cmr/bx/n/24.88 Spontaneous para-met-ric down
  []
 
-
-LaTeX Warning: Citation `procopio' on page 1 undefined on input line 108.
-
-
-LaTeX Warning: Citation `multiphoton' on page 1 undefined on input line 108.
-
-<images/TypeI.jpg, id=331, 900.36375pt x 388.45125pt>
+<images/TypeI.jpg, id=343, 900.36375pt x 388.45125pt>
 File: images/TypeI.jpg Graphic file (type jpg)
 <use images/TypeI.jpg>
 Package pdftex.def Info: images/TypeI.jpg  used on input line 123.
 (pdftex.def)             Requested size: 155.24422pt x 79.66858pt.
-<images/typeII.jpg, id=332, 666.49pt x 288.07625pt>
+<images/typeII.jpg, id=344, 666.49pt x 288.07625pt>
 File: images/typeII.jpg Graphic file (type jpg)
 <use images/typeII.jpg>
 Package pdftex.def Info: images/typeII.jpg  used on input line 128.
@@ -1620,10 +1614,6 @@ been already used, duplicate ignored
 l.138 F
        inally, in SPDC type-II the polarization of converted photons are ort...
 [1]
-
-LaTeX Warning: Citation `grynberg' on page 2 undefined on input line 154.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
@@ -1632,13 +1622,6 @@ been already used, duplicate ignored
                    \relax 
 l.156 \begin{equation}
                        [2 <./images/TypeI.jpg> <./images/typeII.jpg>]
-
-LaTeX Warning: Citation `jackson' on page 3 undefined on input line 179.
-
-
-LaTeX Warning: Citation `boyd' on page 3 undefined on input line 199.
-
-
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
@@ -1655,26 +1638,14 @@ Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
 [5]
-
-LaTeX Warning: Citation `gerry' on page 6 undefined on input line 265.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [6]
-
-LaTeX Warning: Citation `leonhardt' on page 7 undefined on input line 294.
-
-
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
 [7]
-
-LaTeX Warning: Citation `procopio' on page 8 undefined on input line 345.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
@@ -1693,29 +1664,26 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Citation `minardi' on page 9 undefined on input line 405.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [9]
-<images/SPDC_yy.png, id=444, 883.3pt x 662.475pt>
+<images/SPDC_yy.png, id=470, 883.3pt x 662.475pt>
 File: images/SPDC_yy.png Graphic file (type png)
 <use images/SPDC_yy.png>
 Package pdftex.def Info: images/SPDC_yy.png  used on input line 448.
 (pdftex.def)             Requested size: 155.24895pt x 116.43018pt.
-<images/SPDC_xx.png, id=446, 883.3pt x 662.475pt>
+<images/SPDC_xx.png, id=472, 883.3pt x 662.475pt>
 File: images/SPDC_xx.png Graphic file (type png)
 <use images/SPDC_xx.png>
 Package pdftex.def Info: images/SPDC_xx.png  used on input line 451.
 (pdftex.def)             Requested size: 155.24895pt x 116.43018pt.
-<images/SPDC_yx.png, id=447, 883.3pt x 662.475pt>
+<images/SPDC_yx.png, id=473, 883.3pt x 662.475pt>
 File: images/SPDC_yx.png Graphic file (type png)
 <use images/SPDC_yx.png>
 Package pdftex.def Info: images/SPDC_yx.png  used on input line 454.
 (pdftex.def)             Requested size: 155.24895pt x 116.43018pt.
-<images/SPDC_xy.png, id=448, 883.3pt x 662.475pt>
+<images/SPDC_xy.png, id=474, 883.3pt x 662.475pt>
 File: images/SPDC_xy.png Graphic file (type png)
 <use images/SPDC_xy.png>
 Package pdftex.def Info: images/SPDC_xy.png  used on input line 457.
@@ -1726,7 +1694,7 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 [10]
 Chapter 2.
-<images/bS.png, id=464, 796.9775pt x 1127.21124pt>
+<images/bS.png, id=491, 796.9775pt x 1127.21124pt>
 File: images/bS.png Graphic file (type png)
 <use images/bS.png>
 Package pdftex.def Info: images/bS.png  used on input line 470.
@@ -1737,16 +1705,6 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 [11 <./images/SPDC_yy.png> <./images/SPDC_xx.png> <./images/SPDC_yx.png> <./ima
 ges/SPDC_xy.png>]
-
-LaTeX Warning: Citation `ludon' on page 12 undefined on input line 478.
-
-
-LaTeX Warning: Citation `leonhardt' on page 12 undefined on input line 478.
-
-
-LaTeX Warning: Citation `jackson' on page 12 undefined on input line 481.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
@@ -1755,19 +1713,10 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [13]
-
-LaTeX Warning: Citation `Leonhardt_2003' on page 14 undefined on input line 534
-.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [14]
-
-LaTeX Warning: Citation `leonhardt' on page 15 undefined on input line 586.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
@@ -1779,7 +1728,7 @@ I treat `x^1^2' essentially like `x^1{}^2'.
 
 ! Double superscript.
 l.611 ...\dagger}^{n_{1}}_{1}\mathbf{a}^{\dagger}^
-                                                  {n_{2}}_{2} \ket{0,0}
+                                                  {n_{2}}_{2} \ket{0,0}.
 I treat `x^1^2' essentially like `x^1{}^2'.
 
 ! Double superscript.
@@ -1791,7 +1740,7 @@ I treat `x^1^2' essentially like `x^1{}^2'.
 
 ! Double superscript.
 <argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} \ket {0,0} 
+                                                  {n_{2}}_{2} \ket {0,0}. 
 l.627 \end{align}
                  
 I treat `x^1^2' essentially like `x^1{}^2'.
@@ -1805,36 +1754,8 @@ I treat `x^1^2' essentially like `x^1{}^2'.
 
 ! Double superscript.
 <argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} \ket {0,0} 
+                                                  {n_{2}}_{2} \ket {0,0}. 
 l.627 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}'^{\...
-l.634 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} U^{\dagger }_{...
-l.634 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...1}! n_{2}!}} \mathbf {a}^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}^{\d...
-l.634 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}^{n_{1}}_{1}\mathbf {a}^{\dagger }^
-                                                  {n_{2}}_{2}\ket {0,0}' 
-l.634 \end{align}
                  
 I treat `x^1^2' essentially like `x^1{}^2'.
 
@@ -1861,7 +1782,35 @@ I treat `x^1^2' essentially like `x^1{}^2'.
 
 ! Double superscript.
 <argument> ...}^{n_{1}}_{1}\mathbf {a}^{\dagger }^
-                                                  {n_{2}}_{2}\ket {0,0}' 
+                                                  {n_{2}}_{2}\ket {0,0}'. 
+l.634 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
+                                                  {n_{1}}_{1}\mathbf {a}'^{\...
+l.634 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
+                                                  {n_{2}}_{2} U^{\dagger }_{...
+l.634 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...1}! n_{2}!}} \mathbf {a}^{\dagger }^
+                                                  {n_{1}}_{1}\mathbf {a}^{\d...
+l.634 \end{align}
+                 
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<argument> ...}^{n_{1}}_{1}\mathbf {a}^{\dagger }^
+                                                  {n_{2}}_{2}\ket {0,0}'. 
 l.634 \end{align}
                  
 I treat `x^1^2' essentially like `x^1{}^2'.
@@ -1881,38 +1830,15 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 [18]
 Chapter 3.
 
-LaTeX Warning: Citation `10' on page 19 undefined on input line 689.
-
-
-LaTeX Warning: Citation `11' on page 19 undefined on input line 689.
-
-
-LaTeX Warning: Citation `ackerman' on page 19 undefined on input line 689.
-
-
-LaTeX Warning: Citation `studenkov' on page 19 undefined on input line 689.
-
-
-LaTeX Warning: Citation `capmany' on page 19 undefined on input line 689.
-
-
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
 [19]
-<images/machzenhdercla.png, id=567, 845.40843pt x 597.73312pt>
+<images/machzenhdercla.png, id=612, 845.40843pt x 597.73312pt>
 File: images/machzenhdercla.png Graphic file (type png)
 <use images/machzenhdercla.png>
 Package pdftex.def Info: images/machzenhdercla.png  used on input line 696.
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
-
-
-LaTeX Warning: Reference `fig: classical mach' on page 20 undefined on input li
-ne 705.
-
-
-LaTeX Warning: Citation `ludon' on page 20 undefined on input line 705.
-
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
@@ -1929,19 +1855,6 @@ Overfull \hbox (52.81523pt too wide) in paragraph at lines 791--791
  []
 
 
-LaTeX Warning: Citation `Elitzur' on page 22 undefined on input line 793.
-
-
-LaTeX Warning: Citation `paper_vaidman' on page 22 undefined on input line 793.
-
-
-
-LaTeX Warning: Citation `maudlin' on page 22 undefined on input line 793.
-
-
-LaTeX Warning: Citation `imaging' on page 22 undefined on input line 793.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
@@ -1950,10 +1863,7 @@ Overfull \hbox (0.79959pt too wide) in paragraph at lines 795--795
 |[]\OT1/cmr/bx/n/14.4 Single-photon Mach-Zehnder in-ter-fer-o-meter
  []
 
-
-LaTeX Warning: Citation `Elitzur' on page 23 undefined on input line 797.
-
-<images/machzenhderbomb.png, id=595, 845.40843pt x 597.73312pt>
+<images/machzenhderbomb.png, id=647, 845.40843pt x 597.73312pt>
 File: images/machzenhderbomb.png Graphic file (type png)
 <use images/machzenhderbomb.png>
 Package pdftex.def Info: images/machzenhderbomb.png  used on input line 802.
@@ -1970,16 +1880,6 @@ Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
 [24 <./images/machzenhderbomb.png>]
-
-LaTeX Warning: Citation `zuri' on page 25 undefined on input line 834.
-
-
-LaTeX Warning: Citation `azuri' on page 25 undefined on input line 834.
-
-
-LaTeX Warning: Citation `Azuma' on page 25 undefined on input line 834.
-
-
 Overfull \hbox (173.30333pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/10 4.2.  THE SINGLE-PHOTON MACH-ZEHNDER INTERFEROMETER WITH AN IM
 PERFECT TRANSMITTER \OT1/cmr/m/n/10 25
@@ -1993,176 +1893,173 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[26] [27]
-Chapter 5.
+[26]
+Overfull \hbox (173.30333pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 4.2.  THE SINGLE-PHOTON MACH-ZEHNDER INTERFEROMETER WITH AN IM
+PERFECT TRANSMITTER \OT1/cmr/m/n/10 27
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 898.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 898.
-
-<images/machzenhderbs.png, id=637, 845.40843pt x 597.73312pt>
-File: images/machzenhderbs.png Graphic file (type png)
-<use images/machzenhderbs.png>
-Package pdftex.def Info: images/machzenhderbs.png  used on input line 904.
-(pdftex.def)             Requested size: 344.99431pt x 213.3961pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[28 <./images/machzenhderbs.png>]
-<images/P1abs.png, id=645, 414.54875pt x 182.6825pt>
-File: images/P1abs.png Graphic file (type png)
-<use images/P1abs.png>
-Package pdftex.def Info: images/P1abs.png  used on input line 935.
-(pdftex.def)             Requested size: 155.24664pt x 79.66693pt.
-<images/P1d1.png, id=646, 388.45125pt x 210.7875pt>
-File: images/P1d1.png Graphic file (type png)
-<use images/P1d1.png>
-Package pdftex.def Info: images/P1d1.png  used on input line 940.
-(pdftex.def)             Requested size: 155.25327pt x 79.66908pt.
-<images/P1d2.png, id=647, 432.61626pt x 316.18124pt>
-File: images/P1d2.png Graphic file (type png)
-<use images/P1d2.png>
-Package pdftex.def Info: images/P1d2.png  used on input line 945.
-(pdftex.def)             Requested size: 155.24664pt x 79.66748pt.
+[27] [28]
+Chapter 5.
+<images/machzenhderbs.png, id=707, 845.40843pt x 597.73312pt>
+File: images/machzenhderbs.png Graphic file (type png)
+<use images/machzenhderbs.png>
+Package pdftex.def Info: images/machzenhderbs.png  used on input line 916.
+(pdftex.def)             Requested size: 344.99431pt x 213.3961pt.
 
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
-[29 <./images/P1abs.png (PNG copy)> <./images/P1d1.png (PNG copy)> <./images/P1
-d2.png (PNG copy)>]
-<images/P11abs.png, id=656, 367.3725pt x 167.62625pt>
+[29 <./images/machzenhderbs.png>]
+<images/P1abs.png, id=714, 414.54875pt x 182.6825pt>
+File: images/P1abs.png Graphic file (type png)
+<use images/P1abs.png>
+Package pdftex.def Info: images/P1abs.png  used on input line 947.
+(pdftex.def)             Requested size: 155.24664pt x 79.66693pt.
+<images/P1d1.png, id=715, 388.45125pt x 210.7875pt>
+File: images/P1d1.png Graphic file (type png)
+<use images/P1d1.png>
+Package pdftex.def Info: images/P1d1.png  used on input line 952.
+(pdftex.def)             Requested size: 155.25327pt x 79.66908pt.
+<images/P1d2.png, id=716, 432.61626pt x 316.18124pt>
+File: images/P1d2.png Graphic file (type png)
+<use images/P1d2.png>
+Package pdftex.def Info: images/P1d2.png  used on input line 957.
+(pdftex.def)             Requested size: 155.24664pt x 79.66748pt.
+<images/P11abs.png, id=718, 367.3725pt x 167.62625pt>
 File: images/P11abs.png Graphic file (type png)
 <use images/P11abs.png>
-Package pdftex.def Info: images/P11abs.png  used on input line 967.
+Package pdftex.def Info: images/P11abs.png  used on input line 979.
 (pdftex.def)             Requested size: 155.24895pt x 70.8399pt.
-<images/P11d1.png, id=657, 438.63875pt x 281.05pt>
+<images/P11d1.png, id=719, 438.63875pt x 281.05pt>
 File: images/P11d1.png Graphic file (type png)
 <use images/P11d1.png>
-Package pdftex.def Info: images/P11d1.png  used on input line 972.
+Package pdftex.def Info: images/P11d1.png  used on input line 984.
 (pdftex.def)             Requested size: 155.25267pt x 85.35774pt.
-<images/P11d2.png, id=658, 334.24875pt x 186.6975pt>
+<images/P11d2.png, id=720, 334.24875pt x 186.6975pt>
 File: images/P11d2.png Graphic file (type png)
 <use images/P11d2.png>
-Package pdftex.def Info: images/P11d2.png  used on input line 977.
+Package pdftex.def Info: images/P11d2.png  used on input line 989.
 (pdftex.def)             Requested size: 155.24895pt x 86.71657pt.
-
-
-LaTeX Warning: Citation `zuri' on page 30 undefined on input line 994.
-
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[30 <./images/P11abs.png (PNG copy)> <./images/P11d1.png (PNG copy)> <./images/
-P11d2.png (PNG copy)>]
+[30]
+Overfull \vbox (6.44444pt too high) has occurred while \output is active []
+
+
+[31 <./images/P1abs.png (PNG copy)> <./images/P1d1.png (PNG copy)> <./images/P1
+d2.png (PNG copy)> <./images/P11abs.png (PNG copy)> <./images/P11d1.png (PNG co
+py)> <./images/P11d2.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 996.
+(hyperref)                removing `math shift' on input line 1008.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 996.
+(hyperref)                removing `math shift' on input line 1008.
 
-<images/machzenhderBSS.png, id=670, 845.40843pt x 597.73312pt>
+<images/machzenhderBSS.png, id=740, 845.40843pt x 597.73312pt>
 File: images/machzenhderBSS.png Graphic file (type png)
 <use images/machzenhderBSS.png>
-Package pdftex.def Info: images/machzenhderBSS.png  used on input line 1002.
+Package pdftex.def Info: images/machzenhderBSS.png  used on input line 1013.
 (pdftex.def)             Requested size: 344.99431pt x 227.62434pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[31 <./images/machzenhderBSS.png>]
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[32]
+[32 <./images/machzenhderBSS.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [33]
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[34]
 Chapter 6.
 
-Overfull \hbox (2.01822pt too wide) in paragraph at lines 1077--1077
+Overfull \hbox (2.01822pt too wide) in paragraph at lines 1088--1088
 |\OT1/cmr/bx/n/24.88 A Time-dependent trans-mit-
  []
 
-<images/machzenhderchopper.png, id=699, 845.40843pt x 597.73312pt>
+<images/machzenhderchopper.png, id=770, 845.40843pt x 597.73312pt>
 File: images/machzenhderchopper.png Graphic file (type png)
 <use images/machzenhderchopper.png>
-Package pdftex.def Info: images/machzenhderchopper.png  used on input line 1085
+Package pdftex.def Info: images/machzenhderchopper.png  used on input line 1096
 .
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+Overfull \vbox (6.44444pt too high) has occurred while \output is active []
+
+
+[35]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[34]
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[35 <./images/machzenhderchopper.png>]
-<images/Pc2Abs.png, id=717, 361.35pt x 244.915pt>
+[36 <./images/machzenhderchopper.png>]
+<images/Pc2Abs.png, id=789, 361.35pt x 244.915pt>
 File: images/Pc2Abs.png Graphic file (type png)
 <use images/Pc2Abs.png>
-Package pdftex.def Info: images/Pc2Abs.png  used on input line 1142.
+Package pdftex.def Info: images/Pc2Abs.png  used on input line 1153.
 (pdftex.def)             Requested size: 155.25066pt x 85.35529pt.
-<images/Pc2D21.png, id=718, 383.4325pt x 245.91875pt>
+<images/Pc2D21.png, id=790, 383.4325pt x 245.91875pt>
 File: images/Pc2D21.png Graphic file (type png)
 <use images/Pc2D21.png>
-Package pdftex.def Info: images/Pc2D21.png  used on input line 1147.
+Package pdftex.def Info: images/Pc2D21.png  used on input line 1158.
 (pdftex.def)             Requested size: 155.24835pt x 85.35612pt.
-<images/Pc2D22.png, id=719, 379.4175pt x 221.82875pt>
+<images/Pc2D22.png, id=791, 379.4175pt x 221.82875pt>
 File: images/Pc2D22.png Graphic file (type png)
 <use images/Pc2D22.png>
-Package pdftex.def Info: images/Pc2D22.png  used on input line 1152.
+Package pdftex.def Info: images/Pc2D22.png  used on input line 1163.
 (pdftex.def)             Requested size: 155.24954pt x 85.35524pt.
-<images/Pc2D11.png, id=720, 376.40625pt x 230.8625pt>
+<images/Pc2D11.png, id=792, 376.40625pt x 230.8625pt>
 File: images/Pc2D11.png Graphic file (type png)
 <use images/Pc2D11.png>
-Package pdftex.def Info: images/Pc2D11.png  used on input line 1157.
+Package pdftex.def Info: images/Pc2D11.png  used on input line 1168.
 (pdftex.def)             Requested size: 155.25226pt x 85.3579pt.
-<images/Pc2D12.png, id=721, 376.40625pt x 230.8625pt>
+<images/Pc2D12.png, id=793, 376.40625pt x 230.8625pt>
 File: images/Pc2D12.png Graphic file (type png)
 <use images/Pc2D12.png>
-Package pdftex.def Info: images/Pc2D12.png  used on input line 1162.
+Package pdftex.def Info: images/Pc2D12.png  used on input line 1173.
 (pdftex.def)             Requested size: 155.25226pt x 85.3579pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[36]
-<images/Pc1Abs.png, id=736, 361.35pt x 244.915pt>
+[37]
+<images/Pc1Abs.png, id=807, 361.35pt x 244.915pt>
 File: images/Pc1Abs.png Graphic file (type png)
 <use images/Pc1Abs.png>
-Package pdftex.def Info: images/Pc1Abs.png  used on input line 1191.
+Package pdftex.def Info: images/Pc1Abs.png  used on input line 1202.
 (pdftex.def)             Requested size: 120.75111pt x 85.35529pt.
-<images/Pc1D21.png, id=737, 361.35pt x 285.065pt>
+<images/Pc1D21.png, id=808, 361.35pt x 285.065pt>
 File: images/Pc1D21.png Graphic file (type png)
 <use images/Pc1D21.png>
-Package pdftex.def Info: images/Pc1D21.png  used on input line 1196.
+Package pdftex.def Info: images/Pc1D21.png  used on input line 1207.
 (pdftex.def)             Requested size: 120.75111pt x 85.35486pt.
-<images/Pc1D22.png, id=738, 361.35pt x 285.065pt>
+<images/Pc1D22.png, id=809, 361.35pt x 285.065pt>
 File: images/Pc1D22.png Graphic file (type png)
 <use images/Pc1D22.png>
-Package pdftex.def Info: images/Pc1D22.png  used on input line 1201.
+Package pdftex.def Info: images/Pc1D22.png  used on input line 1212.
 (pdftex.def)             Requested size: 120.75111pt x 85.35486pt.
-<images/Pc1D11.png, id=739, 354.32375pt x 168.63pt>
+<images/Pc1D11.png, id=810, 354.32375pt x 168.63pt>
 File: images/Pc1D11.png Graphic file (type png)
 <use images/Pc1D11.png>
-Package pdftex.def Info: images/Pc1D11.png  used on input line 1206.
+Package pdftex.def Info: images/Pc1D11.png  used on input line 1217.
 (pdftex.def)             Requested size: 120.74962pt x 85.35945pt.
-<images/Pc1D12.png, id=740, 348.30125pt x 214.8025pt>
+<images/Pc1D12.png, id=811, 348.30125pt x 214.8025pt>
 File: images/Pc1D12.png Graphic file (type png)
 <use images/Pc1D12.png>
-Package pdftex.def Info: images/Pc1D12.png  used on input line 1211.
+Package pdftex.def Info: images/Pc1D12.png  used on input line 1222.
 (pdftex.def)             Requested size: 120.74867pt x 85.359pt.
 
 
@@ -2172,43 +2069,43 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[37 <./images/Pc2Abs.png (PNG copy)> <./images/Pc2D21.png (PNG copy)> <./images
+[38 <./images/Pc2Abs.png (PNG copy)> <./images/Pc2D21.png (PNG copy)> <./images
 /Pc2D22.png (PNG copy)> <./images/Pc2D11.png (PNG copy)> <./images/Pc2D12.png (
 PNG copy)>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[38 <./images/Pc1Abs.png (PNG copy)> <./images/Pc1D21.png (PNG copy)> <./images
+[39 <./images/Pc1Abs.png (PNG copy)> <./images/Pc1D21.png (PNG copy)> <./images
 /Pc1D22.png (PNG copy)> <./images/Pc1D11.png (PNG copy)> <./images/Pc1D12.png (
 PNG copy)>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[39]
-<images/p1cabs.png, id=766, 361.35pt x 244.915pt>
+[40]
+<images/p1cabs.png, id=837, 361.35pt x 244.915pt>
 File: images/p1cabs.png Graphic file (type png)
 <use images/p1cabs.png>
-Package pdftex.def Info: images/p1cabs.png  used on input line 1289.
+Package pdftex.def Info: images/p1cabs.png  used on input line 1300.
 (pdftex.def)             Requested size: 137.99812pt x 85.35529pt.
-<images/p1cd21.png, id=767, 348.30125pt x 196.735pt>
+<images/p1cd21.png, id=838, 348.30125pt x 196.735pt>
 File: images/p1cd21.png Graphic file (type png)
 <use images/p1cd21.png>
-Package pdftex.def Info: images/p1cd21.png  used on input line 1294.
+Package pdftex.def Info: images/p1cd21.png  used on input line 1305.
 (pdftex.def)             Requested size: 137.99467pt x 85.35687pt.
-<images/p1cd22.png, id=768, 348.30125pt x 196.735pt>
+<images/p1cd22.png, id=839, 348.30125pt x 196.735pt>
 File: images/p1cd22.png Graphic file (type png)
 <use images/p1cd22.png>
-Package pdftex.def Info: images/p1cd22.png  used on input line 1299.
+Package pdftex.def Info: images/p1cd22.png  used on input line 1310.
 (pdftex.def)             Requested size: 137.99467pt x 85.35687pt.
-<images/p1cd11.png, id=769, 328.22626pt x 155.58125pt>
+<images/p1cd11.png, id=840, 328.22626pt x 155.58125pt>
 File: images/p1cd11.png Graphic file (type png)
 <use images/p1cd11.png>
-Package pdftex.def Info: images/p1cd11.png  used on input line 1304.
+Package pdftex.def Info: images/p1cd11.png  used on input line 1315.
 (pdftex.def)             Requested size: 137.99933pt x 85.35866pt.
-<images/p1cd12.png, id=770, 328.22626pt x 155.58125pt>
+<images/p1cd12.png, id=841, 328.22626pt x 155.58125pt>
 File: images/p1cd12.png Graphic file (type png)
 <use images/p1cd12.png>
-Package pdftex.def Info: images/p1cd12.png  used on input line 1309.
+Package pdftex.def Info: images/p1cd12.png  used on input line 1320.
 (pdftex.def)             Requested size: 137.99933pt x 85.35866pt.
 
 
@@ -2218,562 +2115,478 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[40]
-<images/pcabs.png, id=785, 365.365pt x 197.73875pt>
+[41]
+<images/pcabs.png, id=856, 365.365pt x 197.73875pt>
 File: images/pcabs.png Graphic file (type png)
 <use images/pcabs.png>
-Package pdftex.def Info: images/pcabs.png  used on input line 1332.
+Package pdftex.def Info: images/pcabs.png  used on input line 1343.
 (pdftex.def)             Requested size: 137.9983pt x 85.3579pt.
-<images/pcd21.png, id=786, 361.35pt x 285.065pt>
+<images/pcd21.png, id=857, 361.35pt x 285.065pt>
 File: images/pcd21.png Graphic file (type png)
 <use images/pcd21.png>
-Package pdftex.def Info: images/pcd21.png  used on input line 1337.
+Package pdftex.def Info: images/pcd21.png  used on input line 1348.
 (pdftex.def)             Requested size: 137.99812pt x 85.35486pt.
-<images/pcd22.png, id=787, 361.35pt x 285.065pt>
+<images/pcd22.png, id=858, 361.35pt x 285.065pt>
 File: images/pcd22.png Graphic file (type png)
 <use images/pcd22.png>
-Package pdftex.def Info: images/pcd22.png  used on input line 1342.
+Package pdftex.def Info: images/pcd22.png  used on input line 1353.
 (pdftex.def)             Requested size: 137.99812pt x 85.35486pt.
-<images/pcd11.png, id=788, 360.34625pt x 200.75pt>
+<images/pcd11.png, id=859, 360.34625pt x 200.75pt>
 File: images/pcd11.png Graphic file (type png)
 <use images/pcd11.png>
-Package pdftex.def Info: images/pcd11.png  used on input line 1347.
+Package pdftex.def Info: images/pcd11.png  used on input line 1358.
 (pdftex.def)             Requested size: 137.99419pt x 85.35896pt.
-<images/pcd12.png, id=789, 360.34625pt x 200.75pt>
+<images/pcd12.png, id=860, 360.34625pt x 200.75pt>
 File: images/pcd12.png Graphic file (type png)
 <use images/pcd12.png>
-Package pdftex.def Info: images/pcd12.png  used on input line 1352.
+Package pdftex.def Info: images/pcd12.png  used on input line 1363.
 (pdftex.def)             Requested size: 137.99419pt x 85.35896pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[41 <./images/p1cabs.png (PNG copy)> <./images/p1cd21.png (PNG copy)> <./images
+[42 <./images/p1cabs.png (PNG copy)> <./images/p1cd21.png (PNG copy)> <./images
 /p1cd22.png (PNG copy)> <./images/p1cd11.png (PNG copy)> <./images/p1cd12.png (
 PNG copy)>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[42 <./images/pcabs.png (PNG copy)> <./images/pcd21.png (PNG copy)> <./images/p
+[43 <./images/pcabs.png (PNG copy)> <./images/pcd21.png (PNG copy)> <./images/p
 cd22.png (PNG copy)> <./images/pcd11.png (PNG copy)> <./images/pcd12.png (PNG c
 opy)>]
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1373.
+(hyperref)                removing `math shift' on input line 1384.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1373.
+(hyperref)                removing `math shift' on input line 1384.
 
-
-LaTeX Warning: Citation `5' on page 43 undefined on input line 1375.
-
-<images/nmach.png, id=806, 1127.21124pt x 796.9775pt>
+<images/nmach.png, id=878, 1127.21124pt x 796.9775pt>
 File: images/nmach.png Graphic file (type png)
 <use images/nmach.png>
-Package pdftex.def Info: images/nmach.png  used on input line 1379.
+Package pdftex.def Info: images/nmach.png  used on input line 1390.
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
-LaTeX Warning: Citation `Azuma' on page 43 undefined on input line 1384.
-
-
-Overfull \vbox (6.44444pt too high) has occurred while \output is active []
-
-
-[43 <./images/nmach.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[44]
-<images/BS_Azuna.png, id=822, 642.4pt x 481.8pt>
+[44 <./images/nmach.png>]
+Overfull \vbox (6.44444pt too high) has occurred while \output is active []
+
+
+[45]
+<images/BS_Azuna.png, id=895, 642.4pt x 481.8pt>
 File: images/BS_Azuna.png Graphic file (type png)
 <use images/BS_Azuna.png>
-Package pdftex.def Info: images/BS_Azuna.png  used on input line 1441.
+Package pdftex.def Info: images/BS_Azuna.png  used on input line 1452.
 (pdftex.def)             Requested size: 103.49185pt x 142.26208pt.
-<images/BS_AzunaD2.png, id=823, 642.4pt x 481.8pt>
+<images/BS_AzunaD2.png, id=896, 642.4pt x 481.8pt>
 File: images/BS_AzunaD2.png Graphic file (type png)
 <use images/BS_AzunaD2.png>
-Package pdftex.def Info: images/BS_AzunaD2.png  used on input line 1446.
+Package pdftex.def Info: images/BS_AzunaD2.png  used on input line 1457.
 (pdftex.def)             Requested size: 103.49185pt x 142.26208pt.
-<images/absorbido_azuna.png, id=824, 642.4pt x 481.8pt>
+<images/absorbido_azuna.png, id=897, 642.4pt x 481.8pt>
 File: images/absorbido_azuna.png Graphic file (type png)
 <use images/absorbido_azuna.png>
-Package pdftex.def Info: images/absorbido_azuna.png  used on input line 1451.
+Package pdftex.def Info: images/absorbido_azuna.png  used on input line 1462.
 (pdftex.def)             Requested size: 103.49185pt x 142.26208pt.
 
 
-LaTeX Warning: Citation `Azuma' on page 45 undefined on input line 1460.
-
-
-LaTeX Warning: Citation `leonhardt_2003' on page 45 undefined on input line 146
-0.
-
-
-Overfull \vbox (6.44444pt too high) has occurred while \output is active []
-
-
-[45 <./images/BS_Azuna.png> <./images/BS_AzunaD2.png> <./images/absorbido_azuna
-.png>]
-<images/BsFijo_azumaD1.png, id=837, 642.4pt x 481.8pt>
-File: images/BsFijo_azumaD1.png Graphic file (type png)
-<use images/BsFijo_azumaD1.png>
-Package pdftex.def Info: images/BsFijo_azumaD1.png  used on input line 1468.
-(pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-<images/BsFijo_azumaD2.png, id=838, 642.4pt x 481.8pt>
-File: images/BsFijo_azumaD2.png Graphic file (type png)
-<use images/BsFijo_azumaD2.png>
-Package pdftex.def Info: images/BsFijo_azumaD2.png  used on input line 1473.
-(pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-<images/BsFijo_azumaabs.png, id=839, 642.4pt x 481.8pt>
-File: images/BsFijo_azumaabs.png Graphic file (type png)
-<use images/BsFijo_azumaabs.png>
-Package pdftex.def Info: images/BsFijo_azumaabs.png  used on input line 1478.
-(pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1488.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1488.
+LaTeX Warning: Citation `leonhardt_2003' on page 46 undefined on input line 147
+1.
 
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[46 <./images/BsFijo_azumaD1.png> <./images/BsFijo_azumaD2.png> <./images/BsFij
+[46 <./images/BS_Azuna.png> <./images/BS_AzunaD2.png> <./images/absorbido_azuna
+.png>]
+<images/BsFijo_azumaD1.png, id=911, 642.4pt x 481.8pt>
+File: images/BsFijo_azumaD1.png Graphic file (type png)
+<use images/BsFijo_azumaD1.png>
+Package pdftex.def Info: images/BsFijo_azumaD1.png  used on input line 1479.
+(pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
+<images/BsFijo_azumaD2.png, id=912, 642.4pt x 481.8pt>
+File: images/BsFijo_azumaD2.png Graphic file (type png)
+<use images/BsFijo_azumaD2.png>
+Package pdftex.def Info: images/BsFijo_azumaD2.png  used on input line 1484.
+(pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
+<images/BsFijo_azumaabs.png, id=913, 642.4pt x 481.8pt>
+File: images/BsFijo_azumaabs.png Graphic file (type png)
+<use images/BsFijo_azumaabs.png>
+Package pdftex.def Info: images/BsFijo_azumaabs.png  used on input line 1489.
+(pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1499.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1499.
+
+
+Overfull \hbox (54.02647pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 7.1.  OPTICAL CHOPPER AS IMPERFECT ABSORBER IN $\OML/cmm/m/it/
+10 N$ \OT1/cmr/m/sl/10 INTERFEROMETERS \OT1/cmr/m/n/10 47
+ []
+
+
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[47 <./images/BsFijo_azumaD1.png> <./images/BsFijo_azumaD2.png> <./images/BsFij
 o_azumaabs.png>]
-Overfull \hbox (2.66867pt too wide) in paragraph at lines 1501--1502
+Overfull \hbox (2.66867pt too wide) in paragraph at lines 1512--1513
 []\OT1/cmr/m/n/10 In the pos-it-ive cycle we have $\OML/cmm/m/it/10 f[] \OT1/cm
 r/m/n/10 = 1$. While on the neg-at-ive cycle $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n
 /10 =
  []
 
-<images/ChopperD1.png, id=849, 642.4pt x 481.8pt>
+<images/ChopperD1.png, id=923, 642.4pt x 481.8pt>
 File: images/ChopperD1.png Graphic file (type png)
 <use images/ChopperD1.png>
-Package pdftex.def Info: images/ChopperD1.png  used on input line 1507.
+Package pdftex.def Info: images/ChopperD1.png  used on input line 1518.
 (pdftex.def)             Requested size: 103.50105pt x 77.61888pt.
-<images/ChopperD2.png, id=850, 642.4pt x 481.8pt>
+<images/ChopperD2.png, id=924, 642.4pt x 481.8pt>
 File: images/ChopperD2.png Graphic file (type png)
 <use images/ChopperD2.png>
-Package pdftex.def Info: images/ChopperD2.png  used on input line 1512.
+Package pdftex.def Info: images/ChopperD2.png  used on input line 1523.
 (pdftex.def)             Requested size: 103.50105pt x 77.61888pt.
-<images/Chopper_abs.png, id=851, 642.4pt x 481.8pt>
+<images/Chopper_abs.png, id=925, 642.4pt x 481.8pt>
 File: images/Chopper_abs.png Graphic file (type png)
 <use images/Chopper_abs.png>
-Package pdftex.def Info: images/Chopper_abs.png  used on input line 1517.
+Package pdftex.def Info: images/Chopper_abs.png  used on input line 1528.
 (pdftex.def)             Requested size: 103.50105pt x 77.61888pt.
 
-LaTeX Warning: Citation `Azuma' on page 47 undefined on input line 1530.
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (6.94444pt too high) has occurred while \output is active []
-
-
-[47 <./images/ChopperD1.png> <./images/ChopperD2.png> <./images/Chopper_abs.png
+[48 <./images/ChopperD1.png> <./images/ChopperD2.png> <./images/Chopper_abs.png
 >]
-Overfull \hbox (14.04999pt too wide) in paragraph at lines 1538--1539
+Overfull \hbox (14.04999pt too wide) in paragraph at lines 1549--1550
 \OT1/cmr/m/n/10 bit-rary (We are us-ing sympy for sym-bolic com-pu-ta-tion), th
 en we plot $\OML/cmm/m/it/10 P[]; P[]; P[]$
  []
 
-<images/Azuma_phases2.png, id=863, 883.3pt x 662.475pt>
+<images/Azuma_phases2.png, id=939, 883.3pt x 662.475pt>
 File: images/Azuma_phases2.png Graphic file (type png)
 <use images/Azuma_phases2.png>
-Package pdftex.def Info: images/Azuma_phases2.png  used on input line 1543.
+Package pdftex.def Info: images/Azuma_phases2.png  used on input line 1554.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/Azuma_phases5.png, id=864, 883.3pt x 662.475pt>
+<images/Azuma_phases5.png, id=940, 883.3pt x 662.475pt>
 File: images/Azuma_phases5.png Graphic file (type png)
 <use images/Azuma_phases5.png>
-Package pdftex.def Info: images/Azuma_phases5.png  used on input line 1547.
+Package pdftex.def Info: images/Azuma_phases5.png  used on input line 1558.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/Azuma_phases10.png, id=865, 883.3pt x 662.475pt>
+<images/Azuma_phases10.png, id=941, 883.3pt x 662.475pt>
 File: images/Azuma_phases10.png Graphic file (type png)
 <use images/Azuma_phases10.png>
-Package pdftex.def Info: images/Azuma_phases10.png  used on input line 1552.
+Package pdftex.def Info: images/Azuma_phases10.png  used on input line 1563.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/Azuma_phases100.png, id=866, 883.3pt x 662.475pt>
+<images/Azuma_phases100.png, id=942, 883.3pt x 662.475pt>
 File: images/Azuma_phases100.png Graphic file (type png)
 <use images/Azuma_phases100.png>
-Package pdftex.def Info: images/Azuma_phases100.png  used on input line 1557.
+Package pdftex.def Info: images/Azuma_phases100.png  used on input line 1568.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/Azuma_phases1000.png, id=867, 883.3pt x 662.475pt>
+<images/Azuma_phases1000.png, id=943, 883.3pt x 662.475pt>
 File: images/Azuma_phases1000.png Graphic file (type png)
 <use images/Azuma_phases1000.png>
-Package pdftex.def Info: images/Azuma_phases1000.png  used on input line 1561.
+Package pdftex.def Info: images/Azuma_phases1000.png  used on input line 1572.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-
-LaTeX Warning: Citation `delayed' on page 48 undefined on input line 1572.
-
-<images/wheeler1.png, id=870, 845.40843pt x 597.73312pt>
+<images/wheeler1.png, id=947, 845.40843pt x 597.73312pt>
 File: images/wheeler1.png Graphic file (type png)
 <use images/wheeler1.png>
-Package pdftex.def Info: images/wheeler1.png  used on input line 1576.
+Package pdftex.def Info: images/wheeler1.png  used on input line 1587.
 (pdftex.def)             Requested size: 344.99431pt x 184.93964pt.
 
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[48 <./images/Azuma_phases2.png> <./images/Azuma_phases5.png> <./images/Azuma_p
+[49 <./images/Azuma_phases2.png> <./images/Azuma_phases5.png> <./images/Azuma_p
 hases10.png> <./images/Azuma_phases100.png> <./images/Azuma_phases1000.png>]
-<images/wheeler2.png, id=884, 845.40843pt x 597.73312pt>
+<images/wheeler2.png, id=961, 845.40843pt x 597.73312pt>
 File: images/wheeler2.png Graphic file (type png)
 <use images/wheeler2.png>
-Package pdftex.def Info: images/wheeler2.png  used on input line 1585.
+Package pdftex.def Info: images/wheeler2.png  used on input line 1596.
 (pdftex.def)             Requested size: 344.99431pt x 184.93964pt.
 
-Overfull \vbox (6.94444pt too high) has occurred while \output is active []
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[49 <./images/wheeler1.png>]
-
-LaTeX Warning: Citation `Ma' on page 50 undefined on input line 1594.
-
-<images/wheeler3.png, id=891, 845.40843pt x 597.73312pt>
+[50 <./images/wheeler1.png>]
+<images/wheeler3.png, id=969, 845.40843pt x 597.73312pt>
 File: images/wheeler3.png Graphic file (type png)
 <use images/wheeler3.png>
-Package pdftex.def Info: images/wheeler3.png  used on input line 1598.
+Package pdftex.def Info: images/wheeler3.png  used on input line 1609.
 (pdftex.def)             Requested size: 344.99431pt x 213.3961pt.
 
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[50 <./images/wheeler2.png>]
-
-LaTeX Warning: Citation `Peruzzo' on page 51 undefined on input line 1603.
-
-
-LaTeX Warning: Citation `Kaiser2012' on page 51 undefined on input line 1603.
-
-
-LaTeX Warning: Citation `Peruzzo' on page 51 undefined on input line 1608.
-
-
-LaTeX Warning: Citation `Kaiser2012' on page 51 undefined on input line 1608.
-
-
-LaTeX Warning: Citation `Polino' on page 51 undefined on input line 1608.
-
-<images/pd1_2.png, id=899, 883.3pt x 662.475pt>
+[51 <./images/wheeler2.png>]
+<images/pd1_2.png, id=983, 883.3pt x 662.475pt>
 File: images/pd1_2.png Graphic file (type png)
 <use images/pd1_2.png>
-Package pdftex.def Info: images/pd1_2.png  used on input line 1613.
+Package pdftex.def Info: images/pd1_2.png  used on input line 1624.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_2.png, id=900, 883.3pt x 662.475pt>
+<images/pd2_2.png, id=984, 883.3pt x 662.475pt>
 File: images/pd2_2.png Graphic file (type png)
 <use images/pd2_2.png>
-Package pdftex.def Info: images/pd2_2.png  used on input line 1617.
+Package pdftex.def Info: images/pd2_2.png  used on input line 1628.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_2.png, id=901, 883.3pt x 662.475pt>
+<images/pabs_2.png, id=985, 883.3pt x 662.475pt>
 File: images/pabs_2.png Graphic file (type png)
 <use images/pabs_2.png>
-Package pdftex.def Info: images/pabs_2.png  used on input line 1622.
+Package pdftex.def Info: images/pabs_2.png  used on input line 1633.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
 
-Overfull \vbox (6.94444pt too high) has occurred while \output is active []
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[51 <./images/wheeler3.png>]
-
-LaTeX Warning: Citation `azuri' on page 52 undefined on input line 1630.
-
-<images/pd1_2_pi3.png, id=909, 883.3pt x 662.475pt>
+[52 <./images/wheeler3.png>]
+<images/pd1_2_pi3.png, id=996, 883.3pt x 662.475pt>
 File: images/pd1_2_pi3.png Graphic file (type png)
 <use images/pd1_2_pi3.png>
-Package pdftex.def Info: images/pd1_2_pi3.png  used on input line 1635.
+Package pdftex.def Info: images/pd1_2_pi3.png  used on input line 1646.
 (pdftex.def)             Requested size: 137.9979pt x 103.49124pt.
-<images/pd2_2_pi3.png, id=910, 883.3pt x 662.475pt>
+<images/pd2_2_pi3.png, id=997, 883.3pt x 662.475pt>
 File: images/pd2_2_pi3.png Graphic file (type png)
 <use images/pd2_2_pi3.png>
-Package pdftex.def Info: images/pd2_2_pi3.png  used on input line 1639.
+Package pdftex.def Info: images/pd2_2_pi3.png  used on input line 1650.
 (pdftex.def)             Requested size: 137.9979pt x 103.49124pt.
 
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[52 <./images/pd1_2.png> <./images/pd2_2.png> <./images/pabs_2.png> <./images/p
+[53 <./images/pd1_2.png> <./images/pd2_2.png> <./images/pabs_2.png> <./images/p
 d1_2_pi3.png> <./images/pd2_2_pi3.png>]
-<images/pd1_3_pi4.png, id=921, 883.3pt x 662.475pt>
+<images/pd1_3_pi4.png, id=1009, 883.3pt x 662.475pt>
 File: images/pd1_3_pi4.png Graphic file (type png)
 <use images/pd1_3_pi4.png>
-Package pdftex.def Info: images/pd1_3_pi4.png  used on input line 1653.
+Package pdftex.def Info: images/pd1_3_pi4.png  used on input line 1664.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_3_pi4.png, id=922, 883.3pt x 662.475pt>
+<images/pd2_3_pi4.png, id=1010, 883.3pt x 662.475pt>
 File: images/pd2_3_pi4.png Graphic file (type png)
 <use images/pd2_3_pi4.png>
-Package pdftex.def Info: images/pd2_3_pi4.png  used on input line 1657.
+Package pdftex.def Info: images/pd2_3_pi4.png  used on input line 1668.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_3_pi4.png, id=923, 883.3pt x 662.475pt>
+<images/pabs_3_pi4.png, id=1011, 883.3pt x 662.475pt>
 File: images/pabs_3_pi4.png Graphic file (type png)
 <use images/pabs_3_pi4.png>
-Package pdftex.def Info: images/pabs_3_pi4.png  used on input line 1662.
+Package pdftex.def Info: images/pabs_3_pi4.png  used on input line 1673.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd1_5_pi4.png, id=924, 883.3pt x 662.475pt>
+<images/pd1_5_pi4.png, id=1012, 883.3pt x 662.475pt>
 File: images/pd1_5_pi4.png Graphic file (type png)
 <use images/pd1_5_pi4.png>
-Package pdftex.def Info: images/pd1_5_pi4.png  used on input line 1667.
+Package pdftex.def Info: images/pd1_5_pi4.png  used on input line 1678.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_5_pi4.png, id=925, 883.3pt x 662.475pt>
+<images/pd2_5_pi4.png, id=1013, 883.3pt x 662.475pt>
 File: images/pd2_5_pi4.png Graphic file (type png)
 <use images/pd2_5_pi4.png>
-Package pdftex.def Info: images/pd2_5_pi4.png  used on input line 1672.
+Package pdftex.def Info: images/pd2_5_pi4.png  used on input line 1683.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_5_pi4.png, id=926, 883.3pt x 662.475pt>
+<images/pabs_5_pi4.png, id=1014, 883.3pt x 662.475pt>
 File: images/pabs_5_pi4.png Graphic file (type png)
 <use images/pabs_5_pi4.png>
-Package pdftex.def Info: images/pabs_5_pi4.png  used on input line 1677.
+Package pdftex.def Info: images/pabs_5_pi4.png  used on input line 1688.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd1_3.png, id=928, 883.3pt x 662.475pt>
+<images/pd1_3.png, id=1016, 883.3pt x 662.475pt>
 File: images/pd1_3.png Graphic file (type png)
 <use images/pd1_3.png>
-Package pdftex.def Info: images/pd1_3.png  used on input line 1690.
+Package pdftex.def Info: images/pd1_3.png  used on input line 1701.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_3.png, id=929, 883.3pt x 662.475pt>
+<images/pd2_3.png, id=1017, 883.3pt x 662.475pt>
 File: images/pd2_3.png Graphic file (type png)
 <use images/pd2_3.png>
-Package pdftex.def Info: images/pd2_3.png  used on input line 1694.
+Package pdftex.def Info: images/pd2_3.png  used on input line 1705.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_3.png, id=930, 883.3pt x 662.475pt>
+<images/pabs_3.png, id=1018, 883.3pt x 662.475pt>
 File: images/pabs_3.png Graphic file (type png)
 <use images/pabs_3.png>
-Package pdftex.def Info: images/pabs_3.png  used on input line 1699.
+Package pdftex.def Info: images/pabs_3.png  used on input line 1710.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd1_5.png, id=931, 883.3pt x 662.475pt>
+<images/pd1_5.png, id=1019, 883.3pt x 662.475pt>
 File: images/pd1_5.png Graphic file (type png)
 <use images/pd1_5.png>
-Package pdftex.def Info: images/pd1_5.png  used on input line 1704.
+Package pdftex.def Info: images/pd1_5.png  used on input line 1715.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_5.png, id=932, 883.3pt x 662.475pt>
+<images/pd2_5.png, id=1020, 883.3pt x 662.475pt>
 File: images/pd2_5.png Graphic file (type png)
 <use images/pd2_5.png>
-Package pdftex.def Info: images/pd2_5.png  used on input line 1709.
+Package pdftex.def Info: images/pd2_5.png  used on input line 1720.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_5.png, id=933, 883.3pt x 662.475pt>
+<images/pabs_5.png, id=1021, 883.3pt x 662.475pt>
 File: images/pabs_5.png Graphic file (type png)
 <use images/pabs_5.png>
-Package pdftex.def Info: images/pabs_5.png  used on input line 1714.
+Package pdftex.def Info: images/pabs_5.png  used on input line 1725.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-
-Overfull \vbox (6.94444pt too high) has occurred while \output is active []
-
-
-[53 <./images/pd1_3_pi4.png> <./images/pd2_3_pi4.png> <./images/pabs_3_pi4.png>
- <./images/pd1_5_pi4.png> <./images/pd2_5_pi4.png> <./images/pabs_5_pi4.png>]
-
-LaTeX Warning: Citation `Ma' on page 54 undefined on input line 1726.
-
-
-LaTeX Warning: Citation `Kaiser2012' on page 54 undefined on input line 1742.
-
-
-LaTeX Warning: Citation `Peruzzo' on page 54 undefined on input line 1742.
-
-
-LaTeX Warning: Citation `Kaiser2012' on page 54 undefined on input line 1742.
-
-
-LaTeX Warning: Citation `Peruzzo' on page 54 undefined on input line 1742.
-
-
-LaTeX Warning: Citation `Rossi' on page 54 undefined on input line 1742.
-
-
-LaTeX Warning: Citation `Chaves' on page 54 undefined on input line 1742.
-
-
-LaTeX Warning: Citation `Polino' on page 54 undefined on input line 1742.
-
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[54 <./images/pd1_3.png> <./images/pd2_3.png> <./images/pabs_3.png> <./images/p
-d1_5.png> <./images/pd2_5.png> <./images/pabs_5.png>]
-
-LaTeX Warning: Citation `Polino' on page 55 undefined on input line 1744.
-
-
-LaTeX Warning: Citation `Polino' on page 55 undefined on input line 1744.
-
-
+[54 <./images/pd1_3_pi4.png> <./images/pd2_3_pi4.png> <./images/pabs_3_pi4.png>
+ <./images/pd1_5_pi4.png> <./images/pd2_5_pi4.png> <./images/pabs_5_pi4.png>]
 Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[55]
-Chapter 8.
-
-LaTeX Warning: Citation `maestria_procopio' on page 56 undefined on input line 
-1758.
-
-
-LaTeX Warning: Citation `maestria_procopio' on page 56 undefined on input line 
-1762.
-
-<images/SPDC_exp.png, id=964, 845.40843pt x 597.73312pt>
-File: images/SPDC_exp.png Graphic file (type png)
-<use images/SPDC_exp.png>
-Package pdftex.def Info: images/SPDC_exp.png  used on input line 1766.
-(pdftex.def)             Requested size: 345.0pt x 243.92296pt.
-
+[55 <./images/pd1_3.png> <./images/pd2_3.png> <./images/pabs_3.png> <./images/p
+d1_5.png> <./images/pd2_5.png> <./images/pabs_5.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [56]
+Chapter 8.
+<images/SPDC_exp.png, id=1066, 845.40843pt x 597.73312pt>
+File: images/SPDC_exp.png Graphic file (type png)
+<use images/SPDC_exp.png>
+Package pdftex.def Info: images/SPDC_exp.png  used on input line 1777.
+(pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
-LaTeX Warning: Citation `pearson' on page 57 undefined on input line 1788.
+Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
+[57]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[57 <./images/SPDC_exp.png>]
-
-LaTeX Warning: Citation `zuri' on page 58 undefined on input line 1808.
-
-
+[58 <./images/SPDC_exp.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[58]
-<images/machzehnder_single.png, id=983, 791.95876pt x 560.0925pt>
+[59]
+<images/machzehnder_single.png, id=1089, 791.95876pt x 560.0925pt>
 File: images/machzehnder_single.png Graphic file (type png)
 <use images/machzehnder_single.png>
-Package pdftex.def Info: images/machzehnder_single.png  used on input line 1815
+Package pdftex.def Info: images/machzehnder_single.png  used on input line 1826
 .
 (pdftex.def)             Requested size: 345.0pt x 243.99721pt.
 
-
-LaTeX Warning: Citation `zuri' on page 59 undefined on input line 1822.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[59 <./images/machzehnder_single.png>]
+[60 <./images/machzehnder_single.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1826.
+               Default added (so using `tbp') on input line 1837.
 
-<images/first_step.png, id=990, 845.40843pt x 597.73312pt>
+<images/first_step.png, id=1098, 845.40843pt x 597.73312pt>
 File: images/first_step.png Graphic file (type png)
 <use images/first_step.png>
-Package pdftex.def Info: images/first_step.png  used on input line 1829.
+Package pdftex.def Info: images/first_step.png  used on input line 1840.
 (pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
 
-Overfull \hbox (37.86728pt too wide) in paragraph at lines 1829--1830
+Overfull \hbox (37.86728pt too wide) in paragraph at lines 1840--1841
 [][] 
  []
 
-<images/second_step.png, id=991, 845.40843pt x 597.73312pt>
+<images/second_step.png, id=1099, 845.40843pt x 597.73312pt>
 File: images/second_step.png Graphic file (type png)
 <use images/second_step.png>
-Package pdftex.def Info: images/second_step.png  used on input line 1834.
+Package pdftex.def Info: images/second_step.png  used on input line 1845.
 (pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
 
-Overfull \hbox (37.86728pt too wide) in paragraph at lines 1834--1835
+Overfull \hbox (37.86728pt too wide) in paragraph at lines 1845--1846
 [][] 
  []
 
-<images/third_step.png, id=992, 845.40843pt x 597.73312pt>
+<images/third_step.png, id=1100, 845.40843pt x 597.73312pt>
 File: images/third_step.png Graphic file (type png)
 <use images/third_step.png>
-Package pdftex.def Info: images/third_step.png  used on input line 1839.
+Package pdftex.def Info: images/third_step.png  used on input line 1850.
 (pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
 
-Overfull \hbox (37.86728pt too wide) in paragraph at lines 1839--1840
+Overfull \hbox (37.86728pt too wide) in paragraph at lines 1850--1851
 [][] 
  []
 
-<images/last_step.png, id=993, 845.40843pt x 597.73312pt>
+<images/last_step.png, id=1101, 845.40843pt x 597.73312pt>
 File: images/last_step.png Graphic file (type png)
 <use images/last_step.png>
-Package pdftex.def Info: images/last_step.png  used on input line 1844.
+Package pdftex.def Info: images/last_step.png  used on input line 1855.
 (pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
 
-Overfull \hbox (37.86728pt too wide) in paragraph at lines 1844--1845
+Overfull \hbox (37.86728pt too wide) in paragraph at lines 1855--1856
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 12.23035pt on input line 1850.
+LaTeX Warning: Float too large for page by 12.23035pt on input line 1861.
 
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[60]
+[61]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[61 <./images/first_step.png> <./images/second_step.png> <./images/third_step.p
+[62 <./images/first_step.png> <./images/second_step.png> <./images/third_step.p
 ng> <./images/last_step.png>]
-
-LaTeX Warning: Citation `hecht' on page 62 undefined on input line 1873.
-
-
-LaTeX Warning: Citation `malus' on page 62 undefined on input line 1882.
-
-
-LaTeX Warning: Citation `Leonhardt_2003' on page 62 undefined on input line 188
-7.
-
-<images/polarizeranalogy.png, id=1012, 845.40843pt x 597.73312pt>
+<images/polarizeranalogy.png, id=1122, 845.40843pt x 597.73312pt>
 File: images/polarizeranalogy.png Graphic file (type png)
 <use images/polarizeranalogy.png>
-Package pdftex.def Info: images/polarizeranalogy.png  used on input line 1891.
+Package pdftex.def Info: images/polarizeranalogy.png  used on input line 1902.
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[62]
-
-LaTeX Warning: Citation `exp' on page 63 undefined on input line 1896.
-
-
-LaTeX Warning: Citation `zeno' on page 63 undefined on input line 1896.
-
-
-LaTeX Warning: Citation `hecht' on page 63 undefined on input line 1905.
-
-
+[63]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[63 <./images/polarizeranalogy.png>]
-
-LaTeX Warning: Citation `glauber' on page 64 undefined on input line 1913.
-
-
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[64]
+[64 <./images/polarizeranalogy.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [65]
+Chapter 9.
+
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [66]
-No file esta.bbl.
+Chapter 10.
+
+Overfull \vbox (6.44444pt too high) has occurred while \output is active []
+
+
+[67] (esta.bbl
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[68]
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[69]
+Underfull \hbox (badness 1057) in paragraph at lines 160--163
+\OT1/cmr/m/n/10 Mod-el-ing the Delayed-Choice Ex-per-i-ment.  \OT1/cmr/m/it/10 
+Phys-ical Re-view Let-ters\OT1/cmr/m/n/10 ,
+ []
+
+)
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1945.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1945.
-(esta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1945.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1945.
+
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[70]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1956.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1956.
+ (esta.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1956.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1956.
 
 Package rerunfilecheck Info: File `esta.out' has not changed.
-(rerunfilecheck)             Checksum: 14893E7394AABFA78FD24CFA4F69374A;2467.
+(rerunfilecheck)             Checksum: 15E5D473865DC162FA8DE4E926B1946F;2562.
 
 
 LaTeX Warning: There were undefined references.
@@ -2781,14 +2594,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1945.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1956.
  ) 
 Here is how much of TeX's memory you used:
- 29777 strings out of 480797
- 558015 string characters out of 2895576
- 891781 words of memory out of 3000000
- 44716 multiletter control sequences out of 15000+200000
- 551597 words of font info for 100 fonts, out of 3000000 for 9000
+ 29865 strings out of 480797
+ 558928 string characters out of 2895576
+ 894877 words of memory out of 3000000
+ 44756 multiletter control sequences out of 15000+200000
+ 551943 words of font info for 101 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,18n,85p,1195b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\gerar\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
@@ -2825,13 +2638,14 @@ ers/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 onts/cm/cmsy6.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy7.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/gerar/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/gerar/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Us
-ers/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb>
-
-Output written on esta.pdf (79 pages, 7561780 bytes).
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/gerar/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/g
+erar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm
+10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsf
+s/rsfs10.pfb>
+Output written on esta.pdf (83 pages, 7607991 bytes).
 PDF statistics:
- 1212 PDF objects out of 1440 (max. 8388607)
- 341 named destinations out of 1000 (max. 500000)
- 778 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1356 PDF objects out of 1440 (max. 8388607)
+ 386 named destinations out of 1000 (max. 500000)
+ 794 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: esta.aux
+Case mismatch error between cite keys leonhardt_2003 and Leonhardt_2003
+---line 201 of file esta.aux
+ : \citation{leonhardt_2003
+ :                         }
+I'm skipping whatever remains of this command
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Database file #1: bibliography.bib
+I was expecting a `,' or a `}'---line 100 of file bibliography.bib
+ :   
+ :   doi = {10.1007/BF00736012}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in zuri
+Warning--empty year in zuri
+Warning--empty journal in maestria_procopio
+Warning--empty year in maestria_procopio
+You've used 37 entries,
+            1791 wiz_defined-function locations,
+            686 strings with 8547 characters,
+and the built_in function-call counts, 7570 in all, are:
+= -- 656
+> -- 323
+< -- 0
++ -- 126
+- -- 89
+* -- 533
+:= -- 1241
+add.period$ -- 110
+call.type$ -- 37
+change.case$ -- 30
+chr.to.int$ -- 0
+cite$ -- 41
+duplicate$ -- 334
+empty$ -- 772
+format.name$ -- 89
+if$ -- 1654
+int.to.chr$ -- 0
+int.to.str$ -- 37
+missing$ -- 46
+newline$ -- 187
+num.names$ -- 37
+pop$ -- 101
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 112
+stack$ -- 0
+substring$ -- 467
+swap$ -- 35
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 69
+width$ -- 39
+write$ -- 400
+(There were 2 error messages)

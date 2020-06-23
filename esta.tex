@@ -472,7 +472,7 @@ This last equation encodes all spatial correlations between the signal and idler
 \label{fig:BS}
 \end{figure}
 
-In this chapter, we will develop both the classical and quantum theory of the most important optical element in this thesis, the beam splitter, the beam splitter is a four-port optical device with two inputs and two outputs as shown in Fig. \ref{fig:BS} two input beams may interfere to produce two outgoing beams. A beam splitter is usually a dielectric interface that is birefringent inside a cube as Fig. \ref{fig:BS} shows:
+In this chapter, we will develop both the classical and quantum theory of the most important optical element in this thesis, the beam splitter. The beam splitter is a four-port optical device with two inputs and two outputs as shown in Fig. \ref{fig:BS} two input beams may interfere to produce two outgoing beams. A beam splitter is usually a dielectric interface that is birefringent inside a cube as Fig. \ref{fig:BS} shows.
 
 \section{The  classical lossless beam splitter}
 This section is inspired in the beam splitter description presented in \cite{ludon} and \cite{leonhardt}, we are assuming monochromatic light  (only one mode), in this thesis, we will consider ideal beam splitters which are reversible and lossless devices.
@@ -481,16 +481,16 @@ This section is inspired in the beam splitter description presented in \cite{lud
 When we talk about a laser beam in classical electrodynamics we express it as an electric field, when going through a linear medium the outgoing fields can be written as a linear combination of the input fields satisfying boundary conditions \cite{jackson}. As we are dealing with 2 inputs and two outputs this can be written as:
 
 \begin{equation}
-\begin{pmatrix} E_{1}' \\ E_{2}' \end{pmatrix}=B\begin{pmatrix} E_{1} \\ E_{2} \end{pmatrix}.
+\begin{pmatrix} E_{1}' \\ E_{2}' \end{pmatrix}=B\begin{pmatrix} E_{1} \\ E_{2} \end{pmatrix},
 \end{equation}
 
-The linear transformation $B$ is described by a matrix:
+the linear transformation $B$ is described by a matrix:
 
 \begin{equation}
 B=\begin{pmatrix} B_{11}& B_{12} \\B_{21} & B_{22} \end{pmatrix}.
 \end{equation}
 
-Conditions on the coefficients on this matrix can be found by asking for the total intensity to be conserved (since it is lossless it should be fullfilled), that is:
+Conditions on the coefficients on this matrix can be found by asking for the total intensity to be conserved (since it is lossless this should be fulfilled), that is:
 
 \begin{align}
 &I_{1}'+I_{2}'=I_{1}+I_{2}, \\
@@ -507,7 +507,7 @@ So from conservation of intensity (energy) we obtain the following relationships
 &B_{21}^{*} B_{22}+B_{11}^{*} B_{12}=0.
 \end{align}
 
-From these relations, it follows that the matrix is unitary. From these set of equations one can derive yet another constraint on the coefficients $B_{21}* B_{11}+B_{22}* B_{12}=0$ can be obtained this is because $B^{\dagger}B=B^{\dagger}B=\mathbb{1}$. We will write this matrix in terms of the reflectivity $\rho$ and the transmissivity $\tau$ that follow the relationship:
+From these relations, it follows that the matrix $B$ is unitary. From these set of equations one can derive yet another constraint on the coefficients $B_{21}* B_{11}+B_{22}* B_{12}=0$ can be obtained this is because $B^{\dagger}B=B^{\dagger}B= \mathbf{1}$. We will write this matrix in terms of the reflectivity $\rho$ and the transmissivity $\tau$ that follow the relationship:
 
 \begin{equation}
 |\tau|^{2}+|\rho|^{2}=1.
@@ -534,10 +534,10 @@ so that
 We will now develop the quantum theory of a lossless beam splitter. To do this we will first quantize the electric field and then build the theory. It should not be a surprise that we obtain the same theory as in the case of the classical beam splitter because it is quite typical that classical laws rule interference phenomena, going quantum often only affects the visibility, but does not modify the theory \cite{Leonhardt_2003}.
 
 
-The quantized electric field can be written as:
+The  electric field can be written as:
 
 \begin{equation}
-\mathbf{E}=i \mathbf{\epsilon}N w \left( \alpha e^{i (\mathbf{k \cdot r}-w t)}+\alpha^{*} e^{-i (\mathbf{k \cdot r}-w t)} \right)
+\mathbf{E}=i \mathbf{\epsilon}N w \left( \alpha e^{i (\mathbf{k \cdot r}-w t)}+\alpha^{*} e^{-i (\mathbf{k \cdot r}-w t)} \right),
 \end{equation}
 
 Where $\alpha$ is known as the complex wave amplitude, to make our theoretical model of a beam splitter as general as possible, let us describe the device as a four-port device, a black box with two input and two output ports having certain properties.
@@ -545,13 +545,13 @@ Where $\alpha$ is known as the complex wave amplitude, to make our theoretical m
 If two coherent light beams with complex wave amplitudes $\alpha_{1}$ and $\alpha_{2}$ enter the beam splitter we simply expect the output complex wave amplitude  are superimposed according to a linear transformation that we will call $B$ so that:
 
 \begin{equation}
-\begin{pmatrix} \alpha_{1}' \\ \alpha_{2}' \end{pmatrix}=B\begin{pmatrix} \alpha_{1} \\ \alpha_{2} \end{pmatrix}
+\begin{pmatrix} \alpha_{1}' \\ \alpha_{2}' \end{pmatrix}=B\begin{pmatrix} \alpha_{1} \\ \alpha_{2} \end{pmatrix}.
 \end{equation}
 
 When we quantize the electric field the complex wave amplitude $\alpha$ is promoted to a ladder operator. Once quantized this becomes:
 
 \begin{equation}
-\begin{pmatrix} \mathbf{a}_{1}' \\ \mathbf{a}_{2}' \end{pmatrix}=B\begin{pmatrix} \mathbf{a}_{1} \\ \mathbf{a}_{2} \end{pmatrix}
+\begin{pmatrix} \mathbf{a}_{1}' \\ \mathbf{a}_{2}' \end{pmatrix}=B\begin{pmatrix} \mathbf{a}_{1} \\ \mathbf{a}_{2} \end{pmatrix}.
 \label{eq:amplitudes}
 \end{equation}
 
@@ -580,78 +580,78 @@ Then we use the commutation relations to find constraints on the elements of the
 Substituting for all possible values of $\nu$ and $\mu$ we find the following relationships:
 
 \begin{equation}
-|B_{11}|^{2}+|B_{12}|^{2}=|B_{21}|^{2}+|B_{22}|^{2}=1 ,\qquad B_{11} B_{21}^{*}+B_{12} B_{22}^{*}=0
+|B_{11}|^{2}+|B_{12}|^{2}=|B_{21}|^{2}+|B_{22}|^{2}=1 ,\qquad B_{11} B_{21}^{*}+B_{12} B_{22}^{*}=0.
 \end{equation}
 
 Which indicate that the B transformation is unitary, something we expected of a lossless device. The most general form of a unitary $2\times2$ matrix is \cite{leonhardt}:
 
 
 \begin{equation}
-B=e^{\Lambda} \begin{pmatrix} e^{i\frac{\phi}{2}} & 0 \\ 0 & e^{-i\frac{\phi}{2}} \end{pmatrix} \begin{pmatrix} \cos(\theta) &  \sin(\theta) \\ - \sin(\theta) & \cos(\theta) \end{pmatrix} \begin{pmatrix} e^{i\frac{\psi}{2}} & 0 \\ 0 & e^{-i\frac{\psi}{2}} \end{pmatrix} \label{unitary}
+B=e^{\Lambda} \begin{pmatrix} e^{i\frac{\phi}{2}} & 0 \\ 0 & e^{-i\frac{\phi}{2}} \end{pmatrix} \begin{pmatrix} \cos(\theta) &  \sin(\theta) \\ - \sin(\theta) & \cos(\theta) \end{pmatrix} \begin{pmatrix} e^{i\frac{\psi}{2}} & 0 \\ 0 & e^{-i\frac{\psi}{2}} \end{pmatrix} \label{unitary},
 \end{equation}
 
-Note that our analysis so far is valid for any lossless four-port linear device, furthermore from Eq. \ref{unitary} we can see that any four-port device can be considered as acting in three steps \footnote{A phase shifter is denoted by $P_{\phi}=e^{i \frac{\phi}{2}}\begin{pmatrix}e^{i \frac{\phi}{2}} & 0 \\0 & e^{-i \frac{\phi}{2}} \end{pmatrix}$}. First the phases of the incident modes are changed, then the amplitudes are mixed(rotated) and then the phases change again. In most cases we can adjust the reference phases such that only the rotation is important, so this is the key feature of four-ports, that is why from now on we will parametrize our beam splitter($BS$) as (this corresponds to $\Lambda=0$,$\phi=-\psi=\frac{\pi}{2}$):
+Note that our analysis so far is valid for any lossless four-port linear device, furthermore from Eq. \ref{unitary} we can see that any four-port device can be considered as acting in three steps \footnote{A phase shifter is denoted by $P_{\phi}=e^{i \frac{\phi}{2}}\begin{pmatrix}e^{i \frac{\phi}{2}} & 0 \\0 & e^{-i \frac{\phi}{2}} \end{pmatrix}$}. First the phases of the incident modes are changed, then the amplitudes are mixed (rotated) and then the phases change again. In most cases we can adjust the reference phases such that only the rotation is important, so this is the key feature of four-ports, that is why from now on we will parametrize our beam splitter ($BS$) as (this corresponds to $\Lambda=0$,$\phi=-\psi=\frac{\pi}{2}$):
 
 
 \begin{equation}
-BS=\begin{pmatrix} \cos(\theta) & i \sin(\theta) \\ i \sin(\theta) & \cos(\theta) \end{pmatrix}
+BS=\begin{pmatrix} \cos(\theta) & i \sin(\theta) \\ i \sin(\theta) & \cos(\theta) \end{pmatrix}.
 \end{equation}
 
 
 Let us now analyze this optical element in the Fock basis. In the Heisenberg picture operators evolve via the evolution operator:
 
 \begin{equation}
-\begin{pmatrix} \mathbf{a}'_{1} \\ \mathbf{a}'_{2}\end{pmatrix}=\mathbf{U}^{\dagger}_{B} \begin{pmatrix} \mathbf{a}_{1} \\ \mathbf{a}_{2}\end{pmatrix} \mathbf{U}_{B}
+\begin{pmatrix} \mathbf{a}'_{1} \\ \mathbf{a}'_{2}\end{pmatrix}=\mathbf{U}^{\dagger}_{B} \begin{pmatrix} \mathbf{a}_{1} \\ \mathbf{a}_{2}\end{pmatrix} \mathbf{U}_{B}.
 \label{Heisenberg}
 \end{equation}
 
 A Fock state $\ket{n_{1},n_{2}}$ can be generated from a vacuum state. Note that when one of the inputs does not have a beam what enters the beam splitter is a vacuum state $\ket{0,0}$:
 
 \begin{equation}
- \ket{n_{1},n_{2}}=\frac{1}{\sqrt{n_{1}! n_{2}!}} \mathbf{a}^{\dagger}^{n_{1}}_{1}\mathbf{a}^{\dagger}^{n_{2}}_{2} \ket{0,0}
+ \ket{n_{1},n_{2}}=\frac{1}{\sqrt{n_{1}! n_{2}!}} \mathbf{a}^{\dagger}^{n_{1}}_{1}\mathbf{a}^{\dagger}^{n_{2}}_{2} \ket{0,0}.
 \end{equation}
 
 In the Schrodinger picture a vacuum state evolves by (Note that in this picture operators do not evolve states do so $\mathbf{a}=\mathbf{a'}$):
 
 \begin{equation}
- \ket{\psi}'=U_{B}\ket{\psi} \qquad
- \ket{0,0}'=U_{B}\ket{0,0}
+ \ket{\psi}'=U_{B}\ket{\psi}, \qquad
+ \ket{0,0}'=U_{B}\ket{0,0}.
  \label{evolution}
 \end{equation}
 
 So now let us see the evolution of a $\ket{n_{1},n_{2}}'$:
 
 \begin{align}
-&\ket{n_{1},n_{2}}'=U_{B}\ket{n_{1},n_{2}}\\
-&\ket{n_{1},n_{2}}'=\frac{U_{B}}{\sqrt{n_{1}! n_{2}!}} \mathbf{a}'^{\dagger}^{n_{1}}_{1}\mathbf{a}'^{\dagger}^{n_{2}}_{2} \ket{0,0}
+&\ket{n_{1},n_{2}}'=U_{B}\ket{n_{1},n_{2}},\\
+&\ket{n_{1},n_{2}}'=\frac{U_{B}}{\sqrt{n_{1}! n_{2}!}} \mathbf{a}'^{\dagger}^{n_{1}}_{1}\mathbf{a}'^{\dagger}^{n_{2}}_{2} \ket{0,0}.
 \end{align}
 
 From Eq. \ref{Heisenberg}, Eq. \ref{eq:amplitudes} and Eq. \ref{evolution} we can obtain:
 
 \begin{align}
-&\ket{n_{1},n_{2}}' =\frac{U_{B}}{\sqrt{n_{1}! n_{2}!}} \mathbf{a}'^{\dagger}^{n_{1}}_{1}\mathbf{a}'^{\dagger}^{n_{2}}_{2} U^{\dagger}_{B}\ket{0,0}'\\
-&\ket{n_{1},n_{2}}' =\frac{1}{\sqrt{n_{1}! n_{2}!}} \mathbf{a}^{\dagger}^{n_{1}}_{1}\mathbf{a}^{\dagger}^{n_{2}}_{2}\ket{0,0}'
+&\ket{n_{1},n_{2}}' =\frac{U_{B}}{\sqrt{n_{1}! n_{2}!}} \mathbf{a}'^{\dagger}^{n_{1}}_{1}\mathbf{a}'^{\dagger}^{n_{2}}_{2} U^{\dagger}_{B}\ket{0,0}',\\
+&\ket{n_{1},n_{2}}' =\frac{1}{\sqrt{n_{1}! n_{2}!}} \mathbf{a}^{\dagger}^{n_{1}}_{1}\mathbf{a}^{\dagger}^{n_{2}}_{2}\ket{0,0}'.
 \end{align}
 
 By writing the original ladder operators in terms of the transformed ladder operators, and applying Newton's binomial formula (we can do this because the operators commute in general this cannot be done) we arrive at the ``compact'' expression \footnote{ The binomial coefficient is $\begin{pmatrix} n \\ k \end{pmatrix} =\frac{n!}{\sqrt{k!(n-k)!}}$}:
 
 \begin{align*}
-\ket{n_{1},n_{2}}'& =\frac{1}{\sqrt{n_{1}! n_{2}!}} (B_{11}\mathbf{a}_{1}'^{\dagger}+B_{21}\mathbf{a}_{2}'^{\dagger})^{n_{1}}(B_{12}\mathbf{a}_{1}'^{\dagger}+B_{22}\mathbf{a}_{2}'^{\dagger})^{n_{2}}\ket{0,0}'.\\
+\ket{n_{1},n_{2}}'& =\frac{1}{\sqrt{n_{1}! n_{2}!}} (B_{11}\mathbf{a}_{1}'^{\dagger}+B_{21}\mathbf{a}_{2}'^{\dagger})^{n_{1}}(B_{12}\mathbf{a}_{1}'^{\dagger}+B_{22}\mathbf{a}_{2}'^{\dagger})^{n_{2}}\ket{0,0}',\\
 \ket{n_{1},n_{2}}'&=\frac{1}{\sqrt{n_{1}! n_{2}!}}\sum^{n_{1},n_{2}}_{k_{1},k_{2}=0}\begin{pmatrix} n_{1} \\ k_{1} \end{pmatrix}\begin{pmatrix} n_{2} \\ k_{2} \end{pmatrix} B_{11}^{n_{1}-k_{1}} B_{21}^{k_{1}} B_{12}^{n_{2}-k_{2}} B_{22}^{k_{2}} \\
-\times &\sqrt{(n_{1}+n_{2}-k_{1}-k_{2})!(k_{1}+k_{2})!} \ket{n_{1}+n_{2}-k_{1}-k_{2},k_{1}+k_{2}}' \numberthis{}
+\times &\sqrt{(n_{1}+n_{2}-k_{1}-k_{2})!(k_{1}+k_{2})!} \ket{n_{1}+n_{2}-k_{1}-k_{2},k_{1}+k_{2}}' .\numberthis{}
 \end{align*}
 
 Now let us consider one of the inputs is vacuum that is $n_{2}=0$ and $n_{1}=n$  and vice-versa (from now on we will drop the primes in the right hand side, we know it is the state in the output):
 \begin{align}
- \ket{n,0}'=\sum^{n}_{k=0} \sqrt{\frac{n!}{(n-k)!k!}} B_{11}^{n-k} B_{21}^{k} \ket{n-k,k}\\
-     \ket{0,n}'=\sum^{n}_{k=0} \sqrt{\frac{n!}{(n-k)!k!}} B_{12}^{n-k} B_{22}^{k} \ket{n-k,k}
+ \ket{n,0}'=\sum^{n}_{k=0} \sqrt{\frac{n!}{(n-k)!k!}} B_{11}^{n-k} B_{21}^{k} \ket{n-k,k},\\
+     \ket{0,n}'=\sum^{n}_{k=0} \sqrt{\frac{n!}{(n-k)!k!}} B_{12}^{n-k} B_{22}^{k} \ket{n-k,k}.
 \end{align}
 
-In this thesis we intend to work with single-photons, so that our case of interest is $n=1$,we run the sum to obtain:
+In this work we intend to work with single-photons, so that our case of interest is $n=1$,we run the sum to obtain:
 
 \begin{align}
-\ket{1,0}'=B_{11}\ket{1,0}+B_{21}\ket{0,1} \\
-\ket{0,1}'=B_{12}\ket{1,0}+B_{22}\ket{0,1}
+\ket{1,0}'=B_{11}\ket{1,0}+B_{21}\ket{0,1}, \\
+\ket{0,1}'=B_{12}\ket{1,0}+B_{22}\ket{0,1}.
 \label{basis}
 \end{align}
 
@@ -659,13 +659,13 @@ In this thesis we intend to work with single-photons, so that our case of intere
 From Eq. \ref{basis} we can see that the case of the single-photon can be written in terms of the $BS$ matrix if we define an appropriate basis to describe the system. The one we will use is the Horizontal-Vertical computational basis. We will use:
 
  \begin{equation}
- \ket{1}=\ket{1}_{h}\ket{0}_{v}=\begin{pmatrix} 1 \\0\end{pmatrix}
+ \ket{1}=\ket{1}_{h}\ket{0}_{v}=\begin{pmatrix} 1 \\0\end{pmatrix},
  \end{equation}
 
  meaning one photon in the horizontal path and vacuum in the vertical path
  
  \begin{equation}
- \ket{2}=\ket{0}_{h}\ket{1}_{v}=\begin{pmatrix} 0 \\1 \end{pmatrix}
+ \ket{2}=\ket{0}_{h}\ket{1}_{v}=\begin{pmatrix} 0 \\1 \end{pmatrix},
  \end{equation}
  
 meaning vacuum  in the horizontal path and one photon in the vertical path, so then Eq. \ref{basis} become:
@@ -686,15 +686,15 @@ We have now defined all the things we need to analyze the interferometer in the 
 \chapter{The Mach-Zehnder interferometer }
 
 
- The Mach–Zehnder's flexibility in locating the fringes has made it the preferred interferometer for visualizing flow in wind tunnels \cite{10} and for flow visualization studies in general. It is frequently used in several fields such as aerodynamics, plasma physics, and heat transfer to measure pressure, density, and temperature changes in gases \cite{11}, they are used in electro-optic modulators \cite{ackerman}, electronic devices used in various fiber-optic communication applications. Mach–Zehnder modulators are incorporated in monolithic integrated circuits and offer well-behaved \cite{studenkov}, high-bandwidth electro-optic amplitude, and phase responses over a multiple-gigahertz frequency range \cite{capmany}.
+ The Mach–Zehnder's flexibility in locating the fringes has made it the preferred interferometer for visualizing flow in wind tunnels \cite{10} and for flow visualization studies in general. It is frequently used in several fields such as aerodynamics, plasma physics, and heat transfer to measure pressure, density, and temperature changes in gases \cite{11}, they are also used in electro-optic modulators \cite{ackerman}, electronic devices used in various fiber-optic communication applications. Mach–Zehnder modulators are incorporated in monolithic integrated circuits and offer well-behaved \cite{studenkov}, high-bandwidth electro-optic amplitude, and phase responses over a multiple-gigahertz frequency range \cite{capmany}.
 
-The Mach-Zehnder interferometer consists of two Beam Splitters ($BS_{1}$ and $BS_{2}$) and two mirrors ($M_{1}$ and $M_{2}$), two detectors $D_{1}$ and $D_{2}$ are placed in the output of the second beam splitter $BS_{2}$ as shown in Fig.1. The idea is to get an interference pattern from just one incoming beam which is then divided by $BS_{1}$ then it encounters a mirror in each path of the interferometer and it is then recombined in the second beam splitter its output is detected in either $D_{1}$ and $D_{2}$. We will now analyze the interferometer both in the classical and quantum regimes.
+The Mach-Zehnder interferometer consists of two Beam Splitters ($BS_{1}$ and $BS_{2}$) and two mirrors ($M_{1}$ and $M_{2}$). Two detectors $D_{1}$ and $D_{2}$ are placed in the output of the second beam splitter $BS_{2}$ as shown in Fig. \ref{fig:classical mach}. The idea is to get an interference pattern from just one incoming beam which is divided by $BS_{1}$ then each arm is redirected by mirrors $M_{1}$ and $M_{2}$ to be recombined by the second beam splitter $BS_{2}$ into the outgoing beams $E_{1}^{'''}$ and $E_{2}^{'''}$ these output beams are detected in either $D_{1}$ or $D_{2}$ respectively. We will now analyze the interferometer both in the classical and quantum regimes.
 
 \pagebreak
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{images/machzenhdercla.png}
-\caption{Mach Zehnder Interferometer}
+\caption{Mach-Zehnder Interferometer}
 \label{fig:classical mach}
 \end{figure}
 
@@ -702,7 +702,7 @@ The Mach-Zehnder interferometer consists of two Beam Splitters ($BS_{1}$ and $BS
 
 \section{Classical Mach-Zehnder interferometer}
 
-In this section, we study the Mach-Zehnder interferometer in the classical regime. We will denote the classical fields going through the interferometer as is shown in Fig.\ref{fig: classical mach}. We will follow the approach taken by Loudon \cite{ludon}. Let us consider two lossless beam splitters   $BS_{1}=BS_{2}$. The electric field $E_{1}$ of the incident beam is then split as:
+In this section, we study the Mach-Zehnder interferometer in the classical regime. We will denote the classical fields going through the interferometer as is shown in Fig. \ref{fig:classical mach}. We will follow the approach taken by Loudon \cite{ludon}. Let us consider two lossless beam splitters   $BS_{1}=BS_{2}$. The electric field $E_{1}$ of the incident beam is then split as:
 
 \begin{equation}
 E_{1}'=\tau E_{1} ,\qquad E_{2}'=\rho E_{1}.
@@ -723,7 +723,7 @@ E_{1}'''=\tau E_{2}'' +\rho E_{1}'', \qquad E_{2}'''=\tau E_{1}'' -\rho E_{2}''.
 Substituting the expressions obtained before the above equations can be written as :
 
 \begin{align*}
-E_{1}'''&=\tau \rho (e^{i k\phi_{1}}+ e^{i k\phi_{2}})E_{1}.\\
+E_{1}'''&=\tau \rho (e^{i k\phi_{1}}+ e^{i k\phi_{2}})E_{1},\\
 E_{2}'''&=\tau^2 e^{i k\phi_{1}} E_{1} -\rho^2 e^{i k\phi_{2}}E_{1}.
  \numberthis
 \end{align*}
@@ -731,14 +731,14 @@ E_{2}'''&=\tau^2 e^{i k\phi_{1}} E_{1} -\rho^2 e^{i k\phi_{2}}E_{1}.
 We can calculate intensities at the detectors by taking the modulus squared of the fields, we use $\delta \phi=\phi_{1}-\phi_{2}$:
 
 \begin{align*}
-I_{D_{1}}& \propto \abs{E_{1}}^2 2(\rho \tau)^2(1+\cos(k\delta \phi)).\\
+I_{D_{1}}& \propto \abs{E_{1}}^2 2(\rho \tau)^2(1+\cos(k\delta \phi)),\\
 I_{D_{2}}& \propto \abs{E_{1}}^2 (\rho^4 +\tau^4)(1-\frac{2 (\rho \tau)^2}{\rho^4+\tau^4}\cos(k\delta \phi)). \numberthis
 \end{align*}
 
 A case of interest is when $\rho =\tau=\frac{1}{\sqrt{2}}$, then the intensities become:
 
 \begin{align*}
-I_{D_{1}} & \propto \abs{E_{1}}^2 \frac{1+\cos(k\delta \phi)}{2}. \\
+I_{D_{1}} & \propto \abs{E_{1}}^2 \frac{1+\cos(k\delta \phi)}{2}, \\
 I_{D_{2}} & \propto \abs{E_{1}}^2 \frac{1-\cos(k\delta \phi)}{2}. \numberthis
 \end{align*}
  
@@ -776,14 +776,14 @@ To study a general situation, we will consider two different $BS$ in our interfe
 To compare with the classical case where we did our calculations with two identical $BS$ we make $\theta_{1}=\theta_{2}=\frac{\pi}{4}$ then the state at the output of the interferometer is
 
 \begin{align*}
-\ket{\psi}=\frac{i}{2}(e^{i\gamma_{1}}+e^{i\gamma_{2}})\ket{1}+\frac{1}{2}(e^{i\gamma_{1}}-e^{i\gamma_{2}})\ket{2} \\
-\ket{\psi}=\frac{e^{i(\gamma_{1}+\frac{\pi}{2})}}{2}(1+e^{i(\gamma_{2}-\gamma_{1})})\ket{1}+\frac{e^{i\gamma_{1}}}{2}(1-e^{i(\gamma_{2}-\gamma_{1})})\ket{2} \numberthis
+\ket{\psi}=\frac{i}{2}(e^{i\gamma_{1}}+e^{i\gamma_{2}})\ket{1}+\frac{1}{2}(e^{i\gamma_{1}}-e^{i\gamma_{2}})\ket{2}, \\
+\ket{\psi}=\frac{e^{i(\gamma_{1}+\frac{\pi}{2})}}{2}(1+e^{i(\gamma_{2}-\gamma_{1})})\ket{1}+\frac{e^{i\gamma_{1}}}{2}(1-e^{i(\gamma_{2}-\gamma_{1})})\ket{2}. \numberthis
 \end{align*}
 
 To obtain the probabilities at the output we simply compute:
 \begin{align}
-P_{D_{1}}&=|\bra{1}\ket{\psi}|^{2}, \qquad &&P_{D_{2}}=|\bra{2}\ket{\psi}|^{2}\\
-P_{D_{1}}&=\frac{1+\cos(\gamma_{2}-\gamma_{1})}{2}, \qquad &&P_{D_{2}}=\frac{1-\cos(\gamma_{2}-\gamma_{1})}{2} \label{pp_wheler}
+P_{D_{1}}&=|\bra{1}\ket{\psi}|^{2}, \qquad &&P_{D_{2}}=|\bra{2}\ket{\psi}|^{2},\\
+P_{D_{1}}&=\frac{1+\cos(\gamma_{2}-\gamma_{1})}{2}, \qquad &&P_{D_{2}}=\frac{1-\cos(\gamma_{2}-\gamma_{1})}{2}. \label{pp_wheler}
 \end{align}
 
 Perfect alignment means no difference in the optical path so that $\gamma_{2}-\gamma_{1}=0$, then the probability to detect in $D_{1}$ is one and in $D_{2}$ is zero, perfectly compatible with the result obtained in the classical case, we expect a similar result because the classical case is nothing but many repetitions of this case.
@@ -808,14 +808,14 @@ To analyze this case we will simply repeat the calculations we did above this ti
  
 \begin{align*}
 &\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{\text{Bomb}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{abs}\\ &\xrightarrow{\text{Mirrors}}
- i\cos(\theta_{1})\ket{2}+i\sin(\theta_{1})\ket{abs} \\ &\xrightarrow{\text{BS2}}i\cos(\theta_{1})\cos(\theta_{2})\ket{2}-\cos(\theta_{1})\sin(\theta_{2})\ket{1}+i\sin(\theta_{1})\ket{abs} \numberthis
+ i\cos(\theta_{1})\ket{2}+i\sin(\theta_{1})\ket{abs} \\ &\xrightarrow{\text{BS2}}i\cos(\theta_{1})\cos(\theta_{2})\ket{2}-\cos(\theta_{1})\sin(\theta_{2})\ket{1}+i\sin(\theta_{1})\ket{abs}. \numberthis
 \end{align*}
 
 The probabilities to be absorbed or detected at either $D_{1}$ or $D_{2}$ are given by :
 
 \begin{align}
-P_{D_{1}}&=\cos^2(\theta_{1}) \sin^2(\theta_{2}) .\\
-P_{D_{2}}&=\cos^2(\theta_{1}) \cos^2(\theta_{2}).\\
+P_{D_{1}}&=\cos^2(\theta_{1}) \sin^2(\theta_{2}),\\
+P_{D_{2}}&=\cos^2(\theta_{1}) \cos^2(\theta_{2}),\\
 P_{abs}&=\sin^2(\theta_{1}).
 \end{align}
 
@@ -825,13 +825,25 @@ Let us again consider the case where $\theta_{1}=\theta_{2}=\frac{\pi}{4}$ then:
 P_{D_{1}}=\frac{1}{4},\quad P_{D_{2}}=\frac{1}{4}, \quad P_{abs}=\frac{1}{2}.
 \end{equation}
 
-If the photon is detected at $D_{2}$ it would indicate that there's an object in one of the arms of the interferometer. This is often called non-interactive measurements because we can infer information about the object from the photons that did not interact with it. We cannot distinguish between this case and the previous one from a single event if we detect at $D_{1}$, so $\frac{1}{2}$ of the times we make a measurement we can't tell if a bomb is there or not.
 
 
+Since we are dealing with just one measurement it is not so useful to talk about conditional probabilities such as, what is the probability of detecting in $D_{2}$, if the object isn't absorbed in the same way that it is not useful to talk about the probability of having a single dice throw come out as six provided it was not one. However it is useful to talk about the efficiency of this interferometers, that is just how probable is it for us to realize interaction free measurements, the efficiency is given by \cite{5}:
+
+\begin{equation}
+\eta=\frac{P_{det}}{P_{det}+P_{abs}},
+\end{equation}
+
+where $\eta$ is the efficiency, $P_{det}$ is the probability the object is detected and $P_{abs}$ is the probability that the object is absorbed, considering lossless devices, which we do in this work $P_{det}+P_{abs}=1$ and we have
+
+\begin{equation}
+\eta=P_{D_{1}}+P_{D_{2}}.
+\end{equation}
+
+So for example in the case we explored in this section $\eta=\frac{1}{2}$ so fifty percent of the time we have interaction-free measurements , to tell wheter an object is there or not we need to consider that if the photon is detected at $D_{2}$ it would indicate that there's an object in one of the arms of the interferometer. However, we cannot distinguish between this case and the previous one from a single event if we detect at $D_{1}$, so $\frac{1}{2}$ of the times we make a measurement we can't tell if a bomb is there or not.
 
 \section{The single-photon Mach-Zehnder interferometer with an  imperfect transmitter}
 
-This section and the next ones are based on the treatment done by Z.Blanco and O.Rosas-Ortiz \cite{zuri} \cite{azuri} and the work done by Azuma \cite{Azuma}. Let us consider an object such that $\alpha'$ and $\beta'$ are its absorption and transmission coefficients, respectively, satisfying the condition $|\alpha|^2 + |\beta|^2 = 1.$.
+This section and the next ones are based on the treatment done by Z.Blanco and O.Rosas-Ortiz \cite{zuri,azuri} and the work done by Azuma \cite{Azuma}. Let us consider an object such that $\alpha'$ and $\beta'$ are its absorption and transmission coefficients, respectively, satisfying the condition $|\alpha|^2 + |\beta|^2 = 1.$.
 
 We will use the same Horizontal-Vertical basis and our initial state $\ket{1}$. We will place our imperfect absorber in the vertical path. Our absorber can either transmit with probability $|\beta|^2$ or absorb with probability $|\alpha|^2$, such that when encountered with this object our states become:
 
@@ -845,23 +857,23 @@ With this information we can now go on with our calculations, First, the initial
 \begin{align*}
 & \ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2} \\ &\xrightarrow[\text{Absorber}]{\text{Imperfect }}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})(\alpha \ket{abs} +\beta \ket{2} )
 \\ &\xrightarrow{\text{Mirrors}} i\cos(\theta_{1})\ket{2}+i \sin(\theta_{1})\alpha\ket{abs}-\sin(\theta_{1})\beta\ket{1} \\ &\xrightarrow{\text{BS2}} -
-(\cos(\theta_{1})\sin(\theta_{2})+\beta \sin(\theta_{1})\cos(\theta_{2}))\ket{1}+ i \alpha \sin(\theta_{1})\ket{abs}+ \\ &i(\cos(\theta_{1})\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\beta)\ket{2}. \numberthis
+(\cos(\theta_{1})\sin(\theta_{2})+\beta \sin(\theta_{1})\cos(\theta_{2}))\ket{1}+ i \alpha \sin(\theta_{1})\ket{abs} \\ &+i(\cos(\theta_{1})\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\beta)\ket{2}. \numberthis
 \end{align*}
 
 
 We will write detection probabilities as $P_{ij}$ where $i=1,2$ the path of the interferometer where the imperfect transmitter is placed, and $j$ is one of the possible outcomes, therefore the detection probabilities are given by:
 
 \begin{align}
-& P_{2D_{1}}=|\cos(\theta_{1})\sin(\theta_{2})+\beta \sin(\theta_{1})\cos(\theta_{2})|^2. \\
-& P_{2D_{2}}=|\cos(\theta_{1})\cos(\theta_{2})-\beta \sin(\theta_{1})\sin(\theta_{2})|^2. \\
+& P_{2D_{1}}=|\cos(\theta_{1})\sin(\theta_{2})+\beta \sin(\theta_{1})\cos(\theta_{2})|^2, \\
+& P_{2D_{2}}=|\cos(\theta_{1})\cos(\theta_{2})-\beta \sin(\theta_{1})\sin(\theta_{2})|^2, \\
 & P_{2abs}=|\alpha \sin(\theta_{1})|^2.
 \end{align}
 
 If we consider the same procedure but this time we put our imperfect absorber on the horizontal arm of the interferometer we obtain:
 
 \begin{align}
-P_{1D_{1}}&=|\cos(\theta_{1})\sin(\theta_{2})\beta +\sin(\theta_{1})\cos(\theta_{2})|^2. \\
-P_{1D_{2}}&=|\sin(\theta_{1})\sin(\theta_{2})-\beta \cos(\theta_{1})\cos(\theta_{2})|^2.\\
+P_{1D_{1}}&=|\cos(\theta_{1})\sin(\theta_{2})\beta +\sin(\theta_{1})\cos(\theta_{2})|^2, \\
+P_{1D_{2}}&=|\sin(\theta_{1})\sin(\theta_{2})-\beta \cos(\theta_{1})\cos(\theta_{2})|^2,\\
 P_{1abs}&=|\alpha \cos(\theta_{1})|^2.
 \end{align}
 
@@ -871,8 +883,8 @@ Observing the probabilities are different we can obtain the difference between t
 
 
 \begin{align}
-P_{1D_{1}}-P_{1D_{2}}=(1-|\beta|^2)\left(\frac{\cos(2 \theta_{1})-\cos(2 \theta_{2})}{2}\right). \\
-P_{2D_{1}}-P_{2D_{2}}=(1-|\beta|^2)\left(\frac{\cos(2 \theta_{1})+\cos(2 \theta_{2})}{2}\right).
+P_{1D_{1}}-P_{2D_{1}}=(1-|\beta|^2)\left(\frac{\cos(2 \theta_{1})-\cos(2 \theta_{2})}{2}\right), \\
+P_{1D_{2}}-P_{2D_{2}}=(1-|\beta|^2)\left(\frac{\cos(2 \theta_{1})+\cos(2 \theta_{2})}{2}\right).
 \end{align}
 
 From there, we can say that the probabilities are the same only when :
@@ -886,8 +898,8 @@ We can also obtain an expression for one of the angles in terms of the probabili
 
 
 \begin{align}
-\theta_{2}=\frac{\cos^{-1}[(P_{1D_{2}}-P_{1D_{1}})-(P_{1D_{1}}-P_{2D_{1}})]}{2}.\\
-\theta_{1}=\frac{\cos^{-1}[(P_{1D_{2}}-P_{1D_{1}})+(P_{1D_{1}}-P_{2D_{1}})]}{2}.
+\theta_{2}=\frac{\cos^{-1}[\frac{(P_{1D_{2}}-P_{2D_{2}})-(P_{1D_{1}}-P_{2D_{1}})}{1-|\beta|^2}]}{2},\\
+\theta_{1}=\frac{\cos^{-1}[\frac{(P_{1D_{2}}-P_{2D_{2}})+(P_{1D_{1}}-P_{1D_{1}})}{1-|\beta|^2}]}{2}.
 \end{align}
 
 
@@ -895,7 +907,7 @@ We can also obtain an expression for one of the angles in terms of the probabili
 
 \blankpage{}
 
-\chapter{$BS$ as imperfect trasmitter}
+\chapter[BS as imperfect transmitter]{Beam splitter as imperfect \\ trasmitter}
 
 We will now study the case of a $BS$ as an imperfect transmitter. We consider imperfect mirrors such that $\gamma \neq 0$. We will see this is equivalent to including phase shifters in section 3.2 like in the previous cases we will first consider our imperfect transmitter in the vertical path as the Fig. \ref{bs vertical} shows, as we can see from the figure the reflected photon goes out of the interferometer's paths and therefore it is lost instead of being absorbed.
 
@@ -919,8 +931,8 @@ We consider the reflected photon to be lost since it goes out of our interferome
 &\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\
 &\xrightarrow{\text{BS}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})(\cos(\theta_{o})\ket{2}+i\sin(\theta_{o})\ket{abs})\\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})\cos(\theta_{o})e^{i\gamma_{2}}\ket{1}-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\ &\xrightarrow{\text{BS2}}\cos(\theta_{1})e^{i\gamma_{1}}(\cos(\theta_{2})\ket{2}
 +i\sin(\theta_{2})\ket{1})+i\sin(\theta_{1})\cos(\theta_{o})e^{i\gamma_{2}}\\
-&(\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2})-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\
-&=(\cos(\theta_{1})e^{i\gamma_{1}}\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\cos(\theta_{o})e^{i\gamma_{2}})\ket{2}-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}+\\ &(i\cos(\theta_{1})\sin(\theta_{2})e^{i\gamma_{1}}+
+&\times (\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2})-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\
+&=(\cos(\theta_{1})e^{i\gamma_{1}}\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\cos(\theta_{o})e^{i\gamma_{2}})\ket{2}-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\ &+(i\cos(\theta_{1})\sin(\theta_{2})e^{i\gamma_{1}}+
  i \sin(\theta_{1})\cos(\theta_{o})\cos(\theta_{2})e^{i\gamma_{2}})\ket{1}.\numberthis
 \end{align*}
 
@@ -952,8 +964,8 @@ Detection probabilities are shown in Fig. \ref{P_bs}, where we can see that for 
 
 
 \begin{align}
- P_{2D_{1}}&=|ie^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+i e^{i\gamma_{2}}\cos(\theta_{o}) \sin(\theta_{1})\cos(\theta_{2})|^2.\\
- P_{2D_{2}}&=|\cos(\theta_{1})\cos(\theta_{2})e^{i\gamma_{1}}- e^{i\gamma_{2}}\cos(\theta_{o}) \sin(\theta_{1})\sin(\theta_{2})|^2.\\
+ P_{2D_{1}}&=|ie^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+i e^{i\gamma_{2}}\cos(\theta_{o}) \sin(\theta_{1})\cos(\theta_{2})|^2,\\
+ P_{2D_{2}}&=|\cos(\theta_{1})\cos(\theta_{2})e^{i\gamma_{1}}- e^{i\gamma_{2}}\cos(\theta_{o}) \sin(\theta_{1})\sin(\theta_{2})|^2,\\
  P_{2abs}&=|\sin(\theta_{o}) \sin(\theta_{1})|^2.
 \end{align}
 
@@ -985,8 +997,8 @@ Repeating the same calculation with the object in the horizontal path we obtain 
 
 
 \begin{align}
-P_{1D_{1}}&=|ie^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})\cos(\theta_{o})+i e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2})|^2. \\
-P_{1D_{2}}&=|\cos(\theta_{1})\cos(\theta_{o})\cos(\theta_{2})e^{i\gamma_{1}}-e^{i\gamma_{2}} \sin(\theta_{1})\sin(\theta_{2})|^2.\\
+P_{1D_{1}}&=|ie^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})\cos(\theta_{o})+i e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2})|^2, \\
+P_{1D_{2}}&=|\cos(\theta_{1})\cos(\theta_{o})\cos(\theta_{2})e^{i\gamma_{1}}-e^{i\gamma_{2}} \sin(\theta_{1})\sin(\theta_{2})|^2,\\
 P_{1abs}&=|\sin(\theta_{o}) \cos(\theta_{1})|^2.
 \end{align}
 
@@ -994,13 +1006,12 @@ P_{1abs}&=|\sin(\theta_{o}) \cos(\theta_{1})|^2.
 This analysis is totally consistent with Zurika's \cite{zuri} when one takes the case $\beta'=\cos(\theta_{o})$, $\alpha'=i \sin(\theta_{o})$ and $\gamma_{2}-\gamma_{1}=0$. However this case has a little advantage and that is that our ``absorbed'' photon, is not absorbed but goes out of our interferometer so we can measure all outputs of the interferometer by placing a detector, say $D_{abs}$, in the path the ``lost photon" would follow.
 
 \section{$N$ Beam Splitters as imperfect transmitter }
-\vspace{1 cm}
 
 
-\begin{figure}[hbt!]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=8 cm]{images/machzenhderBSS.png}
-\caption{Mach Zehnder with $N$ $BS$ as imperfect transmitter}
+\caption{Mach-Zehnder with $N$ $BS$ as imperfect transmitter}
 \label{N_bs}
 \end{figure}
 
@@ -1014,7 +1025,7 @@ BS_{3}\ket{2}=\cos(\theta_{3})\ket{2}+i\sin(\theta_{3})\ket{abs}.
 The next $BS$ only acts on the transmitted photon so:
 \begin{align}
 BS_{4}(\cos(\theta_{3})\ket{3}+i\sin(\theta_{3})\ket{abs})&=\cos(\theta_{1})BS_{2}\ket{2}+i\sin(\theta_{3})\ket{abs},\\
-BS_{4}BS_{3}\ket{1}&=\cos(\theta_{3})\cos(\theta_{4})\ket{1}+i A\ket{abs},
+BS_{4}BS_{3}\ket{1}&=\cos(\theta_{3})\cos(\theta_{4})\ket{1}+i A\ket{abs}.
 \end{align}
 where $A$ is whatever the absorption coefficient for two $BS$ may be. Then, the next $BS$ does the same
 \begin{equation}
@@ -1024,29 +1035,28 @@ BS_{5}BS_{4}BS_{3}\ket{2}=\cos(\theta_{3})\cos(\theta_{4})\cos(\theta_{5})\ket{2
 so after $n$ $BS$ :
 
 \begin{align*}
-BS^{n}=BS_{n}...BS_{3}\ket{2}=\cos(\theta_{3})\cos(\theta_{4})\cos(\theta_{5})....\cos(\theta_{n})\ket{2}
-\\+i C\ket{abs}. \numberthis
+BS^{n}=BS_{n}...BS_{3}\ket{2}=\cos(\theta_{3})\cos(\theta_{4})\cos(\theta_{5})....\cos(\theta_{n})\ket{2} +i C\ket{abs}. \numberthis
 \end{align*}
 
 We can obtain $C$ by asking the probabilities to add to unity, since everything that is not transmitted will be ``lost":
 
 \begin{align}
-BS^{n}\ket{2}&=\prod_{i=1}^{n} \cos(\theta_{i})\ket{2}+i C \ket{abs}.\\
-C&=\sqrt{1-\prod_{i=1}^{n}\cos^2(\theta_{i})}
+BS^{n}\ket{2}&=\prod_{i=3}^{n} \cos(\theta_{i})\ket{2}+i C \ket{abs},\\
+C&=\sqrt{1-\prod_{i=3}^{n}\cos^2(\theta_{i})}.
 \end{align}
 
-We now use this as a imperfect absorber in the vertical path:
+Following the same procedure we could obtain the same result if the object was in the other arm of the interferometer. We now use this as a imperfect absorber in the vertical path:
 
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{{B^{n}}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\prod_{i=3}^{n} \cos(\theta_{i})\ket{2}-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{n}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{Mirrors}}\cos(\theta_{1})  e^{i \gamma_{1}}\ket{2}+i\sin(\theta_{1})\prod_{i=3}^{n} \cos(\theta_{i}) e^{i \gamma_{2}}\ket{1}-\\
-&\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{n}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{BS2}}(\cos(\theta_{1})\cos(\theta_{2})e^{i \gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i \gamma_{2}}\prod_{i=3}^{n} \cos(\theta_{i}))\ket{2}+\\ & i(\cos(\theta_{1})\sin(\theta_{2})e^{i \gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i \gamma_{2}}\prod_{i=3}^{n} \cos(\theta_{i}))\ket{1}-\\ &\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{n}\cos^2(\theta_{i})}\ket{abs}.
+&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{{B^{n}}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\prod_{i=3}^{n} \cos(\theta_{i})\ket{2}-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{n}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{Mirrors}}\cos(\theta_{1})  e^{i \gamma_{1}}\ket{2}+i\sin(\theta_{1})\prod_{i=3}^{n} \cos(\theta_{i}) e^{i \gamma_{2}}\ket{1}\\
+&-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{n}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{BS2}}(\cos(\theta_{1})\cos(\theta_{2})e^{i \gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i \gamma_{2}}\prod_{i=3}^{n} \cos(\theta_{i}))\ket{2}\\ &+ i(\cos(\theta_{1})\sin(\theta_{2})e^{i \gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i \gamma_{2}}\prod_{i=3}^{n} \cos(\theta_{i}))\ket{1}\\ &-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{n}\cos^2(\theta_{i})}\ket{abs}.
 \end{align*}
  
 The probabilities of detection in each of the detectors are given by:
 
 \begin{align}
-P_{D_{1}}&=|\cos(\theta_{1})\sin(\theta_{2})e^{i \gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i \gamma_{2}}\prod_{i=3}^{n} \cos(\theta_{i})|^2.\\
-P_{D_{2}}&=|\cos(\theta_{1})\cos(\theta_{2})e^{i \gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i \gamma_{2}}\prod_{i=3}^{n} \cos(\theta_{i})|^2.\\
+P_{D_{1}}&=|\cos(\theta_{1})\sin(\theta_{2})e^{i \gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i \gamma_{2}}\prod_{i=3}^{n} \cos(\theta_{i})|^2,\\
+P_{D_{2}}&=|\cos(\theta_{1})\cos(\theta_{2})e^{i \gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i \gamma_{2}}\prod_{i=3}^{n} \cos(\theta_{i})|^2,\\
 P_{abs}&=\sin^2(\theta_{1})\left(1-\prod_{i=3}^{n}\cos^2(\theta_{i})\right).
 \end{align}
 
@@ -1060,8 +1070,8 @@ The interferometer is an instrument quite hard to align experimentally, in most 
 {pmatrix} e^
 {i c} & 0\\0& e^
 {i k }\end
-{pmatrix}
-\end{equation}.
+{pmatrix}.
+\end{equation}
 
 Let us see the effect of such an optical device in our setup:
 \begin{align*}
@@ -1094,7 +1104,7 @@ We will be ignoring diffraction effects, a consequence of modeling it like this 
 We can model our optical chopper by using an operator $C_{i}$ where $i$ is the path where the chopper is placed, such that in our base(where $i=1,2$ and $i \neq j$):
 
 \begin{align}
-C_{i}\ket{i}&=f(t)\ket{i}.\\
+C_{i}\ket{i}&=f(t)\ket{i},\\
 C_{j}\ket{i}&=\ket{i}.
 \end{align}
 
@@ -1105,7 +1115,7 @@ Ideally, we want this operator to be unitary in the ``hole" cycle. Since we are 
 \end{equation}
 the sign function squared is always one so
 \begin{align}
-&|f|^2=\frac{2(1+sgn(\sin(wt)))}{4}. \\
+&|f|^2=\frac{2(1+sgn(\sin(wt)))}{4}, \\
 &|f|^2=f,
 \end{align}
 
@@ -1113,9 +1123,9 @@ the sign function squared is always one so
 from there we can see that it is a unitary matrix whenever the sine is in the positive cycle, and it becomes null in the negative cycle, that happens because in the negative cycle we have total absorption. The absorption coefficient would  be:  
 
 \begin{align}
- a&=1-f.\\
- a&=\frac{1-sgn(\sin(wt))}{2}.\\
-|a|^2&=\frac{2(1-sgn(\sin(wt)))}{4}.\\
+ a&=1-f,\\
+ a&=\frac{1-sgn(\sin(wt))}{2},\\
+|a|^2&=\frac{2(1-sgn(\sin(wt)))}{4},\\
 |a|^2&=a.
 \end{align}
 
@@ -1124,9 +1134,9 @@ We will now analyze a Mach-Zehnder interferometer using a chopper as a time-depe
 
 
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{\text{Chopper}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})f\ket{2}+i\sin(\theta_{1})a\ket{abs}\\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})f e^{i\gamma_{2}}\ket{1}+i\sin(\theta_{1})a\ket{abs}\\& \xrightarrow{\text{BS2}}\cos(\theta_{1})e^{i\gamma_{1}}(\cos(\theta_{2})\ket{2}+\\
-&i\sin(\theta_{2})\ket{1})+i\sin(\theta_{1})e^{i\gamma_{2}}f(\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2})+i\sin(\theta_{1})a\ket{abs}\\
-& = i(e^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+f e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2}))\ket{1}+(\cos(\theta_{1})\cos(\theta_{2}) e^{i\gamma_{1}}- \\&  \sin(\theta_{1})\sin(\theta_{2})f e^{i \gamma_{2}})\ket{2}+i\sin(\theta_{1})a\ket{abs}. \numberthis
+&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{\text{Chopper}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})f\ket{2}+i\sin(\theta_{1})a\ket{abs}\\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})f e^{i\gamma_{2}}\ket{1}+i\sin(\theta_{1})a\ket{abs}\\& \xrightarrow{\text{BS2}}\cos(\theta_{1})e^{i\gamma_{1}}(\cos(\theta_{2})\ket{2}\\
+&+i\sin(\theta_{2})\ket{1})+i\sin(\theta_{1})e^{i\gamma_{2}}f(\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2})+i\sin(\theta_{1})a\ket{abs}\\
+& = i(e^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+f e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2}))\ket{1}+(\cos(\theta_{1})\cos(\theta_{2}) e^{i\gamma_{1}} \\&  -\sin(\theta_{1})\sin(\theta_{2})f e^{i \gamma_{2}})\ket{2}+i\sin(\theta_{1})a\ket{abs}. \numberthis
 \end{align*}
 
 
@@ -1169,17 +1179,17 @@ A plot for the detection probabilities is shown in Fig. \ref{Pchopper}, as we me
 
 
 \begin{align}
-&P_{2D_{1}}=|e^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+f e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2})|^2.\\
-&P_{2D_{2}}=|\cos(\theta_{1})\cos(\theta_{2})e^{i\gamma_{1}}- f \sin(\theta_{1})\sin(\theta_{2})e^{i\gamma_{2}}|^2.\\
+&P_{2D_{1}}=|e^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+f e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2})|^2,\\
+&P_{2D_{2}}=|\cos(\theta_{1})\cos(\theta_{2})e^{i\gamma_{1}}- f \sin(\theta_{1})\sin(\theta_{2})e^{i\gamma_{2}}|^2,\\
 &P_{2abs}=|a \sin(\theta_{1})|^2.
 \end{align}
 
 Which can be rewritten as:
 \begin{align*}
 & P_{2D_{1}}=\cos^2(\theta_{1})\sin^2(\theta_{2})+f^2 \sin^2(\theta_{1})\cos^2(\theta_{2})+\\
-&\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2}. \numberthis{}\\
+&\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2}, \numberthis{}\\
 & P_{2D_{2}}=\cos^2(\theta_{1})\cos^2(\theta_{2})+ f^2 \sin^2(\theta_{1})\sin^2(\theta_{2})-\\
-&\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2}.\numberthis{} \\
+&\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{} \\
 & P_{2abs}=a^2 \sin^2(\theta_{1}).\numberthis{}
 \end{align*}
 
@@ -1218,24 +1228,24 @@ By the same procedure having the chopper in the horizontal path, one can obtain 
 
 \begin{align*}
 & P_{1D_{1}}=\cos^2(\theta_{1})\sin^2(\theta_{2})f^2+ \sin^2(\theta_{1})\cos^2(\theta_{2})+\\
-&\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2}.\numberthis{}\\
+&\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
 & P_{1D_{2}}=\cos^2(\theta_{1})\cos^2(\theta_{2})f^2+ \sin^2(\theta_{1})\sin^2(\theta_{2})-\\
-&\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2}.\numberthis{}\\
-& P_{2abs}=a^2 \cos^2(\theta_{1}). \numberthis{}
+&\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
+& P_{1abs}=a^2 \cos^2(\theta_{1}). \numberthis{}
 \end{align*}
 
 Since $f^2=f$, we can write the difference of probabilities as:
 
 \begin{align}
-P_{1D_{1}}-P_{1D_{2}}=(a)\left(\frac{\cos(2 \theta_{1})-\cos(2 \theta_{2})}{2}\right).\\
-P_{2D_{1}}-P_{2D_{2}}=(a)\left(\frac{\cos(2 \theta_{1})+\cos(2 \theta_{2})}{2}\right).
+P_{1D_{1}}-P_{1D_{2}}=(a)\left(\frac{\cos(2 \theta_{1})-\cos(2 \theta_{2})}{2}\right),\
+P_{1D_{2}}-P_{2D_{2}}=(a)\left(\frac{\cos(2 \theta_{1})+\cos(2 \theta_{2})}{2}\right).
 \end{align}
  From there we can obtain either $\theta_{1}$  or $\theta_{2}$ :
 \begin{align}
-&(P_{1D_{1}}-P_{1D_{2}})+(P_{2D_{1}}-P_{2D_{2}})=(a)(\cos(2 \theta_{1})).\\
-&(P_{1D_{1}}-P_{1D_{2}})-(P_{2D_{1}}-P_{2D_{2}})=(-a)(\cos(2 \theta_{2})).\\
- &\theta_{1}=\frac{1}{2}\cos^{-1}\left[\frac{(P_{1D_{1}}-P_{1D_{2}})+(P_{2D_{1}}-P_{2D_{2}})}{a}\right].\\
- &\theta_{2}=\frac{1}{2}\cos^{-1}\left[\frac{(P_{1D_{1}}-P_{1D_{2}})-(P_{2D_{1}}-P_{2D_{2}})}{a}\right].
+&(P_{1D_{1}}-P_{1D_{2}})+(P_{1D_{2}}-P_{2D_{2}})=(a)(\cos(2 \theta_{1})),\\
+&(P_{1D_{1}}-P_{1D_{2}})-(P_{2D_{1}}-P_{2D_{2}})=(-a)(\cos(2 \theta_{2})).,\
+ &\theta_{1}=\frac{1}{2}\cos^{-1}\left[\frac{(P_{1D_{1}}-P_{2D_{1}})+(P_{1D_{2}}-P_{2D_{2}})}{a}\right],\\
+ &\theta_{2}=\frac{1}{2}\cos^{-1}\left[\frac{(P_{1D_{1}}-P_{2D_{1}})-(P_{1D_{2}}-P_{2D_{2}})}{a}\right].
  \end{align}
  
 \pagebreak
@@ -1246,21 +1256,21 @@ Previously we considered the ``material" part of the chopper as a perfect absorb
  
 
 \begin{align}
-f_{hole}&=\frac{1+sgn(\sin(wt))}{2}.\\
-f_{material}&=\left(\frac{1-sgn(\sin(wt))}{2} \right)\beta.\\
-f&=f_{material}+f_{hole}.
+f_{hole}&=\frac{1+sgn(\sin(wt))}{2},\\
+f_{material}&=\left(\frac{1-sgn(\sin(wt))}{2} \right)\beta,\\
+f&=f_{material}+f_{hole},
 \end{align}
 
 
-Where $\beta$ is the transmission coefficient of the material part of our chopper, $\beta$ could be a function of  $\omega$ or $t$ in this analysis. The operator used to describe our chopper is the same as in the previous section, we define:
+where $\beta$ is the transmission coefficient of the material part of our chopper, $\beta$ could be a function of  $\omega$ or $t$ in this analysis. The operator used to describe our chopper is the same as in the previous section, we define:
 
 \vspace{0.5cm}
 \begin{equation}
-a=\left(\frac{1-sgn(\sin(wt))}{2}\right) \alpha.
+a=\left(\frac{1-sgn(\sin(wt))}{2}\right) \alpha,
 \end{equation}
 \vspace{0.5cm}
 
-Where $\alpha$ is the absorption coefficient of the material part of our chopper, by using this notation we have the same case as in the previous section, except this time $f^2 \neq 1$ :
+where $\alpha$ is the absorption coefficient of the material part of our chopper, by using this notation we have the same case as in the previous section, except this time $f^2 \neq 1$ :
 
 \begin{align}
 |a|^2&=a \alpha.\\
@@ -1270,7 +1280,7 @@ Where $\alpha$ is the absorption coefficient of the material part of our chopper
 which we can generalize to obtain:
 
 \begin{align}
-|a|^n&=a\alpha^{n-1}.\\
+|a|^n&=a\alpha^{n-1},\\
 |f_{material}|^n&=f_{material} \beta^{n-1},
 \end{align}
 so we have:
@@ -1316,10 +1326,10 @@ Substituting in the previous section yields the probability distributions shown 
 
 
 \begin{align*}
-&P_{1D_{1}}=\cos^2(\theta_{1})\sin^2(\theta_{2})\abs{f}^2+ \sin^2(\theta_{1})\cos^2(\theta_{2})+\\
-&\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2}.\numberthis{}\\
-&P_{1D_{2}}=\cos^2(\theta_{1})\cos^2(\theta_{2})\abs{f}^2+ \sin^2(\theta_{1})\sin^2(\theta_{2})-\\
-&\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2}.\numberthis{}\\
+&P_{1D_{1}}=\cos^2(\theta_{1})\sin^2(\theta_{2})\abs{f}^2+ \sin^2(\theta_{1})\cos^2(\theta_{2})\\
+&+\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
+&P_{1D_{2}}=\cos^2(\theta_{1})\cos^2(\theta_{2})\abs{f}^2+ \sin^2(\theta_{1})\sin^2(\theta_{2})\\
+&-\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
 &P_{1abs}=\abs{\alpha}^2 \cos^2(\theta_{1}).\numberthis{}
 \end{align*}
 
@@ -1358,10 +1368,10 @@ When the optical chopper is in the vertical path we obtain the following detecti
 \end{figure}
 
 \begin{align*}
-&P_{2D_{1}}=\cos^2(\theta_{1})\sin^2(\theta_{2})+\abs{f}^2 \sin^2(\theta_{1})\cos^2(\theta_{2})+\\
-&\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2}.\numberthis{}\\
-&P_{2D_{2}}=\cos^2(\theta_{1})\cos^2(\theta_{2})+ \abs{f}^2 \sin^2(\theta_{1})\sin^2(\theta_{2})-\\
-&\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2}.\numberthis{}\\
+&P_{2D_{1}}=\cos^2(\theta_{1})\sin^2(\theta_{2})+\abs{f}^2 \sin^2(\theta_{1})\cos^2(\theta_{2})\\
+&+\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
+&P_{2D_{2}}=\cos^2(\theta_{1})\cos^2(\theta_{2})+ \abs{f}^2 \sin^2(\theta_{1})\sin^2(\theta_{2})\\
+&-\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
 &P_{2abs}=\abs{\alpha}^2 \sin^2(\theta_{1}).\numberthis{}
 \end{align*}
 
@@ -1715,7 +1725,7 @@ Now, what happens if we do $N$ interferometers in a row? how does this transitio
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Continuous transition between wave and particle behaviour with 50:50 BSs for $N=3$ and $N=5$}
+\caption{Continuous transition between wave and particle behaviour with $\theta=\frac{pi}{2N}$ BSs for $N=3$ and $N=5$}
 \label{varias2}
 \end{figure}
 
@@ -1928,11 +1938,11 @@ Visibility counts will vary as we change the difference in optical paths $\delta
 
 
 \pagebreak 
-\chapter*{Conclusions}
+\chapter{Conclusions}
 \pagebreak
 
 
-\chapter*{Appendices}
+\chapter{Appendices}
 \pagebreak
 
 %prints bibliography from the bibliography file.

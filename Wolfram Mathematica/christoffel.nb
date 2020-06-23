@@ -1,0 +1,3464 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    118790,       3456]
+NotebookOptionsPosition[    114827,       3328]
+NotebookOutlinePosition[    115495,       3351]
+CellTagsIndexPosition[    115452,       3348]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Christoffel Symbols and Geodesic  Equation", "Subtitle"],
+
+Cell[TextData[{
+ "This is a ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " program to compute the Christoffel  and the geodesic equations, starting \
+from a given metric  ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    StyleBox["g",
+     FontSlant->"Italic"], "\[Alpha]\[Beta]"], TraditionalForm]]],
+ ". The Christoffel symbols are calculated from the formula"
+}], "Text"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox[
+     SuperscriptBox["\[CapitalGamma]", "\[Lambda]"], "\[Mu]\[Nu]"], "=", 
+    RowBox[{
+     FractionBox["1", "2"], 
+     RowBox[{
+      SuperscriptBox["g", "\[Lambda]\[Sigma]"], "(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Mu]"], " ", 
+        SubscriptBox["g", "\[Sigma]\[Nu]"]}], "+", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Nu]"], " ", 
+        SubscriptBox["g", "\[Sigma]\[Mu]"]}], "-", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Sigma]"], " ", 
+        SubscriptBox["g", "\[Mu]\[Nu]"]}]}], ")"}]}]}], TraditionalForm]]],
+ "\n\nwhere ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["g", "\[Lambda]\[Sigma]"], TraditionalForm]]],
+ " is the matrix inverse of ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["g", 
+    RowBox[{"\[Lambda]\[Sigma]", " "}]], TraditionalForm]]],
+ "called the inverse metric. This is the  solution of the relation (8.19) and \
+the notation for the inverse metric is standard [cf (20.17)]. The components \
+of the geodesic equation are \n\n",
+ StyleBox["d",
+  FontSlant->"Italic"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["u", "\[Alpha]"], TraditionalForm]]],
+ "/",
+ StyleBox["d\[Tau]",
+  FontSlant->"Italic"],
+ " = - ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    SuperscriptBox["\[CapitalGamma]", "\[Alpha]"], "\[Beta]\[Gamma]"], 
+   TraditionalForm]]],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["u", "\[Beta]"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["u", "\[Gamma]"], TraditionalForm]]],
+ " ."
+}], "Text"],
+
+Cell[TextData[{
+ "You must input the covariant components of the metric tensor ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["g", "\[Mu]\[Nu]"], TraditionalForm]]],
+ " by editing the relevant input line in this ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " notebook. You may also wish to change the names of the coordinates. The \
+nonzero components of the above quantities are displayed as the output. "
+}], "Text"],
+
+Cell[CellGroupData[{
+
+Cell["Clearing the values of symbols:", "Subsubsection"],
+
+Cell["\<\
+First clear any values that may already have been assigned to the names of \
+the various objects to be calculated. The names of the coordinates that you \
+will use are also cleared.\
+\>", "Text"],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", 
+  RowBox[{
+  "coord", ",", " ", "metric", ",", "inversemetric", ",", " ", "affine", ",", 
+   "  ", "x", ",", " ", "y", ",", " ", "z", ",", " ", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7782626099398727`*^9, 3.778262613346416*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\[LineSeparator]Setting The Dimension ", "Subsubsection",
+ CellChangeTimes->{3.7782624654902973`*^9}],
+
+Cell[TextData[{
+ "The dimension ",
+ StyleBox["n",
+  FontWeight->"Bold"],
+ " of the spacetime (or space) must be set:"
+}], "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"n", "=", "4"}]], "Input"],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{3.778262466921322*^9, 3.778262615933771*^9, 
+  3.7782633018700743`*^9, 3.778938707370425*^9, 3.778939682460504*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Defining a list of coordinates:", "Subsubsection"],
+
+Cell[TextData[{
+ "The example given here is the wormhole metric (7.40). Note that for \
+convenience ",
+ StyleBox["t ",
+  FontSlant->"Italic"],
+ StyleBox["is denoted by ",
+  FontVariations->{"CompatibilityType"->0}],
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    SuperscriptBox["x", "4"],
+    FontVariations->{"CompatibilityType"->0}], TraditionalForm]]],
+ " rather than ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "0"], TraditionalForm]]],
+ " and summations run from 1 to 4 rather than 0 to 3. "
+}], "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"coord", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "}"}]}],
+  FontWeight->"Bold"]], "Input",
+ CellChangeTimes->{{3.7782625056555157`*^9, 3.778262508131892*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "}"}]], "Output",
+ CellChangeTimes->{3.778262469265258*^9, 3.7782625107128487`*^9, 
+  3.77826261803185*^9, 3.7782633037693567`*^9, 3.7789387136448507`*^9, 
+  3.7789396840094147`*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "You can change the names of the coordinates by simply editing the \
+definition of ",
+ StyleBox["coord",
+  FontWeight->"Bold"],
+ ", for example, to ",
+ StyleBox["coord = {x, y, z, t}",
+  FontWeight->"Bold"],
+ ", when another set of coordinate names is more appropriate",
+ "."
+}], "Text"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Defining the metric:", "Subsubsection"],
+
+Cell["\<\
+Input the metric as a list of lists, i.e., as a matrix. You can input the \
+components of any metric here, but you must specify them as explicit \
+functions of the coordinates.\
+\>", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"metric", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"2", "\[Epsilon]", "*", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}]}], 
+       "+", 
+       RowBox[{"2", "*", 
+        RowBox[{
+         RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", "\[Epsilon]", "*", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"EE", "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], ",", "x", ",", 
+          "x"}], "]"}]}]}], ",", 
+      RowBox[{"2", "*", 
+       RowBox[{
+        RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", "\[Epsilon]", "*", 
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"EE", "[", 
+          RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], ",", "x", ",", 
+         "y"}], "]"}]}], ",", 
+      RowBox[{"2", "*", 
+       RowBox[{
+        RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", "\[Epsilon]", "*", 
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"EE", "[", 
+          RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], ",", "x", ",", 
+         "z"}], "]"}]}], ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"2", "*", 
+       RowBox[{
+        RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", "\[Epsilon]", "*", 
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"EE", "[", 
+          RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], ",", "y", ",", 
+         "x"}], "]"}]}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"2", "\[Epsilon]", "*", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}]}], 
+       "+", 
+       RowBox[{"2", "*", 
+        RowBox[{
+         RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", "\[Epsilon]", "*", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"EE", "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], ",", "y", ",", 
+          "y"}], "]"}]}]}], ",", 
+      RowBox[{"2", "*", 
+       RowBox[{
+        RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", "\[Epsilon]", "*", 
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"EE", "[", 
+          RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], ",", "y", ",", 
+         "z"}], "]"}]}], ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"2", "*", 
+       RowBox[{
+        RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", "\[Epsilon]", "*", 
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"EE", "[", 
+          RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], ",", "z", ",", 
+         "x"}], "]"}]}], ",", 
+      RowBox[{"2", "*", 
+       RowBox[{
+        RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", "\[Epsilon]", "*", 
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"EE", "[", 
+          RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], ",", "z", ",", 
+         "y"}], "]"}]}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"2", "\[Epsilon]", "*", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}]}], 
+       "+", 
+       RowBox[{"2", "*", 
+        RowBox[{
+         RowBox[{"a", "[", "t", "]"}], "^", "2"}], "*", "\[Epsilon]", "*", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"EE", "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], ",", "z", ",", 
+          "z"}], "]"}]}]}], ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0", ",", 
+      RowBox[{"-", 
+       RowBox[{
+        RowBox[{"a", "[", "t", "]"}], "^", "2"}]}]}], "}"}]}], 
+   "}"}]}]], "Input",
+ CellChangeTimes->{{3.778262364529372*^9, 3.7782624193896933`*^9}, {
+   3.7782625152400827`*^9, 3.7782625178364277`*^9}, {3.778262561266502*^9, 
+   3.778262564125128*^9}, 3.7782626040713587`*^9, {3.778262653020537*^9, 
+   3.77826278999362*^9}, {3.778262823256057*^9, 3.7782629224813232`*^9}, {
+   3.77826296254393*^9, 3.778262991492755*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"2", " ", "\[Epsilon]", " ", 
+          RowBox[{"\[Psi]", "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}]}], 
+      "+", 
+      RowBox[{"2", " ", "\[Epsilon]", " ", 
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{
+        SuperscriptBox["EE", 
+         TagBox[
+          RowBox[{"(", 
+           RowBox[{"2", ",", "0", ",", "0", ",", "0"}], ")"}],
+          Derivative],
+         MultilineFunction->None], "[", 
+        RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ",", 
+     RowBox[{"2", " ", "\[Epsilon]", " ", 
+      SuperscriptBox[
+       RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+      RowBox[{
+       SuperscriptBox["EE", 
+        TagBox[
+         RowBox[{"(", 
+          RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+         Derivative],
+        MultilineFunction->None], "[", 
+       RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ",", 
+     RowBox[{"2", " ", "\[Epsilon]", " ", 
+      SuperscriptBox[
+       RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+      RowBox[{
+       SuperscriptBox["EE", 
+        TagBox[
+         RowBox[{"(", 
+          RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+         Derivative],
+        MultilineFunction->None], "[", 
+       RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ",", "0"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"2", " ", "\[Epsilon]", " ", 
+      SuperscriptBox[
+       RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+      RowBox[{
+       SuperscriptBox["EE", 
+        TagBox[
+         RowBox[{"(", 
+          RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+         Derivative],
+        MultilineFunction->None], "[", 
+       RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ",", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"2", " ", "\[Epsilon]", " ", 
+          RowBox[{"\[Psi]", "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}]}], 
+      "+", 
+      RowBox[{"2", " ", "\[Epsilon]", " ", 
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{
+        SuperscriptBox["EE", 
+         TagBox[
+          RowBox[{"(", 
+           RowBox[{"0", ",", "2", ",", "0", ",", "0"}], ")"}],
+          Derivative],
+         MultilineFunction->None], "[", 
+        RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ",", 
+     RowBox[{"2", " ", "\[Epsilon]", " ", 
+      SuperscriptBox[
+       RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+      RowBox[{
+       SuperscriptBox["EE", 
+        TagBox[
+         RowBox[{"(", 
+          RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+         Derivative],
+        MultilineFunction->None], "[", 
+       RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ",", "0"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"2", " ", "\[Epsilon]", " ", 
+      SuperscriptBox[
+       RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+      RowBox[{
+       SuperscriptBox["EE", 
+        TagBox[
+         RowBox[{"(", 
+          RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+         Derivative],
+        MultilineFunction->None], "[", 
+       RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ",", 
+     RowBox[{"2", " ", "\[Epsilon]", " ", 
+      SuperscriptBox[
+       RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+      RowBox[{
+       SuperscriptBox["EE", 
+        TagBox[
+         RowBox[{"(", 
+          RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+         Derivative],
+        MultilineFunction->None], "[", 
+       RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ",", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"2", " ", "\[Epsilon]", " ", 
+          RowBox[{"\[Psi]", "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}]}], 
+      "+", 
+      RowBox[{"2", " ", "\[Epsilon]", " ", 
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{
+        SuperscriptBox["EE", 
+         TagBox[
+          RowBox[{"(", 
+           RowBox[{"0", ",", "0", ",", "2", ",", "0"}], ")"}],
+          Derivative],
+         MultilineFunction->None], "[", 
+        RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ",", "0"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0", ",", 
+     RowBox[{"-", 
+      SuperscriptBox[
+       RowBox[{"a", "[", "t", "]"}], "2"]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.778262923664983*^9, 3.778262991899147*^9, 
+  3.7782633072931747`*^9, 3.778938718757668*^9, 3.778939685651733*^9}]
+}, Open  ]],
+
+Cell["You can also display this in matrix form:", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"metric", "//", "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"2", " ", "\[Epsilon]", " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}]}], 
+       "+", 
+       RowBox[{"2", " ", "\[Epsilon]", " ", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"2", ",", "0", ",", "0", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], 
+      RowBox[{"2", " ", "\[Epsilon]", " ", 
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{
+        SuperscriptBox["EE", 
+         TagBox[
+          RowBox[{"(", 
+           RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+          Derivative],
+         MultilineFunction->None], "[", 
+        RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], 
+      RowBox[{"2", " ", "\[Epsilon]", " ", 
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{
+        SuperscriptBox["EE", 
+         TagBox[
+          RowBox[{"(", 
+           RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+          Derivative],
+         MultilineFunction->None], "[", 
+        RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "0"},
+     {
+      RowBox[{"2", " ", "\[Epsilon]", " ", 
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{
+        SuperscriptBox["EE", 
+         TagBox[
+          RowBox[{"(", 
+           RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+          Derivative],
+         MultilineFunction->None], "[", 
+        RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"2", " ", "\[Epsilon]", " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}]}], 
+       "+", 
+       RowBox[{"2", " ", "\[Epsilon]", " ", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"0", ",", "2", ",", "0", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], 
+      RowBox[{"2", " ", "\[Epsilon]", " ", 
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{
+        SuperscriptBox["EE", 
+         TagBox[
+          RowBox[{"(", 
+           RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+          Derivative],
+         MultilineFunction->None], "[", 
+        RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "0"},
+     {
+      RowBox[{"2", " ", "\[Epsilon]", " ", 
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{
+        SuperscriptBox["EE", 
+         TagBox[
+          RowBox[{"(", 
+           RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+          Derivative],
+         MultilineFunction->None], "[", 
+        RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], 
+      RowBox[{"2", " ", "\[Epsilon]", " ", 
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+       RowBox[{
+        SuperscriptBox["EE", 
+         TagBox[
+          RowBox[{"(", 
+           RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+          Derivative],
+         MultilineFunction->None], "[", 
+        RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"2", " ", "\[Epsilon]", " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}]}], 
+       "+", 
+       RowBox[{"2", " ", "\[Epsilon]", " ", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"0", ",", "0", ",", "2", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], "0"},
+     {"0", "0", "0", 
+      RowBox[{"-", 
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"]}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.778262429924521*^9, 3.7782624729778*^9, 
+  3.7782629299737673`*^9, 3.778262995246623*^9, 3.778938738380127*^9, 
+  3.778939688708824*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Note:", "Subsubsection"],
+
+Cell[TextData[{
+ "It is important not to use the symbols, ",
+ StyleBox["i",
+  FontWeight->"Bold"],
+ ", ",
+ StyleBox["j",
+  FontWeight->"Bold"],
+ ", ",
+ StyleBox["k",
+  FontWeight->"Bold"],
+ ", ",
+ StyleBox["l",
+  FontWeight->"Bold"],
+ ", ",
+ StyleBox["n,",
+  FontWeight->"Bold",
+  FontVariations->{"CompatibilityType"->0}],
+ " or ",
+ StyleBox["s  ",
+  FontWeight->"Bold"],
+ "as constants or coordinates in the metric that you specify above. The \
+reason is that  the first four of those symbols are used as summation or \
+table indices in the calculations done below. The last is the dimension of \
+the space. "
+}], "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"metric", " ", "=", " ", 
+  RowBox[{"Series", "[", 
+   RowBox[{"metric", ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Epsilon]", ",", "0", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.778263113039668*^9, 3.778263163425641*^9}, {
+  3.778263212641139*^9, 3.778263214237508*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     InterpretationBox[
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "2"}], " ", 
+           SuperscriptBox[
+            RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"2", ",", "0", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}], 
+        " ", "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^2, ((-2) \
+$CellContext`a[$CellContext`t]^2) $CellContext`\[Psi][$CellContext`x, \
+$CellContext`y, $CellContext`z, $CellContext`t] + (
+          2 $CellContext`a[$CellContext`t]^2) 
+         Derivative[
+          2, 0, 0, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]}, 0, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"2", " ", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {(2 $CellContext`a[$CellContext`t]^2) 
+        Derivative[
+         1, 1, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"2", " ", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {(2 $CellContext`a[$CellContext`t]^2) 
+        Derivative[
+         1, 0, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"2", " ", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {(2 $CellContext`a[$CellContext`t]^2) 
+        Derivative[
+         1, 1, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "2"}], " ", 
+           SuperscriptBox[
+            RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "2", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}], 
+        " ", "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^2, ((-2) \
+$CellContext`a[$CellContext`t]^2) $CellContext`\[Psi][$CellContext`x, \
+$CellContext`y, $CellContext`z, $CellContext`t] + (
+          2 $CellContext`a[$CellContext`t]^2) 
+         Derivative[
+          0, 2, 0, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]}, 0, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"2", " ", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {(2 $CellContext`a[$CellContext`t]^2) 
+        Derivative[
+         0, 1, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"2", " ", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {(2 $CellContext`a[$CellContext`t]^2) 
+        Derivative[
+         1, 0, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"2", " ", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {(2 $CellContext`a[$CellContext`t]^2) 
+        Derivative[
+         0, 1, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"a", "[", "t", "]"}], "2"], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "2"}], " ", 
+           SuperscriptBox[
+            RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"a", "[", "t", "]"}], "2"], " ", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "2", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}]}], ")"}], 
+        " ", "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^2, ((-2) \
+$CellContext`a[$CellContext`t]^2) $CellContext`\[Psi][$CellContext`x, \
+$CellContext`y, $CellContext`z, $CellContext`t] + (
+          2 $CellContext`a[$CellContext`t]^2) 
+         Derivative[
+          0, 0, 2, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]}, 0, 2, 1],
+      Editable->False], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0", ",", 
+     RowBox[{"-", 
+      SuperscriptBox[
+       RowBox[{"a", "[", "t", "]"}], "2"]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.778263151137135*^9, 3.7782631640530043`*^9}, 
+   3.7782632145967712`*^9, 3.7782633115998497`*^9, 3.7789387618868017`*^9, 
+   3.778939691615156*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Calculating the inverse metric:", "Subsubsection"],
+
+Cell["The inverse metric is obtained through matrix inversion.", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"inversemetric", "=", 
+  RowBox[{"Series", "[", 
+   RowBox[{
+    RowBox[{"Simplify", "[", 
+     RowBox[{"Inverse", "[", "metric", "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Epsilon]", ",", "0", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.778263183008973*^9, 3.778263219733404*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     InterpretationBox[
+      RowBox[{
+       FractionBox["1", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "-", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"2", ",", "0", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+         "\[Epsilon]"}], 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^(-2), (
+         2 $CellContext`a[$CellContext`t]^(-2)) \
+($CellContext`\[Psi][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t] - Derivative[
+         2, 0, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t])}, 0, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+          "\[Epsilon]"}], 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+        Derivative[
+         1, 1, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+          "\[Epsilon]"}], 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+        Derivative[
+         1, 0, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+          "\[Epsilon]"}], 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+        Derivative[
+         1, 1, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       FractionBox["1", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "-", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "2", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+         "\[Epsilon]"}], 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^(-2), (
+         2 $CellContext`a[$CellContext`t]^(-2)) \
+($CellContext`\[Psi][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t] - Derivative[
+         0, 2, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t])}, 0, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+          "\[Epsilon]"}], 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+        Derivative[
+         0, 1, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+          "\[Epsilon]"}], 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+        Derivative[
+         1, 0, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+          "\[Epsilon]"}], 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+        Derivative[
+         0, 1, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False], ",", 
+     InterpretationBox[
+      RowBox[{
+       FractionBox["1", 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "-", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "2", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+         "\[Epsilon]"}], 
+        SuperscriptBox[
+         RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^(-2), (
+         2 $CellContext`a[$CellContext`t]^(-2)) \
+($CellContext`\[Psi][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t] - Derivative[
+         0, 0, 2, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t])}, 0, 2, 1],
+      Editable->False], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0", ",", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {(-1) $CellContext`a[$CellContext`t]^(-2)}, 0, 2, 1],
+      Editable->False]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.77826243757899*^9, 3.778262476722666*^9, 3.778263048272237*^9, {
+   3.778263166619493*^9, 3.7782632201373377`*^9}, 3.778263316008012*^9, 
+   3.778938766262545*^9, 3.778939693316869*^9}]
+}, Open  ]],
+
+Cell["The inverse metric can also be displayed in matrix form:", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"inversemetric", "//", "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      InterpretationBox[
+       RowBox[{
+        FractionBox["1", 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"\[Psi]", "[", 
+             RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "-", 
+            RowBox[{
+             SuperscriptBox["EE", 
+              TagBox[
+               RowBox[{"(", 
+                RowBox[{"2", ",", "0", ",", "0", ",", "0"}], ")"}],
+               Derivative],
+              MultilineFunction->None], "[", 
+             RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ",
+           "\[Epsilon]"}], 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+        InterpretationBox[
+         SuperscriptBox[
+          RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+         SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+         Editable->False]}],
+       SeriesData[$CellContext`\[Epsilon], 
+        0, {$CellContext`a[$CellContext`t]^(-2), (
+          2 $CellContext`a[$CellContext`t]^(-2)) \
+($CellContext`\[Psi][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t] - Derivative[
+          2, 0, 0, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t])}, 0, 2, 1],
+       Editable->False], 
+      InterpretationBox[
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+           "\[Epsilon]"}], 
+          SuperscriptBox[
+           RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+        InterpretationBox[
+         SuperscriptBox[
+          RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+         SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+         Editable->False]}],
+       SeriesData[$CellContext`\[Epsilon], 
+        0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+         Derivative[
+          1, 1, 0, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]}, 1, 2, 1],
+       Editable->False], 
+      InterpretationBox[
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+           "\[Epsilon]"}], 
+          SuperscriptBox[
+           RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+        InterpretationBox[
+         SuperscriptBox[
+          RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+         SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+         Editable->False]}],
+       SeriesData[$CellContext`\[Epsilon], 
+        0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+         Derivative[
+          1, 0, 1, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]}, 1, 2, 1],
+       Editable->False], "0"},
+     {
+      InterpretationBox[
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+           "\[Epsilon]"}], 
+          SuperscriptBox[
+           RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+        InterpretationBox[
+         SuperscriptBox[
+          RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+         SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+         Editable->False]}],
+       SeriesData[$CellContext`\[Epsilon], 
+        0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+         Derivative[
+          1, 1, 0, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]}, 1, 2, 1],
+       Editable->False], 
+      InterpretationBox[
+       RowBox[{
+        FractionBox["1", 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"\[Psi]", "[", 
+             RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "-", 
+            RowBox[{
+             SuperscriptBox["EE", 
+              TagBox[
+               RowBox[{"(", 
+                RowBox[{"0", ",", "2", ",", "0", ",", "0"}], ")"}],
+               Derivative],
+              MultilineFunction->None], "[", 
+             RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ",
+           "\[Epsilon]"}], 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+        InterpretationBox[
+         SuperscriptBox[
+          RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+         SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+         Editable->False]}],
+       SeriesData[$CellContext`\[Epsilon], 
+        0, {$CellContext`a[$CellContext`t]^(-2), (
+          2 $CellContext`a[$CellContext`t]^(-2)) \
+($CellContext`\[Psi][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t] - Derivative[
+          0, 2, 0, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t])}, 0, 2, 1],
+       Editable->False], 
+      InterpretationBox[
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+           "\[Epsilon]"}], 
+          SuperscriptBox[
+           RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+        InterpretationBox[
+         SuperscriptBox[
+          RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+         SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+         Editable->False]}],
+       SeriesData[$CellContext`\[Epsilon], 
+        0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+         Derivative[
+          0, 1, 1, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]}, 1, 2, 1],
+       Editable->False], "0"},
+     {
+      InterpretationBox[
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+           "\[Epsilon]"}], 
+          SuperscriptBox[
+           RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+        InterpretationBox[
+         SuperscriptBox[
+          RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+         SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+         Editable->False]}],
+       SeriesData[$CellContext`\[Epsilon], 
+        0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+         Derivative[
+          1, 0, 1, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]}, 1, 2, 1],
+       Editable->False], 
+      InterpretationBox[
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{
+            SuperscriptBox["EE", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+           "\[Epsilon]"}], 
+          SuperscriptBox[
+           RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+        InterpretationBox[
+         SuperscriptBox[
+          RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+         SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+         Editable->False]}],
+       SeriesData[$CellContext`\[Epsilon], 
+        0, {((-2) $CellContext`a[$CellContext`t]^(-2)) 
+         Derivative[
+          0, 1, 1, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]}, 1, 2, 1],
+       Editable->False], 
+      InterpretationBox[
+       RowBox[{
+        FractionBox["1", 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"\[Psi]", "[", 
+             RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "-", 
+            RowBox[{
+             SuperscriptBox["EE", 
+              TagBox[
+               RowBox[{"(", 
+                RowBox[{"0", ",", "0", ",", "2", ",", "0"}], ")"}],
+               Derivative],
+              MultilineFunction->None], "[", 
+             RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ",
+           "\[Epsilon]"}], 
+         SuperscriptBox[
+          RowBox[{"a", "[", "t", "]"}], "2"]], "+", 
+        InterpretationBox[
+         SuperscriptBox[
+          RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+         SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+         Editable->False]}],
+       SeriesData[$CellContext`\[Epsilon], 
+        0, {$CellContext`a[$CellContext`t]^(-2), (
+          2 $CellContext`a[$CellContext`t]^(-2)) \
+($CellContext`\[Psi][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t] - Derivative[
+          0, 0, 2, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t])}, 0, 2, 1],
+       Editable->False], "0"},
+     {"0", "0", "0", 
+      InterpretationBox[
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox["1", 
+          SuperscriptBox[
+           RowBox[{"a", "[", "t", "]"}], "2"]]}], "+", 
+        InterpretationBox[
+         SuperscriptBox[
+          RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+         SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+         Editable->False]}],
+       SeriesData[$CellContext`\[Epsilon], 
+        0, {(-1) $CellContext`a[$CellContext`t]^(-2)}, 0, 2, 1],
+       Editable->False]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.7782624404431667`*^9, 3.77826247896881*^9, 
+  3.778263054424362*^9, 3.77826332149326*^9, 3.778938773910865*^9, 
+  3.7789396956865053`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Calculating the affine connection:", "Subsubsection"],
+
+Cell[TextData[{
+ "The calculation of the components of the affine connection is done by \
+transcribing the definition given earlier into the notation of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " and using the ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " functions ",
+ StyleBox["D",
+  FontWeight->"Bold"],
+ " for taking partial derivatives, ",
+ StyleBox["Sum",
+  FontWeight->"Bold"],
+ " for summing over repeated indices, ",
+ StyleBox["Table",
+  FontWeight->"Bold"],
+ " for forming a list of components, and ",
+ StyleBox["Simplify",
+  FontWeight->"Bold"],
+ " for simplifying the result."
+}], "Text"],
+
+Cell[BoxData[
+ RowBox[{"affine", ":=", 
+  RowBox[{"affine", "=", 
+   RowBox[{"Series", "[", 
+    RowBox[{
+     RowBox[{"Simplify", "[", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1", "/", "2"}], ")"}], "*", 
+         RowBox[{"Sum", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"inversemetric", "[", 
+              RowBox[{"[", 
+               RowBox[{"i", ",", "s"}], "]"}], "]"}], ")"}], "*", 
+            "\[IndentingNewLine]", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"D", "[", 
+               RowBox[{
+                RowBox[{"metric", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"s", ",", "j"}], "]"}], "]"}], ",", 
+                RowBox[{"coord", "[", 
+                 RowBox[{"[", "k", "]"}], "]"}]}], " ", "]"}], "+", 
+              "\[IndentingNewLine]", 
+              RowBox[{"D", "[", 
+               RowBox[{
+                RowBox[{"metric", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"s", ",", "k"}], "]"}], "]"}], ",", 
+                RowBox[{"coord", "[", 
+                 RowBox[{"[", "j", "]"}], "]"}]}], " ", "]"}], "-", 
+              RowBox[{"D", "[", 
+               RowBox[{
+                RowBox[{"metric", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"j", ",", "k"}], "]"}], "]"}], ",", 
+                RowBox[{"coord", "[", 
+                 RowBox[{"[", "s", "]"}], "]"}]}], " ", "]"}]}], ")"}]}], ",", 
+           RowBox[{"{", 
+            RowBox[{"s", ",", "1", ",", "n"}], "}"}]}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "1", ",", "n"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"j", ",", "1", ",", "n"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}], " ", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Epsilon]", ",", "0", ",", "1"}], "}"}]}], "]"}]}]}]], "Input",\
+
+ CellChangeTimes->{{3.778263276079533*^9, 3.7782632875289097`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Displaying the affine connection:", "Subsubsection"],
+
+Cell["\<\
+The nonzero components of the affine connections are displayed below. You \
+need not follow the details of constructing the functions that we use for \
+that purpose. Because the affine connection is symmetric under interchange of \
+the last two indices, only the independent components are displayed.\
+\>", "Text"],
+
+Cell[BoxData[
+ RowBox[{"listaffine", ":=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"UnsameQ", "[", 
+       RowBox[{
+        RowBox[{"affine", "[", 
+         RowBox[{"[", 
+          RowBox[{"i", ",", "j", ",", "k"}], "]"}], "]"}], ",", "0"}], "]"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ToString", "[", 
+         RowBox[{"\[CapitalGamma]", "[", 
+          RowBox[{"i", ",", "j", ",", "k"}], "]"}], "]"}], ",", 
+        RowBox[{"affine", "[", 
+         RowBox[{"[", 
+          RowBox[{"i", ",", "j", ",", "k"}], "]"}], "]"}]}], "}"}]}], "]"}], 
+    " ", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "n"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"j", ",", "1", ",", "n"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"k", ",", "1", ",", "j"}], "}"}]}], "]"}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TableForm", "[", 
+  RowBox[{
+   RowBox[{"Partition", "[", 
+    RowBox[{
+     RowBox[{"DeleteCases", "[", 
+      RowBox[{
+       RowBox[{"Flatten", "[", "listaffine", "]"}], ",", "Null"}], "]"}], ",",
+      "2"}], "]"}], ",", 
+   RowBox[{"TableSpacing", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"2", ",", "2"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.778263473410824*^9, 3.7782634970896053`*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\[CapitalGamma][1, 1, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"1", ",", "0", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"3", ",", "0", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {-Derivative[
+          1, 0, 0, 
+           0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         3, 0, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][1, 2, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "1", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"2", ",", "1", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {-Derivative[
+          0, 1, 0, 
+           0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         2, 1, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][1, 2, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["\[Psi]", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "0", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "2", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+       Derivative[
+         1, 0, 0, 
+          0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         1, 2, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][1, 3, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "1", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"2", ",", "0", ",", "1", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {-Derivative[
+          0, 0, 1, 
+           0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         2, 0, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][1, 3, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "1", ",", "1", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+        Derivative[
+        1, 1, 1, 
+         0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][1, 3, 3]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["\[Psi]", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "0", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "0", ",", "2", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+       Derivative[
+         1, 0, 0, 
+          0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         1, 0, 2, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][1, 4, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["a", "\[Prime]",
+          MultilineFunction->None], "[", "t", "]"}], 
+        RowBox[{"a", "[", "t", "]"}]], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "0", ",", "1"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"2", ",", "0", ",", "0", ",", "1"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^(-1) 
+        Derivative[1][$CellContext`a][$CellContext`t], -
+         Derivative[
+          0, 0, 0, 
+           1][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         2, 0, 0, 
+          1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 0, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][1, 4, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "1", ",", "0", ",", "1"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+        Derivative[
+        1, 1, 0, 
+         1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][1, 4, 3]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "0", ",", "1", ",", "1"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+        Derivative[
+        1, 0, 1, 
+         1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][2, 1, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["\[Psi]", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "1", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"2", ",", "1", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+       Derivative[
+         0, 1, 0, 
+          0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         2, 1, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][2, 2, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"1", ",", "0", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "2", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {-Derivative[
+          1, 0, 0, 
+           0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         1, 2, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][2, 2, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "1", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "3", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {-Derivative[
+          0, 1, 0, 
+           0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         0, 3, 0, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][2, 3, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "1", ",", "1", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+        Derivative[
+        1, 1, 1, 
+         0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][2, 3, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "1", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "2", ",", "1", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {-Derivative[
+          0, 0, 1, 
+           0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         0, 2, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][2, 3, 3]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["\[Psi]", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "1", ",", "0", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "1", ",", "2", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+       Derivative[
+         0, 1, 0, 
+          0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         0, 1, 2, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][2, 4, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "1", ",", "0", ",", "1"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+        Derivative[
+        1, 1, 0, 
+         1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][2, 4, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["a", "\[Prime]",
+          MultilineFunction->None], "[", "t", "]"}], 
+        RowBox[{"a", "[", "t", "]"}]], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "0", ",", "1"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "2", ",", "0", ",", "1"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^(-1) 
+        Derivative[1][$CellContext`a][$CellContext`t], -
+         Derivative[
+          0, 0, 0, 
+           1][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         0, 2, 0, 
+          1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 0, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][2, 4, 3]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"0", ",", "1", ",", "1", ",", "1"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+        Derivative[
+        0, 1, 1, 
+         1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][3, 1, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["\[Psi]", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "0", ",", "1", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"2", ",", "0", ",", "1", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+       Derivative[
+         0, 0, 1, 
+          0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         2, 0, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][3, 2, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "1", ",", "1", ",", "0"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+        Derivative[
+        1, 1, 1, 
+         0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][3, 2, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["\[Psi]", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "0", ",", "1", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "2", ",", "1", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+       Derivative[
+         0, 0, 1, 
+          0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         0, 2, 1, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][3, 3, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"1", ",", "0", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "0", ",", "2", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {-Derivative[
+          1, 0, 0, 
+           0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         1, 0, 2, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][3, 3, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "1", ",", "0", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "1", ",", "2", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {-Derivative[
+          0, 1, 0, 
+           0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         0, 1, 2, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][3, 3, 3]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "1", ",", "0"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "0", ",", "3", ",", "0"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {-Derivative[
+          0, 0, 1, 
+           0][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         0, 0, 3, 
+          0][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][3, 4, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"1", ",", "0", ",", "1", ",", "1"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+        Derivative[
+        1, 0, 1, 
+         1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][3, 4, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["EE", 
+          TagBox[
+           RowBox[{"(", 
+            RowBox[{"0", ",", "1", ",", "1", ",", "1"}], ")"}],
+           Derivative],
+          MultilineFunction->None], "[", 
+         RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 0, {
+        Derivative[
+        0, 1, 1, 
+         1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][3, 4, 3]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["a", "\[Prime]",
+          MultilineFunction->None], "[", "t", "]"}], 
+        RowBox[{"a", "[", "t", "]"}]], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "0", ",", "1"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "0", ",", "2", ",", "1"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^(-1) 
+        Derivative[1][$CellContext`a][$CellContext`t], -
+         Derivative[
+          0, 0, 0, 
+           1][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         0, 0, 2, 
+          1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 0, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][4, 1, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["a", "\[Prime]",
+          MultilineFunction->None], "[", "t", "]"}], 
+        RowBox[{"a", "[", "t", "]"}]], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "0", ",", "1"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{
+             SuperscriptBox["a", "\[Prime]",
+              MultilineFunction->None], "[", "t", "]"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               RowBox[{"\[Psi]", "[", 
+                RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+              RowBox[{
+               SuperscriptBox["EE", 
+                TagBox[
+                 RowBox[{"(", 
+                  RowBox[{"2", ",", "0", ",", "0", ",", "0"}], ")"}],
+                 Derivative],
+                MultilineFunction->None], "[", 
+               RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}]}], 
+           
+           RowBox[{"a", "[", "t", "]"}]], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"2", ",", "0", ",", "0", ",", "1"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^(-1) 
+        Derivative[1][$CellContext`a][$CellContext`t], -
+         Derivative[
+          0, 0, 0, 
+           1][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + ((2/$CellContext`a[$CellContext`t]) 
+          Derivative[
+           1][$CellContext`a][$CellContext`t]) \
+(-$CellContext`\[Psi][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t] + 
+          Derivative[
+           2, 0, 0, 
+            0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]) + 
+        Derivative[
+         2, 0, 0, 
+          1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 0, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][4, 2, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{
+             SuperscriptBox["a", "\[Prime]",
+              MultilineFunction->None], "[", "t", "]"}], " ", 
+            RowBox[{
+             SuperscriptBox["EE", 
+              TagBox[
+               RowBox[{"(", 
+                RowBox[{"1", ",", "1", ",", "0", ",", "0"}], ")"}],
+               Derivative],
+              MultilineFunction->None], "[", 
+             RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], 
+           RowBox[{"a", "[", "t", "]"}]], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "1", ",", "0", ",", "1"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {((2/$CellContext`a[$CellContext`t]) 
+          Derivative[1][$CellContext`a][$CellContext`t]) 
+         Derivative[
+          1, 1, 0, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         1, 1, 0, 
+          1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][4, 2, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["a", "\[Prime]",
+          MultilineFunction->None], "[", "t", "]"}], 
+        RowBox[{"a", "[", "t", "]"}]], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "0", ",", "1"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{
+             SuperscriptBox["a", "\[Prime]",
+              MultilineFunction->None], "[", "t", "]"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               RowBox[{"\[Psi]", "[", 
+                RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+              RowBox[{
+               SuperscriptBox["EE", 
+                TagBox[
+                 RowBox[{"(", 
+                  RowBox[{"0", ",", "2", ",", "0", ",", "0"}], ")"}],
+                 Derivative],
+                MultilineFunction->None], "[", 
+               RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}]}], 
+           
+           RowBox[{"a", "[", "t", "]"}]], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "2", ",", "0", ",", "1"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^(-1) 
+        Derivative[1][$CellContext`a][$CellContext`t], -
+         Derivative[
+          0, 0, 0, 
+           1][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + ((2/$CellContext`a[$CellContext`t]) 
+          Derivative[
+           1][$CellContext`a][$CellContext`t]) \
+(-$CellContext`\[Psi][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t] + 
+          Derivative[
+           0, 2, 0, 
+            0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]) + 
+        Derivative[
+         0, 2, 0, 
+          1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 0, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][4, 3, 1]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{
+             SuperscriptBox["a", "\[Prime]",
+              MultilineFunction->None], "[", "t", "]"}], " ", 
+            RowBox[{
+             SuperscriptBox["EE", 
+              TagBox[
+               RowBox[{"(", 
+                RowBox[{"1", ",", "0", ",", "1", ",", "0"}], ")"}],
+               Derivative],
+              MultilineFunction->None], "[", 
+             RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], 
+           RowBox[{"a", "[", "t", "]"}]], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"1", ",", "0", ",", "1", ",", "1"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {((2/$CellContext`a[$CellContext`t]) 
+          Derivative[1][$CellContext`a][$CellContext`t]) 
+         Derivative[
+          1, 0, 1, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         1, 0, 1, 
+          1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][4, 3, 2]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{
+             SuperscriptBox["a", "\[Prime]",
+              MultilineFunction->None], "[", "t", "]"}], " ", 
+            RowBox[{
+             SuperscriptBox["EE", 
+              TagBox[
+               RowBox[{"(", 
+                RowBox[{"0", ",", "1", ",", "1", ",", "0"}], ")"}],
+               Derivative],
+              MultilineFunction->None], "[", 
+             RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], 
+           RowBox[{"a", "[", "t", "]"}]], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "1", ",", "1", ",", "1"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 1, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {((2/$CellContext`a[$CellContext`t]) 
+          Derivative[1][$CellContext`a][$CellContext`t]) 
+         Derivative[
+          0, 1, 1, 
+           0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + 
+        Derivative[
+         0, 1, 1, 
+          1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 1, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][4, 3, 3]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["a", "\[Prime]",
+          MultilineFunction->None], "[", "t", "]"}], 
+        RowBox[{"a", "[", "t", "]"}]], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{
+            SuperscriptBox["\[Psi]", 
+             TagBox[
+              RowBox[{"(", 
+               RowBox[{"0", ",", "0", ",", "0", ",", "1"}], ")"}],
+              Derivative],
+             MultilineFunction->None], "[", 
+            RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{
+             SuperscriptBox["a", "\[Prime]",
+              MultilineFunction->None], "[", "t", "]"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               RowBox[{"\[Psi]", "[", 
+                RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], "+", 
+              RowBox[{
+               SuperscriptBox["EE", 
+                TagBox[
+                 RowBox[{"(", 
+                  RowBox[{"0", ",", "0", ",", "2", ",", "0"}], ")"}],
+                 Derivative],
+                MultilineFunction->None], "[", 
+               RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}]}], 
+           
+           RowBox[{"a", "[", "t", "]"}]], "+", 
+          RowBox[{
+           SuperscriptBox["EE", 
+            TagBox[
+             RowBox[{"(", 
+              RowBox[{"0", ",", "0", ",", "2", ",", "1"}], ")"}],
+             Derivative],
+            MultilineFunction->None], "[", 
+           RowBox[{"x", ",", "y", ",", "z", ",", "t"}], "]"}]}], ")"}], " ", 
+        "\[Epsilon]"}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^(-1) 
+        Derivative[1][$CellContext`a][$CellContext`t], -
+         Derivative[
+          0, 0, 0, 
+           1][$CellContext`\[Psi]][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t] + ((2/$CellContext`a[$CellContext`t]) 
+          Derivative[
+           1][$CellContext`a][$CellContext`t]) \
+(-$CellContext`\[Psi][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t] + 
+          Derivative[
+           0, 0, 2, 
+            0][$CellContext`EE][$CellContext`x, $CellContext`y, \
+$CellContext`z, $CellContext`t]) + 
+        Derivative[
+         0, 0, 2, 
+          1][$CellContext`EE][$CellContext`x, $CellContext`y, $CellContext`z, \
+$CellContext`t]}, 0, 2, 1],
+      Editable->False]},
+    {"\<\"\[CapitalGamma][4, 4, 4]\"\>", 
+     InterpretationBox[
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["a", "\[Prime]",
+          MultilineFunction->None], "[", "t", "]"}], 
+        RowBox[{"a", "[", "t", "]"}]], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "\[Epsilon]", "]"}], "2"],
+        SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 2, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`\[Epsilon], 
+       0, {$CellContext`a[$CellContext`t]^(-1) 
+        Derivative[1][$CellContext`a][$CellContext`t]}, 0, 2, 1],
+      Editable->False]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[1.4]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.8]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$, TableSpacing -> {2, 2}]]]], "Output",
+ CellChangeTimes->{
+  3.77826245014161*^9, 3.778262485574185*^9, 3.77826306561558*^9, 
+   3.778263256394958*^9, 3.778263293753561*^9, 3.778263341042818*^9, {
+   3.778263483060267*^9, 3.778263497535791*^9}, 3.7789387953945847`*^9, 
+   3.7789397070512543`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Calculating the geodesic equations:", "Subsubsection"],
+
+Cell[TextData[{
+ "The geodesic equations are calculated by asking  ",
+ StyleBox["Mathematica ",
+  FontSlant->"Italic"],
+ StyleBox["to carry out the sum -",
+  FontVariations->{"CompatibilityType"->0}],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    SuperscriptBox["\[CapitalGamma]", "\[Alpha]"], "\[Beta]\[Gamma]"], 
+   TraditionalForm]]],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["u", "\[Beta]"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["u", "\[Gamma]"], TraditionalForm]]],
+ ",  where ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["u", "\[Alpha]"], TraditionalForm]]],
+ " are the components of the four-velocity.  (This gives the derivitive of ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["u", "\[Alpha]"], TraditionalForm]]],
+ " with respect to proper time  \[Tau].  (This is replaced by  ",
+ StyleBox["s",
+  FontSlant->"Italic"],
+ "  if the geodesics are spacelike.)"
+}], "Text"],
+
+Cell[BoxData[
+ RowBox[{"geodesic", ":=", 
+  RowBox[{"geodesic", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"affine", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "j", ",", "k"}], "]"}], "]"}], 
+          RowBox[{"u", "[", "j", "]"}], 
+          RowBox[{"u", "[", "k", "]"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"j", ",", "1", ",", "n"}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "1", ",", "n"}], "}"}]}], "]"}], "]"}]}]}]], "Input"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Displaying the geodesic equations:", "Subsubsection"],
+
+Cell[BoxData[
+ RowBox[{"listgeodesic", ":=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<d/d\[Tau]\>\"", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"u", "[", "i", "]"}], "]"}]}], ",", "\"\<=\>\"", ",", 
+      RowBox[{"geodesic", "[", 
+       RowBox[{"[", "i", "]"}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "n"}], "}"}]}], "]"}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TableForm", "[", 
+  RowBox[{"listgeodesic", ",", 
+   RowBox[{"TableSpacing", "\[Rule]", 
+    RowBox[{"{", "2", "}"}]}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     RowBox[{"\<\"d/d\[Tau]\"\>", " ", "\<\"u[1]\"\>"}], "\<\"=\"\>", 
+     RowBox[{"r", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"u", "[", "2", "]"}], "2"], "+", 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"], " ", 
+         SuperscriptBox[
+          RowBox[{"u", "[", "3", "]"}], "2"]}]}], ")"}]}]},
+    {
+     RowBox[{"\<\"d/d\[Tau]\"\>", " ", "\<\"u[2]\"\>"}], "\<\"=\"\>", 
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"2", " ", "r", " ", 
+         RowBox[{"u", "[", "1", "]"}], " ", 
+         RowBox[{"u", "[", "2", "]"}]}], 
+        RowBox[{
+         SuperscriptBox["b", "2"], "+", 
+         SuperscriptBox["r", "2"]}]]}], "+", 
+      RowBox[{
+       RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+       RowBox[{"Sin", "[", "\[Theta]", "]"}], " ", 
+       SuperscriptBox[
+        RowBox[{"u", "[", "3", "]"}], "2"]}]}]},
+    {
+     RowBox[{"\<\"d/d\[Tau]\"\>", " ", "\<\"u[3]\"\>"}], "\<\"=\"\>", 
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"2", " ", "r", " ", 
+         RowBox[{"u", "[", "1", "]"}], " ", 
+         RowBox[{"u", "[", "3", "]"}]}], 
+        RowBox[{
+         SuperscriptBox["b", "2"], "+", 
+         SuperscriptBox["r", "2"]}]]}], "-", 
+      RowBox[{"2", " ", 
+       RowBox[{"Cot", "[", "\[Theta]", "]"}], " ", 
+       RowBox[{"u", "[", "2", "]"}], " ", 
+       RowBox[{"u", "[", "3", "]"}]}]}]},
+    {
+     RowBox[{"\<\"d/d\[Tau]\"\>", " ", "\<\"u[4]\"\>"}], "\<\"=\"\>", "0"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.7]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.8]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  TableForm[#, TableSpacing -> {2}]& ]], "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[" Acknowledgment", "Subsubsection"],
+
+Cell[TextData[{
+ "This program was adapted from the notebook ",
+ StyleBox["Curvature and the Einstein ",
+  FontSlant->"Italic"],
+ "equation kindly written by ",
+ StyleBox["Leonard Parker ",
+  FontSlant->"Italic"],
+ StyleBox[" especially for this text. ",
+  FontVariations->{"CompatibilityType"->0}]
+}], "Text"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Chapter",
+ CellChangeTimes->{{3.778938809832766*^9, 3.778938814582601*^9}, 
+   3.781490717979723*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.778938841567006*^9, 3.778938921528651*^9}, {
+   3.7789389837286177`*^9, 3.77893902954357*^9}, 3.781490721423661*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.781490723799775*^9, 3.781490723832646*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.778939147032243*^9, 3.778939201380774*^9}, 
+   3.781490726026884*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7814907283457623`*^9, 3.781490728347904*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7789391224797907`*^9, 3.778939124255681*^9}, {
+   3.778939216978669*^9, 3.778939238945221*^9}, {3.778939321143217*^9, 
+   3.778939462991662*^9}, {3.7789397258034277`*^9, 3.778939741696871*^9}, 
+   3.781490730205181*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7814907324641867`*^9, 3.781490732467445*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.778939921015359*^9, 3.77893996666206*^9}, {
+   3.77894003662965*^9, 3.778940037924576*^9}, 3.781490735028676*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7814907371412163`*^9, 3.7814907371740627`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7789401314262877`*^9, 3.778940162424407*^9}, 
+   3.781490739549923*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7814907456086807`*^9, 3.781490745611305*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.778939074475189*^9, 3.778939098620791*^9}, {
+   3.7789398135857964`*^9, 3.778939822648901*^9}, {3.778939870541696*^9, 
+   3.778939872368495*^9}, 3.7789400437636967`*^9, {3.7789400907873707`*^9, 
+   3.7789401130122766`*^9}, {3.778940170665656*^9, 3.778940322905529*^9}, {
+   3.778940494154294*^9, 3.778940496166771*^9}, 3.781490747692872*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.78149074948573*^9, 3.781490749499834*^9}}]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{1299, 713},
+WindowMargins->{{0, Automatic}, {-2, 30}},
+PrintingPageRange->{Automatic, Automatic},
+PrintingOptions->{"Magnification"->1,
+"PaperOrientation"->"Portrait",
+"PaperSize"->{612, 792},
+"PostScriptOutputFile":>FrontEnd`FileName[{$RootDirectory, "home", "cosmic", 
+   "hartle", "131book", "math"}, "wh.ps", CharacterEncoding -> "ISO8859-1"]},
+Magnification->1.5,
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 62, 0, 77, "Subtitle"],
+Cell[645, 24, 382, 12, 85, "Text"],
+Cell[1030, 38, 1605, 54, 230, "Text"],
+Cell[2638, 94, 424, 10, 117, "Text"],
+Cell[CellGroupData[{
+Cell[3087, 108, 56, 0, 53, "Subsubsection"],
+Cell[3146, 110, 205, 4, 82, "Text"],
+Cell[3354, 116, 273, 5, 52, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3664, 126, 107, 1, 90, "Subsubsection"],
+Cell[3774, 129, 129, 5, 49, "Text"],
+Cell[CellGroupData[{
+Cell[3928, 138, 49, 1, 46, "Input"],
+Cell[3980, 141, 163, 2, 46, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4192, 149, 56, 0, 53, "Subsubsection"],
+Cell[4251, 151, 512, 17, 82, "Text"],
+Cell[CellGroupData[{
+Cell[4788, 172, 235, 6, 46, "Input"],
+Cell[5026, 180, 258, 5, 46, "Output"]
+}, Open  ]],
+Cell[5299, 188, 304, 10, 82, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5640, 203, 45, 0, 53, "Subsubsection"],
+Cell[5688, 205, 200, 4, 82, "Text"],
+Cell[CellGroupData[{
+Cell[5913, 213, 4420, 122, 257, "Input"],
+Cell[10336, 337, 5002, 147, 294, "Output"]
+}, Open  ]],
+Cell[15353, 487, 57, 0, 49, "Text"],
+Cell[CellGroupData[{
+Cell[15435, 491, 64, 1, 46, "Input"],
+Cell[15502, 494, 5432, 154, 152, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20983, 654, 30, 0, 53, "Subsubsection"],
+Cell[21016, 656, 623, 24, 114, "Text"],
+Cell[CellGroupData[{
+Cell[21664, 684, 311, 7, 52, "Input"],
+Cell[21978, 693, 10596, 292, 341, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32623, 991, 56, 0, 53, "Subsubsection"],
+Cell[32682, 993, 72, 0, 49, "Text"],
+Cell[CellGroupData[{
+Cell[32779, 997, 333, 8, 52, "Input"],
+Cell[33115, 1007, 10959, 304, 475, "Output"]
+}, Open  ]],
+Cell[44089, 1314, 72, 0, 49, "Text"],
+Cell[CellGroupData[{
+Cell[44186, 1318, 71, 1, 46, "Input"],
+Cell[44260, 1321, 11474, 312, 267, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55783, 1639, 59, 0, 53, "Subsubsection"],
+Cell[55845, 1641, 621, 21, 114, "Text"],
+Cell[56469, 1664, 2088, 55, 163, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58594, 1724, 58, 0, 53, "Subsubsection"],
+Cell[58655, 1726, 324, 5, 114, "Text"],
+Cell[58982, 1733, 864, 26, 120, "Input"],
+Cell[CellGroupData[{
+Cell[59871, 1763, 432, 12, 52, "Input"],
+Cell[60306, 1777, 47617, 1329, 1754, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[107972, 3112, 60, 0, 53, "Subsubsection"],
+Cell[108035, 3114, 912, 29, 117, "Text"],
+Cell[108950, 3145, 737, 21, 89, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[109724, 3171, 59, 0, 53, "Subsubsection"],
+Cell[109786, 3173, 426, 12, 52, "Input"],
+Cell[CellGroupData[{
+Cell[110237, 3189, 162, 4, 52, "Input"],
+Cell[110402, 3195, 2027, 58, 200, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[112478, 3259, 40, 0, 53, "Subsubsection"],
+Cell[112521, 3261, 310, 9, 82, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[112880, 3276, 111, 2, 98, "Chapter"],
+Cell[112994, 3280, 165, 2, 46, "Input"],
+Cell[113162, 3284, 92, 1, 46, InheritFromParent],
+Cell[113257, 3287, 118, 2, 46, "Input"],
+Cell[113378, 3291, 94, 1, 46, InheritFromParent],
+Cell[113475, 3294, 268, 4, 46, "Input"],
+Cell[113746, 3300, 94, 1, 46, InheritFromParent],
+Cell[113843, 3303, 162, 2, 46, "Input"],
+Cell[114008, 3307, 96, 1, 46, InheritFromParent],
+Cell[114107, 3310, 120, 2, 46, "Input"],
+Cell[114230, 3314, 94, 1, 46, InheritFromParent],
+Cell[114327, 3317, 390, 5, 46, "Input"],
+Cell[114720, 3324, 91, 1, 46, InheritFromParent]
+}, Open  ]]
+}
+]
+*)
+

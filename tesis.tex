@@ -1,0 +1,159 @@
+
+\documentclass[11pt]{article}
+\usepackage{physics}
+%Gummi|065|=)
+\title{\textbf{Calulos Tesis}}
+\author{Gerardo Suarez
+}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section{Resultados Zurika}
+
+Sean $\alpha'$ y $\beta'$ los coeficientees de absorcion y emision del objeto semitransparente , entonces :
+
+$|\alpha'|^2 + |\beta'|^2 = 1$  y en forma polar   $\alpha'=\alpha e^{i \theta}$ ; $\beta'=\beta e^{i \gamma}$
+
+Usamos la siguiente Base (de Jones):
+
+$\ket{1}=\begin{bmatrix} 1 \\0\end{bmatrix} $   \hspace{5 cm}   $\ket{2}=\begin{bmatrix} 0\\1\end{bmatrix}$ 
+
+Inicialmente el foton llega por el camino 1 y elobjeto semitransparente esta en el camino 2 , el primer elemento optico que se encuentra el foton es un beamspliter cuya accion esta modelada por el operador:
+
+$B_{1}=\begin{pmatrix} \cos(\theta_{1}) & i \sin(\theta_{1}) \\ i \sin(\theta_{1}) & \cos(\theta_{1}) \end{pmatrix}$
+
+Al actuar este operador sobre el camino 1 y el camino 2 se obtiene 
+
+$B_{1}\ket{1}=\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}$
+
+$B_{1}\ket{2}=\cos(\theta_{1})\ket{2}+i\sin(\theta_{1})\ket{1}$
+
+Luego pasa por el objeto semitransparente el foton puede ser transmitido o absorbido con probabilidad $|\beta'|^2$ y $|\alpha'|^2$ respectivamente , es decir al pasar por el objeto el estado se convierte en 
+
+$Objeto\ket{2}=\alpha' \ket{abs} +\beta' \ket{2} $
+
+es decir 
+
+$B_{1}\ket{1}=\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})(\alpha' \ket{abs} +\beta' \ket{2} )$
+
+Luego lo siguiente que se encuentra el foton es un espejo ya sea que venga por el camino 1 o el camino 2 , la forma mas general de representar un espejo es mediante el operador :
+
+$M=\begin{pmatrix} 0& e^{i z} \\ e^{iz} & 0 \end{pmatrix}$
+
+con $z=\pi/2$ se reduce a :
+
+$M=\begin{pmatrix} 0& i\\ i & 0 \end{pmatrix}$
+
+Actuamos el espejo sobre el interferometro( en realidad espejos distintos sobre cada camino)
+
+$M \ket{1}=i\ket{2}$   \hspace{3cm}   $M\ket{2}=i\ket{1}$
+
+Entonces el estado se convierte en :
+
+$i\cos(\theta_{1})\ket{2}+i \sin(\theta_{1})\alpha'\ket{abs}-\sin(\theta_{1})\beta'\ket{2}$
+
+Al aplicar un segundo beamsplitter( solo cambia $\theta_{1} por \theta_{2} $ obtenemos que :
+
+$-(\cos(\theta_{1})\sin(\theta_{2})+\beta' \sin(\theta_{1})\cos(\theta_{2}))\ket{1}+i \alpha' \sin(\theta_{1})\ket{abs}+i(\cos(\theta_{1})\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\beta')\ket{2}$
+
+
+Entonces las probabilidades obtenidas son:
+
+$P_{2D1}=|\cos(\theta_{1})\sin(\theta_{2})+\beta' \sin(\theta_{1})\cos(\theta_{2})|^2$\\
+$P_{2D2}=|\cos(\theta_{1})\cos(\theta_{2})-\beta' \sin(\theta_{1})\sin(\theta_{2})|^2$\\
+$P_{2Abs}=|\alpha' \sin(\theta_{1})|$
+
+Si consideramos exactamente el miso procedimiento pero esta vez colocando el objeto semitransparente en el Otro brazo del interferometro las probabilidades que obtenemos que :
+
+$P_{1D1}=|\cos(\theta_{1})\sin(\theta_{2})\beta' +\sin(\theta_{1})\cos(\theta_{2})|^2$\\
+$P_{1D2}=|\sin(\theta_{1})\sin(\theta_{2})-\beta' \cos(\theta_{1})\cos(\theta_{2})|^2$\\
+$P_{1Abs}=|\alpha' \cos(\theta_{1})|^2$
+
+Ahora bien Veamos cual es la diferencia entre Colocar el objeto en un brazo del interferometro u otro , restemos las probabilidades
+
+$P_{1D1}-P_{1D2}=(1-\beta^2)(\frac{\cos(2 \theta_{1})-\cos(2 \theta_{2})}{2})$\\
+
+$P_{2D1}-P_{2D2}=(1-\beta^2)(\frac{\cos(2 \theta_{1})+\cos(2 \theta_{2})}{2})$\\
+
+Solo sucede que las probabilidades son las mismas cuando
+
+a)$\beta=1 es decir transmitancia total $
+b)$\cos(2 \theta_{2})=0 es decir \theta_{2}=\frac{\pi}{4}\pm 2n\pi$
+\section{Avances}
+
+Veamos que sucede si acoplamos BS( para usar como objeto semitransparente) asumimos por ahora dos BS con coeficientes distintos
+
+
+
+$B_{1}=\begin{pmatrix} \cos(\theta_{1}) & i \sin(\theta_{1}) \\ i \sin(\theta_{1}) & \cos(\theta_{1}) \end{pmatrix}$
+
+$B_{2}=\begin{pmatrix} \cos(\theta_{2}) & i \sin(\theta_{2}) \\ i \sin(\theta_{2}) & \cos(\theta_{2}) \end{pmatrix}$
+
+Al hacer el producto
+
+$B_{1}B_{2}= \begin{pmatrix} \cos(\theta_{1})\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})& i (\sin(\theta_{2})\cos(\theta_{1})+\cos(\theta_{2})\sin(\theta_{1})) \\ i (\sin(\theta_{2})\cos(\theta_{1})+\cos(\theta_{2})\sin(\theta_{1})) & \cos(\theta_{1})\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2}) \end{pmatrix} $
+
+Usando relaciones trigonometricas 
+$B_{1}B_{2}=\begin{pmatrix} \cos(\theta_{1}+\theta_{2}) & i \sin(\theta_{1}+\theta_{2}) \\ i \sin(\theta_{1}+\theta_{2}) & \cos(\theta_{1}+\theta_{2}) \end{pmatrix}$
+
+
+Con esto Veamos que varios BS pueden verse como un solo BS, ahora pasemos a hacer el analisis usando el BS como objeto semitransparente ,si consideramos que el foton reflejado por este objeto es de alguna manera un foton Perdido , entonces el tratamiento es totalmente analogo al caso anterior substituyendo $\beta=\cos(\theta_{o})$
+
+De forma que el resultado final es 
+$P_{1D1}-P_{1D2}=(\sin(\theta_{o})^2)(\frac{\cos(2 \theta_{1})-\cos(2 \theta_{2})}{2})$
+
+\section{Chopper Optico}
+Consideremos modelar el chopper mediante una onda cuadrada descrita por $f=\frac{sgn(\sin(wt))+1}{2}$, donde w es la frecuencia angular mecanica del chopper dividida entre el numero de pares de "hueco , material " que asumimos del mismo tamaño (en caso de que sean de distinto tamaño esto puede ajustarse mediante la convolucion de este tipo de señales )
+
+La accion del chopper puede verse entonces como un operador diagonal de la forma(Diagonal porque suponemos que el lado con material del chopper es totalmente absorbente )
+
+$C=\begin{pmatrix} \frac{sgn(\sin(wt))+1}{2} & 0 \\ 0 & \frac{sgn(\sin(wt))+1}{2} \end{pmatrix}$
+
+verifiquemos que esta matriz es de hecho una operacion unitaria, como es diagonal solo tenemos que verificar que el modulo al cuadrado de f es igual a 1
+
+$|f|^2=\frac{(sgn(\sin(wt))+1)^2}{4}$
+
+la funcion signo al cuadrado es siempre 1 de forma que 
+
+$|f|^2=\frac{2(1+sgn(\sin(wt)))}{4}$
+
+Vemos que esta es unitaria cuando estamos en el ciclo positivo del seno y nula cuando estamos en el ciclo negativo , es decir en el ciclo negativo tenemos absorcion total : la probabilidad de absorcion esta data por 
+
+$a=1-f$\\
+$a=\frac{1-sgn(\sin(wt))}{2}$\\
+$|a|^2=\frac{2(1-sgn(\sin(wt)))}{4}$\\
+
+Con comportamiento contrario al de f , una vez planteado nuestro primer modelo juguete de un chopper podemos analizar que sucede si usamos este como objeto en un interferometro de Mach-Zehnder : 
+
+Partimos de que el chopper esta en el camino 2 y nuestro foton entra por el camino 1, nuestro estado incial es entonces el $\ket{1}$:
+
+Al pasar por un BS este pasa a convertirse en :
+
+$\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}$
+
+Luego el efecto de la matriz del chopper es facil de observar ya que esta es diagonal (añadimos tambien lo que sucede si es absorbido)
+
+$\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})f\ket{2}+i\sin(\theta_{1})a\ket{abs}$
+
+Al pasar por los espejos (los mismos operadores del caso anterior)
+
+$\cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})f e^{i\gamma_{2}}\ket{1}+i\sin(\theta_{1})a\ket{abs}$
+
+Y ahora pasamos por un segundo BS, y nuestro estado se convierte en 
+
+$\cos(\theta_{1})(\cos(\theta_{2})\ket{2}+i\sin(\theta_{2})\ket{1})+i\sin(\theta_{1})f(\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2})+i\sin(\theta_{1})a\ket{abs}$
+
+Al agrupar los terminos , obtenemos que :
+
+$i(e^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+f e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2}))\ket{1}
++(\cos(\theta_{1})\cos(\theta_{2}) e^{i\gamma_{2}}-\sin(\theta_{1})\sin(\theta_{2})f e^{i \gamma_{2}})\ket{2}+i\sin(\theta_{1})a\ket{abs}$
+
+por lo que las probabilidades de deteccion estan dadas por :
+
+
+
+
+\end{document}
+

@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: esta_correcciones.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Database file #1: bibliography.bib
+I was expecting a `,' or a `}'---line 100 of file bibliography.bib
+ :   
+ :   doi = {10.1007/BF00736012}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Leonhardt_2003"
+Warning--empty journal in zuri
+Warning--empty year in zuri
+Warning--empty journal in maestria_procopio
+Warning--empty year in maestria_procopio
+You've used 36 entries,
+            1791 wiz_defined-function locations,
+            681 strings with 8483 characters,
+and the built_in function-call counts, 7392 in all, are:
+= -- 640
+> -- 315
+< -- 0
++ -- 123
+- -- 87
+* -- 523
+:= -- 1213
+add.period$ -- 107
+call.type$ -- 36
+change.case$ -- 29
+chr.to.int$ -- 0
+cite$ -- 40
+duplicate$ -- 324
+empty$ -- 753
+format.name$ -- 87
+if$ -- 1612
+int.to.chr$ -- 0
+int.to.str$ -- 36
+missing$ -- 44
+newline$ -- 182
+num.names$ -- 36
+pop$ -- 96
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 109
+stack$ -- 0
+substring$ -- 467
+swap$ -- 34
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 68
+width$ -- 38
+write$ -- 388
+(There was 1 error message)

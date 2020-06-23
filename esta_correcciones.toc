@@ -1,0 +1,39 @@
+\babel@toc {australian}{}
+\thispagestyle {empty}
+\contentsline {section}{Declaration}{I}{Doc-Start}%
+\contentsline {section}{List of Figures}{II}{Doc-Start}%
+\contentsline {section}{List of Tables}{IV}{Doc-Start}%
+\contentsline {section}{Acknowledgements}{V}{Doc-Start}%
+\contentsline {section}{Abstract}{VI}{Doc-Start}%
+\contentsline {chapter}{\numberline {1}Spontaneous parametric \\ down conversion}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}First order joint amplitude function}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Spatial correlations}{9}{section.1.2}%
+\contentsline {chapter}{\numberline {2}The lossless beam splitter}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The classical lossless beam splitter}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}The quantum lossless beam splitter}{14}{section.2.2}%
+\contentsline {chapter}{\numberline {3}The Mach-Zehnder interferometer }{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Classical Mach-Zehnder interferometer}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Single photon Mach-Zehnder interferometer}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Analysis with phase retarders }{22}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Interaction-free measurements}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Single-photon Mach-Zehnder interferometer with a perfect absorber}{24}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Interferometer with an imperfect transmitter}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.3}BS as imperfect transmitter}{30}{section.4.3}%
+\contentsline {section}{\numberline {4.4}$N$ Beam Splitters as imperfect transmitter }{33}{section.4.4}%
+\contentsline {chapter}{\numberline {5}A Time-dependent transmitter}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Optical chopper as perfect absorber }{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Optical chopper as imperfect absorber}{41}{section.5.2}%
+\contentsline {chapter}{\numberline {6}High-efficiency Mach-Zehnder}{44}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Using Identical beam splitters for all $N$}{47}{subsection.6.0.1}%
+\contentsline {subsection}{\numberline {6.0.2}Using Different Beam splitters}{48}{subsection.6.0.2}%
+\contentsline {section}{\numberline {6.1}Optical chopper}{50}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Does the phase matter?}{52}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Towards Wheeler's Gedanken experiment}{53}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Experimental Setup}{61}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Single photon source}{61}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Single photon Mach-Zehnder interferometer}{63}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Alignment of the Interferometer}{64}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Single-photon interference}{67}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Varying optical paths}{69}{subsection.7.2.3}%
+\contentsline {chapter}{\numberline {8}Conclusions}{70}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Appendices}{71}{chapter.9}%

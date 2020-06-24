@@ -700,15 +700,17 @@ M=\begin{pmatrix} 0& e^{i\gamma}  \\ e^{i\gamma} & 0 \end{pmatrix}, \label{mirro
 $\theta=\frac{\pi}{2}$ was chosen because it flips the state while $\theta=2 \pi$ would give a diagonal matrix. We have now defined all the things we need to analyze the interferometer in the classical and quantum case, which we will do in the next chapter.
 
  It should not be a surprise that we obtain the same theory as in the case of the classical beam splitter because it is quite typical that classical laws rule interference phenomena, going quantum often only affects the visibility, but does not modify the theory \cite{leonhardt}.
- 
+ \todo{pensar poner el espejo en la otra nota}
 \pagebreak
 \chapter{The Mach-Zehnder interferometer }
 
 
- The Mach–Zehnder's flexibility in locating the fringes has made it the preferred interferometer for visualizing flow in wind tunnels \cite{10} and for flow visualization studies in general. It is frequently used in several fields such as aerodynamics, plasma physics, and heat transfer to measure pressure, density, and temperature changes in gases \cite{11}, they are also used in electro-optic modulators \cite{ackerman}, electronic devices used in various fiber-optic communication applications. Mach–Zehnder modulators are incorporated in monolithic integrated circuits and offer well-behaved \cite{studenkov}, high-bandwidth electro-optic amplitude, and phase responses over a multiple-gigahertz frequency range \cite{capmany}.
+ The Mach–Zehnder's flexibility in locating the fringes has made it the preferred interferometer for visualizing flow in wind tunnels \cite{10} and for flow visualization studies in general. It is frequently used in several fields such as aerodynamics, plasma physics, and heat transfer to measure pressure, density, and temperature changes in gases \cite{11}. They are also used in electro-optic modulators \cite{ackerman} and in electronic devices used in various fiber-optic communication applications. Mach–Zehnder modulators are incorporated in monolithic integrated circuits and offer well-behaved, high-bandwidth electro-optic amplitude, and phase responses over a multiple-gigahertz frequency range \cite{studenkov,capmany}.
 
-The Mach-Zehnder interferometer consists of two Beam Splitters ($BS_{1}$ and $BS_{2}$) and two mirrors ($M_{1}$ and $M_{2}$). Two detectors $D_{1}$ and $D_{2}$ are placed in the output of the second beam splitter $BS_{2}$ as shown in Fig. \ref{fig:classical mach}. The idea is to get an interference pattern from just one incoming beam which is divided by $BS_{1}$ then each arm is redirected by mirrors $M_{1}$ and $M_{2}$ to be recombined by the second beam splitter $BS_{2}$ into the outgoing beams $E_{1}^{'''}$ and $E_{2}^{'''}$ these output beams are detected in either $D_{1}$ or $D_{2}$ respectively. We will now analyze the interferometer both in the classical and quantum regimes.
+The Mach-Zehnder interferometer consists of two Beam Splitters, $BS_{1}$ and $BS_{2}$ and two mirrors $M_{1}$ and $M_{2}$ as shown in Fig. \ref{fig:classical mach}. One of the input channels of the first beam splitter $BS_{1}$ is pumped to a beam to produce two output signals  that are redirected by the two mirrors $M_{1}$ and $M_{2}$ towards the input ports of the second $BS_{2}$.  Two detectors $D_{1}$ and $D_{2}$ placed at the output ports will  sense the interference pattern of the recombined beams $E_{1}'''$ and $E_{2}'''$. We will now analyze the interferometer, both, in the classical and quantum regimes.
 
+
+\todo{Tal vez poner el espejo aqui}
 \pagebreak
 \begin{figure}[H]
 \centering
@@ -721,25 +723,25 @@ The Mach-Zehnder interferometer consists of two Beam Splitters ($BS_{1}$ and $BS
 
 \section{Classical Mach-Zehnder interferometer}
 
-In this section, we study the Mach-Zehnder interferometer in the classical regime. We will denote the classical fields going through the interferometer as is shown in Fig. \ref{fig:classical mach}. We will follow the approach taken by Loudon \cite{ludon}. Let us consider two lossless beam splitters   $BS_{1}=BS_{2}$. The electric field $E_{1}$ of the incident beam is then split as:
+In this section, we study the Mach-Zehnder interferometer in the classical regime. We will denote the classical fields going through the interferometer as it is shown in Fig. \ref{fig:classical mach}. We will follow the approach taken by Loudon \cite{ludon}. Let us consider two lossless beam splitters   $BS_{1}$, $BS_{2}$ with the same reflectivity $\rho$ and transmitivity $\tau$. The electric field $E_{1}$ of the incident beam is then split into two beams $E_{1}'$ and $E_{2}'$ written as:
 
 \begin{equation}
-E_{1}'=\tau E_{1} ,\qquad E_{2}'=\rho E_{1}.
+E_{1}'=\tau E_{1} ,\qquad E_{2}'=\rho E_{1}.\label{corr1}
 \end{equation}
 
-The mirrors described by the matrix $M$ only add a phase $e^{i\phi_{i}}$, where $i=1,2$. We can proceed to calculate the intensity of the fields in the output
+The action of the matrix $M$ representing the mirrors only add a phase $e^{i\phi_{i}}$, where $i=1,2$. Then, two fields $E_{1}''$ and $E_{2}''$ are given by:
 
 \begin{equation}
- E_{1}''=e^{ik\phi_{1}}E_{1}', \qquad E_{2}''=e^{i k\phi_{2}}E_{2}'.
+ E_{1}''=e^{ik\phi_{1}}E_{1}', \qquad E_{2}''=e^{i k\phi_{2}}E_{2}'.\label{corr2}
 \end{equation}
 
-Then those fields go through the second $BS$:
+The fields are recombined in the second beam splitter $BS_{2}$ producing the output beams $E_{1}'''$ and $E_{2}'''$:
 
 \begin{align*}
-E_{1}'''=\tau E_{2}'' +\rho E_{1}'', \qquad E_{2}'''=\tau E_{1}'' -\rho E_{2}''. \numberthis
+E_{1}'''=\tau E_{2}'' +\rho E_{1}'', \qquad E_{2}'''=\tau E_{1}'' -\rho E_{2}''.\label{corr} \numberthis
 \end{align*}
 
-Substituting the expressions obtained before the above equations can be written as :
+Thus, substituting the eqs. \ref{corr1},\ref{corr2} in \ref{corr} the beams $E_{1}'''$ and $E_{2}'''$ can be written in terms of the pump beam $E_{1}$ as :
 
 \begin{align*}
 E_{1}'''&=\tau \rho (e^{i k\phi_{1}}+ e^{i k\phi_{2}})E_{1},\\
@@ -747,65 +749,65 @@ E_{2}'''&=\tau^2 e^{i k\phi_{1}} E_{1} -\rho^2 e^{i k\phi_{2}}E_{1}.
  \numberthis
 \end{align*}
 
-We can calculate intensities at the detectors by taking the modulus squared of the fields, we use $\delta \phi=\phi_{1}-\phi_{2}$:
+The intensities at the detectors can be calculated by taking the modulus squared of the fields, where $\delta \phi=\phi_{1}-\phi_{2}$:
 
 \begin{align*}
-I_{D_{1}}& \propto \abs{E_{1}}^2 2(\rho \tau)^2(1+\cos(k\delta \phi)),\\
-I_{D_{2}}& \propto \abs{E_{1}}^2 (\rho^4 +\tau^4)(1-\frac{2 (\rho \tau)^2}{\rho^4+\tau^4}\cos(k\delta \phi)). \numberthis
+I_{D_{1}}& \propto \abs{E_{1}}^2 2(\rho \tau)^2\left[1+\cos(k\delta \phi)\right],\\
+I_{D_{2}}& \propto \abs{E_{1}}^2 (\rho^4 +\tau^4)\left[1-\frac{2 (\rho \tau)^2}{\rho^4+\tau^4}\cos(k\delta \phi)\right]. \numberthis
 \end{align*}
 
-A case of interest is when $\rho =\tau=\frac{1}{\sqrt{2}}$, then the intensities become:
+A case of interest occurs whenever $\rho =\tau=\frac{1}{\sqrt{2}}$. In this circumstances the intensities become:
 
 \begin{align*}
-I_{D_{1}} & \propto \abs{E_{1}}^2 \frac{1+\cos(k\delta \phi)}{2}, \\
-I_{D_{2}} & \propto \abs{E_{1}}^2 \frac{1-\cos(k\delta \phi)}{2}. \numberthis
+I_{D_{1}}  \propto \abs{E_{1}}^2 \frac{1+\cos(k\delta \phi)}{2}, \quad
+I_{D_{2}}  \propto \abs{E_{1}}^2 \frac{1-\cos(k\delta \phi)}{2}. \numberthis
 \end{align*}
  
- When  $\delta \phi=\lambda n$ where $n=1,2,3,...$, so $\cos(2 \pi n )=1$ and the detector $D_{1}$ receives the intensity of the initial beam and $D_{2}$ receives no light.
+ If additionally   $\delta \phi=\lambda n$ where $n=1,2,3,...$, then $\cos(2 \pi n )=1$ and the detector $D_{1}$ receives the intensity of the initial beam and $D_{2}$ receives no light:
  
 \begin{align}
-I_{D_{1}}\propto \abs{E_{1}}^2, \qquad I_{D_{2}}\propto 0. \numberthis
+I_{D_{1}}\propto \abs{E_{1}}^2, \qquad I_{D_{2}}= 0. \numberthis
 \end{align}
 
 
 \section{Single photon Mach-Zehnder interferometer}
 
-In this section, we will study a single photon Mach-Zehnder, which will be the main object of concern for the rest of this thesis. for this part of the analysis, we will assume mirrors that induce different phases in each path. This is done to analyze misalignment and as proven in a later chapter, it is equivalent to considering phase-shifters inducing differences in the optical paths.
+In this section, we will study a single photon Mach-Zehnder interferometer, which will be the main object of concern for the rest of this work. In this part of the analysis, we will assume that the mirrors induce different phases in each path. This is done in order to account for misalignment in our model. It will be proven in a later chapter that this is equivalent to considering phase-shifters inducing differences in the optical paths then we write the matrix representation of the mirrors as:
 
 \begin{equation}
-M_{i}= \begin{pmatrix} 0& e^{i\gamma_{i}} \\ e^{i\gamma_{i}} & 0 \end{pmatrix}.
+M_{i}= \begin{pmatrix} 0& e^{i\gamma_{i}} \\ e^{i\gamma_{i}} & 0 \end{pmatrix}, \quad i=1,2.
 \end{equation}
 
-Once we have defined the main elements we can analyze the single-photon Mach-Zehnder interferometer. A single photon is generated via SPDC and is sent in the horizontal path of the interferometer as input, so $\ket{1}$ is our initial state which encounters the first $BS$
+Once we have defined the main elements we can analyze the single-photon Mach-Zehnder interferometer. A single photon, generated via SPDC, is sent in the horizontal path of the interferometer as the input signal. Then, our initial state $\ket{1}$  is transformed by the first $BS$ as:
 
 \begin{align}
 \ket{1}\xrightarrow{\text{BS}}\cos(\theta)\ket{1}+i\sin(\theta)\ket{2}.
 \numberthis
 \end{align}
 
-To study a general situation, we will consider two different $BS$ in our interferometer. Note that the action of optical elements is local. After the first $BS$, the photon encounters a mirror in each path, and then both paths are recombined in the second $BS$. The whole action of the interferometer on the initial state $\ket{1}$ is then:
+In order to study a general situation, we will consider two different $BS$ in our interferometer. Note that the action of optical elements is local meaning $M_{1}$ acts on path one and not in path and vice versa. After passing through the first $BS$, the photon encounters a mirror in each path, and then both paths are recombined in the second $BS$ as Fig. \ref{fig:classical mach}. The whole action of the interferometer on the initial state $\ket{1}$ is then:
 
 
 \begin{align*}
 &\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\xrightarrow{\text{Mirrors}}\cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})e^{i\gamma_{2}}\ket{1} \\ \xrightarrow{\text{BS2}}
- &i(\cos(\theta_{1})\sin(\theta_{2})e^{i\gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i\gamma_{2}})\ket{1}+\\&(\cos(\theta_{1})\cos(\theta_{2})e^{i\gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i\gamma_{2}})\ket{2}. \numberthis
+ &i\left[\cos(\theta_{1})\sin(\theta_{2})e^{i\gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i\gamma_{2}}\right]\ket{1}+\\&\left[\cos(\theta_{1})\cos(\theta_{2})e^{i\gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i\gamma_{2}}\right]\ket{2}. \numberthis
 \end{align*}
 
 
-To compare with the classical case where we did our calculations with two identical $BS$ we make $\theta_{1}=\theta_{2}=\frac{\pi}{4}$ then the state at the output of the interferometer is
+To compare this result with the classical case for which we consider two identical $BS$ we make $\theta_{1}=\theta_{2}=\frac{\pi}{4}$. Then the state $\ket{\psi}$ at the output of the interferometer is
 
 \begin{align*}
 \ket{\psi}=\frac{i}{2}(e^{i\gamma_{1}}+e^{i\gamma_{2}})\ket{1}+\frac{1}{2}(e^{i\gamma_{1}}-e^{i\gamma_{2}})\ket{2}, \\
 \ket{\psi}=\frac{e^{i(\gamma_{1}+\frac{\pi}{2})}}{2}(1+e^{i(\gamma_{2}-\gamma_{1})})\ket{1}+\frac{e^{i\gamma_{1}}}{2}(1-e^{i(\gamma_{2}-\gamma_{1})})\ket{2}. \numberthis
 \end{align*}
 
-To obtain the probabilities at the output we simply compute:
+To obtain the probabilities of detection, we simply compute:
 \begin{align}
 P_{D_{1}}&=|\bra{1}\ket{\psi}|^{2}, \qquad &&P_{D_{2}}=|\bra{2}\ket{\psi}|^{2},\\
 P_{D_{1}}&=\frac{1+\cos(\gamma_{2}-\gamma_{1})}{2}, \qquad &&P_{D_{2}}=\frac{1-\cos(\gamma_{2}-\gamma_{1})}{2}. \label{pp_wheler}
 \end{align}
 
-Perfect alignment means no difference in the optical path so that $\gamma_{2}-\gamma_{1}=0$, then the probability to detect in $D_{1}$ is one and in $D_{2}$ is zero, perfectly compatible with the result obtained in the classical case, we expect a similar result because the classical case is nothing but many repetitions of this case.
+Perfect alignment means no difference in the optical path so that $\gamma_{2}-\gamma_{1}=0$, then the probability to detect a photon in $D_{1}$ is one and in $D_{2}$ is zero, perfectly compatible with the result obtained in the classical case. We expect a similar result because the classical case is nothing but many repetitions of the single-photon case.
 
 \section{Analysis with phase retarders }
 

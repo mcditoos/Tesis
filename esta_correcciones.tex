@@ -690,17 +690,10 @@ meaning vacuum  in the horizontal path and one photon in the vertical one. In th
 \ket{out}=\begin{pmatrix} \cos(\theta) & i \sin(\theta) \\ i \sin(\theta) & \cos(\theta) \end{pmatrix} \ket{in},
 \end{equation}
 
-where $\ket{in}=\ket{1},\ket{2}$ and out is a linear combination of the vectors $\ket{1},\ket{2}$. A mirror in this basis(Horizontal-Vertical) simply flips the state and adds a phase, so we have no recombination of the amplitudes (which corresponds to no rotations only phase shifting) taking Eq. \ref{unitary} with $\theta=\frac{\pi}{2}$,$\phi=\pi$,$\Lambda=\gamma$ and $\psi= \frac{\pi}{2} $ we get:
-
- 
-\begin{equation}
-M=\begin{pmatrix} 0& e^{i\gamma}  \\ e^{i\gamma} & 0 \end{pmatrix}, \label{mirror}
-\end{equation}
-
-$\theta=\frac{\pi}{2}$ was chosen because it flips the state while $\theta=2 \pi$ would give a diagonal matrix. We have now defined all the things we need to analyze the interferometer in the classical and quantum case, which we will do in the next chapter.
+where $\ket{in}=\ket{1},\ket{2}$ and out is a linear combination of the vectors $\ket{1},\ket{2}$.
 
  It should not be a surprise that we obtain the same theory as in the case of the classical beam splitter because it is quite typical that classical laws rule interference phenomena, going quantum often only affects the visibility, but does not modify the theory \cite{leonhardt}.
- \todo{pensar poner el espejo en la otra nota}
+
 \pagebreak
 \chapter{The Mach-Zehnder interferometer }
 
@@ -710,8 +703,15 @@ $\theta=\frac{\pi}{2}$ was chosen because it flips the state while $\theta=2 \pi
 The Mach-Zehnder interferometer consists of two Beam Splitters, $BS_{1}$ and $BS_{2}$ and two mirrors $M_{1}$ and $M_{2}$ as shown in Fig. \ref{fig:classical mach}. One of the input channels of the first beam splitter $BS_{1}$ is pumped to a beam to produce two output signals  that are redirected by the two mirrors $M_{1}$ and $M_{2}$ towards the input ports of the second $BS_{2}$.  Two detectors $D_{1}$ and $D_{2}$ placed at the output ports will  sense the interference pattern of the recombined beams $E_{1}'''$ and $E_{2}'''$. We will now analyze the interferometer, both, in the classical and quantum regimes.
 
 
-\todo{Tal vez poner el espejo aqui}
-\pagebreak
+ A mirror in this basis(Horizontal-Vertical) simply flips the state and adds a phase, so we have no recombination of the amplitudes (which corresponds to no rotations only phase shifting) taking Eq. \ref{unitary} with $\theta=\frac{\pi}{2}$,$\phi=\pi$,$\Lambda=\gamma$ and $\psi= \frac{\pi}{2} $ we get:
+
+ 
+\begin{equation}
+M=\begin{pmatrix} 0& e^{i\gamma}  \\ e^{i\gamma} & 0 \end{pmatrix}, \label{mirror}
+\end{equation}
+
+$\theta=\frac{\pi}{2}$ was chosen because it flips the state while $\theta=2 \pi$ would give a diagonal matrix. We have now defined all the things we need to analyze the interferometer in the classical and quantum case.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{images/machzenhdercla.png}

@@ -1428,7 +1428,7 @@ When the optical chopper is in the vertical path we obtain the following detecti
  
  The notation previously used is not popular when dealing with nested interferometers. To be consistent with the existing literature we will use the same notation as Kwait et al. \cite{5}, where the arrangement shown in Fig. \ref{Nmach}, we see from the figure that we will have $N$ beam splitters and $N-1$ absorbers before the output:
  
-\begin{figure}[!htb]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{images/nmach.png}
 \caption{Nested Mach-Zehnders interferometer  with imperfect absorbers.}
@@ -1523,7 +1523,7 @@ Fig. \ref{Azuma1} shows different probabilities as we increase $N$. We can see t
 One may wonder how the system behaves for growing $N$ with the same kind of $BS$ for all $N$, maybe we could make the probability of detecting in $D_{1}$ grow as well, but after the analysis. We can see that even though it may grow for low $N$ it soon begins to lower and approaches zero very quickly for most values as we can see below.
 
 
-\begin{figure}[!htb]
+\begin{figure}[!t]
 \centering
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/BsFijo_azumaD1.png}
@@ -1585,7 +1585,7 @@ P_{D_{1}}=\cos^{2}{\left(\frac{\pi}{4} \right)} \cos^{2}{\left(\frac{\pi}{6} \ri
 
 Now, What happens for higher $N$? this analysis remains the same, this happens because as Kwait et al \cite{exp} reasoned if the photon is to be detected then it always was reflected so it did not interact with the object and we simply have the product of cosines. If we get analytic answers and set $\beta=0$ then we get the same answer as they did with their reasoning, If we have semitransparent objects then we just as we can see from the curves in the previous section a semitransparent object reduces our probability of detecting in $D_{1}$ as we can also see plotting the analytical answer vs $\beta$ 
 
-\begin{figure}[!htb]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{images/alonso_idea.png}
 \caption{Behaviour of the probability when we use different angles as we vary $\beta$ for $N=3$, we used $\theta_{1}=\frac{\pi}{4}$,$\theta_{2}=\frac{\pi}{6}$ and $\theta_{3}=\frac{\pi}{12}$ .}
@@ -1609,7 +1609,7 @@ f=\left(\frac{1-sgn(\sin(wt))}{2} \right)\beta+\frac{1+sgn(\sin(wt))}{2}.
 In the positive cycle we have $f_{positive}=1$. While on the negative cycle $f_{negative}=\beta$. For convenience, we will redefine $n=\abs{\beta}^{2}$ and write in terms of $n$, this way in the positive cycle we will have the case of the nested interferometer with no object which is the same as  $\beta=1$, but in the negative cycle, we will have  Azuma's case.
 
 
- \begin{figure}[!htb]
+ \begin{figure}[!t]
 \centering
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/ChopperD1.png}
@@ -1870,7 +1870,7 @@ In this chapter, we will describe the necessary materials and steps to realize a
 
 To produce a single-photon source we will use the SPDC process described in chapter 1, to do this experimentally we will follow the method described in \cite{maestria_procopio}. The experimental setup can be seen in Fig. \ref{single}.  We will use the following materials:
 
-\begin{figure}[!htb]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{images/SPDC_exp.png}
 \caption{Experimental setup of single photon source}
@@ -1919,7 +1919,7 @@ We aim to get the difference in optical paths to a minimum, that is we wish to a
 Both $D_{1}$ and $D_{2}$ are APDs placed in the same way as in Fig.1, in the output of  $BS_{2}$, the interference pattern requires special treatment of the counts since unlike the classical case where we inject coherent beams into the interferometer we are injecting single photons. This ``special treatment'' consists in only considering detector clicks when there's a simultaneous coincidence in $D_{idler}$, where $D_{idler}$ is an APD placed in the path of the idler photon as described in the SPDC section, we will use the same temporal window of ``simultaneously'' as described in the previous section that is 10ns. The experimental set up for this section is shown in Fig. \ref{newsingle}.
 
 
-\begin{figure}[!htb]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{images/machzehnder_single.png}
 \caption{Experimental setup of a single photon Mach-Zehnder Interferometer}

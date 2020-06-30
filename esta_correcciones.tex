@@ -949,29 +949,29 @@ Finally, we can also obtain an expression for each one of the angles in terms of
 
 
 \begin{align}
-\theta_{2}=\displaystyle \frac{\cos^{-1}\left[\frac{(P_{1D_{2}}-P_{2D_{2}})-(P_{1D_{1}}-P_{2D_{1}})}{1-|\beta|^2}\right]}{2},\\
-\theta_{1}=\displaystyle \frac{\cos^{-1}\left[\frac{(P_{1D_{2}}-P_{2D_{2}})+(P_{1D_{1}}-P_{1D_{1}})}{1-|\beta|^2}\right]}{2},
+\theta_{2}=\displaystyle \frac{\cos^{-1}\left[\frac{(P_{1D_{2}}-P_{2D_{2}})-(P_{1D_{1}}-P_{2D_{1}})}{1-|\beta|^2}\right]}{2},\label{thetasara}\\
+\theta_{1}=\displaystyle \frac{\cos^{-1}\left[\frac{(P_{1D_{2}}-P_{2D_{2}})+(P_{1D_{1}}-P_{1D_{1}})}{1-|\beta|^2}\right]}{2}\label{thetasara1},
 \end{align}
 
 
-where $\cos^{1}(x)$ is the arccosine of x. This way we can find the values for beam splitters such that the probabilities of detection, having the object in either arm, are as different as possible so we can distinguish if the object is in one path or the other.
+where $\cos^{1}(x)$ is the arccosine of x. These equations would allow us  to set the values of the beam splitters' transmitance and reflectance coefficients in order to obtain specific values of the probabilities of detection $P_{iD_{1}}$, $P_{iD_{2}}$. This fact will serve us to infere, in a series of measurements, some information about the location of te absorber in the interferometer.  
 
-For example let us say we want to make it so that if the object is in the horizontal path $P_{1D_{2}}=\frac{1}{3} \quad P_{1D_{1}}=\frac{1}{4}$  and  if the object (which will consider has $|\beta|^{2}=0.5$) was in the vertical path $P_{2D_{2}}=\frac{1}{4} \quad P_{2D_{1}}=\frac{1}{3}$. Then what values $\theta_{1},\theta_{2}$ of beam splitter would be needed substiting would yield
+For example, suppose we consider an interferometer such that, if the object is in the horizontal path, then $P_{1D_{2}}=\frac{1}{3} \quad P_{1D_{1}}=\frac{1}{4}$. Correspondingly,  if the object was in the vertical path $P_{2D_{2}}=\frac{1}{4} \quad P_{2D_{1}}=\frac{1}{3}$. Assuming, for instance that the object is characterized by $|\beta|^{2}=0.5$ the expressions \ref{thetasara}-\ref{thetasara1} for the values $\theta_{1},\theta_{2}$ defining the beam splitters' transmitance and reflectance coefficients would yield
 
 \begin{align*}
 \theta_{2} \approx \frac{\pi}{5},\\
 \theta_{1} = \frac{\pi}{4}.
 \end{align*}
 
-These equations allow us to design interferometers in which we could distinguish between the object in one path or the other by measuring several times and taking the statistics, however, we risk exploding the bomb doing this, since for example, in this case, $P_{det}=\frac{7}{12}$ and $P_{abs}=\frac{5}{12}$ so it would not be wise to try and tell in which path the object may be. Furthermore, the values for the beam splitters found may not be realizable.
+Thus, expressions \ref{thetasara}-\ref{thetasara1} offer the posibility to design interferometers by means of which we could distinguish between the object being placed in one path or the other by measuments and taking the statistics. From the pratical point of view, one should also consider the technical difficulties in constructing the very specific beam splitter needed to perform the measurements, we also risk exploding the bomb in the process, as for the previous values of detection probabilities we have $P_{det}=\frac{7}{12}$ and $P_{abs}=\frac{5}{12}$ (so it would not be wise to try and tell in which path the object may be).
  
 
 \pagebreak
 
 
-\section[BS as imperfect transmitter]{Beam splitter as imperfect trasmitter}
+\section[BS as an imperfect transmitter]{Beam splitter as an imperfect trasmitter}
 
-We will now study the case where we replaced the object of section 4.2 for a $BS$ as an imperfect transmitter. We now consider imperfect mirrors $M_{1}$ and $M_{2}$ such that $\gamma$ is arbitrary that is mirrors that induce an arbitrary phase, we will also consider the phases to be different so we can model misalignment as described in section 3.3.  Like in the previous cases we will first consider our imperfect transmitter in the vertical path as Fig. \ref{bs vertical} shows, as we can see from the figure when the photon is reflected by the object(a $BS$) it goes out of the interferometer's paths, and therefore it is lost instead of being absorbed.
+We will now study the case where we replaced the semi-transparent object discused in section 4.2 by a beam splitter $BS_{o}$ as an imperfect transmitter. In this case, we will consider imperfect mirrors $M_{1}$ and $M_{2}$ such that $\gamma$ is arbitrary, i.e, the mirrors, are assumed to induce an arbitrary phase. We will suppose that the phases are different so we can model misalignments in the interferometer as described in section 3.3.  Likewise  previous cases, we will first consider our imperfect transmitter is placed in the vertical path as shown in Fig. \ref{bs vertical}. As might be infered from the Figure, the event of the photon being absorbed by the object, is now modeled by the photon being reflected by $BS_{o}$ ( the photon goes out of the interferometer's paths, and does not interact anylonger with the rest of the optical elements).
 
 
 
@@ -982,33 +982,38 @@ We will now study the case where we replaced the object of section 4.2 for a $BS
 \label{bs vertical}
 \end{figure}
 
-Our imperfect transmitter is a $BS$ whose transmission and reflection coefficients are $\cos(\theta_{o})$ and $i\sin(\theta_{o})$, respectively. When a state interacts with our imperfect transmitter it becomes:
+Thus, let us assume that our imperfect transmitter is a beam splitter $BS_{o}$ whose transmission and reflection coefficients are $\cos(\theta_{o})$ and $i\sin(\theta_{o})$, respectively. When the photon in the state $\ket{2}$ interacts with our imperfect transmitter, its state is transformed as:
 
 \begin{align}
 \ket{2}\xrightarrow[\text{transmitter}]{\text{Imperfect}}i\sin(\theta_{o}) \ket{abs} +\cos(\theta_{o}) \ket{2}.
 \end{align}
 
-We consider the reflected photon to be lost since it goes out of our interferometer, and we denote that lost photon state by $\ket{abs}$, with that in mind now we can begin our calculation which is analogous to the ones from the previous sections:
+As the reflected photon goes out of the paths of the interferometer, and, thus out of reach of the remaining optical components, it might be considered as if it were absorbed by this component of the device. So, we denote its state by the vector $\ket{abs}$ as in the case of the states of truly absorbed photons of the previous experiments. With that in mind  now our model is an analogous form to those cases of the previous sections.
+
+Assuming the photon enters the interferometer though the horizontal channel, i.e being in the initial state $\ket{1}$, we have:
+
 
 
 \begin{align*}
 &\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\
-&\xrightarrow{\text{BS}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})(\cos(\theta_{o})\ket{2}+i\sin(\theta_{o})\ket{abs})\\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})\cos(\theta_{o})e^{i\gamma_{2}}\ket{1}-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\ &\xrightarrow{\text{BS2}}\cos(\theta_{1})e^{i\gamma_{1}}(\cos(\theta_{2})\ket{2}
-+i\sin(\theta_{2})\ket{1})+i\sin(\theta_{1})\cos(\theta_{o})e^{i\gamma_{2}}\\
-&\times (\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2})-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\
+&\xrightarrow{\text{BSo}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\left[\cos(\theta_{o})\ket{2}+i\sin(\theta_{o})\ket{abs}\right]\\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})\cos(\theta_{o})e^{i\gamma_{2}}\ket{1}-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\ &\xrightarrow{\text{BS2}}\cos(\theta_{1})e^{i\gamma_{1}}\left[\cos(\theta_{2})\ket{2}
++i\sin(\theta_{2})\ket{1}\right]+i\sin(\theta_{1})\cos(\theta_{o})e^{i\gamma_{2}}\\
+&\times \left[\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2}\right]-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\
 &=(\cos(\theta_{1})e^{i\gamma_{1}}\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\cos(\theta_{o})e^{i\gamma_{2}})\ket{2}-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\ &+(i\cos(\theta_{1})\sin(\theta_{2})e^{i\gamma_{1}}+
  i \sin(\theta_{1})\cos(\theta_{o})\cos(\theta_{2})e^{i\gamma_{2}})\ket{1}.\numberthis
 \end{align*}
-
+The detection probabilities can now be readily written:
 \begin{align}
- P_{2D_{1}}&=|i\cos(\theta_{1})\sin(\theta_{2})+i e^{i(\gamma_{2}-\gamma_{2})}\cos(\theta_{o}) \sin(\theta_{1})\cos(\theta_{2})|^2,\\
- P_{2D_{2}}&=|\cos(\theta_{1})\cos(\theta_{2})- e^{i(\gamma_{2}-\gamma_{2})}\cos(\theta_{o}) \sin(\theta_{1})\sin(\theta_{2})|^2,\\
+ P_{2D_{1}}&=|\cos(\theta_{1})\sin(\theta_{2})+ e^{i(\gamma_{2}-\gamma_{1})}\cos(\theta_{o}) \sin(\theta_{1})\cos(\theta_{2})|^2,\\
+ P_{2D_{2}}&=|\cos(\theta_{1})\cos(\theta_{2})- e^{i(\gamma_{2}-\gamma_{1})}\cos(\theta_{o}) \sin(\theta_{1})\sin(\theta_{2})|^2,\\
  P_{2abs}&=|\sin(\theta_{o}) \sin(\theta_{1})|^2.
 \end{align}
 
+It is worthwhile noting that $P_{2D_{1}}$ and $P_{2D_{2}}$ do not depend on $\gamma_{1}$ and $\gamma_{2}$ independently but only on the difference $\gamma_{2}-\gamma_{1}$ meaning that the detection probabilties are only sensitive to the relative phases introduced by the mirrors. Adittionally, as it might be expected the absortion probability depends only on the parameters of $BS_{1}$ and $BS_{o}$.
 
-Detection probabilities are shown in Fig. \ref{P_bs}, where we can see that for certain values of $\theta_{i}$ where $i=1,2,o$ the probabilities of detection in $D_{2}$ can be close to one:
+we show the plots for the detection probabilities $P_{2abs}$, $P_{2D_{1}}$ and $P_{2D_{2}}$ in Fig. \ref{P_bs}, as functions of $\theta_{1}$ and $\theta_{2}$ for the particular values of $\theta_{o}=\frac{\pi}{3}$ and $\gamma_{2}-\gamma_{1}=\pi$. There we can see the oscilatory behavious in both parameters:
 
+\todo{arreglar graficas}
 
 \begin{figure}[H]
 \centering
@@ -1027,14 +1032,15 @@ Detection probabilities are shown in Fig. \ref{P_bs}, where we can see that for 
 \caption{$P_{2D_{2}}$}
 \label{fig:BS2}
 \end{subfigure}
-\caption{Probability distributions with imperfect absorber in vertical path and $\theta_{o}=\frac{\pi}{3}$ y $\gamma_{2}-\gamma_{1}=\pi$.}
+\caption{Probability distributions of detection and absorption of the photon with the imperfect absorber placed in the vertical path. In these plots $\theta_{o}=\frac{\pi}{3}$ and $\gamma_{2}-\gamma_{1}=\pi$.}
 \label{P_bs}
 \end{figure}
 
+\todo{show different values}
 
 
 
-Repeating the same calculation with the object in the horizontal path we obtain the following probabilities
+Repeating the same calculation with the beam splitter $BS_{o}$ in the horizontal path we obtain the following detection probabilities
 
 
 
@@ -1044,8 +1050,7 @@ P_{1D_{2}}&=|\cos(\theta_{1})\cos(\theta_{o})\cos(\theta_{2})e^{i(\gamma_{1}-\ga
 P_{1abs}&=|\sin(\theta_{o}) \cos(\theta_{1})|^2 .
 \end{align}
 
-which are shown graphically in Fig. \ref{P_bs2}. We can see they are quite different and that is because we are always launching our photon from the same path, therefore, the situation is not symmetrical
-
+which are shown graphically in Fig. \ref{P_bs2} as functions of $\theta_{1}$ and $\theta_{2}$, for the same values of $\theta_{o}$ and $\gamma_{2}-\gamma_{1}$ than those of Fig. \ref{P_{bs}}. We can see they are quite different, valleys in one are hills on the other and one the reasons is that we are always launching the incident photon from the same input channel, so that the initial conditions are not symetrical.
 
 \begin{figure}[H]
 \centering
@@ -1061,19 +1066,16 @@ which are shown graphically in Fig. \ref{P_bs2}. We can see they are quite diffe
 \end{subfigure}
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/P11d2.png}
-\caption{$P_{1D_{1}}$}
+\caption{$P_{1D_{2}}$}
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probabilities distribution in the Horizontal path for $\theta_{o}=\frac{\pi}{3}$ y $\gamma_{2}-\gamma_{1}=\pi$}
+\caption{Probability distributions of detection and absorption of the photon with the imperfect absorber placed in the horizontal path. In these plots $\theta_{o}=\frac{\pi}{3}$ and $\gamma_{2}-\gamma_{1}=\pi$.}
 \label{P_bs2}
 \end{figure}
 
+\todo{check it is the same using the other path}
 
-
-
-
-
-This analysis is totally consistent with Z. Blanco's work \cite{zuri,azuri} when one takes the case $\beta=\cos(\theta_{o})$, $\alpha=i \sin(\theta_{o})$ and $\gamma_{2}-\gamma_{1}=0$. However, the advantage of this setup is that our ``absorbed'' photon, is not absorbed but goes out of our interferometer so we can measure all outputs of the interferometer by placing a detector, say $D_{abs}$, in the path the ``lost photon" would follow.
+Our results are totally consistent with those reported in \cite{zuri,azuri} by taking $\beta=\cos(\theta_{o})$, $\alpha=i \sin(\theta_{o})$ and $\gamma_{2}-\gamma_{1}=0$. One of the advantages of this setup is that the ``absorbed'' photon, is not really absorbed but redirected through another path and can be monitored as well, by a third detector, say $D_{abs}$, enabling, thus the posibility of correlating the absorption and detection probabilities.
 
 \section{$N$ Beam Splitters as imperfect transmitter }
 

@@ -1,14 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  27 JUN 2020 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  30 JUN 2020 18:52
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**esta_correcciones.tex
-(./esta_correcciones.tex
-LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14>
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+**./esta_correcciones.tex
+(esta_correcciones.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-03>
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\book.cls"
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\bk10.clo"
 File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
@@ -23,37 +21,41 @@ File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) (./setup/packages.tex
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(setup/packages.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) ("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.st
+y"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color
+.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl.
+sty"
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen135
 \ar@mcellbox=\box45
 \extrarowheight=\dimen136
-\NC@list=\toks16
+\NC@list=\toks17
 \extratabsurround=\skip49
 \backup@length=\skip50
 \ar@cellbox=\box46
 )
-\everycr=\toks17
+\everycr=\toks18
 \minrowclearance=\skip51
 )
 \rownum=\count176
@@ -67,60 +69,75 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\dvipsnam.
+def"
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\svgnam.def"
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/x11nam.def
+) ("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\x11nam.de
+f"
 File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/was\gensymb.sty"
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\afterpage.st
+y"
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks18
+\AP@output=\toks19
 \AP@partial=\box47
 \AP@footins=\box48
 )
-(/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/physics\physics.st
+y"
 Package: physics 
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-02-14 L3 programming layer (loader) 
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse\
+xparse.sty"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty
+"
+Package: expl3 2020-06-03 L3 programming layer (loader) 
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
+d-pdfmode.def"
+File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count177
 \l__pdf_internal_box=\box49
 ))
-Package: xparse 2020-02-14 L3 Experimental document command parser
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse\
+xparse-generic.tex"
 \l__xparse_current_arg_int=\count178
 \g__xparse_grabber_int=\count179
 \l__xparse_m_args_int=\count180
 \l__xparse_v_nesting_int=\count181
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+))
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
+y"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
+\@emptytoks=\toks20
 \ex@=\dimen137
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen138
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count182
@@ -143,38 +160,42 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count189
 \dspbrk@lvl=\count190
-\tag@help=\toks20
+\tag@help=\toks21
 \row@=\count191
 \column@=\count192
 \maxfields@=\count193
-\andhelp@=\toks21
+\andhelp@=\toks22
 \eqnshift@=\dimen140
 \alignsep@=\dimen141
 \tagshift@=\dimen142
 \tagwidth@=\dimen143
 \totwidth@=\dimen144
 \lineht@=\dimen145
-\@envbody=\toks22
+\@envbody=\toks23
 \multlinegap=\skip53
 \multlinetaggap=\skip54
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks24
+\KV@toks@=\toks25
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
@@ -182,16 +203,18 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 \Gin@req@height=\dimen146
 \Gin@req@width=\dimen147
 )
-(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/placeins\placeins.
+sty"
 Package: placeins 2005/04/18  v 2.2
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pdfpages.
+sty"
 Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count194
 \calc@Bcount=\count195
@@ -204,35 +227,41 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count196
 \calc@Cskip=\skip57
 )
-(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eso-pic\eso-pic.st
+y"
 Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 
-(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegshi\atbegsh
+i.sty"
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infwar
+err.sty"
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.
+sty"
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 )))
 \AM@pagewidth=\dimen150
 \AM@pageheight=\dimen151
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pppdftex.
+def"
 File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box52
-\AM@global@opts=\toks25
+\AM@global@opts=\toks26
 \AM@pagecnt=\count197
-\AM@toc@title=\toks26
+\AM@toc@title=\toks27
 \c@AM@survey=\count198
 \AM@templatesizebox=\box53
 )
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.
+sty"
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen152
 \lightrulewidth=\dimen153
@@ -252,14 +281,17 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count268
 \@thisrulewidth=\dimen164
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaption
+.sty"
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
+y"
+Package: caption 2020/05/10 v3.4j Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.s
+ty"
+Package: caption3 2020/05/10 v1.11 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen165
 \captionmargin@=\dimen166
@@ -276,46 +308,60 @@ Package caption Info: Standard document class detected.
 \c@subfigure=\count271
 \c@subtable=\count272
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\rotating.
+sty"
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \c@r@tfl@t=\count273
 \rotFPtop=\skip58
 \rotFPbot=\skip59
 \rot@float@box=\box54
-\rot@mess@toks=\toks27
+\rot@mess@toks=\toks28
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks28
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendlayer\
+tikz.sty"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf
+.sty"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfr
+cs.sty"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
+futil-common.tex"
+\pgfutil@everybye=\toks29
 \pgfutil@tempdima=\dimen172
 \pgfutil@tempdimb=\dimen173
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
-ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
+futil-common-lists.tex"))
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
+futil-latex.def"
 \pgfutil@abb=\box55
-(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
+frcs.code.tex"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.revision
+.tex")
 Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
 ))
 Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf
+core.sty"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/systemlayer\pg
+fsys.sty"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\
+pgfsys.code.tex"
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks29
-\pgfkeys@temptoks=\toks30
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
+fkeys.code.tex"
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
-ex
-\pgfkeys@tmptoks=\toks31
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
+fkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks32
 ))
 \pgf@x=\dimen174
 \pgf@y=\dimen175
@@ -333,69 +379,80 @@ ex
 \c@pgf@countb=\count275
 \c@pgf@countc=\count276
 \c@pgf@countd=\count277
-\t@pgf@toka=\toks32
-\t@pgf@tokb=\toks33
-\t@pgf@tokc=\toks34
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
 \pgf@sys@id@count=\count278
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\
+pgf.cfg"
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\
+pgfsys-pdftex.def"
 File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
-f
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\
+pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
-tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\
+pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfsyssoftpath@smallbuffer@items=\count279
 \pgfsyssoftpath@bigbuffer@items=\count280
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
-tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\
+pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcore.code.tex"
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+.code.tex"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+calc.code.tex"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+util.code.tex")
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+parser.code.tex"
 \pgfmath@dimen=\dimen184
 \pgfmath@count=\count281
 \pgfmath@box=\box56
-\pgfmath@toks=\toks35
-\pgfmath@stack@operand=\toks36
-\pgfmath@stack@operation=\toks37
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
-ric.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
-e.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
-.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
-thmetics.code.tex)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+functions.code.tex"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+functions.basic.code.tex")
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+functions.trigonometric.code.tex")
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+functions.random.code.tex")
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+functions.comparison.code.tex")
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+functions.base.code.tex")
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+functions.round.code.tex")
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+functions.misc.code.tex")
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+functions.integerarithmetics.code.tex")))
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+float.code.tex"
 \c@pgfmathroundto@lastzeros=\count282
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
-x
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfint.
+code.tex")
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@picminx=\dimen185
 \pgf@picmaxx=\dimen186
@@ -412,117 +469,133 @@ File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@zx=\dimen197
 \pgf@zy=\dimen198
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
-code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@path@lastx=\dimen199
 \pgf@path@lasty=\dimen256
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
-.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@shorten@end@additional=\dimen257
 \pgf@shorten@start@additional=\dimen258
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
-x
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
 \pgf@picture@serial@count=\count283
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
-ode.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgflinewidth=\dimen259
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
-s.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@pt@x=\dimen260
 \pgf@pt@y=\dimen261
 \pgf@pt@temp=\dimen262
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcorequick.code.tex"
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
-ex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
-.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcorepathprocessing.code.tex"
 File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
-x
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowsep=\dimen263
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen264
 \pgf@sys@shading@range@num=\count284
 \pgf@shadingcount=\count285
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
-tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfexternal@startupbox=\box60
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
-x
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
-ode.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcoretransparency.code.tex"
 File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
-tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
+gfcorerdf.code.tex"
 File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfm
+oduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfnodeparttextbox=\box61
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfm
+oduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
-.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\
+pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@nodesepstart=\dimen265
 \pgf@nodesepend=\dimen266
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
-.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\
+pgfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
-)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+))
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgff
+or.sty"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfk
+eys.sty"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
+fkeys.code.tex"))
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.s
+ty"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+.code.tex"))
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
+ffor.code.tex"
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
+.code.tex")
 \pgffor@iter=\dimen267
 \pgffor@skip=\dimen268
-\pgffor@stack=\toks38
-\pgffor@toks=\toks39
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
+r/tikz\tikz.code.tex"
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
-.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pg
+flibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@plot@mark@count=\count286
 \pgfplotmarksize=\dimen269
@@ -544,7 +617,8 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikznumberofcurrentchild=\count289
 \tikz@fig@count=\count290
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfm
+odulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfmatrixcurrentrow=\count291
 \pgfmatrixcurrentcolumn=\count292
@@ -552,177 +626,205 @@ File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 \tikz@expandcount=\count294
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarytopaths.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
+r/tikz/libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count295
-\float@exts=\toks40
+\float@exts=\toks41
 \float@box=\box66
-\@float@everytoks=\toks41
+\@float@everytoks=\toks42
 \@floatcapt=\box67
 )
-(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/parskip\parskip.st
+y"
+Package: parskip 2020-05-19 v2.0e non-zero parskip adjustments
 
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoption
+s.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetk
+eys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.
+sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count296
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\lscape.st
+y"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim.sty
+"
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks42
-\verbatim@line=\toks43
+\every@verbatim=\toks43
+\verbatim@line=\toks44
 \verbatim@in@stream=\read3
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/02/14 3.40 The Babel package
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2020/02/14 3.40 Babel switching mechanism
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/australian.ldf
-Language: australian 2017/06/06 v3.3r English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/02/14 3.40 Babel common definitions
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2020/05/13 3.44 The Babel package
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2020/05/13 3.44 Babel common definitions
 \babel@savecnt=\count297
 \U@D=\dimen278
+\l@babelnohyphens=\language79
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
+ef")
 \bbl@readstream=\read4
-\bbl@dirlevel=\count298
 )
+\bbl@dirlevel=\count298
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\aust
+ralian.ldf"
+Language: australian 2017/06/06 v3.3r English support from the babel system
+
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\engl
+ish.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language54) on input line 105.
+(babel)             (\language73) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language54) on input line 108.
+(babel)             (\language73) on input line 108.
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titlesec.
+sty"
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box68
 \beforetitleunit=\skip60
 \aftertitleunit=\skip61
 \ttl@plus=\dimen279
 \ttl@minus=\dimen280
-\ttl@toksa=\toks44
+\ttl@toksa=\toks45
 \titlewidth=\dimen281
 \titlewidthlast=\dimen282
 \titlewidthfirst=\dimen283
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
+sty"
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexc
+mds.sty"
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kvd
+efinekeys.sty"
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape\pdfesc
+ape.sty"
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hycolor.st
+y"
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro\letltx
+macro.sty"
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\auxhook.st
+y"
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen284
 \Hy@linkcounter=\count299
 \Hy@pagecounter=\count300
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
+f"
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\intcalc.
+sty"
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmds\etexcmd
+s.sty"
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count301
-\pdfmajorversion=\count302
-Package hyperref Info: Hyper figures OFF on input line 4547.
-Package hyperref Info: Link nesting OFF on input line 4552.
-Package hyperref Info: Hyper index ON on input line 4555.
-Package hyperref Info: Plain pages OFF on input line 4562.
-Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count303
-
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count302
+ ("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5159.
+LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen285
 
-(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.st
+y"
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcalc\bigin
+tcalc.sty"
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count304
+\Fld@menulength=\count303
 \Field@Width=\dimen286
 \Fld@charsize=\dimen287
-Package hyperref Info: Hyper figures OFF on input line 6430.
-Package hyperref Info: Link nesting OFF on input line 6435.
-Package hyperref Info: Hyper index ON on input line 6438.
-Package hyperref Info: backreferencing OFF on input line 6445.
-Package hyperref Info: Link coloring OFF on input line 6450.
-Package hyperref Info: Link coloring with OCG OFF on input line 6455.
-Package hyperref Info: PDF/A mode OFF on input line 6460.
-LaTeX Info: Redefining \ref on input line 6500.
-LaTeX Info: Redefining \pageref on input line 6504.
-\Hy@abspage=\count305
-\c@Item=\count306
-\c@Hfootnote=\count307
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
+ef"
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/atveryend\atveryen
+d.sty"
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \AP@enddocument detected (standard20110627).
 )
-\Fld@listcount=\count308
-\c@bookmark@seq@number=\count309
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
 
-(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\rer
+unfilecheck.sty"
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecounter\un
+iquecounter.sty"
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -730,17 +832,19 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip62
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mathtools\mathtool
+s.sty"
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
 
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mathtools\mhsetup.
+sty"
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
-LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count310
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count309
 \l_MT_multwidth_dim=\dimen288
 \origjot=\skip63
 \l_MT_shortvdotswithinadjustabove_dim=\dimen289
@@ -749,8 +853,11 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_below_intertext_sep=\dimen292
 \l_MT_above_shortintertext_sep=\dimen293
 \l_MT_below_shortintertext_sep=\dimen294
+\xmathstrut@box=\box69
+\xmathstrut@dim=\dimen295
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -758,216 +865,234 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
+ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\mathrsfs.
+sty"
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ncctools/nccmath.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ncctools\nccmath.s
+ty"
 Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
-\NCC@fracrulewidth=\dimen295
+\NCC@fracrulewidth=\dimen296
 )
-(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem.
+sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip64
-\enit@outerparindent=\dimen296
-\enit@toks=\toks45
-\enit@inbox=\box69
-\enit@count@id=\count311
-\enitdp@description=\count312
+\enit@outerparindent=\dimen297
+\enit@toks=\toks46
+\enit@inbox=\box70
+\enit@count@id=\count310
+\enitdp@description=\count311
 )
-(/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/todonotes\todonote
+s.sty"
 Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
 Package: todonotes 2018/11/22
 
-(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.st
+y"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks46
-\XKV@tempa@toks=\toks47
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.
+tex"
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils
+.tex"
+\XKV@toks=\toks47
+\XKV@tempa@toks=\toks48
 )
-\XKV@depth=\count313
+\XKV@depth=\count312
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarypositioning.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
+r/tikz/libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryshadows.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
+r/tikz/libraries\tikzlibraryshadows.code.tex"
 File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryfadings.code.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
+r/tikz/libraries\tikzlibraryfadings.code.tex"
 File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
-.tex
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pg
+flibraryfadings.code.tex"
 File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-\c@@todonotes@numberoftodonotes=\count314
+\c@@todonotes@numberoftodonotes=\count313
 )
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
-Package: glossaries 2020/02/13 v4.45 (NLCT)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/glossaries/base\gl
+ossaries.sty"
+Package: glossaries 2020/03/19 v4.46 (NLCT)
 
-(/usr/share/texlive/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mfirstuc\mfirstuc.
+sty"
 Package: mfirstuc 2017/11/14 v2.06 (NLCT)
-\@glsmfirst=\toks48
-\@glsmrest=\toks49
+\@glsmfirst=\toks49
+\@glsmrest=\toks50
 )
-(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/textcase\textcase.
+sty"
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty
+) ("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xfor\xfor.sty"
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/datatool\datatool-
+base.sty"
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
-(/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/substr\substr.sty"
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count315
+\c@su@anzahl=\count314
 )
-(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/datatool\datatool-
+fp.sty"
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
-
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+ ("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp.sty"
 Package: fp 1995/04/02
-
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\defpattern.sty"
 Package: defpattern 1994/10/12
-\actioncount=\count316
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
+\actioncount=\count315
+) ("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-basic.sty"
 Package: fp-basic 1996/05/13
-\FP@xs=\count317
-\FP@xia=\count318
-\FP@xib=\count319
-\FP@xfa=\count320
-\FP@xfb=\count321
-\FP@rega=\count322
-\FP@regb=\count323
-\FP@regs=\count324
-\FP@times=\count325
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
+\FP@xs=\count316
+\FP@xia=\count317
+\FP@xib=\count318
+\FP@xfa=\count319
+\FP@xfb=\count320
+\FP@rega=\count321
+\FP@regb=\count322
+\FP@regs=\count323
+\FP@times=\count324
+) ("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-addons.sty
+"
 Package: fp-addons 1995/03/15
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
+) ("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-snap.sty"
 Package: fp-snap 1995/04/05
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
+) ("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-exp.sty"
 Package: fp-exp 1995/04/03
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-trigo.sty"
 Package: fp-trigo 1995/04/14
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-pas.sty"
 Package: fp-pas 1994/08/29
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-random.sty"
 Package: fp-random 1995/02/23
-\FPseed=\count326
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
+\FPseed=\count325
+) ("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-eqn.sty"
 Package: fp-eqn 1995/04/03
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-upn.sty"
 Package: fp-upn 1996/10/21
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-eval.sty"
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks50
-\@dtl@tmpcount=\count327
+\@dtl@toks=\toks51
+\@dtl@tmpcount=\count326
 \dtl@tmplength=\skip65
-\dtl@sortresult=\count328
-\@dtl@numgrpsepcount=\count329
-\@dtl@datatype=\count330
-\dtl@codeA=\count331
-\dtl@codeB=\count332
-\@dtl@foreach@level=\count333
+\dtl@sortresult=\count327
+\@dtl@numgrpsepcount=\count328
+\@dtl@datatype=\count329
+\dtl@codeA=\count330
+\dtl@codeB=\count331
+\@dtl@foreach@level=\count332
 )
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
-307.sty
-Package: glossaries-compatible-307 2020/02/13 v4.45 (NLCT)
-) (/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/glossaries/base\gl
+ossaries-compatible-307.sty"
+Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
+)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tracklang\tracklan
+g.sty"
 Package: tracklang 2019/11/30 v1.4 (NLCT) Track Languages
 
-(/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex))
-(/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/tracklang\trackl
+ang.tex"))
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\transla
+tor.sty"
 Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 )
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries-english/glossaries-english.
-ldf
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/glossaries-english
+\glossaries-english.ldf"
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
-\gls@level=\count334
-\@gls@tmpb=\toks51
+\gls@level=\count333
+\@gls@tmpb=\toks52
 \gls@tmplen=\skip66
-\glskeylisttok=\toks52
-\glslabeltok=\toks53
-\glsshorttok=\toks54
-\glslongtok=\toks55
+\glskeylisttok=\toks53
+\glslabeltok=\toks54
+\glsshorttok=\toks55
+\glslongtok=\toks56
 
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
-y
-Package: glossary-hypernav 2020/02/13 v4.45 (NLCT)
-) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
-Package: glossary-list 2020/02/13 v4.45 (NLCT)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/glossaries/styles\
+glossary-hypernav.sty"
+Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
+)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/glossaries/styles\
+glossary-list.sty"
+Package: glossary-list 2020/03/19 v4.46 (NLCT)
 \glslistdottedwidth=\skip67
-) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
-Package: glossary-long 2020/02/13 v4.45 (NLCT)
+)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/glossaries/styles\
+glossary-long.sty"
+Package: glossary-long 2020/03/19 v4.46 (NLCT)
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\longtable.st
+y"
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTleft=\skip68
 \LTright=\skip69
 \LTpre=\skip70
 \LTpost=\skip71
-\LTchunksize=\count335
-\LTcapwidth=\dimen297
-\LT@head=\box70
-\LT@firsthead=\box71
-\LT@foot=\box72
-\LT@lastfoot=\box73
-\LT@cols=\count336
-\LT@rows=\count337
-\c@LT@tables=\count338
-\c@LT@chunks=\count339
-\LT@p@ftn=\toks56
+\LTchunksize=\count334
+\LTcapwidth=\dimen298
+\LT@head=\box71
+\LT@firsthead=\box72
+\LT@foot=\box73
+\LT@lastfoot=\box74
+\LT@cols=\count335
+\LT@rows=\count336
+\c@LT@tables=\count337
+\c@LT@chunks=\count338
+\LT@p@ftn=\toks57
 )
 \glsdescwidth=\skip72
 \glspagelistwidth=\skip73
 )
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
-Package: glossary-super 2020/02/13 v4.45 (NLCT)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/glossaries/styles\
+glossary-super.sty"
+Package: glossary-super 2020/03/19 v4.46 (NLCT)
 
-(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/supertabular\super
+tabular.sty"
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count340
-\ST@wd=\dimen298
+\c@tracingst=\count339
+\ST@wd=\dimen299
 \ST@rightskip=\skip74
 \ST@leftskip=\skip75
 \ST@parfillskip=\skip76
-\ST@pageleft=\dimen299
-\ST@headht=\dimen300
-\ST@tailht=\dimen301
-\ST@pagesofar=\dimen302
-\ST@pboxht=\dimen303
-\ST@lineht=\dimen304
-\ST@prevht=\dimen305
-\ST@toadd=\dimen306
-\ST@dimen=\dimen307
-\ST@pbox=\box74
+\ST@pageleft=\dimen300
+\ST@headht=\dimen301
+\ST@tailht=\dimen302
+\ST@pagesofar=\dimen303
+\ST@pboxht=\dimen304
+\ST@lineht=\dimen305
+\ST@prevht=\dimen306
+\ST@toadd=\dimen307
+\ST@dimen=\dimen308
+\ST@pbox=\box75
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
-Package: glossary-tree 2020/02/13 v4.45 (NLCT)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/glossaries/styles\
+glossary-tree.sty"
+Package: glossary-tree 2020/03/19 v4.46 (NLCT)
 \glstreeindent=\skip77
 ))
 \glswrite=\write4
@@ -981,12 +1106,9 @@ ine 50.
 
 Package glossaries Info: Writing glossary file esta_correcciones.acn on input l
 ine 50.
-) (./esta_correcciones.aux
+) (esta_correcciones.aux
 
 LaTeX Warning: Label `joint' multiply defined.
-
-
-LaTeX Warning: Label `fig:BS2' multiply defined.
 
 
 LaTeX Warning: Label `fig:BS2' multiply defined.
@@ -1313,28 +1435,28 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
+df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count341
-\scratchdimen=\dimen308
-\scratchbox=\box75
-\nofMPsegments=\count342
-\nofMParguments=\count343
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count344
-\MPscratchDim=\dimen309
-\MPnumerator=\count345
-\makeMPintoPDFobject=\count346
-\everyMPtoPDFconversion=\toks58
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count340
+\scratchdimen=\dimen309
+\scratchbox=\box76
+\nofMPsegments=\count341
+\nofMParguments=\count342
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count343
+\MPscratchDim=\dimen310
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
+\everyMPtoPDFconversion=\toks59
+)
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+)
 LaTeX Info: Redefining \celsius on input line 23.
 Package gensymb Info: Faking symbols for \degree and \celsius on input line 23.
 
@@ -1347,8 +1469,10 @@ Package gensymb Info: Using \Omega for \ohm on input line 23.
 
 Package gensymb Warning: Not defining \micro.
 
-\AtBeginShipoutBox=\box76
-(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+\AtBeginShipoutBox=\box77
+
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdflscape\pdflscap
+e.sty"
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
@@ -1357,75 +1481,60 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\ltcaption.
+sty"
 Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 Package hyperref Info: Link coloring OFF on input line 23.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
+ty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.
+sty"
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\g
+ettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count347
+\c@section@level=\count346
 )
 LaTeX Info: Redefining \ref on input line 23.
 LaTeX Info: Redefining \pageref on input line 23.
 LaTeX Info: Redefining \nameref on input line 23.
-
-(./esta_correcciones.out) (./esta_correcciones.out)
+ (esta_correcciones.out) (esta_correcciones.out)
 \@outlinefile=\write7
 \openout7 = `esta_correcciones.out'.
 
-
-
-! LaTeX Error: Command \blankpage already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28     \newpage}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<images/logo.jpg, id=175, 819.06pt x 179.67125pt>
+<images/logo.jpg, id=174, 819.06pt x 179.67125pt>
 File: images/logo.jpg Graphic file (type jpg)
 <use images/logo.jpg>
-Package pdftex.def Info: images/logo.jpg  used on input line 37.
+Package pdftex.def Info: images/logo.jpg  used on input line 34.
 (pdftex.def)             Requested size: 345.0pt x 75.68073pt.
-[1
+ [1
 
 \openout4 = `esta_correcciones.ist'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo.jpg>]
-(./esta_correcciones.toc
+{C:/Users/gerar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/lo
+go.jpg>] (esta_correcciones.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+("C:\Users\gerar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [2
 
@@ -1441,7 +1550,19 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[1] (./esta_correcciones.lof
+[1] (esta_correcciones.lof
+Overfull \hbox (3.3341pt too wide) in paragraph at lines 8--8
+ [][] [][]\OT1/cmr/m/n/10 Probability dis-tri-bu-tions of de-tec-tion and ab-so
+rp-tion of the photon 
+ []
+
+
+Overfull \hbox (3.3341pt too wide) in paragraph at lines 9--9
+ [][] [][]\OT1/cmr/m/n/10 Probability dis-tri-bu-tions of de-tec-tion and ab-so
+rp-tion of the photon 
+ []
+
+
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
@@ -1453,7 +1574,7 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[3] (./esta_correcciones.lot)
+[3] (esta_correcciones.lot)
 \tf@lot=\write10
 \openout10 = `esta_correcciones.lot'.
 
@@ -1465,7 +1586,7 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.86 \blankpage
+l.83 \blankpage
                {} [4]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
@@ -1474,7 +1595,7 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.95 \blankpage
+l.92 \blankpage
                {} [5]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
@@ -1483,27 +1604,27 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105 \blankpage
+l.102 \blankpage
                 {} [6]pdfTeX warning (ext4): destination with the same identifi
 er (name{page.VI}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.110 \blankpage
+l.107 \blankpage
                 {} [6]
 Chapter 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 114.
+(hyperref)                removing `\\' on input line 111.
 
-<images/TypeI.jpg, id=371, 900.36375pt x 388.45125pt>
+<images/TypeI.jpg, id=370, 900.36375pt x 388.45125pt>
 File: images/TypeI.jpg Graphic file (type jpg)
 <use images/TypeI.jpg>
-Package pdftex.def Info: images/TypeI.jpg  used on input line 131.
+Package pdftex.def Info: images/TypeI.jpg  used on input line 128.
 (pdftex.def)             Requested size: 155.24422pt x 79.66858pt.
-<images/typeII.jpg, id=372, 666.49pt x 288.07625pt>
+<images/typeII.jpg, id=371, 666.49pt x 288.07625pt>
 File: images/typeII.jpg Graphic file (type jpg)
 <use images/typeII.jpg>
-Package pdftex.def Info: images/typeII.jpg  used on input line 136.
+Package pdftex.def Info: images/typeII.jpg  used on input line 133.
 (pdftex.def)             Requested size: 155.24208pt x 79.66736pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1515,25 +1636,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.146 F
-       inally, in SPDC type-II the polarization of converted photons are ort...
-[1]
+l.142 
+       [1]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
-                       [2 <./images/TypeI.jpg> <./images/typeII.jpg>]
+l.160 
+       [2 <./images/TypeI.jpg> <./images/typeII.jpg>]
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.208 
-       [3]
+l.202 \end{equation}
+                     [3]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
@@ -1554,43 +1674,29 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [8]
-
-! Package amsmath Error: Multiple \label's: label 't2' will be lost.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.392 \end{align*}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [9]
-<images/SPDC_yy.png, id=498, 883.3pt x 662.475pt>
+<images/SPDC_yy.png, id=496, 883.3pt x 662.475pt>
 File: images/SPDC_yy.png Graphic file (type png)
 <use images/SPDC_yy.png>
-Package pdftex.def Info: images/SPDC_yy.png  used on input line 456.
+Package pdftex.def Info: images/SPDC_yy.png  used on input line 453.
 (pdftex.def)             Requested size: 155.24895pt x 116.43018pt.
-<images/SPDC_xx.png, id=500, 883.3pt x 662.475pt>
+<images/SPDC_xx.png, id=498, 883.3pt x 662.475pt>
 File: images/SPDC_xx.png Graphic file (type png)
 <use images/SPDC_xx.png>
-Package pdftex.def Info: images/SPDC_xx.png  used on input line 459.
+Package pdftex.def Info: images/SPDC_xx.png  used on input line 456.
 (pdftex.def)             Requested size: 155.24895pt x 116.43018pt.
-<images/SPDC_yx.png, id=501, 883.3pt x 662.475pt>
+<images/SPDC_yx.png, id=499, 883.3pt x 662.475pt>
 File: images/SPDC_yx.png Graphic file (type png)
 <use images/SPDC_yx.png>
-Package pdftex.def Info: images/SPDC_yx.png  used on input line 462.
+Package pdftex.def Info: images/SPDC_yx.png  used on input line 459.
 (pdftex.def)             Requested size: 155.24895pt x 116.43018pt.
-<images/SPDC_xy.png, id=502, 883.3pt x 662.475pt>
+<images/SPDC_xy.png, id=500, 883.3pt x 662.475pt>
 File: images/SPDC_xy.png Graphic file (type png)
 <use images/SPDC_xy.png>
-Package pdftex.def Info: images/SPDC_xy.png  used on input line 465.
+Package pdftex.def Info: images/SPDC_xy.png  used on input line 462.
 (pdftex.def)             Requested size: 155.24895pt x 116.43018pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
@@ -1598,10 +1704,10 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 [10]
 Chapter 2.
-<images/bS.png, id=519, 796.9775pt x 1127.21124pt>
+<images/bS.png, id=517, 796.9775pt x 1127.21124pt>
 File: images/bS.png Graphic file (type png)
 <use images/bS.png>
-Package pdftex.def Info: images/bS.png  used on input line 478.
+Package pdftex.def Info: images/bS.png  used on input line 475.
 (pdftex.def)             Requested size: 142.25798pt x 142.25984pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
@@ -1613,18 +1719,6 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [12 <./images/bS.png>]
-! Missing } inserted.
-<inserted text> 
-                }
-l.512 ...by $I=\frac{c n \epsilon_{0}}{2} |E|^{2]$
-                                                  , where $c$ is the speed o...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
@@ -1637,219 +1731,10 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [15]
-! Double superscript.
-l.620 ...qrt{n_{1}! n_{2}!}} \mathbf{a}^{\dagger}^
-                                                  {n_{1}}_{1}\mathbf{a}^{\da...
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-l.620 ...\dagger}^{n_{1}}_{1}\mathbf{a}^{\dagger}^
-                                                  {n_{2}}_{2} \ket{0,0}.
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [16]
-! Double superscript.
-<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}'^{\...
-l.640 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} \ket {0,0}. 
-l.640 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}'^{\...
-l.640 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} \ket {0,0}. 
-l.640 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}'^{\...
-l.647 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} U^{\dagger }_{...
-l.647 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...1}! n_{2}!}} \mathbf {a}^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}^{\d...
-l.647 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}^{n_{1}}_{1}\mathbf {a}^{\dagger }^
-                                                  {n_{2}}_{2}\ket {0,0}'. 
-l.647 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}! n_{2}!}} \mathbf {a}'^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}'^{\...
-l.647 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...^{n_{1}}_{1}\mathbf {a}'^{\dagger }^
-                                                  {n_{2}}_{2} U^{\dagger }_{...
-l.647 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...1}! n_{2}!}} \mathbf {a}^{\dagger }^
-                                                  {n_{1}}_{1}\mathbf {a}^{\d...
-l.647 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<argument> ...}^{n_{1}}_{1}\mathbf {a}^{\dagger }^
-                                                  {n_{2}}_{2}\ket {0,0}'. 
-l.647 \end{align}
-                 
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Misplaced \cr.
-\math@cr@@@ ->\cr 
-                  
-l.664 \end{align}
-                 
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \noalign.
-\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
-                                                  {\vskip #1\relax }
-l.664 \end{align}
-                 
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.664 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.664 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \vskip 
-l.664 \end{align}
-                 
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Extra }, or forgotten \endgroup.
-\math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
-                                                  
-l.664 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Misplaced \noalign.
-\black@ #1->\noalign 
-                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.664 \end{align}
-                 
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-Overfull \hbox (303.30087pt too wide) detected at line 664
-[]
- []
-
-! Extra }, or forgotten \endgroup.
-\endalign ->\math@cr \black@ \totwidth@ \egroup 
-                                                \ifingather@ \restorealignst...
-l.664 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: \begin{equation} on input line 662 ended by \end{align}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.664 \end{align}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.664 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.664 \end{align}
-                 
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
@@ -1864,10 +1749,10 @@ Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
 [19]
-<images/machzenhdercla.png, id=645, 845.40843pt x 597.73312pt>
+<images/machzenhdercla.png, id=642, 845.40843pt x 597.73312pt>
 File: images/machzenhdercla.png Graphic file (type png)
 <use images/machzenhdercla.png>
-Package pdftex.def Info: images/machzenhdercla.png  used on input line 717.
+Package pdftex.def Info: images/machzenhdercla.png  used on input line 714.
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
@@ -1888,30 +1773,22 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [23]
-Overfull \hbox (0.79959pt too wide) in paragraph at lines 840--840
+Overfull \hbox (0.79959pt too wide) in paragraph at lines 837--837
 |[]\OT1/cmr/bx/n/14.4 Single-photon Mach-Zehnder in-ter-fer-o-meter
  []
-
-<images/machzenhderbomb.png, id=689, 1127.21124pt x 796.9775pt>
-File: images/machzenhderbomb.png Graphic file (type png)
-<use images/machzenhderbomb.png>
-Package pdftex.def Info: images/machzenhderbomb.png  used on input line 847.
-(pdftex.def)             Requested size: 345.0pt x 243.92296pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [24]
-Overfull \hbox (109.2766pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 4.1.  SINGLE-PHOTON MACH-ZEHNDER INTERFEROMETER WITH A PERFECT
- ABSORBER \OT1/cmr/m/n/10 25
- []
+<images/machzenhderbomb.png, id=694, 845.40843pt x 597.73312pt>
+File: images/machzenhderbomb.png Graphic file (type png)
+<use images/machzenhderbomb.png>
+Package pdftex.def Info: images/machzenhderbomb.png  used on input line 844.
+(pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
-
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
 [25 <./images/machzenhderbomb.png>]
@@ -1931,90 +1808,103 @@ Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
 [29]
-<images/machzenhderbs.png, id=750, 845.40843pt x 597.73312pt>
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[30]
+<images/machzenhderbs.png, id=761, 845.40843pt x 597.73312pt>
 File: images/machzenhderbs.png Graphic file (type png)
 <use images/machzenhderbs.png>
-Package pdftex.def Info: images/machzenhderbs.png  used on input line 977.
+Package pdftex.def Info: images/machzenhderbs.png  used on input line 980.
 (pdftex.def)             Requested size: 344.99431pt x 213.3961pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[30 <./images/machzenhderbs.png>]
-<images/P1abs.png, id=759, 414.54875pt x 182.6825pt>
+[31 <./images/machzenhderbs.png>]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 1016.
+<images/P1abs.png, id=769, 415.5525pt x 183.084pt>
 File: images/P1abs.png Graphic file (type png)
 <use images/P1abs.png>
-Package pdftex.def Info: images/P1abs.png  used on input line 1013.
-(pdftex.def)             Requested size: 155.24664pt x 79.66693pt.
-<images/P1d1.png, id=760, 388.45125pt x 210.7875pt>
+Package pdftex.def Info: images/P1abs.png  used on input line 1021.
+(pdftex.def)             Requested size: 155.24844pt x 79.66882pt.
+<images/P1d1.png, id=770, 361.95226pt x 274.02374pt>
 File: images/P1d1.png Graphic file (type png)
 <use images/P1d1.png>
-Package pdftex.def Info: images/P1d1.png  used on input line 1018.
-(pdftex.def)             Requested size: 155.25327pt x 79.66908pt.
-<images/P1d2.png, id=761, 432.61626pt x 316.18124pt>
+Package pdftex.def Info: images/P1d1.png  used on input line 1026.
+(pdftex.def)             Requested size: 155.24982pt x 79.66972pt.
+<images/P1d2.png, id=771, 361.95226pt x 274.02374pt>
 File: images/P1d2.png Graphic file (type png)
 <use images/P1d2.png>
-Package pdftex.def Info: images/P1d2.png  used on input line 1023.
-(pdftex.def)             Requested size: 155.24664pt x 79.66748pt.
+Package pdftex.def Info: images/P1d2.png  used on input line 1031.
+(pdftex.def)             Requested size: 155.24982pt x 79.66972pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[31 <./images/P1abs.png (PNG copy)> <./images/P1d1.png (PNG copy)> <./images/P1
-d2.png (PNG copy)>]
-<images/P11abs.png, id=772, 367.3725pt x 167.62625pt>
+[32]
+
+LaTeX Warning: Reference `P_{bs}' on page 33 undefined on input line 1053.
+
+<images/P11abs.png, id=782, 388.45125pt x 333.6465pt>
 File: images/P11abs.png Graphic file (type png)
 <use images/P11abs.png>
-Package pdftex.def Info: images/P11abs.png  used on input line 1050.
-(pdftex.def)             Requested size: 155.24895pt x 70.8399pt.
-<images/P11d1.png, id=773, 438.63875pt x 281.05pt>
+Package pdftex.def Info: images/P11abs.png  used on input line 1058.
+(pdftex.def)             Requested size: 155.24895pt x 133.34932pt.
+<images/P11d1.png, id=783, 361.95226pt x 274.02374pt>
 File: images/P11d1.png Graphic file (type png)
 <use images/P11d1.png>
-Package pdftex.def Info: images/P11d1.png  used on input line 1055.
-(pdftex.def)             Requested size: 155.25267pt x 85.35774pt.
-<images/P11d2.png, id=774, 334.24875pt x 186.6975pt>
+Package pdftex.def Info: images/P11d1.png  used on input line 1063.
+(pdftex.def)             Requested size: 155.24982pt x 85.36043pt.
+<images/P11d2.png, id=784, 361.95226pt x 274.02374pt>
 File: images/P11d2.png Graphic file (type png)
 <use images/P11d2.png>
-Package pdftex.def Info: images/P11d2.png  used on input line 1060.
-(pdftex.def)             Requested size: 155.24895pt x 86.71657pt.
+Package pdftex.def Info: images/P11d2.png  used on input line 1068.
+(pdftex.def)             Requested size: 155.24895pt x 117.53522pt.
+
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[33 <./images/P1abs.png (PNG copy)> <./images/P1d1.png (PNG copy)> <./images/P1
+d2.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1080.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1075.
+(hyperref)                removing `math shift' on input line 1080.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1075.
-
-<images/machzenhderBSS.png, id=777, 1127.21124pt x 796.9775pt>
+<images/machzenhderBSS.png, id=796, 1127.21124pt x 796.9775pt>
 File: images/machzenhderBSS.png Graphic file (type png)
 <use images/machzenhderBSS.png>
-Package pdftex.def Info: images/machzenhderBSS.png  used on input line 1080.
+Package pdftex.def Info: images/machzenhderBSS.png  used on input line 1085.
 (pdftex.def)             Requested size: 344.99432pt x 227.61522pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[32 <./images/P11abs.png (PNG copy)> <./images/P11d1.png (PNG copy)> <./images/
+[34 <./images/P11abs.png (PNG copy)> <./images/P11d1.png (PNG copy)> <./images/
 P11d2.png (PNG copy)>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[33 <./images/machzenhderBSS.png>]
+[35 <./images/machzenhderBSS.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[34]
+[36]
 Chapter 5.
 
-Overfull \hbox (2.01822pt too wide) in paragraph at lines 1133--1133
+Overfull \hbox (2.01822pt too wide) in paragraph at lines 1138--1138
 |\OT1/cmr/bx/n/24.88 A Time-dependent trans-mit-
  []
 
-<images/machzenhderchopper.png, id=803, 1127.21124pt x 796.9775pt>
+<images/machzenhderchopper.png, id=821, 1127.21124pt x 796.9775pt>
 File: images/machzenhderchopper.png Graphic file (type png)
 <use images/machzenhderchopper.png>
-Package pdftex.def Info: images/machzenhderchopper.png  used on input line 1141
+Package pdftex.def Info: images/machzenhderchopper.png  used on input line 1146
 .
 (pdftex.def)             Requested size: 345.0pt x 243.92296pt.
 
@@ -2024,74 +1914,74 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
-[35]
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[36 <./images/machzenhderchopper.png>]
-<images/Pc2Abs.png, id=821, 361.35pt x 244.915pt>
-File: images/Pc2Abs.png Graphic file (type png)
-<use images/Pc2Abs.png>
-Package pdftex.def Info: images/Pc2Abs.png  used on input line 1198.
-(pdftex.def)             Requested size: 155.25066pt x 85.35529pt.
-<images/Pc2D21.png, id=822, 383.4325pt x 245.91875pt>
-File: images/Pc2D21.png Graphic file (type png)
-<use images/Pc2D21.png>
-Package pdftex.def Info: images/Pc2D21.png  used on input line 1203.
-(pdftex.def)             Requested size: 155.24835pt x 85.35612pt.
-<images/Pc2D22.png, id=823, 379.4175pt x 221.82875pt>
-File: images/Pc2D22.png Graphic file (type png)
-<use images/Pc2D22.png>
-Package pdftex.def Info: images/Pc2D22.png  used on input line 1208.
-(pdftex.def)             Requested size: 155.24954pt x 85.35524pt.
-<images/Pc2D11.png, id=824, 376.40625pt x 230.8625pt>
-File: images/Pc2D11.png Graphic file (type png)
-<use images/Pc2D11.png>
-Package pdftex.def Info: images/Pc2D11.png  used on input line 1213.
-(pdftex.def)             Requested size: 155.25226pt x 85.3579pt.
-<images/Pc2D12.png, id=825, 376.40625pt x 230.8625pt>
-File: images/Pc2D12.png Graphic file (type png)
-<use images/Pc2D12.png>
-Package pdftex.def Info: images/Pc2D12.png  used on input line 1218.
-(pdftex.def)             Requested size: 155.25226pt x 85.3579pt.
-
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
 [37]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[38 <./images/Pc2Abs.png (PNG copy)> <./images/Pc2D21.png (PNG copy)> <./images
+[38 <./images/machzenhderchopper.png>]
+<images/Pc2Abs.png, id=838, 361.95226pt x 263.18324pt>
+File: images/Pc2Abs.png Graphic file (type png)
+<use images/Pc2Abs.png>
+Package pdftex.def Info: images/Pc2Abs.png  used on input line 1203.
+(pdftex.def)             Requested size: 155.24982pt x 85.35684pt.
+<images/Pc2D21.png, id=839, 361.95226pt x 274.02374pt>
+File: images/Pc2D21.png Graphic file (type png)
+<use images/Pc2D21.png>
+Package pdftex.def Info: images/Pc2D21.png  used on input line 1208.
+(pdftex.def)             Requested size: 155.24982pt x 85.36043pt.
+<images/Pc2D22.png, id=840, 361.95226pt x 274.02374pt>
+File: images/Pc2D22.png Graphic file (type png)
+<use images/Pc2D22.png>
+Package pdftex.def Info: images/Pc2D22.png  used on input line 1213.
+(pdftex.def)             Requested size: 155.24982pt x 85.36043pt.
+<images/Pc2D11.png, id=841, 361.95226pt x 274.02374pt>
+File: images/Pc2D11.png Graphic file (type png)
+<use images/Pc2D11.png>
+Package pdftex.def Info: images/Pc2D11.png  used on input line 1218.
+(pdftex.def)             Requested size: 155.24982pt x 85.36043pt.
+<images/Pc2D12.png, id=842, 361.95226pt x 274.02374pt>
+File: images/Pc2D12.png Graphic file (type png)
+<use images/Pc2D12.png>
+Package pdftex.def Info: images/Pc2D12.png  used on input line 1223.
+(pdftex.def)             Requested size: 155.24982pt x 85.36043pt.
+
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[39]
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[40 <./images/Pc2Abs.png (PNG copy)> <./images/Pc2D21.png (PNG copy)> <./images
 /Pc2D22.png (PNG copy)> <./images/Pc2D11.png (PNG copy)> <./images/Pc2D12.png (
 PNG copy)>]
-<images/Pc1Abs.png, id=850, 361.35pt x 244.915pt>
+<images/Pc1Abs.png, id=866, 361.95226pt x 263.18324pt>
 File: images/Pc1Abs.png Graphic file (type png)
 <use images/Pc1Abs.png>
-Package pdftex.def Info: images/Pc1Abs.png  used on input line 1247.
-(pdftex.def)             Requested size: 120.75111pt x 85.35529pt.
-<images/Pc1D21.png, id=851, 361.35pt x 285.065pt>
+Package pdftex.def Info: images/Pc1Abs.png  used on input line 1252.
+(pdftex.def)             Requested size: 120.75354pt x 85.35684pt.
+<images/Pc1D21.png, id=867, 361.95226pt x 274.02374pt>
 File: images/Pc1D21.png Graphic file (type png)
 <use images/Pc1D21.png>
-Package pdftex.def Info: images/Pc1D21.png  used on input line 1252.
-(pdftex.def)             Requested size: 120.75111pt x 85.35486pt.
-<images/Pc1D22.png, id=852, 361.35pt x 285.065pt>
+Package pdftex.def Info: images/Pc1D21.png  used on input line 1257.
+(pdftex.def)             Requested size: 120.75354pt x 85.36043pt.
+<images/Pc1D22.png, id=868, 361.95226pt x 274.02374pt>
 File: images/Pc1D22.png Graphic file (type png)
 <use images/Pc1D22.png>
-Package pdftex.def Info: images/Pc1D22.png  used on input line 1257.
-(pdftex.def)             Requested size: 120.75111pt x 85.35486pt.
-<images/Pc1D11.png, id=853, 354.32375pt x 168.63pt>
+Package pdftex.def Info: images/Pc1D22.png  used on input line 1262.
+(pdftex.def)             Requested size: 120.75354pt x 85.36043pt.
+<images/Pc1D11.png, id=869, 361.95226pt x 274.02374pt>
 File: images/Pc1D11.png Graphic file (type png)
 <use images/Pc1D11.png>
-Package pdftex.def Info: images/Pc1D11.png  used on input line 1262.
-(pdftex.def)             Requested size: 120.74962pt x 85.35945pt.
-<images/Pc1D12.png, id=854, 348.30125pt x 214.8025pt>
+Package pdftex.def Info: images/Pc1D11.png  used on input line 1267.
+(pdftex.def)             Requested size: 120.75354pt x 85.36043pt.
+<images/Pc1D12.png, id=870, 361.95226pt x 274.02374pt>
 File: images/Pc1D12.png Graphic file (type png)
 <use images/Pc1D12.png>
-Package pdftex.def Info: images/Pc1D12.png  used on input line 1267.
-(pdftex.def)             Requested size: 120.74867pt x 85.359pt.
+Package pdftex.def Info: images/Pc1D12.png  used on input line 1272.
+(pdftex.def)             Requested size: 120.75354pt x 85.36043pt.
 
-Overfull \hbox (34.92851pt too wide) detected at line 1288
+Overfull \hbox (34.92851pt too wide) detected at line 1293
 []
  []
 
@@ -2099,43 +1989,38 @@ Overfull \hbox (34.92851pt too wide) detected at line 1288
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[39 <./images/Pc1Abs.png (PNG copy)> <./images/Pc1D21.png (PNG copy)> <./images
+[41 <./images/Pc1Abs.png (PNG copy)> <./images/Pc1D21.png (PNG copy)> <./images
 /Pc1D22.png (PNG copy)> <./images/Pc1D11.png (PNG copy)> <./images/Pc1D12.png (
 PNG copy)>]
-Overfull \hbox (101.18561pt too wide) detected at line 1295
-[]
- []
-
-
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[40]
-<images/p1cabs.png, id=871, 361.35pt x 244.915pt>
-File: images/p1cabs.png Graphic file (type png)
-<use images/p1cabs.png>
-Package pdftex.def Info: images/p1cabs.png  used on input line 1345.
-(pdftex.def)             Requested size: 137.99812pt x 85.35529pt.
-<images/p1cd21.png, id=872, 348.30125pt x 196.735pt>
-File: images/p1cd21.png Graphic file (type png)
-<use images/p1cd21.png>
-Package pdftex.def Info: images/p1cd21.png  used on input line 1350.
-(pdftex.def)             Requested size: 137.99467pt x 85.35687pt.
-<images/p1cd22.png, id=873, 348.30125pt x 196.735pt>
-File: images/p1cd22.png Graphic file (type png)
-<use images/p1cd22.png>
-Package pdftex.def Info: images/p1cd22.png  used on input line 1355.
-(pdftex.def)             Requested size: 137.99467pt x 85.35687pt.
-<images/p1cd11.png, id=874, 328.22626pt x 155.58125pt>
-File: images/p1cd11.png Graphic file (type png)
-<use images/p1cd11.png>
-Package pdftex.def Info: images/p1cd11.png  used on input line 1360.
-(pdftex.def)             Requested size: 137.99933pt x 85.35866pt.
-<images/p1cd12.png, id=875, 328.22626pt x 155.58125pt>
-File: images/p1cd12.png Graphic file (type png)
-<use images/p1cd12.png>
-Package pdftex.def Info: images/p1cd12.png  used on input line 1365.
-(pdftex.def)             Requested size: 137.99933pt x 85.35866pt.
+[42]
+<images/pcabs.png, id=889, 361.95226pt x 290.2845pt>
+File: images/pcabs.png Graphic file (type png)
+<use images/pcabs.png>
+Package pdftex.def Info: images/pcabs.png  used on input line 1350.
+(pdftex.def)             Requested size: 138.00168pt x 85.35855pt.
+<images/pcd21.png, id=890, 361.95226pt x 274.02374pt>
+File: images/pcd21.png Graphic file (type png)
+<use images/pcd21.png>
+Package pdftex.def Info: images/pcd21.png  used on input line 1355.
+(pdftex.def)             Requested size: 138.00168pt x 85.36043pt.
+<images/pcd22.png, id=891, 361.95226pt x 274.02374pt>
+File: images/pcd22.png Graphic file (type png)
+<use images/pcd22.png>
+Package pdftex.def Info: images/pcd22.png  used on input line 1360.
+(pdftex.def)             Requested size: 138.00168pt x 85.36043pt.
+<images/pcd11.png, id=892, 361.95226pt x 274.02374pt>
+File: images/pcd11.png Graphic file (type png)
+<use images/pcd11.png>
+Package pdftex.def Info: images/pcd11.png  used on input line 1365.
+(pdftex.def)             Requested size: 138.00168pt x 85.36043pt.
+<images/pcd12.png, id=893, 361.95226pt x 274.02374pt>
+File: images/pcd12.png Graphic file (type png)
+<use images/pcd12.png>
+Package pdftex.def Info: images/pcd12.png  used on input line 1370.
+(pdftex.def)             Requested size: 138.00168pt x 85.36043pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2144,48 +2029,48 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[41]
-<images/pcabs.png, id=890, 365.365pt x 197.73875pt>
-File: images/pcabs.png Graphic file (type png)
-<use images/pcabs.png>
-Package pdftex.def Info: images/pcabs.png  used on input line 1388.
-(pdftex.def)             Requested size: 137.9983pt x 85.3579pt.
-<images/pcd21.png, id=891, 361.35pt x 285.065pt>
-File: images/pcd21.png Graphic file (type png)
-<use images/pcd21.png>
-Package pdftex.def Info: images/pcd21.png  used on input line 1393.
-(pdftex.def)             Requested size: 137.99812pt x 85.35486pt.
-<images/pcd22.png, id=892, 361.35pt x 285.065pt>
-File: images/pcd22.png Graphic file (type png)
-<use images/pcd22.png>
-Package pdftex.def Info: images/pcd22.png  used on input line 1398.
-(pdftex.def)             Requested size: 137.99812pt x 85.35486pt.
-<images/pcd11.png, id=893, 360.34625pt x 200.75pt>
-File: images/pcd11.png Graphic file (type png)
-<use images/pcd11.png>
-Package pdftex.def Info: images/pcd11.png  used on input line 1403.
-(pdftex.def)             Requested size: 137.99419pt x 85.35896pt.
-<images/pcd12.png, id=894, 360.34625pt x 200.75pt>
-File: images/pcd12.png Graphic file (type png)
-<use images/pcd12.png>
-Package pdftex.def Info: images/pcd12.png  used on input line 1408.
-(pdftex.def)             Requested size: 137.99419pt x 85.35896pt.
+[43]
+<images/p1cabs.png, id=908, 361.95226pt x 290.2845pt>
+File: images/p1cabs.png Graphic file (type png)
+<use images/p1cabs.png>
+Package pdftex.def Info: images/p1cabs.png  used on input line 1393.
+(pdftex.def)             Requested size: 138.00168pt x 85.35855pt.
+<images/p1cd21.png, id=909, 361.95226pt x 274.02374pt>
+File: images/p1cd21.png Graphic file (type png)
+<use images/p1cd21.png>
+Package pdftex.def Info: images/p1cd21.png  used on input line 1398.
+(pdftex.def)             Requested size: 138.00168pt x 85.36043pt.
+<images/p1cd22.png, id=910, 361.95226pt x 274.02374pt>
+File: images/p1cd22.png Graphic file (type png)
+<use images/p1cd22.png>
+Package pdftex.def Info: images/p1cd22.png  used on input line 1403.
+(pdftex.def)             Requested size: 138.00168pt x 85.36043pt.
+<images/p1cd11.png, id=911, 361.95226pt x 274.02374pt>
+File: images/p1cd11.png Graphic file (type png)
+<use images/p1cd11.png>
+Package pdftex.def Info: images/p1cd11.png  used on input line 1408.
+(pdftex.def)             Requested size: 138.00168pt x 85.36043pt.
+<images/p1cd12.png, id=912, 361.95226pt x 274.02374pt>
+File: images/p1cd12.png Graphic file (type png)
+<use images/p1cd12.png>
+Package pdftex.def Info: images/p1cd12.png  used on input line 1413.
+(pdftex.def)             Requested size: 138.00168pt x 85.36043pt.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[42 <./images/p1cabs.png (PNG copy)> <./images/p1cd21.png (PNG copy)> <./images
-/p1cd22.png (PNG copy)> <./images/p1cd11.png (PNG copy)> <./images/p1cd12.png (
-PNG copy)>]
+[44 <./images/pcabs.png (PNG copy)> <./images/pcd21.png (PNG copy)> <./images/p
+cd22.png (PNG copy)> <./images/pcd11.png (PNG copy)> <./images/pcd12.png (PNG c
+opy)>]
 Chapter 6.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[43 <./images/pcabs.png (PNG copy)> <./images/pcd21.png (PNG copy)> <./images/p
-cd22.png (PNG copy)> <./images/pcd11.png (PNG copy)> <./images/pcd12.png (PNG c
-opy)>]
-<images/nmach.png, id=912, 845.40843pt x 597.73312pt>
+[45 <./images/p1cabs.png (PNG copy)> <./images/p1cd21.png (PNG copy)> <./images
+/p1cd22.png (PNG copy)> <./images/p1cd11.png (PNG copy)> <./images/p1cd12.png (
+PNG copy)>]
+<images/nmach.png, id=929, 845.40843pt x 597.73312pt>
 File: images/nmach.png Graphic file (type png)
 <use images/nmach.png>
 Package pdftex.def Info: images/nmach.png  used on input line 1435.
@@ -2194,22 +2079,22 @@ Package pdftex.def Info: images/nmach.png  used on input line 1435.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[44 <./images/nmach.png>]
+[46 <./images/nmach.png>]
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
-[45]
-<images/BS_Azuna.png, id=928, 642.4pt x 481.8pt>
+[47]
+<images/BS_Azuna.png, id=945, 642.4pt x 481.8pt>
 File: images/BS_Azuna.png Graphic file (type png)
 <use images/BS_Azuna.png>
 Package pdftex.def Info: images/BS_Azuna.png  used on input line 1503.
 (pdftex.def)             Requested size: 155.24759pt x 142.26208pt.
-<images/BS_AzunaD2.png, id=929, 642.4pt x 481.8pt>
+<images/BS_AzunaD2.png, id=946, 642.4pt x 481.8pt>
 File: images/BS_AzunaD2.png Graphic file (type png)
 <use images/BS_AzunaD2.png>
 Package pdftex.def Info: images/BS_AzunaD2.png  used on input line 1508.
 (pdftex.def)             Requested size: 155.24759pt x 142.26208pt.
-<images/absorbido_azuna.png, id=930, 642.4pt x 481.8pt>
+<images/absorbido_azuna.png, id=947, 642.4pt x 481.8pt>
 File: images/absorbido_azuna.png Graphic file (type png)
 <use images/absorbido_azuna.png>
 Package pdftex.def Info: images/absorbido_azuna.png  used on input line 1513.
@@ -2218,7 +2103,7 @@ Package pdftex.def Info: images/absorbido_azuna.png  used on input line 1513.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[46]
+[48]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 1523.
@@ -2235,19 +2120,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
-[47 <./images/BS_Azuna.png> <./images/BS_AzunaD2.png> <./images/absorbido_azuna
+[49 <./images/BS_Azuna.png> <./images/BS_AzunaD2.png> <./images/absorbido_azuna
 .png>]
-<images/BsFijo_azumaD1.png, id=950, 642.4pt x 481.8pt>
+<images/BsFijo_azumaD1.png, id=968, 642.4pt x 481.8pt>
 File: images/BsFijo_azumaD1.png Graphic file (type png)
 <use images/BsFijo_azumaD1.png>
 Package pdftex.def Info: images/BsFijo_azumaD1.png  used on input line 1531.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-<images/BsFijo_azumaD2.png, id=951, 642.4pt x 481.8pt>
+<images/BsFijo_azumaD2.png, id=969, 642.4pt x 481.8pt>
 File: images/BsFijo_azumaD2.png Graphic file (type png)
 <use images/BsFijo_azumaD2.png>
 Package pdftex.def Info: images/BsFijo_azumaD2.png  used on input line 1536.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-<images/BsFijo_azumaabs.png, id=952, 642.4pt x 481.8pt>
+<images/BsFijo_azumaabs.png, id=970, 642.4pt x 481.8pt>
 File: images/BsFijo_azumaabs.png Graphic file (type png)
 <use images/BsFijo_azumaabs.png>
 Package pdftex.def Info: images/BsFijo_azumaabs.png  used on input line 1541.
@@ -2256,105 +2141,69 @@ Package pdftex.def Info: images/BsFijo_azumaabs.png  used on input line 1541.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[48 <./images/BsFijo_azumaD1.png> <./images/BsFijo_azumaD2.png> <./images/BsFij
+[50 <./images/BsFijo_azumaD1.png> <./images/BsFijo_azumaD2.png> <./images/BsFij
 o_azumaabs.png>]
-<images/alonso_idea.png, id=964, 642.4pt x 563.10374pt>
+Overfull \vbox (6.44444pt too high) has occurred while \output is active []
+
+
+[51]
+<images/alonso_idea.png, id=990, 642.4pt x 563.10374pt>
 File: images/alonso_idea.png Graphic file (type png)
 <use images/alonso_idea.png>
 Package pdftex.def Info: images/alonso_idea.png  used on input line 1592.
 (pdftex.def)             Requested size: 345.0pt x 302.42178pt.
 
-Overfull \vbox (6.44444pt too high) has occurred while \output is active []
-
-
-[49]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[50 <./images/alonso_idea.png>]
+[52 <./images/alonso_idea.png>]
 Overfull \hbox (2.66867pt too wide) in paragraph at lines 1611--1612
 []\OT1/cmr/m/n/10 In the pos-it-ive cycle we have $\OML/cmm/m/it/10 f[] \OT1/cm
 r/m/n/10 = 1$. While on the neg-at-ive cycle $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n
 /10 =
  []
 
-<images/ChopperD1.png, id=980, 642.4pt x 481.8pt>
+<images/ChopperD1.png, id=996, 642.4pt x 481.8pt>
 File: images/ChopperD1.png Graphic file (type png)
 <use images/ChopperD1.png>
 Package pdftex.def Info: images/ChopperD1.png  used on input line 1617.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-<images/ChopperD2.png, id=981, 642.4pt x 481.8pt>
+<images/ChopperD2.png, id=997, 642.4pt x 481.8pt>
 File: images/ChopperD2.png Graphic file (type png)
 <use images/ChopperD2.png>
 Package pdftex.def Info: images/ChopperD2.png  used on input line 1622.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-<images/Chopper_abs.png, id=982, 642.4pt x 481.8pt>
+<images/Chopper_abs.png, id=998, 642.4pt x 481.8pt>
 File: images/Chopper_abs.png Graphic file (type png)
 <use images/Chopper_abs.png>
 Package pdftex.def Info: images/Chopper_abs.png  used on input line 1627.
 (pdftex.def)             Requested size: 155.24895pt x 116.43568pt.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1628 \caption{$P_{abs}}
-                         $}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1628 \caption{$P_{abs}}
-                         $}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.1628 \caption{$P_{abs}}$}
-                           
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1630 \end{subfigure}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[51 <./images/ChopperD1.png> <./images/ChopperD2.png> <./images/Chopper_abs.png
->]
-<images/Azuma_phases2.png, id=996, 757.83125pt x 638.385pt>
+[53]
+<images/Azuma_phases2.png, id=1009, 757.83125pt x 638.385pt>
 File: images/Azuma_phases2.png Graphic file (type png)
 <use images/Azuma_phases2.png>
 Package pdftex.def Info: images/Azuma_phases2.png  used on input line 1653.
 (pdftex.def)             Requested size: 103.50105pt x 87.18156pt.
-<images/Azuma_phases5.png, id=997, 755.82375pt x 629.35126pt>
+<images/Azuma_phases5.png, id=1010, 755.82375pt x 629.35126pt>
 File: images/Azuma_phases5.png Graphic file (type png)
 <use images/Azuma_phases5.png>
 Package pdftex.def Info: images/Azuma_phases5.png  used on input line 1657.
 (pdftex.def)             Requested size: 103.50105pt x 86.17834pt.
-<images/Azuma_phases10.png, id=998, 813.0375pt x 683.55376pt>
+<images/Azuma_phases10.png, id=1011, 813.0375pt x 683.55376pt>
 File: images/Azuma_phases10.png Graphic file (type png)
 <use images/Azuma_phases10.png>
 Package pdftex.def Info: images/Azuma_phases10.png  used on input line 1662.
 (pdftex.def)             Requested size: 103.50105pt x 87.00853pt.
-<images/Azuma_phases100.png, id=999, 798.985pt x 690.58pt>
+<images/Azuma_phases100.png, id=1012, 798.985pt x 690.58pt>
 File: images/Azuma_phases100.png Graphic file (type png)
 <use images/Azuma_phases100.png>
 Package pdftex.def Info: images/Azuma_phases100.png  used on input line 1667.
 (pdftex.def)             Requested size: 103.50105pt x 89.45189pt.
-<images/Azuma_phases1000.png, id=1000, 790.955pt x 660.4675pt>
+<images/Azuma_phases1000.png, id=1013, 790.955pt x 660.4675pt>
 File: images/Azuma_phases1000.png Graphic file (type png)
 <use images/Azuma_phases1000.png>
 Package pdftex.def Info: images/Azuma_phases1000.png  used on input line 1671.
@@ -2363,8 +2212,9 @@ Package pdftex.def Info: images/Azuma_phases1000.png  used on input line 1671.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[52]
-<images/wheeler1.png, id=1009, 845.40843pt x 597.73312pt>
+[54 <./images/ChopperD1.png> <./images/ChopperD2.png> <./images/Chopper_abs.png
+>]
+<images/wheeler1.png, id=1026, 845.40843pt x 597.73312pt>
 File: images/wheeler1.png Graphic file (type png)
 <use images/wheeler1.png>
 Package pdftex.def Info: images/wheeler1.png  used on input line 1688.
@@ -2373,9 +2223,9 @@ Package pdftex.def Info: images/wheeler1.png  used on input line 1688.
 Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[53 <./images/Azuma_phases2.png> <./images/Azuma_phases5.png> <./images/Azuma_p
+[55 <./images/Azuma_phases2.png> <./images/Azuma_phases5.png> <./images/Azuma_p
 hases10.png> <./images/Azuma_phases100.png> <./images/Azuma_phases1000.png>]
-<images/wheeler2.png, id=1022, 845.40843pt x 597.73312pt>
+<images/wheeler2.png, id=1039, 845.40843pt x 597.73312pt>
 File: images/wheeler2.png Graphic file (type png)
 <use images/wheeler2.png>
 Package pdftex.def Info: images/wheeler2.png  used on input line 1697.
@@ -2384,8 +2234,8 @@ Package pdftex.def Info: images/wheeler2.png  used on input line 1697.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[54 <./images/wheeler1.png> <./images/wheeler2.png>]
-<images/wheeler3.png, id=1032, 845.40843pt x 597.73312pt>
+[56 <./images/wheeler1.png> <./images/wheeler2.png>]
+<images/wheeler3.png, id=1048, 845.40843pt x 597.73312pt>
 File: images/wheeler3.png Graphic file (type png)
 <use images/wheeler3.png>
 Package pdftex.def Info: images/wheeler3.png  used on input line 1710.
@@ -2394,18 +2244,18 @@ Package pdftex.def Info: images/wheeler3.png  used on input line 1710.
 Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[55 <./images/wheeler3.png>]
-<images/pd1_2.png, id=1048, 883.3pt x 662.475pt>
+[57 <./images/wheeler3.png>]
+<images/pd1_2.png, id=1064, 883.3pt x 662.475pt>
 File: images/pd1_2.png Graphic file (type png)
 <use images/pd1_2.png>
 Package pdftex.def Info: images/pd1_2.png  used on input line 1725.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_2.png, id=1049, 883.3pt x 662.475pt>
+<images/pd2_2.png, id=1065, 883.3pt x 662.475pt>
 File: images/pd2_2.png Graphic file (type png)
 <use images/pd2_2.png>
 Package pdftex.def Info: images/pd2_2.png  used on input line 1729.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_2.png, id=1050, 883.3pt x 662.475pt>
+<images/pabs_2.png, id=1066, 883.3pt x 662.475pt>
 File: images/pabs_2.png Graphic file (type png)
 <use images/pabs_2.png>
 Package pdftex.def Info: images/pabs_2.png  used on input line 1734.
@@ -2414,43 +2264,43 @@ Package pdftex.def Info: images/pabs_2.png  used on input line 1734.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[56 <./images/pd1_2.png> <./images/pd2_2.png> <./images/pabs_2.png>]
-<images/pd1_2_pi3.png, id=1062, 883.3pt x 662.475pt>
+[58 <./images/pd1_2.png> <./images/pd2_2.png> <./images/pabs_2.png>]
+<images/pd1_2_pi3.png, id=1078, 883.3pt x 662.475pt>
 File: images/pd1_2_pi3.png Graphic file (type png)
 <use images/pd1_2_pi3.png>
 Package pdftex.def Info: images/pd1_2_pi3.png  used on input line 1747.
 (pdftex.def)             Requested size: 137.9979pt x 103.49124pt.
-<images/pd2_2_pi3.png, id=1063, 883.3pt x 662.475pt>
+<images/pd2_2_pi3.png, id=1079, 883.3pt x 662.475pt>
 File: images/pd2_2_pi3.png Graphic file (type png)
 <use images/pd2_2_pi3.png>
 Package pdftex.def Info: images/pd2_2_pi3.png  used on input line 1751.
 (pdftex.def)             Requested size: 137.9979pt x 103.49124pt.
-<images/pd1_3_pi4.png, id=1065, 883.3pt x 662.475pt>
+<images/pd1_3_pi4.png, id=1081, 883.3pt x 662.475pt>
 File: images/pd1_3_pi4.png Graphic file (type png)
 <use images/pd1_3_pi4.png>
 Package pdftex.def Info: images/pd1_3_pi4.png  used on input line 1765.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_3_pi4.png, id=1066, 883.3pt x 662.475pt>
+<images/pd2_3_pi4.png, id=1082, 883.3pt x 662.475pt>
 File: images/pd2_3_pi4.png Graphic file (type png)
 <use images/pd2_3_pi4.png>
 Package pdftex.def Info: images/pd2_3_pi4.png  used on input line 1769.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_3_pi4.png, id=1067, 883.3pt x 662.475pt>
+<images/pabs_3_pi4.png, id=1083, 883.3pt x 662.475pt>
 File: images/pabs_3_pi4.png Graphic file (type png)
 <use images/pabs_3_pi4.png>
 Package pdftex.def Info: images/pabs_3_pi4.png  used on input line 1774.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd1_5_pi4.png, id=1068, 883.3pt x 662.475pt>
+<images/pd1_5_pi4.png, id=1084, 883.3pt x 662.475pt>
 File: images/pd1_5_pi4.png Graphic file (type png)
 <use images/pd1_5_pi4.png>
 Package pdftex.def Info: images/pd1_5_pi4.png  used on input line 1779.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_5_pi4.png, id=1069, 883.3pt x 662.475pt>
+<images/pd2_5_pi4.png, id=1085, 883.3pt x 662.475pt>
 File: images/pd2_5_pi4.png Graphic file (type png)
 <use images/pd2_5_pi4.png>
 Package pdftex.def Info: images/pd2_5_pi4.png  used on input line 1784.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_5_pi4.png, id=1070, 883.3pt x 662.475pt>
+<images/pabs_5_pi4.png, id=1086, 883.3pt x 662.475pt>
 File: images/pabs_5_pi4.png Graphic file (type png)
 <use images/pabs_5_pi4.png>
 Package pdftex.def Info: images/pabs_5_pi4.png  used on input line 1789.
@@ -2459,33 +2309,33 @@ Package pdftex.def Info: images/pabs_5_pi4.png  used on input line 1789.
 Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[57 <./images/pd1_2_pi3.png> <./images/pd2_2_pi3.png>]
-<images/pd1_3.png, id=1078, 883.3pt x 662.475pt>
+[59 <./images/pd1_2_pi3.png> <./images/pd2_2_pi3.png>]
+<images/pd1_3.png, id=1094, 883.3pt x 662.475pt>
 File: images/pd1_3.png Graphic file (type png)
 <use images/pd1_3.png>
 Package pdftex.def Info: images/pd1_3.png  used on input line 1801.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_3.png, id=1079, 883.3pt x 662.475pt>
+<images/pd2_3.png, id=1095, 883.3pt x 662.475pt>
 File: images/pd2_3.png Graphic file (type png)
 <use images/pd2_3.png>
 Package pdftex.def Info: images/pd2_3.png  used on input line 1805.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_3.png, id=1080, 883.3pt x 662.475pt>
+<images/pabs_3.png, id=1096, 883.3pt x 662.475pt>
 File: images/pabs_3.png Graphic file (type png)
 <use images/pabs_3.png>
 Package pdftex.def Info: images/pabs_3.png  used on input line 1810.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd1_5.png, id=1081, 883.3pt x 662.475pt>
+<images/pd1_5.png, id=1097, 883.3pt x 662.475pt>
 File: images/pd1_5.png Graphic file (type png)
 <use images/pd1_5.png>
 Package pdftex.def Info: images/pd1_5.png  used on input line 1815.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pd2_5.png, id=1082, 883.3pt x 662.475pt>
+<images/pd2_5.png, id=1098, 883.3pt x 662.475pt>
 File: images/pd2_5.png Graphic file (type png)
 <use images/pd2_5.png>
 Package pdftex.def Info: images/pd2_5.png  used on input line 1820.
 (pdftex.def)             Requested size: 103.50105pt x 77.62349pt.
-<images/pabs_5.png, id=1083, 883.3pt x 662.475pt>
+<images/pabs_5.png, id=1099, 883.3pt x 662.475pt>
 File: images/pabs_5.png Graphic file (type png)
 <use images/pabs_5.png>
 Package pdftex.def Info: images/pabs_5.png  used on input line 1825.
@@ -2494,19 +2344,19 @@ Package pdftex.def Info: images/pabs_5.png  used on input line 1825.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[58 <./images/pd1_3_pi4.png> <./images/pd2_3_pi4.png> <./images/pabs_3_pi4.png>
+[60 <./images/pd1_3_pi4.png> <./images/pd2_3_pi4.png> <./images/pabs_3_pi4.png>
  <./images/pd1_5_pi4.png> <./images/pd2_5_pi4.png> <./images/pabs_5_pi4.png>]
 Overfull \vbox (6.94444pt too high) has occurred while \output is active []
 
 
-[59 <./images/pd1_3.png> <./images/pd2_3.png> <./images/pabs_3.png> <./images/p
+[61 <./images/pd1_3.png> <./images/pd2_3.png> <./images/pabs_3.png> <./images/p
 d1_5.png> <./images/pd2_5.png> <./images/pabs_5.png>]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[60]
+[62]
 Chapter 7.
-<images/SPDC_exp.png, id=1128, 845.40843pt x 597.73312pt>
+<images/SPDC_exp.png, id=1144, 845.40843pt x 597.73312pt>
 File: images/SPDC_exp.png Graphic file (type png)
 <use images/SPDC_exp.png>
 Package pdftex.def Info: images/SPDC_exp.png  used on input line 1877.
@@ -2515,16 +2365,16 @@ Package pdftex.def Info: images/SPDC_exp.png  used on input line 1877.
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
-[61]
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[62 <./images/SPDC_exp.png>]
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
 [63]
-<images/machzehnder_single.png, id=1152, 791.95876pt x 560.0925pt>
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[64 <./images/SPDC_exp.png>]
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[65]
+<images/machzehnder_single.png, id=1167, 791.95876pt x 560.0925pt>
 File: images/machzehnder_single.png Graphic file (type png)
 <use images/machzehnder_single.png>
 Package pdftex.def Info: images/machzehnder_single.png  used on input line 1926
@@ -2534,12 +2384,12 @@ Package pdftex.def Info: images/machzehnder_single.png  used on input line 1926
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[64 <./images/machzehnder_single.png>]
+[66 <./images/machzehnder_single.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 1937.
 
-<images/first_step.png, id=1160, 845.40843pt x 597.73312pt>
+<images/first_step.png, id=1176, 845.40843pt x 597.73312pt>
 File: images/first_step.png Graphic file (type png)
 <use images/first_step.png>
 Package pdftex.def Info: images/first_step.png  used on input line 1940.
@@ -2549,7 +2399,7 @@ Overfull \hbox (37.86728pt too wide) in paragraph at lines 1940--1941
 [][] 
  []
 
-<images/second_step.png, id=1161, 845.40843pt x 597.73312pt>
+<images/second_step.png, id=1177, 845.40843pt x 597.73312pt>
 File: images/second_step.png Graphic file (type png)
 <use images/second_step.png>
 Package pdftex.def Info: images/second_step.png  used on input line 1945.
@@ -2559,7 +2409,7 @@ Overfull \hbox (37.86728pt too wide) in paragraph at lines 1945--1946
 [][] 
  []
 
-<images/third_step.png, id=1162, 845.40843pt x 597.73312pt>
+<images/third_step.png, id=1178, 845.40843pt x 597.73312pt>
 File: images/third_step.png Graphic file (type png)
 <use images/third_step.png>
 Package pdftex.def Info: images/third_step.png  used on input line 1950.
@@ -2569,7 +2419,7 @@ Overfull \hbox (37.86728pt too wide) in paragraph at lines 1950--1951
 [][] 
  []
 
-<images/last_step.png, id=1163, 845.40843pt x 597.73312pt>
+<images/last_step.png, id=1179, 845.40843pt x 597.73312pt>
 File: images/last_step.png Graphic file (type png)
 <use images/last_step.png>
 Package pdftex.def Info: images/last_step.png  used on input line 1955.
@@ -2586,17 +2436,17 @@ LaTeX Warning: Float too large for page by 12.23035pt on input line 1961.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[65]
+[67]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[66 <./images/first_step.png> <./images/second_step.png> <./images/third_step.p
+[68 <./images/first_step.png> <./images/second_step.png> <./images/third_step.p
 ng> <./images/last_step.png>]
 
-LaTeX Warning: Citation `Leonhardt_2003' on page 67 undefined on input line 199
+LaTeX Warning: Citation `Leonhardt_2003' on page 69 undefined on input line 199
 8.
 
-<images/polarizeranalogy.png, id=1184, 845.40843pt x 597.73312pt>
+<images/polarizeranalogy.png, id=1199, 845.40843pt x 597.73312pt>
 File: images/polarizeranalogy.png Graphic file (type png)
 <use images/polarizeranalogy.png>
 Package pdftex.def Info: images/polarizeranalogy.png  used on input line 2002.
@@ -2605,35 +2455,35 @@ Package pdftex.def Info: images/polarizeranalogy.png  used on input line 2002.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[67]
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
-[68 <./images/polarizeranalogy.png>]
-Overfull \vbox (6.83331pt too high) has occurred while \output is active []
-
-
 [69]
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[70 <./images/polarizeranalogy.png>]
+Overfull \vbox (6.83331pt too high) has occurred while \output is active []
+
+
+[71]
 Chapter 8.
 
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[70]
+[72]
 Chapter 9.
 
 Overfull \vbox (6.44444pt too high) has occurred while \output is active []
 
 
-[71] (./esta_correcciones.bbl
+[73] (esta_correcciones.bbl
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[72]
+[74]
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[73])
+[75])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
@@ -2643,15 +2493,15 @@ This document will not have a glossary.
 Overfull \vbox (6.83331pt too high) has occurred while \output is active []
 
 
-[74]
+[76]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2056.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 2056.
- (./esta_correcciones.aux)
+ (esta_correcciones.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2056.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2056.
 
 Package rerunfilecheck Info: File `esta_correcciones.out' has not changed.
-(rerunfilecheck)             Checksum: 6D896808E34FA0BEFFF727D1769AD788;2670.
+(rerunfilecheck)             Checksum: 04CA0248AA8067C0D14AA31CB93176DD;2639.
 
 
 LaTeX Warning: There were undefined references.
@@ -2662,49 +2512,56 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2056.
  ) 
 Here is how much of TeX's memory you used:
- 29689 strings out of 481239
- 546060 string characters out of 5920377
- 887388 words of memory out of 5000000
- 43843 multiletter control sequences out of 15000+600000
- 548214 words of font info for 86 fonts, out of 8000000 for 9000
+ 30004 strings out of 480797
+ 562246 string characters out of 2895576
+ 897734 words of memory out of 3000000
+ 44886 multiletter control sequences out of 15000+200000
+ 548214 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,18n,85p,1206b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-mextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
-ls/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on esta_correcciones.pdf (87 pages, 7394668 bytes).
+ 63i,18n,85p,1225b,959s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\gerar\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1000.pk><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gerar/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C:/Users/gerar/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/gerar/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/U
+sers/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+xti10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/gerar/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gerar/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ger
+ar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
+C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi6.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/gerar/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gerar/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.p
+fb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr6.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gerar/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/gerar/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/gerar/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
+ers/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+5.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/gerar/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/gerar/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ge
+rar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
+><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb><C:/Users/gerar/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/rsfs/rsfs10.pfb>
+Output written on esta_correcciones.pdf (89 pages, 9717754 bytes).
 PDF statistics:
- 1425 PDF objects out of 1440 (max. 8388607)
- 1142 compressed objects within 12 object streams
- 388 named destinations out of 1000 (max. 500000)
+ 1438 PDF objects out of 1440 (max. 8388607)
+ 394 named destinations out of 1000 (max. 500000)
  815 words of extra memory for PDF output out of 10000 (max. 10000000)
 

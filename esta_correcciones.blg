@@ -1,59 +1,52 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: esta_correcciones.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
-Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
-I was expecting a `,' or a `}'---line 100 of file bibliography.bib
- :   
- :   doi = {10.1007/BF00736012}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Leonhardt_2003"
 Warning--empty journal in zuri
 Warning--empty year in zuri
 Warning--empty journal in maestria_procopio
 Warning--empty year in maestria_procopio
-You've used 36 entries,
+You've used 35 entries,
             1791 wiz_defined-function locations,
-            680 strings with 8332 characters,
-and the built_in function-call counts, 7392 in all, are:
-= -- 640
-> -- 315
+            675 strings with 8342 characters,
+and the built_in function-call counts, 7133 in all, are:
+= -- 610
+> -- 311
 < -- 0
-+ -- 123
-- -- 87
-* -- 523
-:= -- 1213
-add.period$ -- 107
-call.type$ -- 36
-change.case$ -- 29
++ -- 121
+- -- 86
+* -- 503
+:= -- 1175
+add.period$ -- 104
+call.type$ -- 35
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 324
-empty$ -- 753
-format.name$ -- 87
-if$ -- 1612
+cite$ -- 39
+duplicate$ -- 315
+empty$ -- 727
+format.name$ -- 86
+if$ -- 1557
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 44
-newline$ -- 182
-num.names$ -- 36
-pop$ -- 96
+int.to.str$ -- 35
+missing$ -- 43
+newline$ -- 177
+num.names$ -- 35
+pop$ -- 95
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 109
+skip$ -- 106
 stack$ -- 0
-substring$ -- 467
-swap$ -- 34
+substring$ -- 429
+swap$ -- 33
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 68
-width$ -- 38
-write$ -- 388
-(There was 1 error message)
+while$ -- 64
+width$ -- 37
+write$ -- 377
+(There were 5 warnings)

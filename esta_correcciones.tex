@@ -1,8 +1,7 @@
- \documentclass{book}
+ \documentclass[12pt]{book}
 
 % Set up data if you need to add a package, go here
 \input{setup/packages.tex}
-\usepackage{afterpage}
 
 \newcommand\blankpage{
     \null
@@ -63,6 +62,8 @@ Dra. Sara Guadalupe Cruz y Cruz\\
 \addtocontents{toc}{\protect\thispagestyle{empty}}
 \pagebreak
 \pagenumbering{Roman}
+
+\begin{comment}
 \chapter*{Declaration}
 I hereby certify that the material, which I now submit for assessment on the programs of study leading to the award of Master of Science, is entirely my work and has not been taken from the work of others except to the extent that such work has been cited and acknowledged within the text of my work. No portion of the work contained in this thesis has been submitted in support of an application for another degree or qualification to this or any other institution.
 \addcontentsline{toc}{section}{Declaration}
@@ -78,10 +79,15 @@ Gerardo Suárez\\
 %List of figures and tables, automatic from thesis.
 \addcontentsline{toc}{section}{List of Figures}
 \listoffigures\newpage
+
+
 \addcontentsline{toc}{section}{List of Tables}
 \listoftables\newpage
-\blankpage{}
+
+\end{comment}
+
 \chapter*{Acknowledgements}
+\thispagestyle{plain}
 Most figures were made using svgs from flaticom.com, the component library of Alexander Franzen and the noun project
 \addcontentsline{toc}{section}{Acknowledgements}
 
@@ -90,8 +96,17 @@ Most figures were made using svgs from flaticom.com, the component library of Al
 
 
 \blankpage{}
+\chapter*{Resumen}
+\thispagestyle{plain}
+\addcontentsline{toc}{section}{Resumen}
 
+\pagebreak
+
+
+
+\blankpage{}
 \chapter*{Abstract}
+\thispagestyle{plain}
 This is done at the end of the project
 \addcontentsline{toc}{section}{Abstract}
 
@@ -102,15 +117,18 @@ This is done at the end of the project
 \blankpage{}
 
 \chapter*{Introduction}
-
-
+\thispagestyle{plain}
+\addcontentsline{toc}{section}{Introduction}
+\pagebreak
 \blankpage{}
 
 \pagenumbering{arabic}
 
-\chapter{Spontaneous parametric \\ down conversion}
+\chapter[SPDC]{Spontaneous parametric \\ down conversion}
 
-In this section, we will explore the quantum theory of Spontaneous Parametric Down-Conversion (SPDC), following the approach taken in \cite{procopio,multiphoton}. The SPDC phenomenon is a process in which an intense laser beam called pump beam, is incident into a nonlinear crystal. Occasionally, one photon of the pump beam is annihilated in the crystal and two photons which are known as signal and idler photons, of lower frequencies, are created preserving the total energy and linear momentum.
+
+
+In this section, we will explore the quantum theory of Spontaneous Parametric Down-Conversion (SPDC), following the approach taken in \cite{procopio,multiphoton}. The SPDC phenomenon is a process in which an intense laser beam called pump beam, is incident to a nonlinear crystal. Occasionally, one photon of the pump beam is annihilated in the crystal and two photons which are known as signal and idler photons, of lower frequencies, are created preserving the total energy and linear momentum.
 
 Considering that the energy is given by $E=\hbar w$, where $w$ is the angular frequency, and the linear momentum is ($\mathbf{p}=\hbar \mathbf{k}$), where $\mathbf{k}$ is the wave vector, the conservation law reads as:
 
@@ -118,9 +136,9 @@ Considering that the energy is given by $E=\hbar w$, where $w$ is the angular fr
 w_{p}=w_{s}+w_{i}, \qquad \mathbf{k}_{p}=\mathbf{k}_{s}+\mathbf{k}_{i}, \label{conservation}
 \end{equation}
 
-where the sub-indices $p, i,s$ refer to pump, signal and idler respectively. This is the name often used in the literature for each of the photons in the process. Pump refers to the photons of the laser beam. The signal term concerns the photon that undergoes the physical process under consideration, while the idler one is attributed to the second photon that witnesses the presence of the first one.
+where the sub-indices p, i,s refer to pump, signal and idler respectively. This is the name often used in the literature for each of the photons in the process. Pump refers to the photons of the laser beam. The signal term concerns the photon that undergoes the physical process under consideration, while the idler one is attributed to the second photon that witnesses the presence of the first one.
 
-There are three types of SPDC, namely, type-0, type-I, and type-II. Each type of SPDC is defined by the polarization of all the photons involved in the process. Thereby, in type-0 SPDC, all converted photons have the same polarization which is the same as the pump's annihilated photon.
+There are three types of SPDC, namely, type-0, type-I, and type-II. Each type of SPDC is defined by the polarization of all the photons involved in the process. In type-0 SPDC, all converted photons have the same polarization which is the same as the pump's annihilated photon.
 
 \begin{figure}[h!]
 \centering
@@ -134,15 +152,15 @@ There are three types of SPDC, namely, type-0, type-I, and type-II. Each type of
 \caption{SPDC type II}
 \label{fig:type2}
 \end{subfigure}
-\caption{An Illustration Of the SPDC type I and II processes, a laser incident on a non-linear crystal and photons coming out of it along cones}
+\caption{An illustration of the SPDC type I and II processes, a laser incident on a non-linear crystal and photons coming out of it along cones.}
 \label{fig:SPDC}
 \end{figure}
 
-Next, in type-I, both converted photons have the same polarization, which is orthogonal to that of the pump beam. In this kind of SPDC, both photons travel along the same cone\footnote{Photons come out of the crystal in a cone shape, this is a spontaneous process and a given photon can be anywhere on the cone}.
+Next, in type-I, both converted photons have the same polarization, and it is orthogonal to that of the pump beam. In SPDC type I, both photons travel along the same cone (photons come out of the crystal in a cone shape, this is a spontaneous process and a given photon can be anywhere on the surface of said cone).
 
-Finally, in SPDC type-II the polarization of converted photons are orthogonal, one of them the signal is the same polarization as the pump's. In this type of SPDC, each photon travels along its cone.
+Finally, in SPDC type-II the polarization of converted photons are orthogonal, one of them the signal is the same polarization as the pump's. In this type of SPDC, each photon travels along its own cone.
 
-In this work, we are mainly concerned with the type-I SPDC process.
+In this work, we are mainly concerned with the SPDC type-I process.
 
 We will start our description of the SPDC process by considering the quantized electric field operator which can be written as:
 
@@ -156,13 +174,13 @@ with
 \textbf{E}^{(+)} (\textbf{r},t)&=\frac{i(2 \pi \hbar w)^{\frac{1}{2}}}{\sqrt{V}} \sum_{\textbf{k},\nu}  \mathbf{a}_{\textbf{k},\nu} \mathbf{e}_{\textbf{k},\nu} e^{i(\textbf{k.r}-wt)}=[\textbf{E}^{(-)} (\textbf{r},t)]^{\dagger}, \label{quanfield}
 \end{align}
 
-where $w$ is the frequency of the electric field, $\mathbf{k}$ is the wave vector of all modes with defined linear momenta, we sum over this modes and polarizations as part of the canonical quantization process where we make a spatial Fourier expansion \cite{grynberg} \footnote{These $\mathbf{k}$ are the normal modes,}, $\mathbf{e}_{\textbf{k},\nu}$ where $\nu=1,2$, is the polarization vector for a normal mode of wave vector $\mathbf{k}$ and defined polarization labeled by $\nu$, $\mathbf{a}_{\textbf{k},\nu}$ is the photon annihilation operator of the mode with wave vector $\mathbf{k}$ and polarization given by $\nu$. Finally, $V$ is the quantization volume, when we quantize we consider a finite volume (Usually a cube) such that $k_{m}=\frac{2 \pi n_{m}}{L}$ where $m=x,y,z$ and $L$ is the length of said cube, the annihilation and creation operators must obey:
+where $w$ is the frequency of the electric field, $\mathbf{k}$ is the wave vector of all modes with defined linear momenta, we sum over this modes and polarizations as part of the canonical quantization process where we make a spatial Fourier expansion \cite{grynberg}, $\mathbf{e}_{\textbf{k},\nu}$ where $\nu=1,2$, is the polarization vector for a normal mode of wave vector $\mathbf{k}$ and defined polarization labeled by $\nu$, $\mathbf{a}_{\textbf{k},\nu}$ is the photon annihilation operator of the mode with wave vector $\mathbf{k}$ and polarization given by $\nu$. Finally, $V$ is the quantization volume, when we quantize we consider a finite volume (usually a cube) such that $k_{m}=\frac{2 \pi n_{m}}{L}$ where $m=x,y,z$ and $L$ is the length of said cube, the annihilation and creation operators must obey:
 
 \begin{equation}
-[\mathbf{a}_{\textbf{k},\nu},\mathbf{a^{\dagger}}_{\textbf{k},\nu}]=\delta_{\nu \nu'}\delta\textbf{k}\textbf{k'}.
+[\mathbf{a}_{\textbf{k},\nu},\mathbf{a^{\dagger}}_{\textbf{k},\nu}]=\delta_{\nu \nu'}\delta_{\textbf{k}\textbf{k'}},
 \end{equation}
 
-where $\delta$ is the Kronecker's delta. The creation and annihilation operators on the Fock basis act as:
+where $\delta_{ab}$ is the Kronecker's delta. The creation and annihilation operators act on the Fock basis as:
 
 \begin{equation}
     \mathbf{a}_{\textbf{k},\nu}\ket{n}=\sqrt{n}\ket{n-1},\qquad
@@ -187,7 +205,7 @@ The Hamiltonian operator of a quantized electromagnetic field can be written as 
 H=\frac{1}{2}\int_{V} d^{3}r (\mathbf{D \cdot E}+\mathbf{H \cdot B}),
 \end{equation}
 
-where $\textbf{D}$ and $\textbf{H}$ are the electric displacement and the magnetic field operators, respectively. These are given in terms of the electric field $\textbf{E}$ and the magnetic flux $\textbf{B}$ by means of the constitutive relations (with $\epsilon_{0} $ being, as usually, the permittivity and $\mu_{0}$ the permeability of free space):
+where $\textbf{D}$ and $\textbf{H}$ are the electric displacement and the magnetic field operators, respectively. These are given in terms of the electric field $\textbf{E}$ and the magnetic flux $\textbf{B}$ by means of the constitutive relations (with $\epsilon_{0} $ being the permittivity and $\mu_{0}$ the permeability of free space):
 
 
 \begin{align}
@@ -195,22 +213,39 @@ where $\textbf{D}$ and $\textbf{H}$ are the electric displacement and the magnet
 \textbf{H}=\frac{\textbf{B}}{\mu_{0}}-\textbf{M},
 \end{align}
 
-where $\mathbf{P}$ is the electric polarization (the polarization) and $\mathbf{M}$ is the magnetic polarization (the magnetization) of the optical medium of interest (a non-linear crystal).In this work, we will neglect $\textbf{M}$ because we will assume that the laser beam is not as intense as to magnetize the crystal. Hence, the Hamiltonian becomes:
+where $\mathbf{P}$ is the electric polarization (the polarization) and $\mathbf{M}$ is the magnetic polarization (the magnetization) of the optical medium of interest (a non-linear crystal). In this work, we will neglect $\textbf{M}$ because we will assume that the laser beam is not intense enough to magnetize the crystal. Hence, the Hamiltonian becomes:
 
 \begin{equation}
-H=\frac{1}{2}\int_{V} d^{3}r \left(\epsilon_{0}\mathbf{E \cdot E}+\mathbf{E \cdot P}+\frac{\mathbf{B \cdot B}}{\mu_{0}} \right)
+H=\frac{1}{2}\int_{V} d^{3}r \left(\epsilon_{0}\mathbf{E \cdot E}+\mathbf{E \cdot P}+\frac{\mathbf{B \cdot B}}{\mu_{0}} \right).
 \end{equation}
 
- We will consider the polarization to have nonlinear components and the linear term to be included in a term we will call $H_{0}$, the zeroth order term or polar term is negligible , the main contributor to the process is the second-order term in the nonlinear expansion (the expression for this second-order polarization $P_{i}^{(2)}$ can be found in \cite{boyd} ) and this is the main term we are going to consider we will call it $H_{I}$ (we consider higher terms in polarization to be negligible):
+
+As described in \cite{boyd}, while in linear optics polarization is often described by $\mathbf{P}(t)=\epsilon_{0} \chi^{(1)}\mathbf{E}(t)$, in nonlinear optics this equation is generalized by expressing the polarization as a power series of the field strenght:
+
+\begin{equation}
+\mathbf{P}(t)=\epsilon_{0} \left( \chi^{(1)}\mathbf{E}(t)+\chi^{(2)}\mathbf{E}^{2}(t)+\chi^{(3)}\mathbf{E}^{3}(t)+.... \right)=\mathbf{P}^{(1)}(t)+\mathbf{P}^{(2)}(t)+\mathbf{P}^{(3)}(t)+...
+\end{equation}
+
+ We will consider the polarization to have nonlinear components and the linear term to be included in a term we will call $H_{0}$
+ 
+\begin{equation}
+ H_{0}=\frac{1}{2}\int_{V} d^{3}r \left(\epsilon_{0}\mathbf{E \cdot E}+\mathbf{E} \cdot \mathbf{P^{(1)}}+\frac{\mathbf{B \cdot B}}{\mu_{0}} \right),
+\end{equation}
+
+  the zeroth order term or polar term is negligible because we are not considering polar media, the main contributor to the process is the second-order term in the nonlinear expansion which we will include in $H_{I}$, we will consider higher orders to be negligeable:
 
 
-\begin{align}
-H_{0}&=\frac{1}{2}\int_{V} d^{3}r \left(\epsilon_{0}\mathbf{E \cdot E}+\mathbf{E} \cdot \mathbf{P^{(i)}}+\frac{\mathbf{B \cdot B}}{\mu_{0}} \right),\\
-H_{I}&=\frac{1}{2} \int_{V} d^{3}r \textbf{E} \cdot \textbf{P}^{(2)}, \label{Hi}\\
-P_{i}^{(2)} (\mathbf{r},t)&=\int_{0}^{\infty}dt_{1}\int_{0}^{\infty}dt_{2} \chi_{ijk}^{(2')}(t-t_{1},t-t_{2}) E_{j}(\textbf{r},t_{1}) E_{k}(\textbf{r},t_{2}), \label{polariza}
-\end{align}
+\begin{equation}
+H_{I}=\frac{1}{2} \int_{V} d^{3}r \textbf{E} \cdot \textbf{P}^{(2)}, \label{Hi}
+\end{equation}
 
-where $\chi_{ijk}^{(2')}$ is related to the second-order nonlinear susceptibility and represents the response of the medium to the second power of the electric field. By substituting Eq. \ref{polariza} in  Eq. \ref{Hi} and separating the field operators into its the creation and annihilation components the interaction Hamiltonian $H_{I}$ turns into (we drop the dependence of the fields so that the expression is more compact):
+where
+
+\begin{equation}
+P_{i}^{(2)} (\mathbf{r},t)=\int_{0}^{\infty}dt_{1}\int_{0}^{\infty}dt_{2} \chi_{ijk}^{(2')}(t-t_{1},t-t_{2}) E_{j}(\textbf{r},t_{1}) E_{k}(\textbf{r},t_{2}), \label{polariza}
+\end{equation}
+
+and $\chi_{ijk}^{(2')}$ is related to the second-order nonlinear susceptibility and represents the response of the medium to the second power of the electric field. By substituting Eq. \ref{polariza} in  Eq. \ref{Hi} and separating the field operators into its the creation and annihilation components, the interaction Hamiltonian $H_{I}$ turns into (we dropped the dependence of the fields to have a compact expression):
 
 \begin{align*}
 &H_{I}=\frac{1}{2} \int_{V}\int_{0}^{\infty}dt_{1}\int_{0}^{\infty}dt_{2} \chi_{ijk}^{(2')}(t-t_{1},t-t_{2}) \left( E_{i}^{(+)}E_{j}^{(+)}E_{k}^{(+)}+E_{i}^{(-)}E_{j}^{(+)}E_{k}^{(+)}\right.\\
@@ -218,99 +253,89 @@ where $\chi_{ijk}^{(2')}$ is related to the second-order nonlinear susceptibilit
 &+ \left.E_{i}^{(-)}E_{j}^{(-)}E_{k}^{(-)}+E_{i}^{(+)}E_{j}^{(-)}E_{k}^{(-)}  \right). \label{muchoscampos} \numberthis
 \end{align*}
 
-The SPDC process, as we mentioned before, involves the annihilation of one photon of the pump beam and the creation of two photons of lower frequency. The only terms of equation \ref{muchoscampos} which are compatible with such phenomenon are those including $E_{i}^{(+)}E_{j}^{(-)}E_{k}^{(-)}$ (according to Eq. \ref{fiel+} the label $(+)$ is associated with the annihilation of photons and $(-)$ to their creation) and its Hermitian conjugate describing the reverse process. The other terms represent processes that do not preserve energy  so they will not be considered:
+Since the SPDC process involves the annihilation of one photon of the pump beam and the creation of two photons of lower frequency, the only terms of Eq. \ref{muchoscampos} which are compatible with such phenomenon are those including $E_{i}^{(+)}E_{j}^{(-)}E_{k}^{(-)}$ (according to Eq. \ref{fiel+} the label $(+)$ is associated with the annihilation of photons and $(-)$ to their creation) and its Hermitian conjugate describing the reverse process. The other terms represent processes that do not preserve energy  so they will not be considered. Thus, the Hamiltonian $H_{I}$ reduces to:
 
 \begin{equation}
-H_{I}=\int_{V} d^{3}r \chi_{ijk}^{(2)}(w_{j},w_{k}) (E_{i}^{(+)}E_{j}^{(-)}E_{k}^{(-)})+\mathrm{H.C}, \label{Hi2}
+H_{I}=\int_{V} d^{3}r \chi_{ijk}^{(2)}(w_{j},w_{k}) (E_{i}^{(+)}E_{j}^{(-)}E_{k}^{(-)})+\mathrm{H.c}, \label{Hi2}
 \end{equation}
 
-where  $\mathrm{H.C}$ means Hermitian conjugate and we redefined:
+where  $\mathrm{H.c}$ means Hermitian conjugate and we redefined:
+
 
 \begin{equation}
-\chi_{ijk}^{(2)}(w_{j},w_{k})=\frac{1}{2}\int_{0}^{\infty}dt_{1}\int_{0}^{\infty}dt_{2} \chi_{ijk}^{(2')}(t-t_{1},t-t_{2}),
+\chi_{ijk}^{(2)}(w_{j},w_{k})=\frac{1}{2}\int_{0}^{\infty}dt_{1}\int_{0}^{\infty}dt_{2} \chi^{(2')}_{ijk}(t-t_{1},t-t_{2}) e^{i w_{j} (t-t_{1})} e^{i w_{k} (t-t_{2})},
 \end{equation}
 
-this was done by remembering that the temporal dependence of the field operators that create photons is given by $e^{iwt}$ as can be seen from \ref{quanfield} so that $E^{(-)}(\mathbf{r},t_{1})=E^{(-)}(\mathbf{r})e^{iwt_{1}}$ and we have:
+with $t'=t-t_{1}$, $t''=t-t_{2}$ then we may write:
 
 \begin{equation}
-\chi_{ijk}^{(2)}(w_{j},w_{k})=\frac{1}{2}\int_{0}^{\infty}dt_{1}\int_{0}^{\infty}dt_{2} \chi_{ijk}(t-t_{1},t-t_{2})^{(2')} e^{i w_{j} t_{1}} e^{i w_{k} t_{2}},
+\chi_{ijk}^{(2)}(w_{j},w_{k})=\frac{1}{2}\int_{0}^{\infty}dt'\int_{0}^{\infty}dt'' \chi^{(2')}_{ijk}(t',t'') e^{-i(w_{k}t'+w_{j}t'')} 
 \end{equation}
 
-making a change of variable $t'=t-t_{1}$, $t''=t-t_{2}$ then $dt'=-dt_{1}$ and $dt''=-dt_{2}$ then:
 
-\begin{equation}
-\chi_{ijk}^{(2)}(w_{j},w_{k})=\frac{1}{2}\int_{0}^{-\infty}dt_{1}\int_{0}^{-\infty}dt_{2} \chi_{ijk}(t',t'')^{(2')} e^{iw_{j}(t-t')} e^{i w_{k} (t-t'')},
-\end{equation}
-
-\begin{equation}
-\chi_{ijk}^{(2)}(w_{j},w_{k})=\frac{1}{2}\int_{0}^{\infty}dt_{1}\int_{0}^{\infty}dt_{2} \chi_{ijk}(t',t'')^{(2')} e^{-iw_{j}t')} e^{-iw_{k}t'')} e^{iw_{j}t} e^{iw_{k}t},
-\end{equation}
-
-we take the terms dependent in $t$ to be the new time dependence of the field operators so that all field operators are in the same time frame as the pump's, doing this we arrive at Eq. \ref{Hi2}.
-
-Replacing the expressions for the fields in Eq. \ref{Hi2}, and now substituting $i,j,k$ for $s,i,p$ respectively, where $s,i,p$ refers to signal,idler and pump respectively, then approximating the sum to an integral (taking $V$ to $\infty$) we take $\sum_{\textbf{k}}\xrightarrow{}\frac{V}{(2\pi)^{3}}\int d^{3}k$ and $\delta \mathbf{k} \mathbf{k}' =\delta(\mathbf{k}-\mathbf{k}')$:
+Replacing the expressions for the fields in Eq. \ref{Hi2}, and now substituting $i,j,k$ for $s,i,p$ respectively, where $s,i,p$ refers to signal, idler and pump respectively, then approximating the sum to an integral (taking $V$ to $\infty$) we take $\sum_{\textbf{k}}\xrightarrow{}\frac{V}{(2\pi)^{3}}\int d^{3}k$ and $\delta_{ \mathbf{k} \mathbf{k}'} \xrightarrow{}\delta(\mathbf{k}-\mathbf{k}')$:
 
 \begin{align*}
-&H_{I}=\int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i} \sum_{\nu_{p},\nu_{s},\nu_{i}}\chi_{ijk}^{(2)}(w_{p},w_{s},w_{i}) (\mathbf{e}_{k_{p},\nu_{p}})_{i} (\mathbf{e}_{k_{s},\nu_{s}})^{*}_{j} (\mathbf{e}_{k_{i},\nu_{i}})^{*}_{k} \\ & \times \mathbf{a}_{\nu_{p}}(\mathbf{k}_{p})\mathbf{a^{\dagger}}_{\nu_{s}}(\mathbf{k}_{s})\mathbf {a^{\dagger}}_{\nu_{i}}(\mathbf{k}_{i})e^{i(w_{s}+w_{i}-w_{p})t} \int_{V}d^{3}r e^{i \Delta\textbf{k} \cdot \textbf{r}}+\mathrm{H.C} , \label{jajaja}
+&H_{I}=\int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i} \sum_{\nu_{p},\nu_{s},\nu_{i}}\chi_{ijk}^{(2)}(w_{p},w_{s},w_{i}) (\mathbf{e}_{k_{p},\nu_{p}})_{i} (\mathbf{e}_{k_{s},\nu_{s}})^{*}_{j} (\mathbf{e}_{k_{i},\nu_{i}})^{*}_{k} \\ & \times \mathbf{a}_{\nu_{p}}(\mathbf{k}_{p})\mathbf{a^{\dagger}}_{\nu_{s}}(\mathbf{k}_{s})\mathbf {a^{\dagger}}_{\nu_{i}}(\mathbf{k}_{i})e^{i(w_{s}+w_{i}-w_{p})t} \int_{V}d^{3}r e^{i \Delta\textbf{k} \cdot \textbf{r}}+\mathrm{H.c} , \label{jajaja} \numberthis
 \end{align*}
 
-where we  have introduced:
+where $\Delta \mathbf{k}= \mathbf{k}_{p}-\mathbf{k}_{s}-\mathbf{k}_{i}$ and:
 \begin{align}
-\Delta \textbf{k}&= \mathbf{k}_{p}-\mathbf{k}_{s}-\mathbf{k}_{i},\\
-\chi_{ijk}^{(2)}(w_{p},w_{s},w_{i})&=\frac{-iV^{\frac{3}{2}}}{(2\pi)^9 }(2 \pi \hbar)^{\frac{3}{2}} (w_{p}w_{s}w_{i})^{\frac{1}{2}}\chi_{ijk}^{(2)}(w_{s},w_{i}) .
+\chi_{ijk}^{(2)}(w_{p},w_{s},w_{i})=\frac{-iV^{\frac{3}{2}}}{(2\pi)^9 }(2 \pi \hbar)^{\frac{3}{2}} (w_{p}w_{s}w_{i})^{\frac{1}{2}}\chi_{ijk}^{(2)}(w_{s},w_{i}) .
 \end{align}
 
-As polarizations are fixed in SPDC,each sum in the labels $\nu_{p},\nu_{s},\nu_{i}$ contains only one term. Also we will consider $\chi_{ijk}^{(2)}(w_{p},w_{s},w_{i})$ to vary so slowly (in $\mathbf{k}$ and $\mathbf{r}$) that we can treat it as a constant over the integrals. We will define $\chi= \chi_{ijk}^{(2)}(w_{p},w_{s},w_{i}) (\mathbf{e}_{k_{p},\nu_{p}})_{i} (\mathbf{e}_{k_{s},\nu_{s}})^{*}_{j} (\mathbf{e}_{k_{i},\nu_{i}})^{*}_{k}$ so we can write:
+As polarizations are fixed in SPDC, each sum in the labels $\nu_{p},\nu_{s},\nu_{i}$ contains only one term. Also, we will consider $\chi_{ijk}^{(2)}(w_{p},w_{s},w_{i})$ to vary so slowly (in $\mathbf{k}$ and $\mathbf{r}$) that we can treat it as a constant over the integrals. We will define $\chi= \chi_{ijk}^{(2)}(w_{p},w_{s},w_{i}) (\mathbf{e}_{k_{p},\nu_{p}})_{i} (\mathbf{e}_{k_{s},\nu_{s}})^{*}_{j} (\mathbf{e}_{k_{i},\nu_{i}})^{*}_{k}$ so we can write:
 
 \begin{align*}
-   & H_{I}=\chi \int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i}\int_{V} d^{3}r \mathbf{a}_{\nu_{p}}(\mathbf{k}_{p})\mathbf{a^{\dagger}}_{\nu_{s}}(\mathbf{k}_{s})\mathbf {a^{\dagger}}_{\nu_{i}}(\mathbf{k}_{i})e^{i(w_{s}+w_{i}-w_{p})t} \\& e^{i \Delta\textbf{k} \cdot \textbf{r}}+\mathrm{H.C}. \numberthis{}
+   & H_{I}=\chi \int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i}\int_{V} d^{3}r \mathbf{a}_{\nu_{p}}(\mathbf{k}_{p})\mathbf{a^{\dagger}}_{\nu_{s}}(\mathbf{k}_{s})\mathbf {a^{\dagger}}_{\nu_{i}}(\mathbf{k}_{i})e^{i(w_{s}+w_{i}-w_{p})t} \\& e^{i \Delta\textbf{k} \cdot \textbf{r}}+\mathrm{H.c}. \numberthis{}
 \end{align*}
 
+$H_{0}$ is the electromagnetic field Hamiltonian, which is proportional to the number operator and only adds a global phase to the evolution of this state which we can ignore, that is because coherent states evolve to coherent states \cite{leonhardt} and our initial state is indeed a coherent state.
 
-In the interaction picture\footnote{$H_{0}$ is the electromagnetic field Hamiltonian, which is proportional to the number operator and only adds a global phase to the evolution of this state which we can ignore (Coherent states evolve to coherent states \cite{leonhardt})}. The evolution of the state of the system is given by the equation:
+In the interaction picture. The evolution of the state of the system is given by the equation:
 
 
 \begin{align}
-i \hbar \frac{d}{dt}\ket{\psi(t)}&=H_{I}\ket{\psi(t)}.\\
-\label{a}
+i \hbar \frac{d}{dt}\ket{\psi(t)}&=H_{I}\ket{\psi(t)}.\label{a}
 \end{align}
 
-As this is a first order equation, the state of the system $\ket{\Psi(t)}$ is completely determined by the initial condition, say $\ket{\Psi(t_{0})}$ in this way we may write:
+Since this is a first order equation, the state of the system $\ket{\psi(t)}$ is completely determined by the initial condition, say $\ket{\psi(t_{0})}$, then we may write:
 
 \begin{equation}
     \ket{\psi(t)}=U(t,t_{0})\ket{\psi(t_{0})},
 \label{b}
 \end{equation}
 
-where $U(t,t_{0})$ is known as the evolution operator it encodes the dynamics of the system in the interval $[t_{0},t]$. Substituting Eq. \ref{b} in Eq. \ref{a} and applying the Leibniz rule, because the equation must be valid for any ket, one arrives to:
+where $U(t,t_{0})$ is the evolution operator and it encodes the dynamics of the system in the interval $[t_{0},t]$. Substituting Eq. \ref{b} in Eq. \ref{a} one arrives to: 
 
 \begin{align}
 i \hbar \frac{d}{dt}U(t,t_{0})=H_{I}U(t,t_{0}).
 \end{align}
 
-It is well known that the solution to this initial value problem can be expressed  as an iterative integral equation by direct integration,  which is commonly known as Dyson series, Moreover according to \ref{b}, the evolution operator $U(t,to)$ must satisfy the initial condition $U(t_{0},t_{0})=1$, thus up to first order in $H_{I}$, we have:
+The solution to this initial value problem can be expressed  as an iterative integral equation by direct integration,  which is commonly known as Dyson series \cite{zettili}, Moreover according to \ref{b}, the evolution operator $U(t,to)$ must also satisfy the initial condition $U(t_{0},t_{0})=\mathbf{1}$, thus up to first order in $H_{I}$, we have:
 
 \begin{equation}
-U(t,to)=\mathbf{1}-\frac{i}{\hbar} \int_{t_{0}}^{t} H_{I} (\tau) d\tau=\mathbf{1}+U_{1}
+U(t,to)=\mathbf{1}-\frac{i}{\hbar} \int_{t_{0}}^{t} H_{I} (\tau) d\tau=\mathbf{1}+U_{1}.
 \end{equation}
 
-We will not consider higher orders mainly for two reasons: one is that we are mainly interested in the SPDC process as a single photon states source (second-order would generate 4 photons), the second one is that higher orders are unlikely because the laser pump is not as intense as for four photons to be produced in the crystal at once.
+We will not consider higher orders mainly for two reasons: we are mainly interested in the SPDC process as a single-photon states source (second-order in the evolution operator would generate 4 photons), and higher orders are unlikely because the laser pump is not as intense as for four photons to be produced in the crystal at once.
 
-Now, to analyze the evolution of the system in the SPDC process we need to identify the initial state. Knowing that initially, we have a pump  laser beam  and no photons or signal or idler, we identify the initial state as composed a coherent state in the input channel and vacuum states of the quantized electromagnetic field in the output channels, as the pump beam is in a coherent state \cite{leonhardt}, it may be written in the form:
+Now, to analyze the evolution of the system in the SPDC process we need to identify the initial state. Knowing that initially, we have a pump  laser beam  and no photons in the signal or idler channels, we can identify the initial state as composed by a coherent state in the input channel and vacuum states of the quantized electromagnetic field in the output channels. A coherent state is a superposition of fock states in the following form \cite{leonhardt}:
 
 \begin{equation}
 \ket{\alpha}=e^{\frac{-|\alpha|^{2}}{2}} \sum_{n=0}^{\infty} \frac{\alpha^{n}}{\sqrt{n!}} \ket{n},
 \end{equation}
 
-where $\alpha$ is known as the complex wave amplitude  and $\ket{n}$ are the Fock or ``photon number states" of the electromagnetic field. Coherent states are eigenstates of the annihilation operator with eigenvalue $\alpha\in \mathrm{C}$
+where $\alpha$ is a complex parameter known as the complex wave amplitude. Coherent states are eigenstates of the annihilation operator with eigenvalue $\alpha$
+
 \begin{equation}
-\hat{\mathbf{a}}\ket{\alpha}=\alpha\ket{\alpha}
+\hat{\mathbf{a}}\ket{\alpha}=\alpha\ket{\alpha},
 \end{equation}
 
-Fullfiling the following properties:
+fullfiling the following properties:
 
 \begin{align}
-\langle H \rangle = \hbar w \left(|\alpha|^{2}+\frac{1}{2}\right),\qquad P_{n}=e^{-\langle n\rangle}\frac{\langle n \rangle^{n}}{n!},
+\langle H \rangle = \hbar w_{p} \left(|\alpha|^{2}+\frac{1}{2}\right),\qquad P_{n}=e^{-\langle n\rangle}\frac{\langle n \rangle^{n}}{n!},
 \end{align}
 
 where $P_{n}$ is the probability of finding $n$ photons in a measurement of the coherent state. It can be checked that this corresponds to a Poisson distribution so that the coherent state obeys Poissonian statistics.
@@ -322,7 +347,7 @@ Thus our initial state can be cast in the form $\ket{\psi(t_{0})}=\ket{\alpha_{p
 \end{align*}
 
 
-In the last expressions, we already used the expressions in Eqs. \ref{Fock}  concerning the action of the ladder operators on the initial state. Note that the initial state is annihilated under the action of the term $\mathrm{H.C}$ in Eq. \ref{jajaja}.  If we define 
+In the last expressions, we already used the expressions in Eqs. \ref{Fock}  concerning the action of the ladder operators on the initial state. Note that the initial state is annihilated under the action of the term $\mathrm{H.c}$ in Eq. \ref{jajaja}.  If we define 
 
 \begin{equation}
  \xi(t,t_{0})=\frac{-i\chi}{\hbar}  \int d^{3}k_{p}\int d^{3}k_{i} \int d^{3}k_{s}    \int_{t_{0}}^{t} d\tau e^{i(w_{s}+w_{i}-w_{p})\tau}  
@@ -340,24 +365,22 @@ U_{1}(t,t_{0})\ket{\alpha_{p},0_{s},0_{i}}=\xi(t,t_{0}) \mathbf{a_{p}}\mathbf{a_
 Finally, we may write
 
 \begin{equation}
-    U(t,t_{0})=\mathbf{1}+\xi(t,t_{0}) \mathbf{a_{p}}\mathbf{a_{s}^{\dagger}}\mathbf{a_{i}^{\dagger}}. \label{evo}
+    U(t,t_{0})\ket{\alpha_{p},0_{s},0_{i}}=(\mathbf{1}+\xi(t,t_{0}) \mathbf{a_{p}}\mathbf{a_{s}^{\dagger}}\mathbf{a_{i}^{\dagger}})\ket{\alpha_{p},0_{s},0_{i}}. \label{evo}
 \end{equation}
 
-In this section, we developed some of the basics of the quantum theory of the SPDC process. In the next section, we will use this theory to explore spatial correlations between the idler a signal photons.
+In this section, we developed the basics of the quantum theory of the SPDC process. In the next section, we will use this theory to explore spatial correlations between the idler a signal photons.
 
 \section{First order joint amplitude function}
 
-Now that we have presented a quantum mechanical description of the phenomenon, we will describe how it can be used to generate single-photon states. We will use the model proposed by O.Rosas-Ortiz and L.M Procopio in \cite{procopio} in order to set the design for our experiment. Most if not all information concerning the spatial correlations is encoded in the joint amplitude function, which is the aim of the present section. Considering the first order approach to the evolution operator Eq. \ref{evo} we have:
+Now that we have presented a quantum mechanical description of the phenomenon, we will describe how it can be used to generate single-photon states. We will use the model proposed by O. Rosas-Ortiz and L.M Procopio in \cite{procopio} in order to set the design for our experiment. Most information concerning the spatial correlations, if not all, is encoded in the joint amplitude function, which is the aim of the present section. 
 
-\begin{equation}
-    U(t)=\mathbf{1}+\xi(t) \mathbf{a_{p}}\mathbf{a_{s}^{\dagger}}\mathbf{a_{i}^{\dagger}}, 
-\end{equation}
 
-where we have set $t_{0}=0$, $\xi(t,0)=\xi(t)$ and $U(t,0)=U(t)$. So our final state can be calculated by:
+
+  Our final state can be calculated using the first order evolution operator given by \ref{evo}:
 
 \begin{align*}
 \ket{\psi(t)}&=U(t)\ket{\psi(t_{0})},\numberthis{}\\
-&=\ket{\alpha_{p},0_{s},0_{i}}-\frac{i \chi}{\hbar}  \int_{t_{0}}^{t} d\tau \int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i}\int_{V} d^{3}r \alpha_{p} (\mathbf{k}_{p},w_{p})\\ &e^{i(w_{s}+w_{i}-w_{p})\tau}e^{i \Delta\textbf{k}.\textbf{r}}\ket{\alpha_{p},1_{s},1_{i}}  \numberthis{}
+&=\ket{\alpha_{p},0_{s},0_{i}}-\frac{i \chi}{\hbar}  \int_{t_{0}}^{t} d\tau \int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i}\int_{V} d^{3}r \alpha_{p} (\mathbf{k}_{p},w_{p})\\ &\times e^{i(w_{s}+w_{i}-w_{p})\tau}e^{i \Delta\textbf{k}.\textbf{r}}\ket{\alpha_{p},1_{s},1_{i}}  \numberthis{}
 \end{align*}
 
 We will rewrite this as:
@@ -370,15 +393,15 @@ We will rewrite this as:
 where we conveniently defined $\Phi$:
 
 \begin{equation}
-\Phi(\mathbf{k}_{i},w_{i},\mathbf{k}_{s},w_{s})=\int d^{3}k_{p} \alpha_{p}(\mathbf{k}_{p},w_{p}) \int_{V} d^{3}r e^{i \Delta \mathbf{k}.\mathbf{r}} \int_{t_{0}}^{t} d\tau e^{i(w_{s}+w_{i}-w_{p})\tau}.\label{joint}
+\Phi(\mathbf{k}_{i},w_{i},\mathbf{k}_{s},w_{s})=\int d^{3}k_{p} \alpha_{p}(\mathbf{k}_{p},w_{p}) \int_{V} d^{3}r e^{i \Delta \mathbf{k}.\mathbf{r}} \int_{t_{0}}^{t} d\tau e^{i(w_{s}+w_{i}-w_{p})\tau}.\label{jointd}
 \end{equation}
 
-This $\Phi$ function is what is known in the current literature as the joint amplitude function, this one is the first order because we stopped the Dyson series at first order. This function will enable us to study spatial correlations of the signal and idler channel in the next section.
+This $\Phi$ function is known as the the first order joint amplitude function, it is of first order because we stopped the Dyson series at first order. This function will enable us to study spatial correlations of the signal and idler channel in the next section.
 
 \section{Spatial correlations}
 
 Let us now study the spatial correlations from the joint amplitude function, to do this a couple of approximations will be made.
-Considering steady state fields and that the dimensions of the nonlinear crystal are much larger than the wavelength of the pump we consider $V\xrightarrow{}\infty$:
+Considering steady state fields and that the dimensions of the nonlinear crystal are much larger than the wavelength of the pump meaning we consider $V\xrightarrow{}\infty$ we can approximate the following integrals:
 
 
 \begin{align*}
@@ -388,14 +411,14 @@ Considering steady state fields and that the dimensions of the nonlinear crystal
 \label{t2} \numberthis{}
 \end{align*}
 
-Implementing such approximations the Eq. \label{joint} becomes:
+Implementing such approximations the Eq. \ref{jointd} becomes:
 
 \begin{equation}
-\Phi(\mathbf{k}_{i},w_{i},\mathbf{k}_{s},w_{s})= \eta \alpha_{p}(\mathbf{k}_{s}+\mathbf{k}_{i},w_{s}+w_{i}) .
+\Phi(\mathbf{k}_{i},w_{i},\mathbf{k}_{s},w_{s})= \eta \alpha_{p}(\mathbf{k}_{s}+\mathbf{k}_{i},w_{s}+w_{i}) ,
 \end{equation}
 
 
-Let us assume  $\alpha_{p}$ can be factorized into two functions, one that depends on the wave vectors, and one that depends on the frequencies:
+where $\eta$ is a global factor. Let us assume  $\alpha_{p}$ can be factorized into two functions, one that depends on the wave vectors, and one that depends on the frequencies:
 
 \begin{equation}
 \Phi(\mathbf{k_{i}},w_{i},\mathbf{k_{s}},w_{s})= \eta G(\mathbf{k}_{i}+\mathbf{k}_{s}) F(w_{s}+w_{i}) .
@@ -404,16 +427,16 @@ Let us assume  $\alpha_{p}$ can be factorized into two functions, one that depen
 We  will now separate the wave vectors into their transversal and longitudinal components:
 
 \begin{equation}
-\mathbf{k}_{r}=\mathbf{q}_{r}+k_{rz} \mathbf{e}_{rz},\mathbf{q}_{r}=q_{rx} \mathbf{e}_{rx}+q_{ry} \mathbf{e}_{ry},
+\mathbf{k}_{r}=\mathbf{q}_{r}+k_{rz} \mathbf{e}_{rz},\qquad \mathbf{q}_{r}=q_{rx} \mathbf{e}_{rx}+q_{ry} \mathbf{e}_{ry},
 \end{equation}
 
-where $r=p,s,i$. We will assume the paraxial approximation to be valid,  as Molina-Terriza and Minardi \cite{minardi} demonstrated that in this situation the transversal components are negligeable with respect to the longitudinal one. Let us assume that both functions G and F are Gaussian so that:
+where $r=p,s,i$. We will assume the paraxial approximation to be valid,  as Molina-Terriza and Minardi \cite{minardi} demonstrated that in this situation the transversal components are negligeable with respect to the longitudinal one. Moreover, we are assumming that both functions $G$ and $F$ are Gaussian so that:
 
 \begin{equation}
-G(\mathbf{A})=e^{- (\sigma \abs{\mathbf{A}})^{2} },\qquad F(w)=e^{-(\delta w)^2}.
+G(\mathbf{A})=e^{- (\sigma \abs{\mathbf{A}})^{2} },\qquad F(w)=e^{-(\delta w)^2},
 \end{equation}
 
-Using this we can rewrite the joint amplitude function as:
+we can rewrite the joint amplitude function as:
 
 \begin{equation}
 \Phi(\mathbf{q}_{i},w_{i},\mathbf{q}_{s},w_{s})= \eta e^{-\sigma^{2}\abs{\mathbf{q_{s}}+\mathbf{q_{i}}}^{2}} F(w_{s}+w_{i}).\label{true}
@@ -444,47 +467,48 @@ That way separating it into two functions, one that tells us about the frequenci
 Since we are in momentum space, we can obtain the spatial correlations by taking the Fourier transform:
 
 \begin{equation}
-\Phi_{s}(\mathbf{q}_{i},\mathbf{q}_{s})=\mathscr{F}(\Phi_{s}(\mathbf{q}_{i},\mathbf{q}_{s}))=N \int d^{2}q_{i} \int d^{2}q_{s} \Phi_{q}(\mathbf{q}_{i},\mathbf{q}_{s}) e^{-i \mathbf{q}_{s}.\mathbf{r}_{s}} e^{-i \mathbf{q}_{i}.\mathbf{r}_{i}}.
+\Phi_{s}(\mathbf{x}_{i},\mathbf{x}_{s})=\mathscr{F}(\Phi_{s}(\mathbf{q}_{i},\mathbf{q}_{s}))=N \int d^{2}q_{i} \int d^{2}q_{s} \Phi_{q}(\mathbf{q}_{i},\mathbf{q}_{s}) e^{-i \mathbf{q}_{s}.\mathbf{r}_{s}} e^{-i \mathbf{q}_{i}.\mathbf{r}_{i}}.
 \end{equation}
 
 \begin{figure}[H]
+
+
 \centering
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/SPDC_yy.png}
+\caption{YY correlation}
 \end{subfigure}
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/SPDC_xx.png}
+\caption{XX correlation}
 \end{subfigure}
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/SPDC_yx.png}
+\caption{YX correlation}
 \end{subfigure}
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/SPDC_xy.png}
+\caption{XY correlation}
 \end{subfigure}
-\caption{Plots for the spatial part of the joint amplitude function}
+\caption{Plots for $\Phi_{s}(x_{i},y_{i},x_{s},y_{s})$  from left to right are $x_{s}=x_{i}=0$ (a), $y_{s}=y_{i}=0$(b), $x_{i}=y_{s}=0$(c) and $y_{i}=x_{s}=0$(d). In all these plots we set $\sigma=0.18$, $\sigma_{x}=0.59$, $\sigma_{y}=0.1$.}
 \label{SPDC}
 \end{figure}
 
-This last equation encodes all spatial correlations between the signal and idler photon channels, allowing us to use this scheme to produce single-photon states, by measuring in two positions which are highly correlated and only taking into account measurements where both detectors(one placed in the signal channel and the other in the idler channel) click, ensuring that this process took place and we indeed have single-photon states. Plots for $\Phi_{s}(x_{i},y_{i},x_{s},y_{s})$ can be seen in Fig. \ref{SPDC} where, from left to right are $x_{s}=x_{i}=0$, $y_{s}=y_{i}=0$, $x_{i}=y_{s}=0$ and $y_{i}=x_{s}=0$
+
+This last equation encodes all spatial correlations between the signal and idler photon channels, allowing us to use this scheme to study single-photon states, by measuring in two positions which are highly correlated and only taking into account measurements where both detectors (one placed in the signal channel and the other in the idler channel) click, ensuring that this process took place and we indeed have single-photon states.
 
 
 \chapter{The lossless beam splitter}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=5 cm,height=5 cm]{images/bS.png}
-\caption{A Beam splitter cube.}
-\label{fig:BS}
-\end{figure}
 
-In this chapter, we will develop both the classical and quantum theory of the most important optical element in this thesis, the beam splitter. The beam splitter is a four-port optical device with two inputs and two outputs, as shown in Fig. \ref{fig:BS}, in which two input beams may interfere to produce two outgoing beams. A beam splitter usually consists of two dielectric triangular prisms spliced in the form of a cube as Fig. \ref{fig:BS} shows.
+In this chapter, we will develop both the classical and quantum theory of the most important optical element in this thesis, the beam splitter. The beam splitter is a four-port optical device with two inputs and two outputs, as shown in Fig. \ref{fig:BS}, in which two input beams may interfere to produce two outgoing beams. A beam splitter usually consists of two dielectric triangular prisms spliced in the form of a cube.
 
 \section{The  classical lossless beam splitter}
 
-This section is inspired in the beam splitter description presented in \cite{ludon} and \cite{leonhardt}. In this work, we will consider monochromatic light (one mode only) and we will assume that the beam splitter is an ideal reversible and lossless device
+This section is inspired in the beam splitter description presented in \cite{ludon} and \cite{leonhardt}. In this work, we will consider monochromatic light (one mode only) and we will assume that the beam splitter is an ideal reversible and lossless device.
 
 
-In describing the behaviour of a laser beam in classical electrodynamics, it is common to consider the study of their corresponded electric fields, if the beams cross through a linear medium, the outgoing fields can be written as linear combinations of the input fields satisfying the proper boundary conditions \cite{jackson}. As in the beam splitter we have two inputs and two outputs, the output fields $E_{1}'$ and $E_{2}'$ this can be written in terms of the input fields $E_{1}'$ and $E_{2}'$ as:
+In describing the behaviour of a laser beam in classical electrodynamics, it is common to consider the study of their corresponded electric fields, if the beams cross through a linear medium, the outgoing fields can be written as linear combinations of the input fields satisfying the proper boundary conditions \cite{jackson}. As in the beam splitter we have two inputs and two outputs, the output fields $E_{1}'$ and $E_{2}'$  can be written in terms of the input fields $E_{1}'$ and $E_{2}'$ as:
 
 \begin{equation}
 \begin{pmatrix} E_{1}' \\ E_{2}' \end{pmatrix}=B\begin{pmatrix} E_{1} \\ E_{2} \end{pmatrix},
@@ -496,14 +520,21 @@ the linear transformation $B$ represents the action of the beam splitter on the 
 B=\begin{pmatrix} B_{11}& B_{12} \\B_{21} & B_{22} \end{pmatrix}.
 \end{equation}
 
+\begin{figure}[t!]
+\centering
+\includegraphics[width=5 cm,height=5 cm]{images/bS.png}
+\caption{A Beam splitter cube.}
+\label{fig:BS}
+\end{figure}
+
 The conditions  that must be fulfilled by the matrix elements $B_{ij}$  $i,j=1,2$  can be established by demanding the total intensity to be preserved (recall that we are considering that the beam splitter is a lossless device), that is:
 
 \begin{align}
 &I_{1}'+I_{2}'=I_{1}+I_{2}, \\
 &I_{1}'\propto|B_{11} E_{1}|^{2}+|B_{12} E_{2}|^{2}+B_{11} B_{12}^{*} E_{1} E_{2}^{*}+B_{11}^{*} B_{12} E_{1}^{*} E_{2}, \\
 &I_{2}'\propto|B_{21} E_{1}|^{2}+|B_{22} E_{2}|^{2}+B_{21} B_{22}^{*} E_{1} E_{2}^{*}+B_{21}^{*} B_{22} E_{1}^{*} E_{2},\\
-&|E_{1}|^{2}+|E_{2}|^{2}=(|B_{21}|^{2}+|B_{11}|^{2})|E_{1}|^{2}+(|B_{12}|^{2}+|B_{22}|^{2})|E_{2}|^{2}+\\
-&(B_{21} B_{22}^{*}+B_{11} B_{12}^{*})E_{1} E_{2}^{*}+(B_{21}^{*} B_{22}+B_{11}^{*} B_{12})E_{1}^{*} E_{2},
+&|E_{1}|^{2}+|E_{2}|^{2}=(|B_{21}|^{2}+|B_{11}|^{2})|E_{1}|^{2}+(|B_{12}|^{2}+|B_{22}|^{2})|E_{2}|^{2}\\
+&+(B_{21} B_{22}^{*}+B_{11} B_{12}^{*})E_{1} E_{2}^{*}+(B_{21}^{*} B_{22}+B_{11}^{*} B_{12})E_{1}^{*} E_{2},
 \end{align}
 
 where $I_{1}$ and $I_{2}$ are the intensities of the input fields and $I_{1}'$ and $I_{2}'$ are the intensities of the output fields. Recall that the intensity of a given electric field is given by $I=\frac{c n \epsilon_{0}}{2} |E|^{2}$, where $c$ is the speed of light, $n$ the index of refraction of the medium and $\epsilon_{0}$ is the permitivity of free space, in this way the conservation of intensity (energy) leads us to the following relationships:
@@ -513,7 +544,7 @@ where $I_{1}$ and $I_{2}$ are the intensities of the input fields and $I_{1}'$ a
 &B_{21}^{*} B_{22}+B_{11}^{*} B_{12}=0.
 \end{align}
 
-Note that these relations imply that the matrix $B$ is unitary. Yet, from this set of equations, one can derive another constraint on the coefficients, namely, $B_{21}^{*} B_{11}+B_{22}^{*} B_{12}=0$ can be obtained. This is consistent with the fact that $B^{\dagger}B=B^{\dagger}B= \mathbf{1}$. For our purposes it will be convenient to write the matrix $B$ in terms of the reflection $\rho$ and the transmission$\tau$, the transmission coefficient is a measure of how much light is transmitted through a material in relation to the amount of light incident on it, the reflection coefficient is a similar measure for reflection on the material. These coefficients follow the relationship:
+These relations imply that the matrix $B$ is unitary. Yet, from this set of equations, one can derive another constraint on the coefficients, namely, $B_{21}^{*} B_{11}+B_{22}^{*} B_{12}=0$ can be obtained. This is consistent with the fact that $B^{\dagger}B=B^{\dagger}B= \mathbf{1}$. For our purposes it will be convenient to write the matrix $B$ in terms of the reflection $\rho$ and the transmission $\tau$, the transmission coefficient is a measure of how much light is transmitted through a material in relation to the amount of light incident on it, the reflection coefficient is a similar measure for reflection on the material. These coefficients follow the relationship:
 
 \begin{equation}
 |\tau|^{2}+|\rho|^{2}=1.
@@ -540,15 +571,15 @@ so that
 Now, we will describe the quantum theory of a lossless beam splitter. To do this we will first consider the quantized electric field and then we will establish the theory. 
 
 
-The  electric field can be written as:
+The electric field of a polarized and monochromatic light beam can be written as:
 
 \begin{equation}
 \mathbf{E}=i \mathbf{\epsilon}N w \left( \alpha e^{i (\mathbf{k \cdot r}-w t)}+\alpha^{*} e^{-i (\mathbf{k \cdot r}-w t)} \right),
 \end{equation}
 
-where $\alpha$ is known as the complex wave amplitude. To obtain a theoretical model of a beam splitter as general as possible, let us describe the device as a four-port device, a black box with two input and two output ports having certain properties.
+where $\alpha$ is known as the complex wave amplitude. To obtain a theoretical model of a beam splitter as general as possible, let us describe the device as a four-port device, a black box with two input and two output ports.
 
-If two coherent light beams with complex wave amplitudes $\alpha_{1}$ and $\alpha_{2}$ enter the beam splitter we simply expect the output complex wave amplitude  are superimposed according to a linear transformation that we will call also $B$ so that:
+If two coherent light beams with complex wave amplitudes $\alpha_{1}$ and $\alpha_{2}$ enter the beam splitter we simply expect the output complex wave amplitudes  are superimposed according to a linear transformation that we will call also $B$ as
 
 \begin{equation}
 \begin{pmatrix} \alpha_{1}' \\ \alpha_{2}' \end{pmatrix}=B\begin{pmatrix} \alpha_{1} \\ \alpha_{2} \end{pmatrix}. \label{ladilla}
@@ -569,7 +600,7 @@ As this equation describes the transformation of the ladder operators in the pro
 \label{commutators}
 \end{align}
 
-where $\mu=1,2$ and $\nu=1,2$. From Eq.\ref{eq:amplitudes} it follows that:
+where $\mu=1,2$ and $\nu=1,2$. From Eq. \ref{eq:amplitudes} it follows that:
 
 \begin{align}
 &\mathbf{a}'_{\mu}=B_{\mu 1}\mathbf{a}_{1}+B_{\mu 2} \mathbf{a}_{2}, \\
@@ -577,7 +608,7 @@ where $\mu=1,2$ and $\nu=1,2$. From Eq.\ref{eq:amplitudes} it follows that:
 \label{combined amplitudes}
 \end{align}
 
-Then using Eq. \ref{combined amplitudes} and Eq. \ref{commutators} we find that:
+Then using Eq. \ref{combined amplitudes} and Eq. \ref{commutators} we find 
 
 \begin{equation}
    [\mathbf{a}'_{\nu},\mathbf{a}'^{\dagger}_{\mu}]=B_{\nu 1} B_{\mu 1}^{*}+B_{\nu 2} B_{\mu 2}^{*} .
@@ -596,28 +627,28 @@ As in the classical case, we find the $B$ transformation to be unitary, somethin
 B=e^{\Lambda} \begin{pmatrix} e^{i\frac{\phi}{2}} & 0 \\ 0 & e^{-i\frac{\phi}{2}} \end{pmatrix} \begin{pmatrix} \cos(\theta) &  \sin(\theta) \\ - \sin(\theta) & \cos(\theta) \end{pmatrix} \begin{pmatrix} e^{i\frac{\psi}{2}} & 0 \\ 0 & e^{-i\frac{\psi}{2}} \end{pmatrix} \label{unitary},
 \end{equation}
 
-where $\psi,\Lambda,theta,\phi$ are real parameters in the interval $[0,2\pi]$. Note that so far our analysis is valid for any lossless four-port linear device. Furthermore from Eq. \ref{unitary} we can see that any four-port device can be considered as acting in three steps \footnote{A phase shifter is denoted by $P_{\phi}=e^{i \frac{\phi}{2}}\begin{pmatrix}e^{i \frac{\phi}{2}} & 0 \\0 & e^{-i \frac{\phi}{2}} \end{pmatrix}$}. First the phases of the incident modes are changed, then the amplitudes are mixed (rotated) and then the phases are changed again. In most of the cases we can adjust the reference phases such that only the rotation is important (a reference phase is the phase from which we start measuring phase-shifts), so this is the key feature of four-ports, that is why from now on we will parametrize our beam splitter ($BS$) as (this corresponds to  setting $\Lambda=0$, $\phi=-\psi=\frac{\pi}{2}$):
+where $\psi,\Lambda,\theta,\phi$ are real parameters in the interval $[0,2\pi)$. Note that so far our analysis is valid for any linear and lossless four-port device. Furthermore, from Eq. \ref{unitary} we can see that any four-port device can be considered as acting in three steps \footnote{A phase shifter is denoted by $P_{\phi}=e^{i \frac{\phi}{2}}\begin{pmatrix}e^{i \frac{\phi}{2}} & 0 \\0 & e^{-i \frac{\phi}{2}} \end{pmatrix}$}. First, the phases of the incident modes are changed, then the amplitudes are mixed (rotated) and then the phases are changed again. In most cases we can adjust the reference phases such that only the rotation is important (a reference phase is the phase from which we start measuring phase-shifts), so this is the key feature of four-ports, that is why from now on we will parametrize our beam splitter ($BS$) as (this corresponds to  setting $\Lambda=0$, $\phi=-\psi=\frac{\pi}{2}$):
 
 
 \begin{equation}
-BS=\begin{pmatrix} \cos(\theta) & i \sin(\theta) \\ i \sin(\theta) & \cos(\theta) \end{pmatrix}.
+BS=\begin{pmatrix} \cos(\theta) & i \sin(\theta) \\ i \sin(\theta) & \cos(\theta) \end{pmatrix}.\label{BS_matrix}
 \end{equation}
 
 
-The difference between $B$ and $BS$ is that $B$ is general and in $BS$ we fixed the parameters that involve phase-shifting and the global phase. Let us now analyze this optical element in the Fock basis this is done because we intend to use it on a single photon which is described in this basis. In the Heisenberg picture operators evolve via the evolution operator:
+The difference between $B$ and $BS$ is that $B$ is general and in $BS$ we fixed the parameters that involve phase-shifting and the global phase. Let us now analyze this optical element in the Fock basis  to use it on a single-photon state. In the Heisenberg picture operators evolve via the evolution operator:
 
 \begin{equation}
 \begin{pmatrix} \mathbf{a}'_{1} \\ \mathbf{a}'_{2}\end{pmatrix}=\mathbf{U}^{\dagger}_{B} \begin{pmatrix} \mathbf{a}_{1} \\ \mathbf{a}_{2}\end{pmatrix} \mathbf{U}_{B}.
 \label{Heisenberg}
 \end{equation}
 
-A Fock state $\ket{n_{1},n_{2}}$, which means $n_{1}$ in input/output one and $n_{2}$ photons in input/output two can be generated from a vacuum state through the subsequent application on creation operators  $\mathbf{a}^{\dagger}_{1}\mathbf{a}^{\dagger}_{2}$. Note that if just one of the input channels is pumped, then the state corresponding to the other one is a vacuum state $\ket{0}$.
+A Fock state $\ket{n_{1},n_{2}}$, which means $n_{1}$ photons in the first input(output) and $n_{2}$ photons in the second input(output), can be generated from a vacuum state through the subsequent application on creation operators  $\mathbf{a}^{\dagger}_{1}\mathbf{a}^{\dagger}_{2}$. 
 
 \begin{equation}
  \ket{n_{1},n_{2}}=\frac{1}{\sqrt{n_{1}! n_{2}!}} (\mathbf{a}_{1}^{\dagger})^{n_{1}}(\mathbf{a}_{2}^{\dagger})^{n_{2}} \ket{0,0}.
 \end{equation}
 
-Correspondingly, in the Schrodinger picture a state $\ket{\psi}$ evolves by means of the rule:
+Note that if just one of the input channels is pumped, then the state corresponding to the other one is a vacuum state $\ket{0}$. Correspondingly, in the Schrodinger picture a state $\ket{\psi}$ evolves by means of the rule:
 
 \begin{equation}
  \ket{\psi}'=U_{B}\ket{\psi},
@@ -629,7 +660,7 @@ so for the vacuum state we have:
  \label{evolution}
 \end{equation}
 
-Now let us explore the evolution of a Fock state $\ket{n_{1},n_{2}}'$:
+The evolution of a Fock state $\ket{n_{1},n_{2}}'$:
 
 \begin{align}
 &\ket{n_{1},n_{2}}'=U_{B}\ket{n_{1},n_{2}},\\
@@ -643,7 +674,7 @@ From Eq. \ref{Heisenberg}, Eq. \ref{eq:amplitudes} and Eq. \ref{evolution} we ca
 &\ket{n_{1},n_{2}}' =\frac{1}{\sqrt{n_{1}! n_{2}!}} (\mathbf{a}_{1}^{\dagger})^{n_{1}}(\mathbf{a}_{2}^{\dagger})^{n_{2}}\ket{0,0}'.
 \end{align}
 
-By writing the original ladder operators in terms of the transformed ladder operators given by \ref{eq:amplitudes}, and applying Newton's binomial formula (we can do this because the operators commute, in general this cannot be done) we arrive at the ``compact'' expression \footnote{ The binomial coefficient is $\begin{pmatrix} n \\ k \end{pmatrix} =\frac{n!}{\sqrt{k!(n-k)!}}$}:
+By writing the original ladder operators in terms of the transformed ladder operators given by Eq. \ref{eq:amplitudes}, and applying Newton's binomial formula (we can do this because the operators commute, in general this cannot be done) we arrive at the expression \footnote{ The binomial coefficient is $\begin{pmatrix} n \\ k \end{pmatrix} =\frac{n!}{\sqrt{k!(n-k)!}}$}:
 
 \begin{align*}
 \ket{n_{1},n_{2}}'& =\frac{1}{\sqrt{n_{1}! n_{2}!}} (B_{11}\mathbf{a}_{1}'^{\dagger}+B_{21}\mathbf{a}_{2}'^{\dagger})^{n_{1}}(B_{12}\mathbf{a}_{1}'^{\dagger}+B_{22}\mathbf{a}_{2}'^{\dagger})^{n_{2}}\ket{0,0}',\\
@@ -660,7 +691,7 @@ and its counterpart
      \ket{0,n}'=\sum^{n}_{k=0} \sqrt{\frac{n!}{(n-k)!k!}} B_{12}^{n-k} B_{22}^{k} \ket{n-k,k}.
 \end{equation}
 
-In this work will consider single-photons entering the input channels, so that our case of interest is $n=1$,we expand the sum to obtain:
+In this work will consider single-photons states in the input channels, so that our case of interest is $n=1$,we expand the sum to obtain:
 
 \begin{align}
 \ket{1,0}'=B_{11}\ket{1,0}+B_{21}\ket{0,1},\label{basis2} \\
@@ -669,7 +700,7 @@ In this work will consider single-photons entering the input channels, so that o
 \end{align}
 
 
-From Eq. \ref{basis2}-\ref{basis} we can see that the case of the single-photon can be written in terms of the $BS$ matrix if we define an appropriate basis to describe the system. The one we will use is the Horizontal-Vertical computational basis. We will use:
+From Eqs. \ref{basis2}-\ref{basis}, we can see that the evolution of a single-photon state can be written in terms of the $BS$ matrix if we define an appropriate basis to describe the system. The one we will use is the Horizontal-Vertical computational basis. We will use:
 
  \begin{equation}
  \ket{1}=\ket{1}_{h}\ket{0}_{v}=\begin{pmatrix} 1 \\0\end{pmatrix},
@@ -689,30 +720,32 @@ meaning vacuum  in the horizontal path and one photon in the vertical one. In th
 
 where $\ket{in}=\ket{1},\ket{2}$ and out is a linear combination of the vectors $\ket{1},\ket{2}$.
 
- It should not be a surprise that we obtain the same theory as in the case of the classical beam splitter because it is quite typical that classical laws rule interference phenomena, going quantum often only affects the visibility, but does not modify the theory \cite{leonhardt}.
+ It should not be a surprise that we obtain a similar description of the beam splitter in the classical and quantum theories. Typically, classical and quantum interference phenomena differ in the visibility of the effect and not in the final mathematical predictions \cite{leonhardt}.
 
 \pagebreak
+
 \chapter{The Mach-Zehnder interferometer }
 
 
- The Mach–Zehnder's flexibility in locating the fringes has made it the preferred interferometer for visualizing flow in wind tunnels \cite{10} and for flow visualization studies in general. It is frequently used in several fields such as aerodynamics, plasma physics, and heat transfer to measure pressure, density, and temperature changes in gases \cite{11}. They are also used in electro-optic modulators \cite{ackerman} and electronic devices used in various fiber-optic communication applications. Mach–Zehnder modulators are incorporated in monolithic integrated circuits and offer well-behaved, high-bandwidth electro-optic amplitude, and phase responses over a multiple-gigahertz frequency range \cite{studenkov,capmany}.
+ The Mach–Zehnder's flexibility in locating fringes in interference patterns has made it the preferred interferometer for visualizing flow in wind tunnels \cite{10} and for flow visualization studies in general. It is frequently used in several fields such as aerodynamics, plasma physics, and heat transfer to measure pressure, density, and temperature changes in gases \cite{11}. They are also used in electro-optic modulators \cite{ackerman} and electronic devices used in various fiber-optic communication applications. Mach–Zehnder modulators are incorporated in monolithic integrated circuits and offer well-behaved, high-bandwidth electro-optic amplitude, and phase responses over a multiple-gigahertz frequency range \cite{studenkov,capmany}.
 
-The Mach-Zehnder interferometer consists of two Beam Splitters, $BS_{1}$ and $BS_{2}$, and two mirrors $M_{1}$ and $M_{2}$ as shown in Fig. \ref{fig:classical mach}. One of the input channels of the first beam splitter $BS_{1}$ is pumped to a beam to produce two output signals that are redirected by the two mirrors $M_{1}$ and $M_{2}$ towards the input ports of the second $BS_{2}$.  Two detectors $D_{1}$ and $D_{2}$ placed at the output ports will  sense the interference pattern of the recombined beams $E_{1}'''$ and $E_{2}'''$. We will now analyze the interferometer, both, in the classical and quantum regimes.
+The Mach-Zehnder interferometer consists of two Beam Splitters, $BS_{1}$ and $BS_{2}$, and two mirrors $M_{1}$ and $M_{2}$ as shown, in Fig. \ref{fig:classical mach}. One of the input channels of the first beam splitter $BS_{1}$ is pumped by a light beam to produce two output signals that are redirected by the two mirrors $M_{1}$ and $M_{2}$ towards the input ports of the second $BS_{2}$.  Two detectors $D_{1}$ and $D_{2}$ placed at the output ports will  sense the interference pattern of the recombined beams $E_{1}'''$ and $E_{2}'''$. We will now analyze the interferometer, both, in the classical and quantum regimes.
 
 
- A mirror in this basis(Horizontal-Vertical) simply flips the state and adds a phase, so we have no recombination of the amplitudes (which corresponds to no rotations only phase shifting) taking Eq. \ref{unitary} with $\theta=\frac{\pi}{2}$,$\phi=\pi$,$\Lambda=\gamma$ and $\psi= \frac{\pi}{2} $ we get:
+ A mirror in this basis (Horizontal-Vertical) simply flips the state and adds a phase, so we have no recombination of the amplitudes (which corresponds to no rotations only phase shifting) taking Eq. \ref{unitary} with $\theta=\frac{\pi}{2}$, $\phi=\pi$, $\Lambda=\gamma$ and $\psi= \frac{\pi}{2} $ we obtain the matrix $M$ representing a mirror:
 
  
 \begin{equation}
 M=\begin{pmatrix} 0& e^{i\gamma}  \\ e^{i\gamma} & 0 \end{pmatrix}, \label{mirror}
 \end{equation}
 
-$\theta=\frac{\pi}{2}$ was chosen because it flips the state while $\theta=2 \pi$ would give a diagonal matrix. We have now defined all the things we need to analyze the interferometer in the classical and quantum case.
+
+ We have now defined all the elements of the interferometer in the classical and quantum regimes.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{images/machzenhdercla.png}
-\caption{Mach-Zehnder Interferometer}
+\caption{Mach-Zehnder interferometer.}
 \label{fig:classical mach}
 \end{figure}
 
@@ -720,69 +753,65 @@ $\theta=\frac{\pi}{2}$ was chosen because it flips the state while $\theta=2 \pi
 
 \section{Classical Mach-Zehnder interferometer}
 
-In this section, we study the Mach-Zehnder interferometer in the classical regime. We will denote the classical fields going through the interferometer as it is shown in Fig. \ref{fig:classical mach}. We will follow the approach taken by Loudon \cite{ludon}. Let us consider two lossless beam splitters   $BS_{1}$, $BS_{2}$ with the same reflectivity $\rho$ and transmitivity $\tau$. The electric field $E_{1}$ of the incident beam is then split into two beams $E_{1}'$ and $E_{2}'$ written as:
+In this section, we study the Mach-Zehnder interferometer in the classical regime. We will denote the classical fields going through the interferometer as it is shown in Fig. \ref{fig:classical mach}. We will follow the approach taken by Loudon \cite{ludon}. Let us consider two lossless beam splitters   $BS_{1}$, $BS_{2}$ with the same reflectivity $\rho$ and transmitivity $\tau$. After the first beam splitter, the electric field $E_{1}$ of the incident beam is split into two beams $E_{1}'$ and $E_{2}'$ written as:
 
 \begin{equation}
 E_{1}'=\tau E_{1} ,\qquad E_{2}'=\rho E_{1}.\label{corr1}
 \end{equation}
 
-The action of the matrix $M$ representing the mirrors only add a phase $e^{i\phi_{i}}$, where $i=1,2$. Then, two fields $E_{1}''$ and $E_{2}''$ are given by:
+The action of the matrix $M$ representing the mirrors only add a phase $e^{i\gamma_{i}}$, where $i=1,2$. As a second stage, after the light strikes the mirrors $M_{1}$ and $M_{2}$, the electric fields $E_{1}''$ and $E_{2}''$ in each path are:
 
 \begin{equation}
- E_{1}''=e^{ik\phi_{1}}E_{1}', \qquad E_{2}''=e^{i k\phi_{2}}E_{2}'.\label{corr2}
+ E_{1}''=e^{i\gamma_{1}}E_{1}', \qquad E_{2}''=e^{i \gamma_{2}}E_{2}'.\label{corr2}
 \end{equation}
 
-The fields are recombined in the second beam splitter $BS_{2}$ producing the output beams $E_{1}'''$ and $E_{2}'''$:
+As a final stage, the fields are recombined in the second beam splitter $BS_{2}$ producing the output fields $E_{1}'''$ and $E_{2}'''$:
 
 \begin{align*}
 E_{1}'''=\tau E_{2}'' +\rho E_{1}'', \qquad E_{2}'''=\tau E_{1}'' -\rho E_{2}''.\label{corr} \numberthis
 \end{align*}
 
-Thus, substituting the eqs. \ref{corr1},\ref{corr2} in \ref{corr} the beams $E_{1}'''$ and $E_{2}'''$ can be written in terms of the pump beam $E_{1}$ as :
+We can write the output in terms of the input field substituting Eqs. \ref{corr1}, \ref{corr2} in Eq. \ref{corr} as :
 
 \begin{align*}
-E_{1}'''&=\tau \rho (e^{i k\phi_{1}}+ e^{i k\phi_{2}})E_{1},\\
-E_{2}'''&=\tau^2 e^{i k\phi_{1}} E_{1} -\rho^2 e^{i k\phi_{2}}E_{1}.
+E_{1}'''&=\tau \rho (e^{i \gamma_{1}}+ e^{i \gamma_{2}})E_{1},\\
+E_{2}'''&=(\tau^2 e^{i \gamma_{1}}  -\rho^2 e^{i \gamma_{2}})E_{1}.
  \numberthis
 \end{align*}
 
-The intensities at the detectors can be calculated by taking the modulus squared of the fields, where $\delta \phi=\phi_{1}-\phi_{2}$:
+The intensities at the detectors can be calculated by taking the modulus squared of the fields, where $\delta \gamma=\gamma_{1}-\gamma_{2}$:
 
 \begin{align*}
-I_{D_{1}}& \propto \abs{E_{1}}^2 2(\rho \tau)^2\left[1+\cos(k\delta \phi)\right],\\
-I_{D_{2}}& \propto \abs{E_{1}}^2 (\rho^4 +\tau^4)\left[1-\frac{2 (\rho \tau)^2}{\rho^4+\tau^4}\cos(k\delta \phi)\right]. \numberthis
+I_{D_{1}}& \propto \abs{E_{1}}^2 2 |\rho \tau|^2\left[1+\cos(\delta \phi)\right],\\
+I_{D_{2}}& \propto \abs{E_{1}}^2 (|\rho|^4 +|\tau|^4)\left[1-\frac{2 |\rho \tau|^2}{|\rho|^4+|\tau|^4}\cos(\delta \phi)\right]. \numberthis
 \end{align*}
 
 A case of interest occurs whenever $\rho =\tau=\frac{1}{\sqrt{2}}$. In this circumstances the intensities become:
 
 \begin{align*}
-I_{D_{1}}  \propto \abs{E_{1}}^2 \frac{1+\cos(k\delta \phi)}{2}, \quad
-I_{D_{2}}  \propto \abs{E_{1}}^2 \frac{1-\cos(k\delta \phi)}{2}. \numberthis
+I_{D_{1}}  \propto \abs{E_{1}}^2 \frac{1+\cos(\delta \phi)}{2}, \quad
+I_{D_{2}}  \propto \abs{E_{1}}^2 \frac{1-\cos(\delta \phi)}{2}. \numberthis
 \end{align*}
  
- If additionally   $\delta \phi=\lambda n$ where $n=1,2,3,...$, then $\cos(2 \pi n )=1$ and the detector $D_{1}$ receives the intensity of the initial beam and $D_{2}$ receives no light:
- 
-\begin{align}
-I_{D_{1}}\propto \abs{E_{1}}^2, \qquad I_{D_{2}}= 0. \numberthis
-\end{align}
+ If additionally   $\delta \gamma=2 \pi n$ where $n=1,2,3,...$, then $\cos(2 \pi n )=1$ and the detector $D_{1}$ receives the intensity of the initial beam $I_{D_{1}}\propto \abs{E_{1}}^2$ and $D_{2}$ receives no light $I_{D_{2}}= 0.$
 
 
-\section{Single photon Mach-Zehnder interferometer}
+\section{Single-photon Mach-Zehnder interferometer}
 
-In this section, we will study a single photon Mach-Zehnder interferometer, which will be the main object of concern for the rest of this work. In this part of the analysis, we will assume that the mirrors induce different phases in each path. This is done to account for misalignment in our model. It will be proven in a later chapter that this is equivalent to considering phase-shifters inducing differences in the optical paths then we write the matrix representation of the mirrors as:
+In this section, we will study a single-photon Mach-Zehnder interferometer, which will be the main object of concern for the rest of this work. In this part of the analysis, we will assume that the mirrors induce different phases in each path. This is done to account for misalignment in our model. It will be proven in a later chapter that this is equivalent to considering phase-shifters inducing differences in the optical paths. We write the matrix representation of the mirrors as:
 
 \begin{equation}
 M_{i}= \begin{pmatrix} 0& e^{i\gamma_{i}} \\ e^{i\gamma_{i}} & 0 \end{pmatrix}, \quad i=1,2.
 \end{equation}
 
-Once we have defined the main elements we can analyze the single-photon Mach-Zehnder interferometer. A single photon, generated via SPDC, is sent in the horizontal path of the interferometer as the input signal. Then, our initial state $\ket{1}$  is transformed by the first $BS$ as:
+and a beam splitter as in Eq. \ref{BS_matrix}. Once we have defined the main elements we can analyze the single-photon Mach-Zehnder interferometer. A single photon, generated via SPDC, is sent into the horizontal path of the interferometer as the input signal. In order to study a general situation, we will consider two different $BS$ in our interferometer. Then, our initial state $\ket{1}$  is transformed by the first $BS$ as:
 
 \begin{align}
-\ket{1}\xrightarrow{\text{BS}}\cos(\theta)\ket{1}+i\sin(\theta)\ket{2}.
+\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}.
 \numberthis
 \end{align}
 
-In order to study a general situation, we will consider two different $BS$ in our interferometer. Note that the action of optical elements is local meaning $M_{1}$ acts on path one and not in path and vice versa. After passing through the first $BS$, the photon encounters a mirror in each path, and then both paths are recombined in the second $BS$ as Fig. \ref{fig:classical mach}. The whole action of the interferometer on the initial state $\ket{1}$ is then:
+ Note that the action of optical elements is local, meaning that the matrix $M_1$ ($M_2$) acts only onto the input state of the mirror$\ket{2}$ ($\ket{1}$). After passing through the first $BS$, the photon encounters a mirror in each path, and then both paths are recombined in the second $BS$, as in Fig. \ref{fig:classical mach}. The whole action of the interferometer on the initial state $\ket{1}$ is then:
 
 
 \begin{align*}
@@ -794,8 +823,8 @@ In order to study a general situation, we will consider two different $BS$ in ou
 To compare this result with the classical case for which we consider two identical $BS$, we make $\theta_{1}=\theta_{2}=\frac{\pi}{4}$. Then the state $\ket{\psi}$ at the output of the interferometer is
 
 \begin{align*}
-\ket{\psi}=\frac{i}{2}(e^{i\gamma_{1}}+e^{i\gamma_{2}})\ket{1}+\frac{1}{2}(e^{i\gamma_{1}}-e^{i\gamma_{2}})\ket{2}, \\
-\ket{\psi}=\frac{e^{i(\gamma_{1}+\frac{\pi}{2})}}{2}(1+e^{i(\gamma_{2}-\gamma_{1})})\ket{1}+\frac{e^{i\gamma_{1}}}{2}(1-e^{i(\gamma_{2}-\gamma_{1})})\ket{2}. \numberthis
+\ket{\psi}&=\frac{i}{2}(e^{i\gamma_{1}}+e^{i\gamma_{2}})\ket{1}+\frac{1}{2}(e^{i\gamma_{1}}-e^{i\gamma_{2}})\ket{2}, \\
+&=\frac{e^{i(\gamma_{1}+\frac{\pi}{2})}}{2}(1+e^{i(\gamma_{2}-\gamma_{1})})\ket{1}+\frac{e^{i\gamma_{1}}}{2}(1-e^{i(\gamma_{2}-\gamma_{1})})\ket{2}. \numberthis
 \end{align*}
 
 To obtain the probabilities of detection, we simply compute:
@@ -804,28 +833,28 @@ P_{D_{1}}&=|\bra{1}\ket{\psi}|^{2}, \qquad &&P_{D_{2}}=|\bra{2}\ket{\psi}|^{2},\
 P_{D_{1}}&=\frac{1+\cos(\gamma_{2}-\gamma_{1})}{2}, \qquad &&P_{D_{2}}=\frac{1-\cos(\gamma_{2}-\gamma_{1})}{2}. \label{pp_wheler}
 \end{align}
 
-Perfect alignment means no difference in the optical path so that $\gamma_{2}-\gamma_{1}=0$, then the probability to detect a photon in $D_{1}$ is one and in $D_{2}$ is zero, perfectly compatible with the result obtained in the classical case. We expect a similar result because the classical case is nothing but many repetitions of the single-photon case.
+Perfect alignment means no difference in the optical path so that $\gamma_{2}-\gamma_{1}=0$, then the probability to detect a photon in $D_{1}$ is one and in $D_{2}$ is zero, perfectly compatible with the result obtained in the classical case. We expect a similar result because the classical case is nothing but many repetitions of the single-photon phenomenom.
 
-\section{Analysis with phase retarders }
+\section[Analysis with phase retarders]{Analysis of a Mach-Zhender interferometer with additional phase retarders}
 
-The interferometer is an instrument quite hard to align experimentally, in most cases alignment is a little off. We can characterize just how off this alignment is by considering the effects of phase retarders on each arm of the interferometer after all misalignment is nothing but differences in the optical path. Those predictions can be compared with the actual interferometer (without phase retarders), a wave retarder's  matrix representation is (when placed in the horizontal path $k=0$ and when placed in the vertical $c=0$):
+The interferometer is an instrument quite hard to align experimentally, in most cases alignment is a little off. We can characterize just how off this alignment is by considering the effects of phase retarders on each arm of the interferometer, after all misalignment is nothing but differences in the optical path. Those predictions can be compared with the actual interferometer (without phase retarders), a wave retarder's  matrix representation is :
 
 
 \begin{equation}
- Retarder=\begin
+ R=\begin
 {pmatrix} e^
 {i c} & 0\\0& e^
 {i k }\end
-{pmatrix}.
+{pmatrix},
 \end{equation}
 
-Let us see the effect of such an optical device in our setup:
+when placed in the horizontal path $k=0$ and when placed in the vertical $c=0$. Let us see the effect of such an optical device in our setup:
 
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow[\text{Retarders}]{\text{Phase}}\cos(\theta_{1})e^{ic}\ket{1}+i\sin(\theta_{1}) e^{ik}\ket{2} \\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i(\gamma_{1}'+c)}\ket{2}+i\sin(\theta_{1})\beta e^{i(\gamma_{2}'+k)}\ket{1},
+&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow[\text{Retarders}]{\text{Phase}}\cos(\theta_{1})e^{ic}\ket{1}+i\sin(\theta_{1}) e^{ik}\ket{2} \\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i(\frac{\pi}{2}+c)}\ket{2}+i\sin(\theta_{1})\beta e^{i(\frac{\pi}{2}+k)}\ket{1},
 \end{align*}
 
-we can stop here by noticing that making $\gamma_{2}'+k=\gamma_{2}$ and if we make  and $\gamma_{1}'+c=\gamma_{1}$ , so our model that makes use of the general matrix of a mirror instead of using the more popular mirror matrix with a fixed phase $M=\begin{pmatrix} i & 0\\0& i\end{pmatrix}$, where $i=e^{i \frac{\pi}{2}}=\gamma$, has the  effect of a phase retarder included, allowing us to study misalignment.
+we can stop here by noticing that replacing $\frac{\pi}{2}+k\xrightarrow{}\gamma_{2}$ and  $\frac{\pi}{2}+c\xrightarrow{}\gamma_{1}$, is the same as using the mirror matrix given by Eq. \ref{mirror} so our model that makes use of this matrix  instead of the more popular mirror matrix with a fixed phase $M=\begin{pmatrix} i & 0\\0& i\end{pmatrix}$, where $i=e^{i \frac{\pi}{2}}=e^{i\gamma}$, has the  effect of a phase retarder included, allowing us to study misalignment. 
 
 
 
@@ -969,7 +998,7 @@ Thus, expressions \ref{thetasara}-\ref{thetasara1} offer the posibility to desig
 \pagebreak
 
 
-\section[BS as an imperfect transmitter]{Beam splitter as an imperfect trasmitter}
+\section[$BS$ as an imperfect transmitter]{Beam splitter as an imperfect trasmitter}
 
 We will now study the case where we replaced the semi-transparent object discused in section 4.2 by a beam splitter $BS_{o}$ as an imperfect transmitter. In this case, we will consider imperfect mirrors $M_{1}$ and $M_{2}$ such that $\gamma$ is arbitrary, i.e, the mirrors, are assumed to induce an arbitrary phase. We will suppose that the phases are different so we can model misalignments in the interferometer as described in section 3.3.  Likewise  previous cases, we will first consider our imperfect transmitter is placed in the vertical path as shown in Fig. \ref{bs vertical}. As might be infered from the Figure, the event of the photon being absorbed by the object, is now modeled by the photon being reflected by $BS_{o}$ ( the photon goes out of the interferometer's paths, and does not interact anylonger with the rest of the optical elements).
 
@@ -1013,7 +1042,7 @@ It is worthwhile noting that $P_{2D_{1}}$ and $P_{2D_{2}}$ do not depend on $\ga
 
 we show the plots for the detection probabilities $P_{2abs}$, $P_{2D_{1}}$ and $P_{2D_{2}}$ in Fig. \ref{P_bs}, as functions of $\theta_{1}$ and $\theta_{2}$ for the particular values of $\theta_{o}=\frac{\pi}{3}$ and $\gamma_{2}-\gamma_{1}=\pi$. There we can see the oscilatory behavious in both parameters:
 
-\todo{arreglar graficas}
+
 
 \begin{figure}[H]
 \centering
@@ -1036,7 +1065,6 @@ we show the plots for the detection probabilities $P_{2abs}$, $P_{2D_{1}}$ and $
 \label{P_bs}
 \end{figure}
 
-\todo{show different values}
 
 
 
@@ -1050,7 +1078,7 @@ P_{1D_{2}}&=|\cos(\theta_{1})\cos(\theta_{o})\cos(\theta_{2})e^{i(\gamma_{1}-\ga
 P_{1abs}&=|\sin(\theta_{o}) \cos(\theta_{1})|^2 .
 \end{align}
 
-which are shown graphically in Fig. \ref{P_bs2} as functions of $\theta_{1}$ and $\theta_{2}$, for the same values of $\theta_{o}$ and $\gamma_{2}-\gamma_{1}$ than those of Fig. \ref{P_{bs}}. We can see they are quite different, valleys in one are hills on the other and one the reasons is that we are always launching the incident photon from the same input channel, so that the initial conditions are not symetrical.
+which are shown graphically in Fig. \ref{P_bs2} as functions of $\theta_{1}$ and $\theta_{2}$, for the same values of $\theta_{o}$ and $\gamma_{2}-\gamma_{1}$ than those of Fig. \ref{P_bs}. We can see they are quite different, valleys in one are hills on the other and one the reasons is that we are always launching the incident photon from the same input channel, so that the initial conditions are not symetrical.
 
 \begin{figure}[H]
 \centering
@@ -1073,11 +1101,11 @@ which are shown graphically in Fig. \ref{P_bs2} as functions of $\theta_{1}$ and
 \label{P_bs2}
 \end{figure}
 
-\todo{check it is the same using the other path}
+
 
 Our results are totally consistent with those reported in \cite{zuri,azuri} by taking $\beta=\cos(\theta_{o})$, $\alpha=i \sin(\theta_{o})$ and $\gamma_{2}-\gamma_{1}=0$. One of the advantages of this setup is that the ``absorbed'' photon, is not really absorbed but redirected through another path and can be monitored as well, by a third detector, say $D_{abs}$, enabling, thus the posibility of correlating the absorption and detection probabilities.
 
-\section{$N$ Beam Splitters as imperfect transmitter }
+\section{$N$ beam splitters array as the imperfect transmitter }
 
 
 \begin{figure}[H]
@@ -1088,54 +1116,60 @@ Our results are totally consistent with those reported in \cite{zuri,azuri} by t
 \end{figure}
 
 
-We begin analyzing what happens if our initial state goes through several $BS$ assuming the reflected photon is ``lost". We will study both initial states in parallel, as Fig. \ref{N_bs} shows. We are placing $N$ beams splitters in one of the paths of the interferometer so:
+In this section, we analyze the case in which an array of $N$ beam splitters are place along one path of the interferometer (see figure \ref{N_bs}). Let us denote the beam splitters in this array by $BS_{i}$, where $i=1,2,3,4,5,...,N+2$. Assuming that the reflected photon in either beam splitter $BS_{i}$ is ``absorbed'', we have that, the state of the photon initially in the state $\ket{2}$ is transformed into
 
 \begin{align}
 BS_{3}\ket{2}=\cos(\theta_{3})\ket{2}+i\sin(\theta_{3})\ket{abs}.
 \end{align}
 
-The next $BS$ only acts on the transmitted photon so:
+The next beam splitter only acts on the transmitted photon state, since, as explained in the previous section, if the photon is reflected then it goes out of the interferometer and does not interact with the optical elements any longer:
 \begin{align}
-BS_{4}(\cos(\theta_{3})\ket{3}+i\sin(\theta_{3})\ket{abs})&=\cos(\theta_{1})BS_{2}\ket{2}+i\sin(\theta_{3})\ket{abs},\\
-BS_{4}BS_{3}\ket{1}&=\cos(\theta_{3})\cos(\theta_{4})\ket{1}+i A\ket{abs}.
+BS_{4}(\cos(\theta_{3})\ket{2}+i\sin(\theta_{3})\ket{abs})&=\cos(\theta_{3})BS_{4}\ket{2}+i\sin(\theta_{3})\ket{abs},\\
+BS_{4}BS_{3}\ket{2}&=\cos(\theta_{3})\cos(\theta_{4})\ket{2}+i A_{2}\ket{abs}.
 \end{align}
-where $A$ is whatever the absorption coefficient for two $BS$ may be. Then, the next $BS$ does the same
+where $A_{2}$ is the absorption coefficient for a two beam splitter array. The action of the rest of the beam splitters are equivalent
 \begin{equation}
-BS_{5}BS_{4}BS_{3}\ket{2}=\cos(\theta_{3})\cos(\theta_{4})\cos(\theta_{5})\ket{2}+iB\ket{abs}.
+BS_{5}BS_{4}BS_{3}\ket{2}=\cos(\theta_{3})\cos(\theta_{4})\cos(\theta_{5})\ket{2}+iA_{3}\ket{abs},
 \end{equation}
 
-so after $N$ $BS$ :
+where $A_{3}$ is the absorption coefficient of the 3-BS array. Finally, for the  $N$ $BS$ array we have:
 
 \begin{align*}
-BS^{N}=BS_{N}...BS_{3}\ket{2}=\cos(\theta_{3})\cos(\theta_{4})\cos(\theta_{5})....\cos(\theta_{N})\ket{2} +i C\ket{abs}. \numberthis
+BS^{N}\ket{2}=BS_{N}...BS_{3}\ket{2}=\cos(\theta_{3})\cos(\theta_{4})\cos(\theta_{5})....\cos(\theta_{N})\ket{2} +i A_{N}\ket{abs}. \numberthis
 \end{align*}
 
-We can obtain $C$ by asking the probabilities to add to unity, since everything that is not transmitted will be ``lost":
+We can obtain $A_{N}$ by considering that everything that if the photon is not transmitted then it will be ``absorbed":
 
 \begin{align}
-BS^{N}\ket{2}&=\prod_{i=3}^{N} \cos(\theta_{i})\ket{2}+i C \ket{abs},\\
-C&=\sqrt{1-\prod_{i=3}^{N}\cos^2(\theta_{i})}.
+BS^{N}\ket{2}&=\prod_{i=3}^{N+2} \cos(\theta_{i})\ket{2}+i A_{N} \ket{abs},\\
+A_{N}&=\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}.
 \end{align}
 
-Following the same procedure we could obtain the same result if the object was in the other arm of the interferometer. We now use this as a imperfect absorber in the vertical path:
+Following a similar procedure we could obtain a similar result if the $N$ $BS$ array is in the other arm of the interferometer,namely
+
+\begin{align}
+BS^{N}\ket{1}&=\prod_{i=3}^{N+2} \cos(\theta_{i})\ket{1}+i \sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})} \ket{abs}
+\end{align}
+
+ We now use this $N$ $BS$ array to model the imperfect absorber in the vertical path of the interferometer. Again, let us assume that the photon enters the device via the horizontal channel, so that it is in the initial state $\ket{1}$. The state is transformed in the following way:
 
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{{BS^{N}}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\prod_{i=3}^{N} \cos(\theta_{i})\ket{2}-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{Mirrors}}\cos(\theta_{1})  e^{i \gamma_{1}}\ket{2}+i\sin(\theta_{1})\prod_{i=3}^{N} \cos(\theta_{i}) e^{i \gamma_{2}}\ket{1}\\
-&-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{BS2}}(\cos(\theta_{1})\cos(\theta_{2})e^{i \gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i \gamma_{2}}\prod_{i=3}^{N} \cos(\theta_{i}))\ket{2}\\ &+ i(\cos(\theta_{1})\sin(\theta_{2})e^{i \gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i \gamma_{2}}\prod_{i=3}^{N} \cos(\theta_{i}))\ket{1}\\ &-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N}\cos^2(\theta_{i})}\ket{abs}.
+&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{{BS^{N}}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\prod_{i=3}^{N+2} \cos(\theta_{i})\ket{2}-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{Mirrors}}\cos(\theta_{1})  e^{i \gamma_{1}}\ket{2}+i\sin(\theta_{1})\prod_{i=3}^{N+2} \cos(\theta_{i}) e^{i \gamma_{2}}\ket{1}\\
+&-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{BS2}}(\cos(\theta_{1})\cos(\theta_{2})e^{i \gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i \gamma_{2}}\prod_{i=3}^{N+2} \cos(\theta_{i}))\ket{2}\\ &+ i(\cos(\theta_{1})\sin(\theta_{2})e^{i \gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i \gamma_{2}}\prod_{i=3}^{N+2} \cos(\theta_{i}))\ket{1}\\ &-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}\ket{abs}.
 \end{align*}
  
-The probabilities of detection in each of the detectors are given by:
+The probabilities of detection at each of the detectors and the probability of absorption are given by:
 
 \begin{align}
-P_{2D_{1}}&=|\cos(\theta_{1})\sin(\theta_{2})+\cos(\theta_{2})\sin(\theta_{1})e^{i (\gamma_{2}-\gamma_{1})}\prod_{i=3}^{N} \cos(\theta_{i})|^2,\\
-P_{2D_{2}}&=|\cos(\theta_{1})\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})e^{i (\gamma_{2}-\gamma_{1})}\prod_{i=3}^{N} \cos(\theta_{i})|^2,\\
-P_{2abs}&=\sin^2(\theta_{1})\left(1-\prod_{i=3}^{N}\cos^2(\theta_{i})\right).
+P_{2D_{1}}&=|\cos(\theta_{1})\sin(\theta_{2})+\cos(\theta_{2})\sin(\theta_{1})e^{i (\gamma_{2}-\gamma_{1})}\prod_{i=3}^{N+2} \cos(\theta_{i})|^2,\\
+P_{2D_{2}}&=|\cos(\theta_{1})\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})e^{i (\gamma_{2}-\gamma_{1})}\prod_{i=3}^{N+2} \cos(\theta_{i})|^2,\\
+P_{2abs}&=\sin^2(\theta_{1})\left(1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})\right).
 \end{align}
 
 
 
 
-\chapter{A Time-dependent transmitter}
+\chapter{A time-dependent transmitter}
 
 In this chapter we will analyze the case of an object whose transmission and absorption coefficients depend on time, we will explore the case of an optical chopper whose time dependence is discrete. Since what we measure in the lab are probability distributions and those that change in time are quite difficult to visualize in a paper, the reader can see the behavior better in \href{https://github.com/mcditoos/Single-Photon-Mach-Zehnder-}{a Mathematica notebook}. Let us begin by analyzing the optical chopper as a perfect absorber.
 
@@ -1224,7 +1258,7 @@ A plot for the detection probabilities is shown in Fig. \ref{Pchopper}, as we me
 \caption{$P_{2D_{1}} $ in the second cycle }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probability Distribution for $\gamma_{2}-\gamma_{1}=\frac{\pi}{2}$ in the vertical path}
+\caption{Probability distributions of detection and absorption of the photon with an optical chopper whose solid material is totally absorbent  placed in the vertical path. In these plots  $\gamma_{2}-\gamma_{1}=\frac{\pi}{2}$}
 \label{Pchopper}
 \end{figure}
 
@@ -1273,7 +1307,7 @@ By the same procedure having the chopper in the horizontal path, one can obtain 
 \caption{$P_{1D_{1}} $in the second cycle }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probability distribution for the horizontal path and  $\gamma_{2}-\gamma_{1}=\frac{\pi}{2}$}
+\caption{Probability distributions of detection and absorption of the photon with an optical chopper whose solid material is totally absorbent  placed in the horizontal path. In these plots  $\gamma_{2}-\gamma_{1}=\frac{\pi}{2}$}
 \label{P2chopper}
 \end{figure}
 
@@ -1371,7 +1405,7 @@ Substituting in the previous section yields the probability distributions shown 
 \caption{$P_{1D_{1}} $ in the second cycle }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probability Distribution in the horizontal path with  $\gamma_{2}-\gamma_{1}=0 $ y $\beta=0.5$}
+\caption{Probability distributions of detection and absorption of the photon with an optical chopper whose solid material is totally absorbent  placed in the horizontal path. In these plots  $\gamma_{2}-\gamma_{1}=0 $ and $\beta=0.5$}
 \label{P3chopper}
 \end{figure}
 
@@ -1414,7 +1448,7 @@ When the optical chopper is in the vertical path we obtain the following detecti
 \caption{$P_{2D_{1}} $ in the second cycle }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probability Distribution for the vertical path with  $\gamma_{2}-\gamma_{1}=0 $ y $\beta=0.5$}
+\caption{Probability distributions of detection and absorption of the photon with an optical chopper whose solid material is totally absorbent  placed in the vertical path. In these plots  $\gamma_{2}-\gamma_{1}=0 $ and $\beta=0.5$}
 \label{P4chopper}
 \end{figure}
 
@@ -1426,14 +1460,14 @@ When the optical chopper is in the vertical path we obtain the following detecti
 &P_{2abs}=\abs{\alpha}^2 \sin^2(\theta_{1}).\numberthis{}
 \end{align*}
 
-\chapter[High-efficiency Mach-Zehnder]{High-efficiency  Mach- \\ Zehnder interferometer  }
+\chapter[High-efficiency Mach-Zehnder Interferometer]{High-efficiency  Mach- \\ Zehnder interferometer  }
  
  The notation previously used is not popular when dealing with nested interferometers. To be consistent with the existing literature we will use the same notation as Kwait et al. \cite{5}, where the arrangement shown in Fig. \ref{Nmach}, we see from the figure that we will have $N$ beam splitters and $N-1$ absorbers before the output:
  
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{images/nmach.png}
-\caption{Nested Mach-Zehnders interferometer  with imperfect absorbers.}
+\caption{Nested Mach-Zehnders interferometer  with identical imperfect absorbers.}
 \label{Nmach}
 \end{figure}
  
@@ -1518,9 +1552,9 @@ To obtain said probabilities as well as the behavior of the system for varying $
 \label{Azuma1}
 \end{figure}
 
-
+nbrjbegiubre
 Fig. \ref{Azuma1} shows different probabilities as we increase $N$. We can see that the probability of detection in $D_{1}$ asymptotically approaches 1 as Azuma had shown \cite{Azuma}, the case of a $BS$ as an absorber shows consistency. The case of a $BS$ is described by the same mathematics that an analyzer and a polarizer \cite{leonhardt}, unlike other absorbers this can be manipulated continually, giving us a way to test these curves experimentally.
- \subsection{Using Identical beam splitters for all $N$}
+ \section{Using identical beam splitters for all $N$}
  
 One may wonder how the system behaves for growing $N$ with the same kind of $BS$ for all $N$, maybe we could make the probability of detecting in $D_{1}$ grow as well, but after the analysis. We can see that even though it may grow for low $N$ it soon begins to lower and approaches zero very quickly for most values as we can see below.
 
@@ -1539,16 +1573,21 @@ One may wonder how the system behaves for growing $N$ with the same kind of $BS$
 \end{subfigure}
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/BsFijo_azumaabs.png}
-\caption{$P_{D_{2}}$}
+\caption{$P_{abs}$}
 \label{fig:BS1}
 \end{subfigure}
 \caption{Behavior for growing $N$ 50:50 $BS$ for all $N$,we show the probability of detection in $D_{1}$(a), $D_{2}$(b) and the probability of the photon being ``lost'' (c).}
 \label{Azuma2}
 \end{figure}
+
+
+
+
+
  
  Fig. \ref{Azuma2} shows the probabilities when we increase the number of interferometers but do not change the $BS$ as $N$ increases, this may seem like a waste of effort since the aim is to maximize the detection probability. However let us assume that we have an absorber that has a very little absorption probability, if we wanted to have it absorbing our photon this scheme would prove useful
 
-\subsection{Using Different Beam splitters}
+\section{Using different beam splitters}
 
 As we explored at the beginning of this chapter what gives us distinguishability between the case where we have an object in one of the arms of the interferometer and when there is no obstacle is the fact that when the sum of the angles is $\frac{ \pi}{2}$ so that when no object is there the output will be in detected in the opposite path when sent the photon in.
 
@@ -1561,7 +1600,7 @@ P_{D_{1}}=|\bra{2} (B \times A)^{N-1}B \ket{2}|^2
 As we stated in section 2.2 the problem was reduced to matrix multiplication so we can get $P_{D_{1}}$ in this fashion, since manual calculations such as the ones in chapters 3,4 and 5 become tedious when N grows, we will again use a computer, this time using symbolic computation to get this result, to illustrate the point, let us fix $N$, let us use $N=3$ then $P_{D_{1}}$ is given by:
 \small
 \begin{align*}
-&\beta^{4} \sin^{2}{\left(\theta_{1} \right)} \sin^{2}{\left(\theta_{3} \right)} \cos^{2}{\left(\theta_{2} \right)} + 2 \beta^{3} \sin{\left(\theta_{1} \right)} \sin{\left(\theta_{2} \right)} \sin{\left(\theta_{3} \right)} \sin{\left(\theta_{1} + \theta_{3} \right)} \cos{\left(\theta \right)} \cos{\left(\theta_{2} \right)} \\
+&P_{D_{1}}=\beta^{4} \sin^{2}{\left(\theta_{1} \right)} \sin^{2}{\left(\theta_{3} \right)} \cos^{2}{\left(\theta_{2} \right)} + 2 \beta^{3} \sin{\left(\theta_{1} \right)} \sin{\left(\theta_{2} \right)} \sin{\left(\theta_{3} \right)} \sin{\left(\theta_{1} + \theta_{3} \right)} \cos{\left(\theta \right)} \cos{\left(\theta_{2} \right)} \\
  & - 2 \beta^{2} \sin{\left(\theta_{1} \right)} \sin{\left(\theta_{3} \right)} \cos{\left(2 \theta \right)} \cos{\left(\theta_{1} \right)} \cos^{2}{\left(\theta_{2} \right)} \cos{\left(\theta_{3} \right)} + \beta^{2} \sin^{2}{\left(\theta_{2} \right)} \sin^{2}{\left(\theta_{1} + \theta_{3} \right)} \\
  & - 2 \beta \sin{\left(\theta_{2} \right)} \sin{\left(\theta_{1} + \theta_{3} \right)} \cos{\left(\theta \right)} \cos{\left(\theta_{1} \right)} \cos{\left(\theta_{2} \right)} \cos{\left(\theta_{3} \right)} + \cos^{2}{\left(\theta_{1} \right)} \cos^{2}{\left(\theta_{2} \right)} \cos^{2}{\left(\theta_{3} \right)}
 \end{align*}
@@ -1645,7 +1684,7 @@ To answer that question we explore how the object inducing a phase would affect 
  A=\begin{pmatrix} \beta e^{i \theta}& 0\\0&  1\end{pmatrix}.
  \end{equation}
 
-By doing the same procedure as in section 6.1, we plot $P_{D_{1}},P_{D_{2}},P_{abs}$ v. $\theta$ fixing $N$.
+By doing the same procedure as in section 6.1, we plot $P_{D_{1}},P_{D_{2}},P_{abs}$ v. $\theta$ fixing $N$. 
 
 \begin{figure}[H]
 \centering
@@ -1672,11 +1711,13 @@ By doing the same procedure as in section 6.1, we plot $P_{D_{1}},P_{D_{2}},P_{a
 \caption{$N=1000$ }
 \label{1000}
 \end{subfigure}
-\caption{Behaviour of probabilities as $N$ grows and we vary $\theta$, (a) N=2,(b) N=5,(c) N=10,(d) N=100,(e) N=1000.}
+\caption{Behaviour of probabilities as $N$ grows and we vary $\theta$ for $\beta=0.5$, (a) N=2,(b) N=5,(c) N=10,(d) N=100,(e) N=1000.}
 \label{con_fase}
 \end{figure}
 
 As we see from Fig. \ref{con_fase} the phase is important when $N$ is small but as $N$  grows the dependence on the phase $\theta$ becomes smaller until we see for example in Fig \ref{1000} when $N$ is big. It is almost constant with the variation of $\theta$.
+
+These kind of plots, allow us to know the phases that would improve our bomb detector for unbalanced interferometers, such as the one developed in \cite{Chao_2018} for any given transparency and number of beam spliters.
 
 
 \section{Towards Wheeler's Gedanken experiment}
@@ -1721,16 +1762,16 @@ A similar situation arises through interaction-free measurements, since taking a
 
 \begin{figure}[H]
 \centering
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.40\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_2.png}
 \caption{$P_{D_{1}}$}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.40\linewidth}
 \includegraphics[width=\linewidth]{images/pd2_2.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.40\linewidth}
 \includegraphics[width=\linewidth]{images/pabs_2.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
@@ -1739,6 +1780,7 @@ A similar situation arises through interaction-free measurements, since taking a
 \label{transzuri}
 \end{figure}
 
+fgpgibfiufiugbi
 But if you have both $BS$ in the setup how can the transition between particle and wave behavior be achieved? The answer is quite simple, the object introduces two new parameters that can be tuned to change the behavior of the photon from particle to wave since these properties change the probabilities at the output as was studied in previous sections. This was done by Zurika Blanco-Garcia and Oscar Rosas-Ortiz in \cite{azuri} for the 50:50 $BS$ case. Those plots are in perfect agreement with the experiments. However, no experimental realization has been done in this setup. Fig. \ref{transzuri} shows the transition from particle to wave behavior in the 50:50 case. (To make it more comparable to experiments we included the effect of misalignment $\gamma_{1},\gamma_{2}$, in the output they end up in a sum with the phase of the object, we included this in a single parameter $\Delta$):
 
 \begin{figure}[H]
@@ -1752,7 +1794,7 @@ But if you have both $BS$ in the setup how can the transition between particle a
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Continuous transition between wave and particle behavior with 75:25 BSs the probability of detection in $D_{1}$ is shown in (a) and for $D_{2}$ in (b)}
+\caption{Continuous transition between wave and particle behavior with 25:75 BSs the probability of detection in $D_{1}$ is shown in (a) and for $D_{2}$ in (b)}
 \label{pi/3}
 \end{figure}
 
@@ -1761,31 +1803,31 @@ But if you have both $BS$ in the setup how can the transition between particle a
 
 \begin{figure}[H]
 \centering
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_3_pi4.png}
 \caption{$P_{D_{1}}$}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pd2_3_pi4.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pabs_3_pi4.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_5_pi4.png}
 \caption{$P_{D_{1}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pd2_5_pi4.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pabs_5_pi4.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
@@ -1795,33 +1837,36 @@ But if you have both $BS$ in the setup how can the transition between particle a
 \end{figure}
 
 Now, what happens if we do $N$ interferometers in a row? how does this transition change? The answer is that we get multiple transitions as Fig. \ref{varias} shows, there we can see the plots for $N=3$ and $N=5$, in theses plots we consider all objects in the interferometer to be equal, we also considered all Beam Splitters to be 50:50 and we dropped the general form of the mirrors, so computation times are lower (that is we used $\gamma_{1}=\gamma_{2}=\frac{\pi}{2}$), as we can see we have more than one transition between particle and wave behavior, however, we see that this happens only for $\beta \approx 1$ which may suggest that the transition only happens for almost transparent or transparent objects. However, this is because the absorption probability tends to $1$ as $N$ grows as we showed in section 6.0.1
-\begin{figure}[H]
+
+
+
+\begin{figure}[!h]
 \centering
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_3.png}
 \caption{$P_{D_{1}}$}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pd2_3.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pabs_3.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_5.png}
 \caption{$P_{D_{1}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pd2_5.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.30\linewidth}
+\begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pabs_5.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
@@ -1831,7 +1876,6 @@ Now, what happens if we do $N$ interferometers in a row? how does this transitio
 \end{figure}
 
 We can circumvent this by using $BS$ with $\Theta=\frac{\pi}{2N}$, exploiting the quantum Zeno effect as explained in the previous section, we could then see more interesting transitions, and we get plots like the ones in Fig. \ref{varias2}, all other parameters are maintained.
-
 
 
 A more general complementary principle is formulated with regard to this experiments \cite{Ma}, this one is an inequality and goes as:
@@ -1868,7 +1912,7 @@ We could have an equivalent to such experiments with interaction-free measuremen
 \chapter{Experimental Setup}
 In this chapter, we will describe the necessary materials and steps to realize all of the previous content of this thesis experimentally. All of the work from this section on took place at the laboratory for quantum and electromagnetic phenomena at UPIITA. We will begin by generating a single photon source using SPDC, we will follow the approach taken in \cite{maestria_procopio}. We will then replicate the Elitzur-Vaidman ``bomb detector''. Finally, we will study variations of this ``bomb detector'' with semitransparent objects.
 
-\section{Single photon source}
+\section{Single-photon source}
 
 To produce a single-photon source we will use the SPDC process described in chapter 1, to do this experimentally we will follow the method described in \cite{maestria_procopio}. The experimental setup can be seen in Fig. \ref{single}.  We will use the following materials:
 
@@ -1904,7 +1948,7 @@ Since we know the relationship between each of the propagation directions, and i
 
 Once we achieve this, we place APDs in the direction of propagation of both signal and idler photons. Our single-photon source is ready to go and the next step we need to take is to set up and align the Mach-Zehnder interferometer.
 
-\section{Single photon Mach-Zehnder interferometer}
+\section{Single-photon Mach-Zehnder interferometer}
 
 As we previously described in chapter 1, the Mach-Zehnder interferometer is made of two beam splitters ($BS_{1}$ and $BS_{2}$) and two mirrors($M_{1}$ and $M_{2}$). As the Eliztur-Vaidman ``bomb detector'' uses $50:50$ beam splitters and that's a result we want to replicate we will set up our interferometer using those. In addition to the previous section we will need:
 
@@ -1921,7 +1965,7 @@ We aim to get the difference in optical paths to a minimum, that is we wish to a
 Both $D_{1}$ and $D_{2}$ are APDs placed in the same way as in Fig.1, in the output of  $BS_{2}$, the interference pattern requires special treatment of the counts since unlike the classical case where we inject coherent beams into the interferometer we are injecting single photons. This ``special treatment'' consists in only considering detector clicks when there's a simultaneous coincidence in $D_{idler}$, where $D_{idler}$ is an APD placed in the path of the idler photon as described in the SPDC section, we will use the same temporal window of ``simultaneously'' as described in the previous section that is 10ns. The experimental set up for this section is shown in Fig. \ref{newsingle}.
 
 
-\begin{figure}[!t]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{images/machzehnder_single.png}
 \caption{Experimental setup of a single photon Mach-Zehnder Interferometer}
@@ -1934,7 +1978,7 @@ In this section, we will describe in detail the procedure used to align the Mach
 
 To align the interferometer we begin by placing a red laser(HeNe) in such a way that the beam goes through the same path as the signal photon did in Fig. \ref{single}. To do this two collimators are needed. One is placed as close as possible to the BBO-I crystal, and the other one is placed near the $D_{signal}$ from the SPDC array. All alignment of our Mach-Zehnder interferometer is done using this red laser. In Fig.19 (a-d) all the steps we are going to take to align the interferometer are shown.
 
-\begin{figure}[]
+\begin{figure}[H]
 \centering
 \begin{subfigure}[b]{0.55\linewidth}
 \includegraphics[width=8cm,height=4 cm]{images/first_step.png}
@@ -2038,20 +2082,17 @@ Visibility counts will vary as we change the difference in optical paths $\delta
 
 
 
-\pagebreak 
-\chapter{Conclusions}
+ 
+\chapter*{Conclusions}
+\thispagestyle{plain}
+
 \pagebreak
-
-
-\chapter{Appendices}
-\pagebreak
-
-%prints bibliography from the bibliography file.
+\addcontentsline{toc}{section}{Acknowledgements}
 
 
 \bibliographystyle{unsrt}
 \bibliography{bibliography}
-\vspace{1 cm}
+
 
 \end{document}
 

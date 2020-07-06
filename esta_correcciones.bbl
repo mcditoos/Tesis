@@ -45,11 +45,6 @@ R.~Loudon.
 \newblock {\em The {Quantum} {Theory} of {Light}}.
 \newblock OUP Oxford, Oxford ; New York, edición: 3 edition, November 2000.
 
-\bibitem{2003}
-U.~Leonhardt.
-\newblock Quantum physics of simple optical instruments.
-\newblock {\em Reports on Progress in Physics}, 66(7):1207--1249, jun 2003.
-
 \bibitem{10}
 R.~Chevalerias, Y.~Latron, and C.~Veret.
 \newblock Methods of interferometry applied to the visualization of flows in
@@ -93,11 +88,6 @@ T.~Maudlin.
 \newblock {\em Philosophy of Physics: Quantum Theory}.
 \newblock Princeton University Press, 2019.
 
-\bibitem{imaging}
-A.~White, J.~Mitchell, O.~Nairz, and P.~Kwiat.
-\newblock ``interaction-free'' imaging.
-\newblock {\em Phys. Rev. A}, 58:605--613, Jul 1998.
-
 \bibitem{5}
 P.~Kwiat, H.~Weinfurter, T.~Herzog, A.~Zeilinger, and M.~A. Kasevich.
 \newblock Interaction-free measurement,.
@@ -123,6 +113,12 @@ P.~Kwiat, H.~Weinfurter, T.~Herzog, A.~Zeilinger, and M.~Kasevich.
 \newblock Experimental realization of interaction-free measurementsa.
 \newblock {\em Annals of the New York Academy of Sciences}, 755(1):383--393,
   1995.
+
+\bibitem{Chao_2018}
+L.~Chao, L.~Jinhong, Z.~Junxiang, and Z.~Shiyao.
+\newblock High-efficiency interaction-free measurement with an unbalanced
+  mach{\textendash}zehnder interferometer.
+\newblock {\em Laser Physics Letters}, 15(6):065211, may 2018.
 
 \bibitem{delayed}
 J.~Wheeler and W.~Zurek.

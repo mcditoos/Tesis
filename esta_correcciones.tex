@@ -6,7 +6,7 @@
 \newcommand\blankpage{
     \null
     \thispagestyle{empty}
-    \addtocounter{page}{-1}
+    \addtocounter{page}{0}
     \newpage
     }
     
@@ -856,41 +856,39 @@ when placed in the horizontal path $k=0$ and when placed in the vertical $c=0$. 
 
 we can stop here by noticing that replacing $\frac{\pi}{2}+k\xrightarrow{}\gamma_{2}$ and  $\frac{\pi}{2}+c\xrightarrow{}\gamma_{1}$, is the same as using the mirror matrix given by Eq. \ref{mirror} so our model that makes use of this matrix  instead of the more popular mirror matrix with a fixed phase $M=\begin{pmatrix} i & 0\\0& i\end{pmatrix}$, where $i=e^{i \frac{\pi}{2}}=e^{i\gamma}$, has the  effect of a phase retarder included, allowing us to study misalignment. 
 
+\afterpage{\blankpage}
+
+\chapter[Interaction-free measurements]{ Interaction-free  measurements}
 
 
-\chapter[Interaction-free measurements]{\centering Interaction-free \\ \qquad \quad measurements}
-
-
-In this chapter, we will explore what is known in the literature as interaction-free measurements. The possibility of performing such kind of measurements was first reported by Elitzur and Vaidman in \cite{Elitzur}. Since then, the topic has awakened a lot of discussion about the non-local nature of quantum theory as well as the philosophical interpretations of quantum mechanics\footnote{ This kind of discussions will be kept to a minimum in this thesis since they are way more philosophical than physical and highly speculative interesting discussions can be found in \cite{paper_vaidman, maudlin} }. We will now analyze the simplest case proposed by Elitzur and Vaidman
+In this chapter, we will explore what is known in the literature as interaction-free measurements. The possibility of performing such kind of measurements was first reported by Elitzur and Vaidman in \cite{Elitzur}. Since then, the topic has awakened a lot of discussion about the non-local nature of quantum theory as well as the philosophical interpretations of quantum mechanics\footnote{ This philosophical discussions will be kept to a minimum in this thesis since they are way more philosophical than physical and highly speculative. Interesting discussions can be found in \cite{paper_vaidman, maudlin}. }. We will now analyze the simplest case proposed by Elitzur and Vaidman
 
 \section[Elitzur-Vaidman's bomb detector]{Single-photon Mach-Zehnder interferometer with a perfect absorber}
 
-Let us now consider a Mach-Zehnder interferometer with a perfectly absorbent object place in one of its paths. Consider also that a single-photon is traveling through the interferometer. This system is best known as the Elitzur-Vaidman's bomb detector \cite{Elitzur}. An interesting aspect of this experiment is that it exhibits the non-local nature of quantum mechanics, as it allows the possibility of getting knowledge of whether the perfect absorber is in one of the arms of the interferometer performing a measurement without touching it. In order to express their ideas in a more dramatic way, Elitzurt and Vaidman proposed that the perfect absorber may be a bomb that is sensitive to the interaction with a single-photon. The bomb is supposed to explode if only a single-photon enters its sensor. Yet, Elitzur and Vaidman showed that the single-photon Mach-Zehnder interferometer supplies a mechanism such that one could detect if the bomb was there, without exploding it. Their results lead to the conclusion that this can be achieved in, at most $25\%$ the events.
+Consider a Mach-Zehnder interferometer where we could or could not place  a perfectly absorbent object in one of its paths. Consider also that a single photon is traveling through the interferometer. This system is best known as the Elitzur-Vaidman's bomb detector \cite{Elitzur}. In order to express their ideas in a more dramatic way, Elitzurt and Vaidman proposed that the perfect absorber may be a bomb that is sensitive to the interaction with a single-photon. The bomb is supposed to explode if only a single-photon enters its sensor. An interesting aspect of this experiment is that it exhibits the non-local nature of quantum mechanics, as it allows the possibility of getting knowledge of whether the perfect absorber is in one of the arms of the interferometer performing a measurement without touching it. Yet, Elitzur and Vaidman showed that the single-photon Mach-Zehnder interferometer supplies a mechanism to detect if the bomb was there, without exploding it. They concluded that this can be achieved in, at most, $25\%$ the events.
 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
 \centering
 \includegraphics[width=\linewidth]{images/machzenhderbomb.png}
 \caption{Elitzur-Vaidman's bomb detector.}
 \label{fig:bomb}
 \end{figure}
 
-To analyze this system, we will consider the Mach-Zehnder model of section 3.2 but this time having a perfect absorber in its vertical arm, as Fig. \ref{fig:bomb} shows. We will also consider that once the photon is absorbed, the optical elements of the interferometer do not interact with it any longer. We will denote the state corresponding to an absorbed photon by means of the $\ket{abs}$ vector. Assume a single-photon is pumped in the horizontal input channel of the Mach-Zehnder interferometer as shown in Fig. \ref{fig:bomb}. First, the initial state of the system is transformed by the beam splitter $BS_{1}$, into a superposition state of the single-photon being transmitted to the horizontal output of $BS_{1}$ and being reflected to the vertical one. Then the object transforms this state into a superposition of the photon being transmitted towards the mirror $M_{2}$  and being absorbed by the object. The mirror $M_{2}$, in turn, transforms the state into the state of the photon being redirected to the beam splitter $BS_{2}$, where it is finally split into the linear combination of being transmitted to detector $D_{2}$ or reflected to detector $D_{1}$. We have 
+To analyze this system, we will consider the Mach-Zehnder model of section 3.2 but this time having a perfect absorber in its vertical arm, as Fig. \ref{fig:bomb} shows. We will also consider that once the photon is absorbed, the optical elements of the interferometer do not interact with it any longer. We will denote the state corresponding to an absorbed photon by means of the $\ket{abs}$ vector. Assume a single-photon is pumped in the horizontal input channel of the Mach-Zehnder interferometer. First, the initial state of the system is transformed by the beam splitter $BS_{1}$, into a superposition state of the single photon being transmitted to the horizontal output of $BS_{1}$ and being reflected to the vertical one. Then, the photon could either be absorbed by the bomb if it was traveling towards $M_1$ or be reflected by $M_2$ if it was traveling in the other arm. The mirror $M_{2}$, in turn, transforms the state into the state of the photon being redirected to the beam splitter $BS_{2}$, where it is finally split into the linear combination of being transmitted to detector $D_{2}$ or reflected to detector $D_{1}$. We have 
  
 \begin{align*}
 &\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{\text{Bomb}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{abs}\\ &\xrightarrow{\text{Mirrors}}
  i\cos(\theta_{1})\ket{2}+i\sin(\theta_{1})\ket{abs} \\ &\xrightarrow{\text{BS2}}i\cos(\theta_{1})\cos(\theta_{2})\ket{2}-\cos(\theta_{1})\sin(\theta_{2})\ket{1}+i\sin(\theta_{1})\ket{abs}, \numberthis
 \end{align*}
 
-where $M_{2}$ is such that $\gamma=\frac{\pi}{2}$, and $\theta_{1},\theta_{2}$ are the parameters in the beam splitter matrix for $BS_{1},BS_{2}$. The probabilities to be absorbed or detected at either $D_{1}$ or $D_{2}$ are given, respectively, by:
+where $M_{2}$ is such that $\gamma=\frac{\pi}{2}$, and $\theta_{1},\theta_{2}$ are the parameters in the beam splitter matrix for $BS_{1},BS_{2}$. The probabilities to be either absorbed or detected at either $D_{1}$ or $D_{2}$ are given by:
 
-\begin{align}
-P_{D_{1}}&=\cos^2(\theta_{1}) \sin^2(\theta_{2}),\\
-P_{D_{2}}&=\cos^2(\theta_{1}) \cos^2(\theta_{2}),\\
-P_{abs}&=\sin^2(\theta_{1}).
-\end{align}
+\begin{equation}
+P_{D_{1}}=\cos^2(\theta_{1}) \sin^2(\theta_{2}),\qquad P_{D_{2}}=\cos^2(\theta_{1}) \cos^2(\theta_{2}),\qquad P_{abs}=\sin^2(\theta_{1}).
+\end{equation}
 
-Consider the case where both, $BS_{1}$ and $BS_{2}$ are $50:50$ beam splitters, i.e where $\theta_{1}=\theta_{2}=\frac{\pi}{4}$ then:
+As a particular case, if both, $BS_{1}$ and $BS_{2}$ are $50:50$ beam splitters, i.e where $\theta_{1}=\theta_{2}=\frac{\pi}{4}$, then:
 
 \begin{equation}
 P_{D_{1}}=\frac{1}{4},\quad P_{D_{2}}=\frac{1}{4}, \quad P_{abs}=\frac{1}{2}.
@@ -898,7 +896,7 @@ P_{D_{1}}=\frac{1}{4},\quad P_{D_{2}}=\frac{1}{4}, \quad P_{abs}=\frac{1}{2}.
 
 
 
-In the event that we detect the photon in $D_{1}$, we get no useful information to conclude about the presence of the bomb, as this result is always obtained in the conventional Mach-Zehnder interferometer. Thus, in $\frac{1}{2}$ of the times we make a measurement we cannot tell whether the bomb is there or not, this means that, in this experiment, the bomb has a $\frac{1}{2}$ probability of exploding by interacting with the photon. Additionally there is a $\frac{1}{2}$ probability that the photon is detected either at $D_{1}$ or $D_{2}$. Since we are dealing with just one measurement it is not so useful to talk about conditional probabilities such as, what is the probability of detecting in $D_{2}$, if the object is not absorbed in the same way that it is not useful to talk about the probability of having a single dice throw come out as six provided it was not one. However it is useful to analyze the efficiency of this interferometer, that is just how probable is it for us to realize interaction-free measurements, the efficiency is given by \cite{5}:
+If we detect the photon in $D_{1}$, we get no useful information to conclude about the presence of the bomb, as this result is always obtained in the conventional Mach-Zehnder interferometer. Thus, in $\frac{1}{2}$ of the times we make a measurement we cannot tell whether the bomb is there or not. In this experiment, the bomb has a $\frac{1}{2}$ probability of exploding by interacting with the photon. Additionally there is a $\frac{1}{2}$ probability that the photon is detected either at $D_{1}$ or $D_{2}$. So fifty percent of the time we have interaction-free measurements, to tell whether an object is there or not we need to consider that if the photon is detected at $D_{2}$, then it indicates that there is an object in one of the arms of the interferometer. However, we cannot distinguish between this case and the previous one section 3.2 from a single event if we detect at $D_{1}$, so $\frac{1}{2}$ of the times we make a measurement we can't tell if a bomb is there or not. Since we are dealing with just one measurement it is not so useful to talk about conditional probabilities such as, 'what is the probability of detecting in $D_{2}$, if the object is not absorbed' in the same way that it is not useful to talk about the probability of having a single dice throw come out as six provided it was not one. However, it is useful to analyze the efficiency of this interferometer, that is just how probable it is for us to realize interaction-free measurements, the efficiency is given by \cite{5}:
 
 \begin{equation}
 \eta=\frac{P_{det}}{P_{det}+P_{abs}},
@@ -910,27 +908,25 @@ where $\eta$ is the efficiency, $P_{det}$ is the probability the object is detec
 \eta=P_{D_{1}}+P_{D_{2}}.
 \end{equation}
 
-So for example in the case we explored in this section $\eta=\frac{1}{2}$ so fifty percent of the time we have interaction-free measurements, to tell whether an object is there or not we need to consider that if the photon is detected at $D_{2}$, then it indicates that there is an object in one of the arms of the interferometer. However, we cannot distinguish between this case and the previous one section 3.2 from a single event if we detect at $D_{1}$, so $\frac{1}{2}$ of the times we make a measurement we can't tell if a bomb is there or not.
-
-When there is a perfect absorber in one of the paths of the interferometer detecting a photon in either $D_{1}$ or $D_{2}$ means that the photon did not interact with the object and thus in this sense is interaction-free. However as discussed above detecting in $D_{1}$ does not give us information as to whether the object is there or not and cannot be distinguished from the previous case, thus as the objective in this section as well as in the rest of this work is to be able to tell whether the object is there or not without interaction with it. The important detection is the one made in $D_{2}$ for the 50:50 beam splitter case, or whichever gives us information about the object in the more general cases.
+For example in the case we explored in this section $\eta=\frac{1}{2}$.  Whenever a perfect absorber is in one of the arms of the interferometer, detecting a photon in either $D_1$ or $D_2$ means that the photon did not interacted with the bomb. As discussed above, detecting at $D_1$ does not give us information about the presence of the bomb. Since the goal is to determine if the bomb is there, a detection in $D_2$ is an ‘interaction-free measurement’ that confirms the presence of the bomb.
   
-\section[Interferometer with an  imperfect transmitter]{The single-photon Mach-Zehnder interferometer with an  imperfect transmitter}
+\section[Replacing the bomb with an imperfect transmitter]{Replacing the bomb with an imperfect transmitter}
 
-This section is based on the treatment reported by Blanco-Garcia and O. Rosas-Ortiz \cite{zuri,azuri}, and the work by Azuma \cite{Azuma}. 
+This section is based on the treatment reported by Z. Blanco-Garcia and O. Rosas-Ortiz \cite{zuri,azuri}, and the work by Azuma \cite{Azuma}. 
 
 
-Now replacing the ``bomb'' from section 4.1 with an object which can transmit photons partially, that is a semi-transparent object. Let us consider an object such that $\alpha$ and $\beta$ are its absorption and transmission coefficients, respectively, satisfying the condition $|\alpha|^2 + |\beta|^2 = 1.$
+Let us replace the ``bomb'' from section 4.1 with a semi-transparent object. The absorption and transmission coefficients of such an object will be denoted by $\alpha$ and $\beta$ , respectively, satisfying the condition $|\alpha|^2 + |\beta|^2 = 1.$
 
-Now as the object may not be absorbed upon interaction, some people argue that interaction-free measurements is no longer a good name and refer to this kind of setup as quantum interrogation 
 
-In the same Horizontal-Vertical basis and our initial state is $\ket{1}$. We will place our imperfect transmitter in the vertical output path of the beam splitter $BS_{1}$ as Fig. \ref{fig:bomb} shows. Our transmitter can either transmit with probability $|\beta|^2$ or absorb with probability $|\alpha|^2$, in such a way that when a photon the state $\ket{2}$ transforms as:
+
+In the same Horizontal-Vertical basis, our initial state is $\ket{1}$. We will place our imperfect transmitter in the vertical output path of the beam splitter $BS_{1}$ as Fig. \ref{fig:bomb} shows. Our transmitter can either transmit with probability $|\beta|^2$ or absorb with probability $|\alpha|^2$, when a photon in the state $\ket{2}$ travels throught the object, the state transforms as:
 
 
 \begin{align}
 \ket{2}\xrightarrow[\text{Absorber}]{\text{Imperfect}}\alpha \ket{abs} +\beta \ket{2}.
 \end{align}
 
-With this information we can now state our model. First, the initial state is transformed by $BS_{1}$ into a superposition of $\ket{1}$ and $\ket{2}$, then it is acted on by the imperfect transmitter which decomposes the component $\ket{2}$ into a superposition of $\ket{2}$ and $\ket{abs}$ (being transmited or being absorbed). Afterwards the mirror in each path interchanges $\ket{1}\rightarrow{}\ket{2}$ and vice versa, in this section we will consider mirrors such that $\gamma=\frac{\pi}{2}$ \ref{mirror} finally the state is recombined in the second beam splitter $BS_{2}$:
+With this information model the experiment. We start out with a photon state at the horizontal entry port of $BS_1$. Then, the initial state is transformed by $BS_{1}$ into a superposition of $\ket{1}$ and $\ket{2}$. The vertical component interacts with the so called by the imperfect transmitter which decomposes the component $\ket{2}$ into a superposition of $\ket{2}$ and $\ket{abs}$ (being transmited or being absorbed). Afterwards, the mirror in each path interchanges $\ket{1}\rightarrow{}\ket{2}$ and vice versa, in this section we will consider mirrors such that $\gamma=\frac{\pi}{2}$. Finally, the state is recombined in the second beam splitter $BS_{2}$. Mathematically, this process is written as 
 
 \begin{align*}
 & \ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2} \\ &\xrightarrow[\text{Absorber}]{\text{Imperfect }}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})(\alpha \ket{abs} +\beta \ket{2} )
@@ -938,16 +934,19 @@ With this information we can now state our model. First, the initial state is tr
 (\cos(\theta_{1})\sin(\theta_{2})+\beta \sin(\theta_{1})\cos(\theta_{2}))\ket{1}+ i \alpha \sin(\theta_{1})\ket{abs} \\ &+i(\cos(\theta_{1})\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\beta)\ket{2}. \numberthis
 \end{align*}
 
-
-We will write detection probabilities as $P_{ij}$ where $i=1,2$ is the path of the interferometer where the imperfect transmitter is placed, in the previous calculation $i=2$, and $j$ is one of the possible outcomes $j=D_{1},D_{2},abs$. Therefore the detection probabilities are given by:
-
+Then, the probabilities of detection at $D_1$, $D_2$ and absorption of the photon are 
 \begin{align}
-& P_{2D_{1}}=|\cos(\theta_{1})\sin(\theta_{2})+\beta \sin(\theta_{1})\cos(\theta_{2})|^2, \label{eq1}\\
-& P_{2D_{2}}=|\cos(\theta_{1})\cos(\theta_{2})-\beta \sin(\theta_{1})\sin(\theta_{2})|^2, \\
-& P_{2abs}=|\alpha \sin(\theta_{1})|^2. \label{eq2}
+& P_{D_{1}}=|\cos(\theta_{1})\sin(\theta_{2})+\beta \sin(\theta_{1})\cos(\theta_{2})|^2, \label{eq1}\\
+& P_{D_{2}}=|\cos(\theta_{1})\cos(\theta_{2})-\beta \sin(\theta_{1})\sin(\theta_{2})|^2, \\
+& P_{abs}=|\alpha \sin(\theta_{1})|^2. \label{eq2}
 \end{align}
 
-If we consider the same experimet but this time we locate our imperfect transmitter on the horizontal arm of the interferometer we obtain:
+Again, detection at $D_1$ tell us nothing about the presence of the object. But if we detect at $D_2$ we know that the object was in the vertical arm of the interferometer. Some people argue that this is no longer an interaction-free measurement because the photon may have passed through  the semitransparent object, they refer to this kind of setup as 'quantum interrogation' \cite{QI1,QI2}. 
+
+
+From, now on we will write detection probabilities as $P_{ij}$ where $i=1$ ($i=2$) means that the object was placed just after $BS_1$ in the horizontal (vertical) arm of the interferometer, in previous calculation $i=2$. Subindex $j$ denotes one of the possible outcomes $j=D_{1},D_{2},abs$. In this notation $P_{D_1}= P_{2D_{1}}, ~P_{D_2}= P_{2D_{2}}, ~P_{abs}= P_{2abs} $. 
+
+By locating our imperfect transmitter on the horizontal arm of the interferometer, we obtain:
 
 \begin{align}
 P_{1D_{1}}&=|\beta\cos(\theta_{1})\sin(\theta_{2}) +\sin(\theta_{1})\cos(\theta_{2})|^2,\label{eq3} \\
@@ -957,7 +956,7 @@ P_{1abs}&=|\alpha \cos(\theta_{1})|^2. \label{eq4}
 
 
 
-Observing that in general, the probabilities \ref{eq1}-\ref{eq2} are different to those in \ref{eq3}-\ref{eq4} we can consider  the difference between them, to see when the output depends on the path in which we place the object and when it is independent of it. The expressions concerning the difference between $P_{iD_{1}}$ and $P_{iD_{2}}$ are important because they tell us just how distinguishable these outcomes are:
+Observe that, in general, the probabilities Eqs. \ref{eq1}-\ref{eq2} are different to those in Eqs. \ref{eq3}-\ref{eq4}. We can consider  the difference between them to see when the output depends on the arm in which we place the object.
 
 
 \begin{align}
@@ -965,7 +964,7 @@ P_{1D_{1}}-P_{2D_{1}}=(1-|\beta|^2)\left(\frac{\cos(2 \theta_{1})-\cos(2 \theta_
 P_{1D_{2}}-P_{2D_{2}}=(1-|\beta|^2)\left(\frac{\cos(2 \theta_{1})+\cos(2 \theta_{2})}{2}\right).
 \end{align}
 
-From there, we can say that the outcome probabilities are the same only the following cases:
+These expressions tell us how distinguashable these outcomes are.  We can say that the outcome probabilities are the same only the following cases:
 
 \begin{description}
 
@@ -983,7 +982,7 @@ Finally, we can also obtain an expression for each one of the angles in terms of
 \end{align}
 
 
-where $\cos^{1}(x)$ is the arccosine of x. These equations would allow us  to set the values of the beam splitters' transmitance and reflectance coefficients in order to obtain specific values of the probabilities of detection $P_{iD_{1}}$, $P_{iD_{2}}$. This fact will serve us to infere, in a series of measurements, some information about the location of te absorber in the interferometer.  
+where $\cos^{-1}(x)$ is the arccosine of $x$. These equations would allow us  to set the values of the beam splitters' transmitance and reflectance coefficients in order to obtain specific values of the probabilities of detection $P_{iD_{1}}$, $P_{iD_{2}}$. This fact will serve us to infere, in a series of measurements, some information about the location of te absorber in the interferometer.  
 
 For example, suppose we consider an interferometer such that, if the object is in the horizontal path, then $P_{1D_{2}}=\frac{1}{3} \quad P_{1D_{1}}=\frac{1}{4}$. Correspondingly,  if the object was in the vertical path $P_{2D_{2}}=\frac{1}{4} \quad P_{2D_{1}}=\frac{1}{3}$. Assuming, for instance that the object is characterized by $|\beta|^{2}=0.5$ the expressions \ref{thetasara}-\ref{thetasara1} for the values $\theta_{1},\theta_{2}$ defining the beam splitters' transmitance and reflectance coefficients would yield
 
@@ -995,19 +994,19 @@ For example, suppose we consider an interferometer such that, if the object is i
 Thus, expressions \ref{thetasara}-\ref{thetasara1} offer the posibility to design interferometers by means of which we could distinguish between the object being placed in one path or the other by measuments and taking the statistics. From the pratical point of view, one should also consider the technical difficulties in constructing the very specific beam splitter needed to perform the measurements, we also risk exploding the bomb in the process, as for the previous values of detection probabilities we have $P_{det}=\frac{7}{12}$ and $P_{abs}=\frac{5}{12}$ (so it would not be wise to try and tell in which path the object may be).
  
 
-\pagebreak
+
 
 
 \section[$BS$ as an imperfect transmitter]{Beam splitter as an imperfect trasmitter}
 
-We will now study the case where we replaced the semi-transparent object discused in section 4.2 by a beam splitter $BS_{o}$ as an imperfect transmitter. In this case, we will consider imperfect mirrors $M_{1}$ and $M_{2}$ such that $\gamma$ is arbitrary, i.e, the mirrors, are assumed to induce an arbitrary phase. We will suppose that the phases are different so we can model misalignments in the interferometer as described in section 3.3.  Likewise  previous cases, we will first consider our imperfect transmitter is placed in the vertical path as shown in Fig. \ref{bs vertical}. As might be infered from the Figure, the event of the photon being absorbed by the object, is now modeled by the photon being reflected by $BS_{o}$ ( the photon goes out of the interferometer's paths, and does not interact anylonger with the rest of the optical elements).
+We will now study the case where we replaced the bomb discused in section 4.2 with a beam splitter $BS_{o}$ . In this case, we will consider imperfect mirrors $M_{1}$ and $M_{2}$ such that $\gamma_{1}$ and $\gamma_{2}$ are arbitrary, i.e, the mirrors, induce arbitrary phases. So we can model misalignments in the interferometer as described in section 3.3.  Likewise  previous cases, we will first consider our imperfect transmitter is placed in the vertical path as shown in Fig. \ref{bs vertical}. As might be infered from the Figure, the event of the photon being absorbed by the object, is now modeled by the photon being reflected by $BS_{o}$ (the photon goes out of the interferometer, and does not interact anylonger with the rest of the optical elements).bgriubrgirbgi
 
 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
 \centering
 \includegraphics[width=\linewidth,height=7.5 cm]{images/machzenhderbs.png}
-\caption{Mach-Zehnder interferometer with a $BS$ as imperfect transmitter}
+\caption{Mach-Zehnder interferometer with a $BS$ as imperfect transmitter.}
 \label{bs vertical}
 \end{figure}
 
@@ -1019,7 +1018,7 @@ Thus, let us assume that our imperfect transmitter is a beam splitter $BS_{o}$ w
 
 As the reflected photon goes out of the paths of the interferometer, and, thus out of reach of the remaining optical components, it might be considered as if it were absorbed by this component of the device. So, we denote its state by the vector $\ket{abs}$ as in the case of the states of truly absorbed photons of the previous experiments. With that in mind  now our model is an analogous form to those cases of the previous sections.
 
-Assuming the photon enters the interferometer though the horizontal channel, i.e being in the initial state $\ket{1}$, we have:
+Assuming the photon enters the interferometer though the horizontal channel, i.e being in the initial state $\ket{1}$, The evolution of the state goes as follows:
 
 
 
@@ -1040,7 +1039,7 @@ The detection probabilities can now be readily written:
 
 It is worthwhile noting that $P_{2D_{1}}$ and $P_{2D_{2}}$ do not depend on $\gamma_{1}$ and $\gamma_{2}$ independently but only on the difference $\gamma_{2}-\gamma_{1}$ meaning that the detection probabilties are only sensitive to the relative phases introduced by the mirrors. Adittionally, as it might be expected the absortion probability depends only on the parameters of $BS_{1}$ and $BS_{o}$.
 
-we show the plots for the detection probabilities $P_{2abs}$, $P_{2D_{1}}$ and $P_{2D_{2}}$ in Fig. \ref{P_bs}, as functions of $\theta_{1}$ and $\theta_{2}$ for the particular values of $\theta_{o}=\frac{\pi}{3}$ and $\gamma_{2}-\gamma_{1}=\pi$. There we can see the oscilatory behavious in both parameters:
+We show the plots for the detection probabilities $P_{2abs}$, $P_{2D_{1}}$ and $P_{2D_{2}}$ in Fig. \ref{P_bs}, as functions of $\theta_{1}$ and $\theta_{2}$ for the particular values of $\theta_{o}=\frac{\pi}{3}$ and $\gamma_{2}-\gamma_{1}=\pi$. There we can see the oscilatory behavious in both parameters:
 
 
 
@@ -1073,14 +1072,14 @@ Repeating the same calculation with the beam splitter $BS_{o}$ in the horizontal
 
 
 \begin{align}
-P_{1D_{1}}&=|ie^{i(\gamma_{1}-\gamma_{2})}\cos(\theta_{1})\sin(\theta_{2})\cos(\theta_{o})+i \sin(\theta_{1})\cos(\theta_{2})|^2, \\
+P_{1D_{1}}&=|e^{i(\gamma_{1}-\gamma_{2})}\cos(\theta_{1})\sin(\theta_{2})\cos(\theta_{o})+ \sin(\theta_{1})\cos(\theta_{2})|^2, \\
 P_{1D_{2}}&=|\cos(\theta_{1})\cos(\theta_{o})\cos(\theta_{2})e^{i(\gamma_{1}-\gamma_{2})}- \sin(\theta_{1})\sin(\theta_{2})|^2,\\
 P_{1abs}&=|\sin(\theta_{o}) \cos(\theta_{1})|^2 .
 \end{align}
 
 which are shown graphically in Fig. \ref{P_bs2} as functions of $\theta_{1}$ and $\theta_{2}$, for the same values of $\theta_{o}$ and $\gamma_{2}-\gamma_{1}$ than those of Fig. \ref{P_bs}. We can see they are quite different, valleys in one are hills on the other and one the reasons is that we are always launching the incident photon from the same input channel, so that the initial conditions are not symetrical.
 
-\begin{figure}[H]
+\begin{figure}[t]
 \centering
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/P11abs.png}
@@ -1105,7 +1104,7 @@ which are shown graphically in Fig. \ref{P_bs2} as functions of $\theta_{1}$ and
 
 Our results are totally consistent with those reported in \cite{zuri,azuri} by taking $\beta=\cos(\theta_{o})$, $\alpha=i \sin(\theta_{o})$ and $\gamma_{2}-\gamma_{1}=0$. One of the advantages of this setup is that the ``absorbed'' photon, is not really absorbed but redirected through another path and can be monitored as well, by a third detector, say $D_{abs}$, enabling, thus the posibility of correlating the absorption and detection probabilities.
 
-\section{$N$ beam splitters array as the imperfect transmitter }
+\section{Replacing the bomb with $N$ beam splitters }
 
 
 \begin{figure}[H]
@@ -1127,7 +1126,7 @@ The next beam splitter only acts on the transmitted photon state, since, as expl
 BS_{4}(\cos(\theta_{3})\ket{2}+i\sin(\theta_{3})\ket{abs})&=\cos(\theta_{3})BS_{4}\ket{2}+i\sin(\theta_{3})\ket{abs},\\
 BS_{4}BS_{3}\ket{2}&=\cos(\theta_{3})\cos(\theta_{4})\ket{2}+i A_{2}\ket{abs}.
 \end{align}
-where $A_{2}$ is the absorption coefficient for a two beam splitter array. The action of the rest of the beam splitters are equivalent
+where $A_{2}$ is the composed absorption coefficient for a two beam splitter array. The action of the rest of the beam splitters are equivalent
 \begin{equation}
 BS_{5}BS_{4}BS_{3}\ket{2}=\cos(\theta_{3})\cos(\theta_{4})\cos(\theta_{5})\ket{2}+iA_{3}\ket{abs},
 \end{equation}
@@ -1150,8 +1149,8 @@ Following a similar procedure we could obtain a similar result if the $N$ $BS$ a
 \begin{align}
 BS^{N}\ket{1}&=\prod_{i=3}^{N+2} \cos(\theta_{i})\ket{1}+i \sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})} \ket{abs}
 \end{align}
+ We now use this $N$ $BS$ array to model the imperfect absorber, we can calculate the evolution of a photon initially in state $\ket{1}$ through the interferometer, passing the set of $N$ beam splitters that replaced the bomb (placed in the vertical arm just after $BS_1$), being reflected by $M_1$ and $M_2$, recombined in $BS_2$ and finally going directly to detectors $D_1$ and $D_2$ as: 
 
- We now use this $N$ $BS$ array to model the imperfect absorber in the vertical path of the interferometer. Again, let us assume that the photon enters the device via the horizontal channel, so that it is in the initial state $\ket{1}$. The state is transformed in the following way:
 
 \begin{align*}
 &\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{{BS^{N}}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\prod_{i=3}^{N+2} \cos(\theta_{i})\ket{2}-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{Mirrors}}\cos(\theta_{1})  e^{i \gamma_{1}}\ket{2}+i\sin(\theta_{1})\prod_{i=3}^{N+2} \cos(\theta_{i}) e^{i \gamma_{2}}\ket{1}\\
@@ -1167,8 +1166,9 @@ P_{2abs}&=\sin^2(\theta_{1})\left(1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})\right).
 \end{align}
 
 
+To know wheter the or  not the array of beam splitters is there or not, is no different from the previous sections as this case would simply correspond to $\beta=\prod_{i=3}^{N+2} \cos(\theta_{i})$.
 
-
+\afterpage{\blankpage}
 \chapter{A time-dependent transmitter}
 
 In this chapter we will analyze the case of an object whose transmission and absorption coefficients depend on time, we will explore the case of an optical chopper whose time dependence is discrete. Since what we measure in the lab are probability distributions and those that change in time are quite difficult to visualize in a paper, the reader can see the behavior better in \href{https://github.com/mcditoos/Single-Photon-Mach-Zehnder-}{a Mathematica notebook}. Let us begin by analyzing the optical chopper as a perfect absorber.

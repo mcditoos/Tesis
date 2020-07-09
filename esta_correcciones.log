@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  4 JUL 2020 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  8 JUL 2020 19:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1006,9 +1006,6 @@ Package glossaries Info: Writing glossary file esta_correcciones.acn on input l
 ine 52.
 ) (./esta_correcciones.aux
 
-LaTeX Warning: Label `joint' multiply defined.
-
-
 LaTeX Warning: Label `fig:BS2' multiply defined.
 
 
@@ -1260,6 +1257,60 @@ LaTeX Warning: Label `fig:BS1' multiply defined.
 
 LaTeX Warning: Label `sub@fig:BS1' multiply defined.
 
+
+LaTeX Warning: Label `fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:BS1' multiply defined.
+
+
+LaTeX Warning: Label `fig:westminster_aerea' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:westminster_aerea' multiply defined.
+
 )
 \openout1 = `esta_correcciones.aux'.
 
@@ -1421,38 +1472,14 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [3]
-[1]pdfTeX warning (ext4): destination with the same identifier (name{page.I}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.98 \blankpage
-               {} [1] [2]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.II}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.107 \blankpage
-                {} [2] [3]pdfTeX warning (ext4): destination with the same iden
-tifier (name{page.III}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.117 \blankpage
-                {} [3] [4]pdfTeX warning (ext4): destination with the same iden
-tifier (name{page.IV}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.123 \blankpage
-                {} [4]
+[1] [2] [3] [4] [5] [6] [7] [8]
 Chapter 1.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 127.
-
-<images/TypeI.jpg, id=255, 900.36375pt x 388.45125pt>
+<images/TypeI.jpg, id=258, 900.36375pt x 388.45125pt>
 File: images/TypeI.jpg Graphic file (type jpg)
 <use images/TypeI.jpg>
 Package pdftex.def Info: images/TypeI.jpg  used on input line 146.
 (pdftex.def)             Requested size: 206.0077pt x 79.66858pt.
-<images/typeII.jpg, id=256, 666.49pt x 288.07625pt>
+<images/typeII.jpg, id=259, 666.49pt x 288.07625pt>
 File: images/typeII.jpg Graphic file (type jpg)
 <use images/typeII.jpg>
 Package pdftex.def Info: images/typeII.jpg  used on input line 151.
@@ -1475,16 +1502,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.184 
-       [2 <./images/TypeI.jpg> <./images/typeII.jpg>]
+l.188 \end{equation}
+                     [2 <./images/TypeI.jpg> <./images/typeII.jpg>]
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225 \begin{align}
-                    [3]
+l.233 \end{equation}
+                     [3]
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [4]
@@ -1505,47 +1532,48 @@ Overfull \vbox (8.2pt too high) has occurred while \output is active []
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [9]
-<images/SPDC_yy.png, id=388, 883.3pt x 662.475pt>
+<images/SPDC_yy.png, id=384, 883.3pt x 662.475pt>
 File: images/SPDC_yy.png Graphic file (type png)
 <use images/SPDC_yy.png>
-Package pdftex.def Info: images/SPDC_yy.png  used on input line 471.
+Package pdftex.def Info: images/SPDC_yy.png  used on input line 478.
 (pdftex.def)             Requested size: 206.01077pt x 154.49895pt.
-<images/SPDC_xx.png, id=390, 883.3pt x 662.475pt>
+<images/SPDC_xx.png, id=386, 883.3pt x 662.475pt>
 File: images/SPDC_xx.png Graphic file (type png)
 <use images/SPDC_xx.png>
-Package pdftex.def Info: images/SPDC_xx.png  used on input line 474.
+Package pdftex.def Info: images/SPDC_xx.png  used on input line 482.
 (pdftex.def)             Requested size: 206.01077pt x 154.49895pt.
-<images/SPDC_yx.png, id=391, 883.3pt x 662.475pt>
+<images/SPDC_yx.png, id=387, 883.3pt x 662.475pt>
 File: images/SPDC_yx.png Graphic file (type png)
 <use images/SPDC_yx.png>
-Package pdftex.def Info: images/SPDC_yx.png  used on input line 477.
+Package pdftex.def Info: images/SPDC_yx.png  used on input line 486.
 (pdftex.def)             Requested size: 206.01077pt x 154.49895pt.
-<images/SPDC_xy.png, id=392, 883.3pt x 662.475pt>
+<images/SPDC_xy.png, id=388, 883.3pt x 662.475pt>
 File: images/SPDC_xy.png Graphic file (type png)
 <use images/SPDC_xy.png>
-Package pdftex.def Info: images/SPDC_xy.png  used on input line 480.
+Package pdftex.def Info: images/SPDC_xy.png  used on input line 490.
 (pdftex.def)             Requested size: 206.01077pt x 154.49895pt.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [10]
 Chapter 2.
-<images/bS.png, id=407, 796.9775pt x 1127.21124pt>
-File: images/bS.png Graphic file (type png)
-<use images/bS.png>
-Package pdftex.def Info: images/bS.png  used on input line 493.
-(pdftex.def)             Requested size: 142.25798pt x 142.25984pt.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [11 <./images/SPDC_yy.png> <./images/SPDC_xx.png> <./images/SPDC_yx.png> <./im
 ages/SPDC_xy.png>]
+<images/bS.png, id=411, 796.9775pt x 1127.21124pt>
+File: images/bS.png Graphic file (type png)
+<use images/bS.png>
+Package pdftex.def Info: images/bS.png  used on input line 525.
+(pdftex.def)             Requested size: 142.25798pt x 142.25984pt.
+
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [12 <./images/bS.png>]
+ [12]
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [13]
+ [13 <./images/bS.png>]
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [14]
@@ -1562,10 +1590,10 @@ Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [18]
 Chapter 3.
-<images/machzenhdercla.png, id=524, 845.40843pt x 597.73312pt>
+<images/machzenhdercla.png, id=516, 845.40843pt x 597.73312pt>
 File: images/machzenhdercla.png Graphic file (type png)
 <use images/machzenhdercla.png>
-Package pdftex.def Info: images/machzenhdercla.png  used on input line 732.
+Package pdftex.def Info: images/machzenhdercla.png  used on input line 747.
 (pdftex.def)             Requested size: 457.80486pt x 323.68314pt.
 
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
@@ -1586,35 +1614,24 @@ Chapter 4.
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [23]
-<images/machzenhderbomb.png, id=579, 845.40843pt x 597.73312pt>
+[24]
+<images/machzenhderbomb.png, id=576, 845.40843pt x 597.73312pt>
 File: images/machzenhderbomb.png Graphic file (type png)
 <use images/machzenhderbomb.png>
-Package pdftex.def Info: images/machzenhderbomb.png  used on input line 862.
+Package pdftex.def Info: images/machzenhderbomb.png  used on input line 873.
 (pdftex.def)             Requested size: 457.80486pt x 323.68314pt.
 
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+[25]
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [24]
+ [26 <./images/machzenhderbomb.png>]
 Overfull \vbox (8.33331pt too high) has occurred while \output is active []
 
 
-[25 <./images/machzenhderbomb.png>]
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
- [26]
-Overfull \hbox (8.40002pt too wide) in paragraph at lines 913--914
-[]\OT1/cmr/m/n/12 Now as the ob-ject may not be ab-sorbed upon in-ter-ac-tion, 
-some people ar-gue that interaction-
- []
-
-
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
- [27]
+[27]
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [28]
@@ -1626,79 +1643,74 @@ Overfull \vbox (8.2pt too high) has occurred while \output is active []
  [30]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 990.
+(hyperref)                removing `math shift' on input line 1000.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 990.
+(hyperref)                removing `math shift' on input line 1000.
 
-<images/machzenhderbs.png, id=656, 845.40843pt x 597.73312pt>
+<images/machzenhderbs.png, id=649, 845.40843pt x 597.73312pt>
 File: images/machzenhderbs.png Graphic file (type png)
 <use images/machzenhderbs.png>
-Package pdftex.def Info: images/machzenhderbs.png  used on input line 998.
+Package pdftex.def Info: images/machzenhderbs.png  used on input line 1008.
 (pdftex.def)             Requested size: 457.80374pt x 213.3961pt.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [31 <./images/machzenhderbs.png>]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 1034.
-<images/P1abs.png, id=665, 415.5525pt x 183.084pt>
+<images/P1abs.png, id=658, 415.5525pt x 183.084pt>
 File: images/P1abs.png Graphic file (type png)
 <use images/P1abs.png>
-Package pdftex.def Info: images/P1abs.png  used on input line 1039.
+Package pdftex.def Info: images/P1abs.png  used on input line 1049.
 (pdftex.def)             Requested size: 206.01299pt x 79.66882pt.
-<images/P1d1.png, id=666, 361.95226pt x 274.02374pt>
+<images/P1d1.png, id=659, 361.95226pt x 274.02374pt>
 File: images/P1d1.png Graphic file (type png)
 <use images/P1d1.png>
-Package pdftex.def Info: images/P1d1.png  used on input line 1044.
+Package pdftex.def Info: images/P1d1.png  used on input line 1054.
 (pdftex.def)             Requested size: 206.01668pt x 79.66972pt.
-<images/P1d2.png, id=667, 361.95226pt x 274.02374pt>
+<images/P1d2.png, id=660, 361.95226pt x 274.02374pt>
 File: images/P1d2.png Graphic file (type png)
 <use images/P1d2.png>
-Package pdftex.def Info: images/P1d2.png  used on input line 1049.
+Package pdftex.def Info: images/P1d2.png  used on input line 1059.
 (pdftex.def)             Requested size: 206.01668pt x 79.66972pt.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [32]
-
-LaTeX Warning: Reference `P_{bs}' on page 33 undefined on input line 1070.
-
-<images/P11abs.png, id=680, 388.45125pt x 333.6465pt>
+<images/P11abs.png, id=673, 388.45125pt x 333.6465pt>
 File: images/P11abs.png Graphic file (type png)
 <use images/P11abs.png>
-Package pdftex.def Info: images/P11abs.png  used on input line 1075.
+Package pdftex.def Info: images/P11abs.png  used on input line 1085.
 (pdftex.def)             Requested size: 206.01077pt x 176.94888pt.
-<images/P11d1.png, id=681, 361.95226pt x 274.02374pt>
+<images/P11d1.png, id=674, 361.95226pt x 274.02374pt>
 File: images/P11d1.png Graphic file (type png)
 <use images/P11d1.png>
-Package pdftex.def Info: images/P11d1.png  used on input line 1080.
+Package pdftex.def Info: images/P11d1.png  used on input line 1090.
 (pdftex.def)             Requested size: 206.01668pt x 85.36043pt.
-<images/P11d2.png, id=682, 361.95226pt x 274.02374pt>
+<images/P11d2.png, id=675, 361.95226pt x 274.02374pt>
 File: images/P11d2.png Graphic file (type png)
 <use images/P11d2.png>
-Package pdftex.def Info: images/P11d2.png  used on input line 1085.
+Package pdftex.def Info: images/P11d2.png  used on input line 1095.
 (pdftex.def)             Requested size: 206.01077pt x 155.96936pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1107.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1107.
+
+<images/machzenhderBSS.png, id=678, 1127.21124pt x 796.9775pt>
+File: images/machzenhderBSS.png Graphic file (type png)
+<use images/machzenhderBSS.png>
+Package pdftex.def Info: images/machzenhderBSS.png  used on input line 1112.
+(pdftex.def)             Requested size: 457.80804pt x 227.61522pt.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [33 <./images/P1abs.png (PNG copy)> <./images/P1d1.png (PNG copy)> <./images/P
 1d2.png (PNG copy)>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1097.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1097.
-
-<images/machzenhderBSS.png, id=693, 1127.21124pt x 796.9775pt>
-File: images/machzenhderBSS.png Graphic file (type png)
-<use images/machzenhderBSS.png>
-Package pdftex.def Info: images/machzenhderBSS.png  used on input line 1102.
-(pdftex.def)             Requested size: 457.80804pt x 227.61522pt.
-
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [34 <./images/P11abs.png (PNG copy)> <./images/P11d1.png (PNG copy)> <./images
@@ -1710,12 +1722,18 @@ Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [36]
 Chapter 5.
-<images/machzenhderchopper.png, id=718, 1127.21124pt x 796.9775pt>
+
+Overfull \vbox (8.2pt too high) has occurred while \output is active []
+
+ [37]
+[38]
+<images/machzenhderchopper.png, id=722, 1127.21124pt x 796.9775pt>
 File: images/machzenhderchopper.png Graphic file (type png)
 <use images/machzenhderchopper.png>
-Package pdftex.def Info: images/machzenhderchopper.png  used on input line 1169
+Package pdftex.def Info: images/machzenhderchopper.png  used on input line 1183
 .
 (pdftex.def)             Requested size: 457.80486pt x 323.68617pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1723,10 +1741,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[37]
+[39]
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [38 <./images/machzenhderchopper.png>]
+ [40 <./images/machzenhderchopper.png>]
 <images/Pc2Abs.png, id=736, 361.95226pt x 263.18324pt>
 File: images/Pc2Abs.png Graphic file (type png)
 <use images/Pc2Abs.png>
@@ -1752,70 +1770,70 @@ File: images/Pc2D12.png Graphic file (type png)
 <use images/Pc2D12.png>
 Package pdftex.def Info: images/Pc2D12.png  used on input line 1246.
 (pdftex.def)             Requested size: 206.01668pt x 85.36043pt.
-
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
- [39]
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
- [40 <./images/Pc2Abs.png (PNG copy)> <./images/Pc2D21.png (PNG copy)> <./image
-s/Pc2D22.png (PNG copy)> <./images/Pc2D11.png (PNG copy)> <./images/Pc2D12.png 
-(PNG copy)>]
-<images/Pc1Abs.png, id=765, 361.95226pt x 263.18324pt>
+<images/Pc1Abs.png, id=742, 361.95226pt x 263.18324pt>
 File: images/Pc1Abs.png Graphic file (type png)
 <use images/Pc1Abs.png>
 Package pdftex.def Info: images/Pc1Abs.png  used on input line 1275.
 (pdftex.def)             Requested size: 160.23703pt x 85.35684pt.
-<images/Pc1D21.png, id=766, 361.95226pt x 274.02374pt>
+<images/Pc1D21.png, id=743, 361.95226pt x 274.02374pt>
 File: images/Pc1D21.png Graphic file (type png)
 <use images/Pc1D21.png>
 Package pdftex.def Info: images/Pc1D21.png  used on input line 1280.
 (pdftex.def)             Requested size: 160.23703pt x 85.36043pt.
-<images/Pc1D22.png, id=767, 361.95226pt x 274.02374pt>
+<images/Pc1D22.png, id=744, 361.95226pt x 274.02374pt>
 File: images/Pc1D22.png Graphic file (type png)
 <use images/Pc1D22.png>
 Package pdftex.def Info: images/Pc1D22.png  used on input line 1285.
 (pdftex.def)             Requested size: 160.23703pt x 85.36043pt.
-<images/Pc1D11.png, id=768, 361.95226pt x 274.02374pt>
+<images/Pc1D11.png, id=745, 361.95226pt x 274.02374pt>
 File: images/Pc1D11.png Graphic file (type png)
 <use images/Pc1D11.png>
 Package pdftex.def Info: images/Pc1D11.png  used on input line 1290.
 (pdftex.def)             Requested size: 160.23703pt x 85.36043pt.
-<images/Pc1D12.png, id=769, 361.95226pt x 274.02374pt>
+<images/Pc1D12.png, id=746, 361.95226pt x 274.02374pt>
 File: images/Pc1D12.png Graphic file (type png)
 <use images/Pc1D12.png>
 Package pdftex.def Info: images/Pc1D12.png  used on input line 1295.
 (pdftex.def)             Requested size: 160.23703pt x 85.36043pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [41 <./images/Pc1Abs.png (PNG copy)> <./images/Pc1D21.png (PNG copy)> <./image
-s/Pc1D22.png (PNG copy)> <./images/Pc1D11.png (PNG copy)> <./images/Pc1D12.png 
+ [41]
+Overfull \vbox (8.2pt too high) has occurred while \output is active []
+
+ [42 <./images/Pc2Abs.png (PNG copy)> <./images/Pc2D21.png (PNG copy)> <./image
+s/Pc2D22.png (PNG copy)> <./images/Pc2D11.png (PNG copy)> <./images/Pc2D12.png 
 (PNG copy)>]
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [42]
-<images/pcabs.png, id=788, 361.95226pt x 290.2845pt>
+ [43 <./images/Pc1Abs.png (PNG copy)> <./images/Pc1D21.png (PNG copy)> <./image
+s/Pc1D22.png (PNG copy)> <./images/Pc1D11.png (PNG copy)> <./images/Pc1D12.png 
+(PNG copy)>]
+<images/pcabs.png, id=777, 361.95226pt x 290.2845pt>
 File: images/pcabs.png Graphic file (type png)
 <use images/pcabs.png>
 Package pdftex.def Info: images/pcabs.png  used on input line 1373.
 (pdftex.def)             Requested size: 183.1241pt x 85.35855pt.
-<images/pcd21.png, id=789, 361.95226pt x 274.02374pt>
+<images/pcd21.png, id=778, 361.95226pt x 274.02374pt>
 File: images/pcd21.png Graphic file (type png)
 <use images/pcd21.png>
 Package pdftex.def Info: images/pcd21.png  used on input line 1378.
 (pdftex.def)             Requested size: 183.1241pt x 85.36043pt.
-<images/pcd22.png, id=790, 361.95226pt x 274.02374pt>
+<images/pcd22.png, id=779, 361.95226pt x 274.02374pt>
 File: images/pcd22.png Graphic file (type png)
 <use images/pcd22.png>
 Package pdftex.def Info: images/pcd22.png  used on input line 1383.
 (pdftex.def)             Requested size: 183.1241pt x 85.36043pt.
-<images/pcd11.png, id=791, 361.95226pt x 274.02374pt>
+<images/pcd11.png, id=780, 361.95226pt x 274.02374pt>
 File: images/pcd11.png Graphic file (type png)
 <use images/pcd11.png>
 Package pdftex.def Info: images/pcd11.png  used on input line 1388.
 (pdftex.def)             Requested size: 183.1241pt x 85.36043pt.
-<images/pcd12.png, id=792, 361.95226pt x 274.02374pt>
+<images/pcd12.png, id=781, 361.95226pt x 274.02374pt>
 File: images/pcd12.png Graphic file (type png)
 <use images/pcd12.png>
 Package pdftex.def Info: images/pcd12.png  used on input line 1393.
@@ -1827,28 +1845,28 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [43]
-<images/p1cabs.png, id=808, 361.95226pt x 290.2845pt>
+ [44]
+<images/p1cabs.png, id=801, 361.95226pt x 290.2845pt>
 File: images/p1cabs.png Graphic file (type png)
 <use images/p1cabs.png>
 Package pdftex.def Info: images/p1cabs.png  used on input line 1416.
 (pdftex.def)             Requested size: 183.1241pt x 85.35855pt.
-<images/p1cd21.png, id=809, 361.95226pt x 274.02374pt>
+<images/p1cd21.png, id=802, 361.95226pt x 274.02374pt>
 File: images/p1cd21.png Graphic file (type png)
 <use images/p1cd21.png>
 Package pdftex.def Info: images/p1cd21.png  used on input line 1421.
 (pdftex.def)             Requested size: 183.1241pt x 85.36043pt.
-<images/p1cd22.png, id=810, 361.95226pt x 274.02374pt>
+<images/p1cd22.png, id=803, 361.95226pt x 274.02374pt>
 File: images/p1cd22.png Graphic file (type png)
 <use images/p1cd22.png>
 Package pdftex.def Info: images/p1cd22.png  used on input line 1426.
 (pdftex.def)             Requested size: 183.1241pt x 85.36043pt.
-<images/p1cd11.png, id=811, 361.95226pt x 274.02374pt>
+<images/p1cd11.png, id=804, 361.95226pt x 274.02374pt>
 File: images/p1cd11.png Graphic file (type png)
 <use images/p1cd11.png>
 Package pdftex.def Info: images/p1cd11.png  used on input line 1431.
 (pdftex.def)             Requested size: 183.1241pt x 85.36043pt.
-<images/p1cd12.png, id=812, 361.95226pt x 274.02374pt>
+<images/p1cd12.png, id=805, 361.95226pt x 274.02374pt>
 File: images/p1cd12.png Graphic file (type png)
 <use images/p1cd12.png>
 Package pdftex.def Info: images/p1cd12.png  used on input line 1436.
@@ -1857,20 +1875,14 @@ Package pdftex.def Info: images/p1cd12.png  used on input line 1436.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
- [44 <./images/pcabs.png (PNG copy)> <./images/pcd21.png (PNG copy)> <./images/
-pcd22.png (PNG copy)> <./images/pcd11.png (PNG copy)> <./images/pcd12.png (PNG 
-copy)>]
 Chapter 6.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [45 <./images/p1cabs.png (PNG copy)> <./images/p1cd21.png (PNG copy)> <./image
-s/p1cd22.png (PNG copy)> <./images/p1cd11.png (PNG copy)> <./images/p1cd12.png 
-(PNG copy)>]
-<images/nmach.png, id=831, 845.40843pt x 597.73312pt>
+ [45 <./images/pcabs.png (PNG copy)> <./images/pcd21.png (PNG copy)> <./images/
+pcd22.png (PNG copy)> <./images/pcd11.png (PNG copy)> <./images/pcd12.png (PNG 
+copy)>]
+<images/nmach.png, id=816, 845.40843pt x 597.73312pt>
 File: images/nmach.png Graphic file (type png)
 <use images/nmach.png>
 Package pdftex.def Info: images/nmach.png  used on input line 1458.
@@ -1878,30 +1890,32 @@ Package pdftex.def Info: images/nmach.png  used on input line 1458.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [46 <./images/nmach.png>]
+ [46 <./images/p1cabs.png (PNG copy)> <./images/p1cd21.png (PNG copy)> <./image
+s/p1cd22.png (PNG copy)> <./images/p1cd11.png (PNG copy)> <./images/p1cd12.png 
+(PNG copy)>]
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[47]
-<images/BS_Azuna.png, id=849, 437.635pt x 292.09125pt>
+[47 <./images/nmach.png>]
+Overfull \vbox (8.2pt too high) has occurred while \output is active []
+
+ [48]
+<images/BS_Azuna.png, id=839, 437.635pt x 292.09125pt>
 File: images/BS_Azuna.png Graphic file (type png)
 <use images/BS_Azuna.png>
 Package pdftex.def Info: images/BS_Azuna.png  used on input line 1526.
 (pdftex.def)             Requested size: 206.009pt x 142.26576pt.
-<images/BS_AzunaD2.png, id=850, 437.635pt x 297.11pt>
+<images/BS_AzunaD2.png, id=840, 437.635pt x 297.11pt>
 File: images/BS_AzunaD2.png Graphic file (type png)
 <use images/BS_AzunaD2.png>
 Package pdftex.def Info: images/BS_AzunaD2.png  used on input line 1531.
 (pdftex.def)             Requested size: 206.009pt x 142.27116pt.
-<images/absorbido_azuna.png, id=851, 434.62375pt x 292.09125pt>
+<images/absorbido_azuna.png, id=841, 434.62375pt x 292.09125pt>
 File: images/absorbido_azuna.png Graphic file (type png)
 <use images/absorbido_azuna.png>
 Package pdftex.def Info: images/absorbido_azuna.png  used on input line 1536.
 (pdftex.def)             Requested size: 206.01071pt x 142.26576pt.
 
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
- [48]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1546.
@@ -1910,17 +1924,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1546.
 
-<images/BsFijo_azumaD1.png, id=864, 437.635pt x 292.09125pt>
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[49 <./images/BS_Azuna.png> <./images/BS_AzunaD2.png> <./images/absorbido_azuna
+.png>]
+<images/BsFijo_azumaD1.png, id=857, 437.635pt x 292.09125pt>
 File: images/BsFijo_azumaD1.png Graphic file (type png)
 <use images/BsFijo_azumaD1.png>
 Package pdftex.def Info: images/BsFijo_azumaD1.png  used on input line 1554.
 (pdftex.def)             Requested size: 206.01077pt x 137.49683pt.
-<images/BsFijo_azumaD2.png, id=865, 437.635pt x 297.11pt>
+<images/BsFijo_azumaD2.png, id=858, 437.635pt x 297.11pt>
 File: images/BsFijo_azumaD2.png Graphic file (type png)
 <use images/BsFijo_azumaD2.png>
 Package pdftex.def Info: images/BsFijo_azumaD2.png  used on input line 1559.
 (pdftex.def)             Requested size: 206.01077pt x 139.85931pt.
-<images/BsFijo_azumaabs.png, id=866, 434.62375pt x 292.09125pt>
+<images/BsFijo_azumaabs.png, id=859, 434.62375pt x 292.09125pt>
 File: images/BsFijo_azumaabs.png Graphic file (type png)
 <use images/BsFijo_azumaabs.png>
 Package pdftex.def Info: images/BsFijo_azumaabs.png  used on input line 1564.
@@ -1928,13 +1948,12 @@ Package pdftex.def Info: images/BsFijo_azumaabs.png  used on input line 1564.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [49 <./images/BS_Azuna.png> <./images/BS_AzunaD2.png> <./images/absorbido_azun
-a.png>]
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
  [50 <./images/BsFijo_azumaD1.png> <./images/BsFijo_azumaD2.png> <./images/BsFi
 jo_azumaabs.png>]
-<images/alonso_idea.png, id=887, 642.4pt x 563.10374pt>
+Overfull \vbox (8.2pt too high) has occurred while \output is active []
+
+ [51]
+<images/alonso_idea.png, id=879, 642.4pt x 563.10374pt>
 File: images/alonso_idea.png Graphic file (type png)
 <use images/alonso_idea.png>
 Package pdftex.def Info: images/alonso_idea.png  used on input line 1620.
@@ -1942,46 +1961,47 @@ Package pdftex.def Info: images/alonso_idea.png  used on input line 1620.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [51]
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
  [52 <./images/alonso_idea.png>]
-<images/ChopperD1.png, id=902, 437.635pt x 292.09125pt>
+<images/ChopperD1.png, id=887, 437.635pt x 292.09125pt>
 File: images/ChopperD1.png Graphic file (type png)
 <use images/ChopperD1.png>
 Package pdftex.def Info: images/ChopperD1.png  used on input line 1645.
 (pdftex.def)             Requested size: 206.01077pt x 137.49683pt.
-<images/ChopperD2.png, id=903, 437.635pt x 292.09125pt>
+<images/ChopperD2.png, id=888, 437.635pt x 292.09125pt>
 File: images/ChopperD2.png Graphic file (type png)
 <use images/ChopperD2.png>
 Package pdftex.def Info: images/ChopperD2.png  used on input line 1650.
 (pdftex.def)             Requested size: 206.01077pt x 137.49683pt.
-<images/Chopper_abs.png, id=904, 434.62375pt x 292.09125pt>
+<images/Chopper_abs.png, id=889, 434.62375pt x 292.09125pt>
 File: images/Chopper_abs.png Graphic file (type png)
 <use images/Chopper_abs.png>
 Package pdftex.def Info: images/Chopper_abs.png  used on input line 1655.
 (pdftex.def)             Requested size: 206.01077pt x 138.4506pt.
-<images/Azuma_phases2.png, id=909, 418.56375pt x 306.14375pt>
+
+Overfull \vbox (8.2pt too high) has occurred while \output is active []
+
+ [53]
+<images/Azuma_phases2.png, id=901, 418.56375pt x 306.14375pt>
 File: images/Azuma_phases2.png Graphic file (type png)
 <use images/Azuma_phases2.png>
 Package pdftex.def Info: images/Azuma_phases2.png  used on input line 1681.
 (pdftex.def)             Requested size: 137.34285pt x 100.45316pt.
-<images/Azuma_phases5.png, id=910, 424.58624pt x 311.1625pt>
+<images/Azuma_phases5.png, id=902, 424.58624pt x 311.1625pt>
 File: images/Azuma_phases5.png Graphic file (type png)
 <use images/Azuma_phases5.png>
 Package pdftex.def Info: images/Azuma_phases5.png  used on input line 1685.
 (pdftex.def)             Requested size: 137.34285pt x 100.65181pt.
-<images/Azuma_phases10.png, id=911, 424.58624pt x 311.1625pt>
+<images/Azuma_phases10.png, id=903, 424.58624pt x 311.1625pt>
 File: images/Azuma_phases10.png Graphic file (type png)
 <use images/Azuma_phases10.png>
 Package pdftex.def Info: images/Azuma_phases10.png  used on input line 1690.
 (pdftex.def)             Requested size: 137.34285pt x 100.65181pt.
-<images/Azuma_phases100.png, id=912, 424.58624pt x 312.16624pt>
+<images/Azuma_phases100.png, id=904, 424.58624pt x 312.16624pt>
 File: images/Azuma_phases100.png Graphic file (type png)
 <use images/Azuma_phases100.png>
 Package pdftex.def Info: images/Azuma_phases100.png  used on input line 1695.
 (pdftex.def)             Requested size: 137.34285pt x 100.9765pt.
-<images/Azuma_phases1000.png, id=913, 424.58624pt x 311.1625pt>
+<images/Azuma_phases1000.png, id=905, 424.58624pt x 311.1625pt>
 File: images/Azuma_phases1000.png Graphic file (type png)
 <use images/Azuma_phases1000.png>
 Package pdftex.def Info: images/Azuma_phases1000.png  used on input line 1699.
@@ -1989,12 +2009,9 @@ Package pdftex.def Info: images/Azuma_phases1000.png  used on input line 1699.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [53]
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
  [54 <./images/ChopperD1.png> <./images/ChopperD2.png> <./images/Chopper_abs.pn
 g>]
-<images/wheeler1.png, id=933, 845.40843pt x 597.73312pt>
+<images/wheeler1.png, id=918, 845.40843pt x 597.73312pt>
 File: images/wheeler1.png Graphic file (type png)
 <use images/wheeler1.png>
 Package pdftex.def Info: images/wheeler1.png  used on input line 1718.
@@ -2005,7 +2022,7 @@ Overfull \vbox (8.33331pt too high) has occurred while \output is active []
 
 [55 <./images/Azuma_phases2.png> <./images/Azuma_phases5.png> <./images/Azuma_p
 hases10.png> <./images/Azuma_phases100.png> <./images/Azuma_phases1000.png>]
-<images/wheeler2.png, id=948, 845.40843pt x 597.73312pt>
+<images/wheeler2.png, id=933, 845.40843pt x 597.73312pt>
 File: images/wheeler2.png Graphic file (type png)
 <use images/wheeler2.png>
 Package pdftex.def Info: images/wheeler2.png  used on input line 1727.
@@ -2014,7 +2031,7 @@ Package pdftex.def Info: images/wheeler2.png  used on input line 1727.
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [56 <./images/wheeler1.png> <./images/wheeler2.png>]
-<images/wheeler3.png, id=960, 845.40843pt x 597.73312pt>
+<images/wheeler3.png, id=945, 845.40843pt x 597.73312pt>
 File: images/wheeler3.png Graphic file (type png)
 <use images/wheeler3.png>
 Package pdftex.def Info: images/wheeler3.png  used on input line 1740.
@@ -2024,17 +2041,17 @@ Overfull \vbox (8.33331pt too high) has occurred while \output is active []
 
 
 [57 <./images/wheeler3.png>]
-<images/pd1_2.png, id=978, 642.4pt x 481.8pt>
+<images/pd1_2.png, id=963, 642.4pt x 481.8pt>
 File: images/pd1_2.png Graphic file (type png)
 <use images/pd1_2.png>
 Package pdftex.def Info: images/pd1_2.png  used on input line 1755.
 (pdftex.def)             Requested size: 183.11914pt x 137.33647pt.
-<images/pd2_2.png, id=979, 642.4pt x 481.8pt>
+<images/pd2_2.png, id=964, 642.4pt x 481.8pt>
 File: images/pd2_2.png Graphic file (type png)
 <use images/pd2_2.png>
 Package pdftex.def Info: images/pd2_2.png  used on input line 1759.
 (pdftex.def)             Requested size: 183.11914pt x 137.33647pt.
-<images/pabs_2.png, id=980, 642.4pt x 481.8pt>
+<images/pabs_2.png, id=965, 642.4pt x 481.8pt>
 File: images/pabs_2.png Graphic file (type png)
 <use images/pabs_2.png>
 Package pdftex.def Info: images/pabs_2.png  used on input line 1764.
@@ -2043,42 +2060,42 @@ Package pdftex.def Info: images/pabs_2.png  used on input line 1764.
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [58 <./images/pd1_2.png> <./images/pd2_2.png> <./images/pabs_2.png>]
-<images/pd1_2_pi3.png, id=992, 642.4pt x 481.8pt>
+<images/pd1_2_pi3.png, id=977, 642.4pt x 481.8pt>
 File: images/pd1_2_pi3.png Graphic file (type png)
 <use images/pd1_2_pi3.png>
 Package pdftex.def Info: images/pd1_2_pi3.png  used on input line 1778.
 (pdftex.def)             Requested size: 183.11914pt x 137.33647pt.
-<images/pd2_2_pi3.png, id=993, 642.4pt x 481.8pt>
+<images/pd2_2_pi3.png, id=978, 642.4pt x 481.8pt>
 File: images/pd2_2_pi3.png Graphic file (type png)
 <use images/pd2_2_pi3.png>
 Package pdftex.def Info: images/pd2_2_pi3.png  used on input line 1782.
 (pdftex.def)             Requested size: 183.11914pt x 137.33647pt.
-<images/pd1_3_pi4.png, id=995, 642.4pt x 481.8pt>
+<images/pd1_3_pi4.png, id=980, 642.4pt x 481.8pt>
 File: images/pd1_3_pi4.png Graphic file (type png)
 <use images/pd1_3_pi4.png>
 Package pdftex.def Info: images/pd1_3_pi4.png  used on input line 1796.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-<images/pd2_3_pi4.png, id=996, 642.4pt x 481.8pt>
+<images/pd2_3_pi4.png, id=981, 642.4pt x 481.8pt>
 File: images/pd2_3_pi4.png Graphic file (type png)
 <use images/pd2_3_pi4.png>
 Package pdftex.def Info: images/pd2_3_pi4.png  used on input line 1800.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-<images/pabs_3_pi4.png, id=997, 642.4pt x 481.8pt>
+<images/pabs_3_pi4.png, id=982, 642.4pt x 481.8pt>
 File: images/pabs_3_pi4.png Graphic file (type png)
 <use images/pabs_3_pi4.png>
 Package pdftex.def Info: images/pabs_3_pi4.png  used on input line 1805.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-<images/pd1_5_pi4.png, id=998, 642.4pt x 481.8pt>
+<images/pd1_5_pi4.png, id=983, 642.4pt x 481.8pt>
 File: images/pd1_5_pi4.png Graphic file (type png)
 <use images/pd1_5_pi4.png>
 Package pdftex.def Info: images/pd1_5_pi4.png  used on input line 1810.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-<images/pd2_5_pi4.png, id=999, 642.4pt x 481.8pt>
+<images/pd2_5_pi4.png, id=984, 642.4pt x 481.8pt>
 File: images/pd2_5_pi4.png Graphic file (type png)
 <use images/pd2_5_pi4.png>
 Package pdftex.def Info: images/pd2_5_pi4.png  used on input line 1815.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-<images/pabs_5_pi4.png, id=1000, 642.4pt x 481.8pt>
+<images/pabs_5_pi4.png, id=985, 642.4pt x 481.8pt>
 File: images/pabs_5_pi4.png Graphic file (type png)
 <use images/pabs_5_pi4.png>
 Package pdftex.def Info: images/pabs_5_pi4.png  used on input line 1820.
@@ -2092,43 +2109,36 @@ Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [60 <./images/pd1_3_pi4.png> <./images/pd2_3_pi4.png> <./images/pabs_3_pi4.png
 > <./images/pd1_5_pi4.png> <./images/pd2_5_pi4.png> <./images/pabs_5_pi4.png>]
-<images/pd1_3.png, id=1021, 642.4pt x 481.8pt>
+<images/pd1_3.png, id=1007, 642.4pt x 481.8pt>
 File: images/pd1_3.png Graphic file (type png)
 <use images/pd1_3.png>
-Package pdftex.def Info: images/pd1_3.png  used on input line 1835.
+Package pdftex.def Info: images/pd1_3.png  used on input line 1849.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-<images/pd2_3.png, id=1022, 642.4pt x 481.8pt>
+<images/pd2_3.png, id=1008, 642.4pt x 481.8pt>
 File: images/pd2_3.png Graphic file (type png)
 <use images/pd2_3.png>
-Package pdftex.def Info: images/pd2_3.png  used on input line 1839.
+Package pdftex.def Info: images/pd2_3.png  used on input line 1853.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-<images/pabs_3.png, id=1023, 642.4pt x 481.8pt>
+<images/pabs_3.png, id=1009, 642.4pt x 481.8pt>
 File: images/pabs_3.png Graphic file (type png)
 <use images/pabs_3.png>
-Package pdftex.def Info: images/pabs_3.png  used on input line 1844.
+Package pdftex.def Info: images/pabs_3.png  used on input line 1858.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-<images/pd1_5.png, id=1024, 642.4pt x 481.8pt>
+<images/pd1_5.png, id=1010, 642.4pt x 481.8pt>
 File: images/pd1_5.png Graphic file (type png)
 <use images/pd1_5.png>
-Package pdftex.def Info: images/pd1_5.png  used on input line 1849.
+Package pdftex.def Info: images/pd1_5.png  used on input line 1863.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-<images/pd2_5.png, id=1025, 642.4pt x 481.8pt>
+<images/pd2_5.png, id=1011, 642.4pt x 481.8pt>
 File: images/pd2_5.png Graphic file (type png)
 <use images/pd2_5.png>
-Package pdftex.def Info: images/pd2_5.png  used on input line 1854.
+Package pdftex.def Info: images/pd2_5.png  used on input line 1868.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-<images/pabs_5.png, id=1026, 642.4pt x 481.8pt>
+<images/pabs_5.png, id=1012, 642.4pt x 481.8pt>
 File: images/pabs_5.png Graphic file (type png)
 <use images/pabs_5.png>
-Package pdftex.def Info: images/pabs_5.png  used on input line 1859.
+Package pdftex.def Info: images/pabs_5.png  used on input line 1873.
 (pdftex.def)             Requested size: 206.01077pt x 154.50261pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `varias2' on page 61 undefined on input line 1867.
-
 
 Overfull \vbox (8.33331pt too high) has occurred while \output is active []
 
@@ -2136,115 +2146,92 @@ Overfull \vbox (8.33331pt too high) has occurred while \output is active []
 [61]
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [62]
-Chapter 7.
-
-LaTeX Warning: Reference `single' on page 63 undefined on input line 1906.
-
-<images/SPDC_exp.png, id=1053, 845.40843pt x 597.73312pt>
-File: images/SPDC_exp.png Graphic file (type png)
-<use images/SPDC_exp.png>
-Package pdftex.def Info: images/SPDC_exp.png  used on input line 1910.
-(pdftex.def)             Requested size: 457.80486pt x 323.68314pt.
-
-Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+ [62 <./images/pd1_3.png> <./images/pd2_3.png> <./images/pabs_3.png> <./images/
+pd1_5.png> <./images/pd2_5.png> <./images/pabs_5.png>]
+Overfull \vbox (8.33331pt too high) has occurred while \output is active []
 
 
 [63]
-
-LaTeX Warning: Reference `single' on page 64 undefined on input line 1934.
-
+Chapter 7.
+<images/SPDC_exp.png, id=1051, 845.40843pt x 597.73312pt>
+File: images/SPDC_exp.png Graphic file (type png)
+<use images/SPDC_exp.png>
+Package pdftex.def Info: images/SPDC_exp.png  used on input line 1929.
+(pdftex.def)             Requested size: 457.80486pt x 323.68314pt.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [64]
-
-LaTeX Warning: Reference `newsingle' on page 65 undefined on input line 1954.
-
-<images/machzehnder_single.png, id=1069, 791.95876pt x 560.0925pt>
-File: images/machzehnder_single.png Graphic file (type png)
-<use images/machzehnder_single.png>
-Package pdftex.def Info: images/machzehnder_single.png  used on input line 1959
-.
-(pdftex.def)             Requested size: 457.80486pt x 323.77704pt.
-
-LaTeX Warning: Reference `single' on page 65 undefined on input line 1968.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1970.
-
-<images/first_step.png, id=1071, 845.40843pt x 597.73312pt>
-File: images/first_step.png Graphic file (type png)
-<use images/first_step.png>
-Package pdftex.def Info: images/first_step.png  used on input line 1973.
-(pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
-<images/second_step.png, id=1072, 845.40843pt x 597.73312pt>
-File: images/second_step.png Graphic file (type png)
-<use images/second_step.png>
-Package pdftex.def Info: images/second_step.png  used on input line 1978.
-(pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
-<images/third_step.png, id=1073, 845.40843pt x 597.73312pt>
-File: images/third_step.png Graphic file (type png)
-<use images/third_step.png>
-Package pdftex.def Info: images/third_step.png  used on input line 1983.
-(pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
-<images/last_step.png, id=1074, 845.40843pt x 597.73312pt>
-File: images/last_step.png Graphic file (type png)
-<use images/last_step.png>
-Package pdftex.def Info: images/last_step.png  used on input line 1988.
-(pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
-
-LaTeX Warning: Reference `steps' on page 65 undefined on input line 1998.
-
-
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [65]
-
-LaTeX Warning: Reference `steps' on page 66 undefined on input line 2000.
-
-
-LaTeX Warning: Reference `steps' on page 66 undefined on input line 2002.
-
-
-LaTeX Warning: Reference `steps' on page 66 undefined on input line 2004.
-
+ [65 <./images/SPDC_exp.png>]
+<images/machzehnder_single.png, id=1071, 791.95876pt x 560.0925pt>
+File: images/machzehnder_single.png Graphic file (type png)
+<use images/machzehnder_single.png>
+Package pdftex.def Info: images/machzehnder_single.png  used on input line 1961
+.
+(pdftex.def)             Requested size: 457.80486pt x 323.77704pt.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
  [66]
+<images/first_step.png, id=1078, 845.40843pt x 597.73312pt>
+File: images/first_step.png Graphic file (type png)
+<use images/first_step.png>
+Package pdftex.def Info: images/first_step.png  used on input line 1975.
+(pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
+<images/second_step.png, id=1079, 845.40843pt x 597.73312pt>
+File: images/second_step.png Graphic file (type png)
+<use images/second_step.png>
+Package pdftex.def Info: images/second_step.png  used on input line 1980.
+(pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
+<images/third_step.png, id=1080, 845.40843pt x 597.73312pt>
+File: images/third_step.png Graphic file (type png)
+<use images/third_step.png>
+Package pdftex.def Info: images/third_step.png  used on input line 1985.
+(pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
+<images/last_step.png, id=1081, 845.40843pt x 597.73312pt>
+File: images/last_step.png Graphic file (type png)
+<use images/last_step.png>
+Package pdftex.def Info: images/last_step.png  used on input line 1990.
+(pdftex.def)             Requested size: 227.61833pt x 113.8076pt.
 
-LaTeX Warning: Citation `Leonhardt_2003' on page 67 undefined on input line 203
-1.
+Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
-<images/polarizeranalogy.png, id=1086, 845.40843pt x 597.73312pt>
+ [67 <./images/machzehnder_single.png>]
+Overfull \vbox (8.2pt too high) has occurred while \output is active []
+
+ [68 <./images/first_step.png> <./images/second_step.png> <./images/third_step.
+png> <./images/last_step.png>]
+Overfull \vbox (8.2pt too high) has occurred while \output is active []
+
+ [69]
+
+LaTeX Warning: Citation `Leonhardt_2003' on page 70 undefined on input line 203
+3.
+
+<images/polarizeranalogy.png, id=1109, 845.40843pt x 597.73312pt>
 File: images/polarizeranalogy.png Graphic file (type png)
 <use images/polarizeranalogy.png>
-Package pdftex.def Info: images/polarizeranalogy.png  used on input line 2035.
+Package pdftex.def Info: images/polarizeranalogy.png  used on input line 2037.
 (pdftex.def)             Requested size: 457.80486pt x 323.68314pt.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [67]
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
- [68 <./images/polarizeranalogy.png>]
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
- [69]
-Chapter 8.
-
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
  [70]
-(./esta_correcciones.bbl
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [71]
+ [71 <./images/polarizeranalogy.png>]
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [72])
+ [72]
+[73] (./esta_correcciones.bbl
+Overfull \vbox (8.2pt too high) has occurred while \output is active []
+
+ [74]
+Overfull \vbox (8.2pt too high) has occurred while \output is active []
+
+ [75])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
@@ -2253,43 +2240,16 @@ This document will not have a glossary.
 
 Overfull \vbox (8.2pt too high) has occurred while \output is active []
 
- [73]
-Missing character: There is no î in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ë in font cmr12!
-
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
- [74
-
-]
-Missing character: There is no î in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ë in font cmr12!
-Missing character: There is no î in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ë in font cmr12!
-
-Overfull \vbox (12.0pt too high) has occurred while \output is active []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2090.
-
-Overfull \vbox (8.2pt too high) has occurred while \output is active []
-
- [75
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2090.
+ [76]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2088.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2088.
 
 (./esta_correcciones.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2090.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2090.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2088.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2088.
 
 Package rerunfilecheck Info: File `esta_correcciones.out' has not changed.
-(rerunfilecheck)             Checksum: 3B096E32D8029C250B3C699DA5742603;2534.
+(rerunfilecheck)             Checksum: D0379AD78395AF853C557BC6DEB0B19F;2510.
 
 
 LaTeX Warning: There were undefined references.
@@ -2297,46 +2257,45 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2090.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2088.
  ) 
 Here is how much of TeX's memory you used:
- 30278 strings out of 481239
- 555681 string characters out of 5920377
- 897987 words of memory out of 5000000
- 44436 multiletter control sequences out of 15000+600000
+ 30168 strings out of 481239
+ 553146 string characters out of 5920377
+ 903452 words of memory out of 5000000
+ 44332 multiletter control sequences out of 15000+600000
  548518 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,18n,85p,1223b,959s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,18n,85p,1558b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfrm1200.pfb>
-Output written on esta_correcciones.pdf (86 pages, 6348897 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfrm1200.pfb>
+Output written on esta_correcciones.pdf (87 pages, 8497504 bytes).
 PDF statistics:
- 1309 PDF objects out of 1440 (max. 8388607)
- 1046 compressed objects within 11 object streams
- 384 named destinations out of 1000 (max. 500000)
+ 1318 PDF objects out of 1440 (max. 8388607)
+ 1043 compressed objects within 11 object streams
+ 378 named destinations out of 1000 (max. 500000)
  799 words of extra memory for PDF output out of 10000 (max. 10000000)
 

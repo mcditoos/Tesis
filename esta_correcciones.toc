@@ -1,37 +1,37 @@
 \babel@toc {australian}{}
 \thispagestyle {empty}
 \contentsline {section}{Acknowledgements}{I}{Doc-Start}%
-\contentsline {section}{Resumen}{II}{Doc-Start}%
-\contentsline {section}{Abstract}{III}{Doc-Start}%
-\contentsline {section}{Introduction}{IV}{Doc-Start}%
-\contentsline {chapter}{\numberline {1}Spontaneous parametric \\ down conversion}{1}{chapter.1}%
+\contentsline {section}{Resumen}{III}{Doc-Start}%
+\contentsline {section}{Abstract}{V}{Doc-Start}%
+\contentsline {section}{Introduction}{VII}{Doc-Start}%
+\contentsline {chapter}{\numberline {1}SPDC}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}First order joint amplitude function}{8}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Spatial correlations}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Spatial correlations}{8}{section.1.2}%
 \contentsline {chapter}{\numberline {2}The lossless beam splitter}{12}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The classical lossless beam splitter}{12}{section.2.1}%
 \contentsline {section}{\numberline {2.2}The quantum lossless beam splitter}{14}{section.2.2}%
 \contentsline {chapter}{\numberline {3}The Mach-Zehnder interferometer }{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Classical Mach-Zehnder interferometer}{20}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Single-photon Mach-Zehnder interferometer}{21}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Analysis with phase retarders }{23}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Interaction-free measurements}{24}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Elitzur-Vaidman's bomb detector}{24}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Interferometer with an imperfect transmitter}{27}{section.4.2}%
+\contentsline {section}{\numberline {3.3}Analysis with phase retarders}{23}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Interaction-free measurements}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Elitzur-Vaidman's bomb detector}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Replacing the bomb with an imperfect transmitter}{28}{section.4.2}%
 \contentsline {section}{\numberline {4.3}$BS$ as an imperfect transmitter}{31}{section.4.3}%
-\contentsline {section}{\numberline {4.4}$N$ beam splitters as imperfect transmitter }{35}{section.4.4}%
-\contentsline {chapter}{\numberline {5}A time-dependent transmitter}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Optical chopper as perfect absorber }{37}{section.5.1}%
+\contentsline {section}{\numberline {4.4}Replacing the bomb with $N$ beam splitters }{35}{section.4.4}%
+\contentsline {chapter}{\numberline {5}A time-dependent transmitter}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Replacing the bomb with an optical chopper }{39}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Optical chopper as imperfect absorber}{43}{section.5.2}%
 \contentsline {chapter}{\numberline {6}High-efficiency Mach-Zehnder Interferometer}{46}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Using identical beam splitters for all $N$}{49}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Using different beam splitters}{50}{section.6.2}%
+\contentsline {section}{\numberline {6.1}Using identical beam splitters for all $N$}{50}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Using different beam splitters}{51}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Optical chopper}{53}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Does the phase matter?}{53}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Towards Wheeler's Gedanken experiment}{55}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Experimental Setup}{63}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Single-photon source}{63}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Single-photon Mach-Zehnder interferometer}{64}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Alignment of the Interferometer}{65}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Single-photon interference}{66}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Varying optical paths}{69}{subsection.7.2.3}%
-\contentsline {chapter}{\numberline {8}Conclusions}{70}{chapter.8}%
+\contentsline {chapter}{\numberline {7}Experimental Setup}{64}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Single-photon source}{64}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Single-photon Mach-Zehnder interferometer}{66}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Alignment of the Interferometer}{67}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Single-photon interference}{69}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Varying optical paths}{72}{subsection.7.2.3}%
+\contentsline {chapter}{Conclusions}{74}{equation.7.2.3}%

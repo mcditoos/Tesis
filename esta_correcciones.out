@@ -2,7 +2,7 @@
 \BOOKMARK [1][-]{Doc-Start}{Resumen}{}% 2
 \BOOKMARK [1][-]{Doc-Start}{Abstract}{}% 3
 \BOOKMARK [1][-]{Doc-Start}{Introduction}{}% 4
-\BOOKMARK [0][-]{chapter.1}{Spontaneous parametric \040down conversion}{}% 5
+\BOOKMARK [0][-]{chapter.1}{SPDC}{}% 5
 \BOOKMARK [1][-]{section.1.1}{First order joint amplitude function}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.2}{Spatial correlations}{chapter.1}% 7
 \BOOKMARK [0][-]{chapter.2}{The lossless beam splitter}{}% 8
@@ -11,14 +11,14 @@
 \BOOKMARK [0][-]{chapter.3}{The Mach-Zehnder interferometer }{}% 11
 \BOOKMARK [1][-]{section.3.1}{Classical Mach-Zehnder interferometer}{chapter.3}% 12
 \BOOKMARK [1][-]{section.3.2}{Single-photon Mach-Zehnder interferometer}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.3}{Analysis with phase retarders }{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Analysis with phase retarders}{chapter.3}% 14
 \BOOKMARK [0][-]{chapter.4}{Interaction-free measurements}{}% 15
 \BOOKMARK [1][-]{section.4.1}{Elitzur-Vaidman's bomb detector}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Interferometer with an imperfect transmitter}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Replacing the bomb with an imperfect transmitter}{chapter.4}% 17
 \BOOKMARK [1][-]{section.4.3}{BS as an imperfect transmitter}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.4}{N beam splitters as imperfect transmitter }{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.4}{Replacing the bomb with N beam splitters }{chapter.4}% 19
 \BOOKMARK [0][-]{chapter.5}{A time-dependent transmitter}{}% 20
-\BOOKMARK [1][-]{section.5.1}{Optical chopper as perfect absorber }{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.1}{Replacing the bomb with an optical chopper }{chapter.5}% 21
 \BOOKMARK [1][-]{section.5.2}{Optical chopper as imperfect absorber}{chapter.5}% 22
 \BOOKMARK [0][-]{chapter.6}{High-efficiency Mach-Zehnder Interferometer}{}% 23
 \BOOKMARK [1][-]{section.6.1}{Using identical beam splitters for all N}{chapter.6}% 24
@@ -32,4 +32,4 @@
 \BOOKMARK [2][-]{subsection.7.2.1}{Alignment of the Interferometer}{section.7.2}% 32
 \BOOKMARK [2][-]{subsection.7.2.2}{Single-photon interference}{section.7.2}% 33
 \BOOKMARK [2][-]{subsection.7.2.3}{Varying optical paths}{section.7.2}% 34
-\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 35
+\BOOKMARK [0][-]{equation.7.2.3}{Conclusions}{}% 35

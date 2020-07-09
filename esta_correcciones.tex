@@ -43,7 +43,7 @@
 
 \vspace{2cm}
 
-Submitted in Partial Fulfillment of the Requirements for the Degree \\
+
 Master of Science, \\ Physics\\
 Supervised by\par
 Dr. Alonso Contreras Astorga  \\
@@ -1171,47 +1171,36 @@ To know wheter the or  not the array of beam splitters is there or not, is no di
 \afterpage{\blankpage}
 \chapter{A time-dependent transmitter}
 
-In this chapter we will analyze the case of an object whose transmission and absorption coefficients depend on time, we will explore the case of an optical chopper whose time dependence is discrete. Since what we measure in the lab are probability distributions and those that change in time are quite difficult to visualize in a paper, the reader can see the behavior better in \href{https://github.com/mcditoos/Single-Photon-Mach-Zehnder-}{a Mathematica notebook}. Let us begin by analyzing the optical chopper as a perfect absorber.
+In this chapter we will substitute the bomb in the Elitzur-Vaidman experiment with an object whose transmission and absorption coefficients depend on time, this object will be an optical chopper whose time dependence is discrete. Let us begin by analyzing the optical chopper as a perfect absorber.
 
-\section{Optical chopper as perfect absorber }
+\section{Replacing the bomb with an optical chopper }
  
+
+An optical chopper is a device that periodically interrupts light. It is usually a disk with holes rotating with a certain frequency (which can vary in time). We can model the presence of a chopper interrupting the pass of light with and object whose coefficient of transmission  varies as a square wave  $f(t)=\frac{sgn(\sin(wt))+1}{2}$, where $\omega$ is the angular frequency of the optical chopper multiplied by the number of ``hole-material" pairs that we assume are the same size.
+
  \begin{figure}[h!]
 \centering
 \includegraphics[width=\linewidth]{images/machzenhderchopper.png}
-\caption{Mach-Zehnder with an optical chopper as an imperfect absorber}
+\caption{Mach-Zehnder interferometer with an optical chopper as an imperfect absorber.}
 \label{chopper}
 \end{figure}
-An optical chopper is a device that periodically interrupts light. It is usually a disk with holes rotating with a certain frequency (which can vary in time) from its definition we can infer that it can be modeled using a square wave which can be written as  $f(t)=\frac{sgn(\sin(wt))+1}{2}$, where $\omega$ is the angular frequency of the optical chopper multiplied by the number of ``hole-material" pairs which for now we assume are the same size.
- 
-We will be ignoring diffraction effects, a consequence of modeling it like this is that consecutive optical choppers become the product of square waves, and products of square waves is again a square wave, so modeling many choppers would be the same as modeling one with that effective frequency. In this section, we intend to analyze the Mach-Zehnder interferometer with a chopper being the imperfect absorber as Fig. \ref{chopper}, the chopper introduces a discrete-time dependence, therefore we will be alternating between two different probability distributions.
+
+We will be ignoring diffraction effects, a consequence of modeling it like this is that consecutive optical choppers become the product of square waves, and products of square waves is again a square wave, so modeling many choppers would be the same as modeling one with that effective frequency and duty-cycle. In this section, we intend to analyze the Mach-Zehnder interferometer with a chopper replacing the bomb in the Elitzur and Vaidmand experiment, as in Fig. \ref{chopper}, the chopper introduces a discrete-time dependence, therefore we will be alternating between two different probability distributions.
 
 
 We can model our optical chopper by using an operator $C_{i}$ where $i$ is the path where the chopper is placed, such that in our base(where $i=1,2$ and $i \neq j$):
 
-\begin{align}
-C_{i}\ket{i}&=f(t)\ket{i},\\
-C_{j}\ket{i}&=\ket{i}.
-\end{align}
-
-Ideally, we want this operator to be unitary in the ``hole" cycle. Since we are modeling the whole as a transparent object. This will be checked right away:
-
 \begin{equation}
-|f|^2=\frac{(sgn(\sin(wt)+1)^2}{4},
+C_{i}\ket{i}=f(t)\ket{i},\qquad C_{j}\ket{i}=\ket{i}.
 \end{equation}
-the sign function squared is always one so
-\begin{align}
-&|f|^2=\frac{2(1+sgn(\sin(wt)))}{4}, \\
-&|f|^2=f,
-\end{align}
+
+Since we are modeling the hole as a transparent object, the operator $C_i$ is unitary in the 'hole' cycle.  This is indeed fullfilled as the square of the sign function is always one.
 
 
-from there we can see that it is a unitary matrix whenever the sine is in the positive cycle, and it becomes null in the negative cycle, that happens because in the negative cycle we have total absorption. The absorption coefficient would  be:  
+From there we can see that it is a unitary matrix whenever the sine is in the positive cycle, and it becomes null in the negative cycle, that happens because in the negative cycle we have total absorption. The absorption coefficient would  be:  
 
 \begin{align}
- a&=1-f,\\
- a&=\frac{1-sgn(\sin(wt))}{2},\\
-|a|^2&=\frac{2(1-sgn(\sin(wt)))}{4},\\
-|a|^2&=a.
+ \alpha=1-f,\qquad \alpha=\frac{1-sgn(\sin(wt))}{2},
 \end{align}
 
 We will now analyze a Mach-Zehnder interferometer using a chopper as a time-dependent absorber. The chopper will be placed on the vertical path, and our photon will go into the interferometer using the horizontal path
@@ -1333,7 +1322,7 @@ P_{1D_{2}}-P_{2D_{2}}=(a)\left(\frac{\cos(2 \theta_{1})+\cos(2 \theta_{2})}{2}\r
  &\theta_{2}=\frac{1}{2}\cos^{-1}\left[\frac{(P_{1D_{1}}-P_{2D_{1}})-(P_{1D_{2}}-P_{2D_{2}})}{a}\right].
  \end{align}
  
-\pagebreak
+
 
 \section{Optical chopper as imperfect absorber}
 
@@ -1552,7 +1541,7 @@ To obtain said probabilities as well as the behavior of the system for varying $
 \label{Azuma1}
 \end{figure}
 
-nbrjbegiubre
+
 Fig. \ref{Azuma1} shows different probabilities as we increase $N$. We can see that the probability of detection in $D_{1}$ asymptotically approaches 1 as Azuma had shown \cite{Azuma}, the case of a $BS$ as an absorber shows consistency. The case of a $BS$ is described by the same mathematics that an analyzer and a polarizer \cite{leonhardt}, unlike other absorbers this can be manipulated continually, giving us a way to test these curves experimentally.
  \section{Using identical beam splitters for all $N$}
  
@@ -1832,15 +1821,29 @@ But if you have both $BS$ in the setup how can the transition between particle a
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Continuous transition between wave and particle behaviour with 50:50 $BSs$ for $N=3$ and $N=5$. The top plots correspond to $N=3$ they show the probability of detection in $D_{1}$ (a),$D_{2}$ (b) and the probability of the photon being ``lost''(c). The botton plots correspond to $N=3$ they show the probability of detection in $D_{1}$ (d),$D_{2}$ (e) and the probability of the photon being ``lost'' (f)}
+\caption{Continuous transition between wave and particle behaviour with 50:50 $BSs$ for $N=3$ and $N=5$. The top plots correspond to $N=3$ they show the probability of detection in $D_{1}$ (a),$D_{2}$ (b) and the probability of the photon being ``lost''(c). The botton plots correspond to $N=$ they show the probability of detection in $D_{1}$ (d),$D_{2}$ (e) and the probability of the photon being ``lost'' (f)}
 \label{varias}
 \end{figure}
 
-Now, what happens if we do $N$ interferometers in a row? how does this transition change? The answer is that we get multiple transitions as Fig. \ref{varias} shows, there we can see the plots for $N=3$ and $N=5$, in theses plots we consider all objects in the interferometer to be equal, we also considered all Beam Splitters to be 50:50 and we dropped the general form of the mirrors, so computation times are lower (that is we used $\gamma_{1}=\gamma_{2}=\frac{\pi}{2}$), as we can see we have more than one transition between particle and wave behavior, however, we see that this happens only for $\beta \approx 1$ which may suggest that the transition only happens for almost transparent or transparent objects. However, this is because the absorption probability tends to $1$ as $N$ grows as we showed in section 6.0.1
+Now, what happens if we do $N$ interferometers in a row? how does this transition change? The answer is that we get multiple transitions as Fig. \ref{varias} shows, there we can see the plots for $N=3$ and $N=5$, in theses plots we consider all objects in the interferometer to be equal, we also considered all Beam Splitters to be 50:50 and we dropped the general form of the mirrors, so computation times are lower (that is we used $\gamma_{1}=\gamma_{2}=\frac{\pi}{2}$), as we can see we have more than one transition between particle and wave behavior, however, we see that this happens only for $\beta \approx 1$ which may suggest that the transition only happens for almost transparent or transparent objects. However, this is because the absorption probability tends to $1$ as $N$ grows as we showed in section 6.1
+
+We can circumvent this by using $BS$ with $\Theta=\frac{\pi}{2N}$, exploiting the quantum Zeno effect as explained in the previous section, we could then see more interesting transitions, and we get plots like the ones in Fig. \ref{figvarias2}, all other parameters are maintained.
+
+A more general complementary principle is formulated with regard to this experiments \cite{Ma}, this one is an inequality and goes as:
+
+\begin{equation}
+ V^{2} + D^{2} \leq 1,
+\end{equation}
+
+where $V$ is the visibility, $D$ is the distinguishability and are defined as :
+
+\begin{align}
+ V= \frac{P_{max}-P_{min}}{P_{max}+P_{min}}\\
+ D_{i}=|p(i,1)-p(i,2)|
+\end{align}
 
 
-
-\begin{figure}[!h]
+\begin{figure}[H]
 \centering
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_3.png}
@@ -1871,25 +1874,12 @@ Now, what happens if we do $N$ interferometers in a row? how does this transitio
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Continuous transition between wave and particle behaviour with $\theta=\frac{\pi}{2N}$ BSs for $N=3$ and $N=5$. The top plots correspond to $N=3$ they show the probability of detection in $D_{1}$ (a),$D_{2}$ (b) and the probability of the photon being ``lost''(c). The botton plots correspond to $N=3$ they show the probability of detection in $D_{1}$ (d),$D_{2}$ (e) and the probability of the photon being ``lost'' (f)}
-\label{varias2}
+\caption{Continuous transition between wave and particle behaviour with $\theta=\frac{\pi}{2N}$ BSs for $N=3$ and $N=5$. The top plots correspond to $N=3$ they show the probability of detection in $D_{1}$ (a),$D_{2}$ (b) and the probability of the photon being ``lost''(c). The botton plots correspond to $N=5$ they show the probability of detection in $D_{1}$ (d),$D_{2}$ (e) and the probability of the photon being ``lost'' (f)}
+\label{figvarias2}
 \end{figure}
 
-We can circumvent this by using $BS$ with $\Theta=\frac{\pi}{2N}$, exploiting the quantum Zeno effect as explained in the previous section, we could then see more interesting transitions, and we get plots like the ones in Fig. \ref{varias2}, all other parameters are maintained.
 
 
-A more general complementary principle is formulated with regard to this experiments \cite{Ma}, this one is an inequality and goes as:
-
-\begin{equation}
- V^{2} + D^{2} \leq 1,
-\end{equation}
-
-where $V$ is the visibility, $D$ is the distinguishability and are defined as :
-
-\begin{align}
- V= \frac{P_{max}-P_{min}}{P_{max}+P_{min}}\\
- D_{i}=|p(i,1)-p(i,2)|
-\end{align}
 
 where $P_{max}$ and $P_{min}$ refer to the maximal and minimal for recording a photon in a chosen detector when scanning through the phase of the interferometer. The distinguishability or which-path information is defined as $D=D_{1}+D_{2}$ and $p(i,j)$ the probability that the photon travelled the path $i=1,2$ and arrived at detector $j=1,2$
 
@@ -1914,14 +1904,8 @@ In this chapter, we will describe the necessary materials and steps to realize a
 
 \section{Single-photon source}
 
-To produce a single-photon source we will use the SPDC process described in chapter 1, to do this experimentally we will follow the method described in \cite{maestria_procopio}. The experimental setup can be seen in Fig. \ref{single}.  We will use the following materials:
 
-\begin{figure}[!t]
-\centering
-\includegraphics[width=\linewidth]{images/SPDC_exp.png}
-\caption{Experimental setup of single photon source}
-\label{single}
-\end{figure}
+To produce a single-photon source we will use the SPDC process described in chapter 1, to do this experimentally we will follow the method described in \cite{maestria_procopio}. The experimental setup can be seen .in Fig. \ref{single}.  We will use the following materials:
 
 
 
@@ -1939,6 +1923,13 @@ To produce a single-photon source we will use the SPDC process described in chap
 \item Optical Table
 
 \end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/SPDC_exp.png}
+\caption{Experimental setup of single photon source}
+\label{single}
+\end{figure}
 
 The first step to achieve a single photon source is to find the most likely light-cone using individual counts in each photo-detector as described in chapter 2 section 2.1 where we explained type-I SPDC, after that, we need to count coincidences to identify spatial correlations as described in chapter 1. We will set the detection window for coincidences based on the procedure of \cite{pearson} at 10ns, this coincidence window is used so we know the pair of photons are created in the nonlinear crystal thus eliminating noise from the environment in the detection counts. It is usually convenient for the propagation direction of the photon to be co-lineal with one of the lines of tapped holes
 
@@ -2087,7 +2078,7 @@ Visibility counts will vary as we change the difference in optical paths $\delta
 \thispagestyle{plain}
 
 \pagebreak
-\addcontentsline{toc}{section}{Acknowledgements}
+\addcontentsline{toc}{chapter}{Conclusions}
 
 
 \bibliographystyle{unsrt}

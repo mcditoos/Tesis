@@ -33,6 +33,11 @@ U.~Leonhardt.
   Holes}.
 \newblock Cambridge University Press, 2010.
 
+\bibitem{zettili}
+N.~Zettili.
+\newblock {\em Quantum Mechanics: Concepts and Applications, 2nd Edition}.
+\newblock Wiley, feb 2009.
+
 \bibitem{minardi}
 G.~Molina-Terriza, S.~Minardi, Y.~Deyanova, C.~Osorio, M.~Hendrych, and
   J.~Torres.
@@ -107,6 +112,19 @@ Z.~Blanco-García and O.~Rosas-Ortiz.
 H.~Azuma.
 \newblock Interaction-free measurement with an imperfect absorber.
 \newblock {\em Phys. Rev. A}, 74:054301, Nov 2006.
+
+\bibitem{QI1}
+P.~G. Kwiat, A.~G. White, J.~R. Mitchell, O.~Nairz, G.~Weihs, H.~Weinfurter,
+  and A.~Zeilinger.
+\newblock High-efficiency quantum interrogation measurements via the quantum
+  zeno effect.
+\newblock {\em Phys. Rev. Lett.}, 83:4725--4728, Dec 1999.
+
+\bibitem{QI2}
+Paul~G. Kwiat.
+\newblock Quantum interrogation.
+\newblock In {\em Compendium of Quantum Physics}, pages 591--595. Springer
+  Berlin Heidelberg, 2009.
 
 \bibitem{exp}
 P.~Kwiat, H.~Weinfurter, T.~Herzog, A.~Zeilinger, and M.~Kasevich.

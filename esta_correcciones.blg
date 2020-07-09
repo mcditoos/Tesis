@@ -8,45 +8,45 @@ Warning--empty journal in zuri
 Warning--empty year in zuri
 Warning--empty journal in maestria_procopio
 Warning--empty year in maestria_procopio
-You've used 35 entries,
+You've used 38 entries,
             1791 wiz_defined-function locations,
-            675 strings with 8342 characters,
-and the built_in function-call counts, 7133 in all, are:
-= -- 610
-> -- 311
-< -- 0
-+ -- 121
-- -- 86
-* -- 503
-:= -- 1175
-add.period$ -- 104
-call.type$ -- 35
-change.case$ -- 28
+            692 strings with 8733 characters,
+and the built_in function-call counts, 7956 in all, are:
+= -- 688
+> -- 342
+< -- 1
++ -- 133
+- -- 95
+* -- 555
+:= -- 1296
+add.period$ -- 114
+call.type$ -- 38
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 315
-empty$ -- 727
-format.name$ -- 86
-if$ -- 1557
+cite$ -- 42
+duplicate$ -- 356
+empty$ -- 809
+format.name$ -- 95
+if$ -- 1748
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 43
-newline$ -- 177
-num.names$ -- 35
-pop$ -- 95
+int.to.str$ -- 38
+missing$ -- 47
+newline$ -- 192
+num.names$ -- 38
+pop$ -- 109
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 106
+skip$ -- 125
 stack$ -- 0
-substring$ -- 429
-swap$ -- 33
-text.length$ -- 0
+substring$ -- 492
+swap$ -- 45
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 64
-width$ -- 37
-write$ -- 377
+while$ -- 72
+width$ -- 40
+write$ -- 410
 (There were 5 warnings)

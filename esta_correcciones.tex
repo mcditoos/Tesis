@@ -1208,30 +1208,19 @@ We will now analyze a Mach-Zehnder interferometer using a chopper as a time-depe
 
 
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{\text{Chopper}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})f\ket{2}+i\sin(\theta_{1})a\ket{abs}\\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})f e^{i\gamma_{2}}\ket{1}+i\sin(\theta_{1})a\ket{abs}\\& \xrightarrow{\text{BS2}}\cos(\theta_{1})e^{i\gamma_{1}}(\cos(\theta_{2})\ket{2}\\
-&+i\sin(\theta_{2})\ket{1})+i\sin(\theta_{1})e^{i\gamma_{2}}f(\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2})+i\sin(\theta_{1})a\ket{abs}\\
-& = i(e^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+f e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2}))\ket{1}+(\cos(\theta_{1})\cos(\theta_{2}) e^{i\gamma_{1}} \\&  -\sin(\theta_{1})\sin(\theta_{2})f e^{i \gamma_{2}})\ket{2}+i\sin(\theta_{1})a\ket{abs}. \numberthis
+&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{\text{Chopper}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})f\ket{2}+i\sin(\theta_{1})\alpha\ket{abs}\\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})f e^{i\gamma_{2}}\ket{1}+i\sin(\theta_{1})\alpha\ket{abs}\\& \xrightarrow{\text{BS2}}\cos(\theta_{1})e^{i\gamma_{1}}(\cos(\theta_{2})\ket{2}\\
+&+i\sin(\theta_{2})\ket{1})+i\sin(\theta_{1})e^{i\gamma_{2}}f(\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2})+i\sin(\theta_{1})\alpha\ket{abs}\\
+& = i(e^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+f e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2}))\ket{1}+(\cos(\theta_{1})\cos(\theta_{2}) e^{i\gamma_{1}} \\&  -\sin(\theta_{1})\sin(\theta_{2})f e^{i \gamma_{2}})\ket{2}+i\sin(\theta_{1})\alpha\ket{abs}. \numberthis
 \end{align*}
 
 
 
-A plot for the detection probabilities is shown in Fig. \ref{Pchopper}, as we mentioned before the system is alternating between two probability distributions. We can see those for each of the possible states in the figure. It is worth noting that the absorption graph alternates between the one shown and no absorption:
+A plot for the detection probabilities is shown in Fig. \ref{Pchopper}. As we mentioned before, the system is alternating between two probability distributions. We can see those for each of the possible states in the figure. It is worth noting that the absorption graph alternates between the one shown and no absorption:
 
 
 
 \begin{figure}[t!]
 \centering
-
-\begin{subfigure}[b]{0.45\linewidth}
-\includegraphics[width=\linewidth,height=3 cm]{images/Pc2Abs.png}
-\caption{$P_{2abs}$}
-\label{fig:BS1}
-\end{subfigure}
-\begin{subfigure}[b]{0.45\linewidth}
-\includegraphics[width=\linewidth,,height=3 cm]{images/Pc2D21.png}
-\caption{$P_{2D_{2}}$ in the first cycle }
-\label{fig:BS1}
-\end{subfigure}
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth,height=3 cm]{images/Pc2D22.png}
 \caption{$P_{2D_{2}}$ in the second cycle}
@@ -1247,7 +1236,18 @@ A plot for the detection probabilities is shown in Fig. \ref{Pchopper}, as we me
 \caption{$P_{2D_{1}} $ in the second cycle }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probability distributions of detection and absorption of the photon with an optical chopper whose solid material is totally absorbent  placed in the vertical path. In these plots  $\gamma_{2}-\gamma_{1}=\frac{\pi}{2}$}
+\begin{subfigure}[b]{0.45\linewidth}
+\includegraphics[width=\linewidth,,height=3 cm]{images/Pc2D21.png}
+\caption{$P_{2D_{2}}$ in the first cycle }
+\label{fig:BS1}
+\end{subfigure}
+\begin{subfigure}[b]{0.45\linewidth}
+\includegraphics[width=\linewidth,height=3 cm]{images/Pc2Abs.png}
+\caption{$P_{2abs}$}
+\label{fig:BS1}
+\end{subfigure}
+
+\caption{Probability distributions of detection and absorption of the photon at detectors $D_{1}$ and $D_{2}$ with an optical chopper whose solid material is totally absorbent  placed in the vertical path. In these plots  $\gamma_{2}-\gamma_{1}=\frac{\pi}{2}$.}
 \label{Pchopper}
 \end{figure}
 
@@ -1255,7 +1255,7 @@ A plot for the detection probabilities is shown in Fig. \ref{Pchopper}, as we me
 \begin{align}
 &P_{2D_{1}}=|e^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+f e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2})|^2,\\
 &P_{2D_{2}}=|\cos(\theta_{1})\cos(\theta_{2})e^{i\gamma_{1}}- f \sin(\theta_{1})\sin(\theta_{2})e^{i\gamma_{2}}|^2,\\
-&P_{2abs}=|a \sin(\theta_{1})|^2.
+&P_{2abs}=|\alpha \sin(\theta_{1})|^2.
 \end{align}
 
 Which can be rewritten as:
@@ -1264,18 +1264,14 @@ Which can be rewritten as:
 &\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2}, \numberthis{}\\
 & P_{2D_{2}}=\cos^2(\theta_{1})\cos^2(\theta_{2})+ f^2 \sin^2(\theta_{1})\sin^2(\theta_{2})-\\
 &\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{} \\
-& P_{2abs}=a^2 \sin^2(\theta_{1}).\numberthis{}
+& P_{2abs}=\alpha^2 \sin^2(\theta_{1}).\numberthis{}
 \end{align*}
 
 By the same procedure having the chopper in the horizontal path, one can obtain the following results which are shown in Fig. \ref{P2chopper}, for each of the possible states of the system
  
 \begin{figure}[h!]
 \centering
-\begin{subfigure}[b]{0.35\linewidth}
-\includegraphics[width=\linewidth,height=3 cm]{images/Pc1Abs.png}
-\caption{$P_{1abs}$}
-\label{fig:BS1}
-\end{subfigure}
+
 \begin{subfigure}[b]{0.35\linewidth}
 \includegraphics[width=\linewidth,height=3 cm]{images/Pc1D21.png}
 \caption{$P_{1D_{2}}$ in the first cycle }
@@ -1296,7 +1292,12 @@ By the same procedure having the chopper in the horizontal path, one can obtain 
 \caption{$P_{1D_{1}} $in the second cycle }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probability distributions of detection and absorption of the photon with an optical chopper whose solid material is totally absorbent  placed in the horizontal path. In these plots  $\gamma_{2}-\gamma_{1}=\frac{\pi}{2}$}
+\begin{subfigure}[b]{0.35\linewidth}
+\includegraphics[width=\linewidth,height=3 cm]{images/Pc1Abs.png}
+\caption{$P_{1abs}$}
+\label{fig:BS1}
+\end{subfigure}
+\caption{Probability distributions of detection and absorption of the photon at detectors $D_{1}$ and $D_{2}$ with an optical chopper whose solid material is totally absorbent  placed in the horizontal path. In these plots  $\gamma_{2}-\gamma_{1}=\frac{\pi}{2}$.}
 \label{P2chopper}
 \end{figure}
 
@@ -1305,28 +1306,28 @@ By the same procedure having the chopper in the horizontal path, one can obtain 
 &\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
 & P_{1D_{2}}=\cos^2(\theta_{1})\cos^2(\theta_{2})f^2+ \sin^2(\theta_{1})\sin^2(\theta_{2})-\\
 &\frac{f \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
-& P_{1abs}=a^2 \cos^2(\theta_{1}). \numberthis{}
+& P_{1abs}=\alpha^2 \cos^2(\theta_{1}). \numberthis{}
 \end{align*}
 
 Since $f^2=f$, we can write the difference of probabilities as:
 
 \begin{align}
-P_{1D_{1}}-P_{1D_{2}}=(a)\left(\frac{\cos(2 \theta_{1})-\cos(2 \theta_{2})}{2}\right),\
-P_{1D_{2}}-P_{2D_{2}}=(a)\left(\frac{\cos(2 \theta_{1})+\cos(2 \theta_{2})}{2}\right).
+P_{1D_{1}}-P_{1D_{2}}=\alpha\left(\frac{\cos(2 \theta_{1})-\cos(2 \theta_{2})}{2}\right),\
+P_{1D_{2}}-P_{2D_{2}}=\alpha\left(\frac{\cos(2 \theta_{1})+\cos(2 \theta_{2})}{2}\right).
 \end{align}
  From there we can obtain either $\theta_{1}$  or $\theta_{2}$ :
-\begin{align}
-&(P_{1D_{1}}-P_{1D_{2}})+(P_{1D_{2}}-P_{2D_{2}})=(a)(\cos(2 \theta_{1})),\\
-&(P_{1D_{1}}-P_{1D_{2}})-(P_{2D_{1}}-P_{2D_{2}})=(-a)(\cos(2 \theta_{2})),\\
- &\theta_{1}=\frac{1}{2}\cos^{-1}\left[\frac{(P_{1D_{1}}-P_{2D_{1}})+(P_{1D_{2}}-P_{2D_{2}})}{a}\right],\\
- &\theta_{2}=\frac{1}{2}\cos^{-1}\left[\frac{(P_{1D_{1}}-P_{2D_{1}})-(P_{1D_{2}}-P_{2D_{2}})}{a}\right].
+
+ \begin{align}
+&(P_{1D_{1}}-P_{1D_{2}})+(P_{1D_{2}}-P_{2D_{2}})=\alpha(\cos(2 \theta_{1})),\\
+&(P_{1D_{1}}-P_{1D_{2}})-(P_{2D_{1}}-P_{2D_{2}})=-\alpha(\cos(2 \theta_{2})),\\
+ &\theta_{1}=\frac{1}{2}\cos^{-1}\left[\frac{(P_{1D_{1}}-P_{2D_{1}})+(P_{1D_{2}}-P_{2D_{2}})}{\alpha}\right],\\
+ &\theta_{2}=\frac{1}{2}\cos^{-1}\left[\frac{(P_{1D_{1}}-P_{2D_{1}})-(P_{1D_{2}}-P_{2D_{2}})}{\alpha}\right].
  \end{align}
- 
 
 
 \section{Optical chopper as imperfect absorber}
 
-Previously we considered the ``material" part of the chopper as a perfect absorber. In this section we will now generalize to when it is an imperfect absorber, this can be done quite simply by defining :
+Previously we considered the ``material" part of the chopper as a perfect absorber. In this section,  we will generalize the results of the previos section. Instead of considering the material of the chopper with a transmission coeficient $\beta = 0$, we will take $\beta \neq 0$, i.e. it is a semitransparent material. Let us define: 
  
 
 \begin{align}
@@ -1336,7 +1337,7 @@ f&=f_{material}+f_{hole},
 \end{align}
 
 
-where $\beta$ is the transmission coefficient of the material part of our chopper, $\beta$ could be a function of  $\omega$ or $t$ in this analysis. The operator used to describe our chopper is the same as in the previous section, we define:
+where $\beta$ is the transmission coefficient of the material part of our chopper. The operator used to describe our chopper is the same as in the previous section, we define:
 
 \vspace{0.5cm}
 \begin{equation}
@@ -1369,11 +1370,7 @@ Substituting in the previous section yields the probability distributions shown 
 
 \begin{figure}[h]
 \centering
-\begin{subfigure}[b]{0.40\linewidth}
-\includegraphics[width=\linewidth,height=3 cm]{images/pcabs.png}
-\caption{$P_{1abs}$}
-\label{fig:BS1}
-\end{subfigure}
+
 \begin{subfigure}[b]{0.40\linewidth}
 \includegraphics[width=\linewidth,height=3 cm]{images/pcd21.png}
 \caption{$P_{1D_{2}}$ in the first cycle }
@@ -1394,7 +1391,12 @@ Substituting in the previous section yields the probability distributions shown 
 \caption{$P_{1D_{1}} $ in the second cycle }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probability distributions of detection and absorption of the photon with an optical chopper whose solid material is totally absorbent  placed in the horizontal path. In these plots  $\gamma_{2}-\gamma_{1}=0 $ and $\beta=0.5$}
+\begin{subfigure}[b]{0.40\linewidth}
+\includegraphics[width=\linewidth,height=3 cm]{images/pcabs.png}
+\caption{$P_{1abs}$}
+\label{fig:BS1}
+\end{subfigure}
+\caption{Probability distributions of detection and absorption of the photon with an optical chopper whose solid material is totally absorbent  placed in the horizontal path. In these plots  $\gamma_{2}-\gamma_{1}=0 $ and $\beta=0.5$.}
 \label{P3chopper}
 \end{figure}
 
@@ -1412,11 +1414,7 @@ When the optical chopper is in the vertical path we obtain the following detecti
 
 \begin{figure}[!h]
 \centering
-\begin{subfigure}[b]{0.40\linewidth}
-\includegraphics[width=\linewidth,height=3 cm]{images/p1cabs.png}
-\caption{$P_{2abs}$}
-\label{fig:BS1}
-\end{subfigure}
+
 \begin{subfigure}[b]{0.40\linewidth}
 \includegraphics[width=\linewidth,height=3 cm]{images/p1cd21.png}
 \caption{$P_{2D_{2}}$ in the first cycle }
@@ -1437,7 +1435,12 @@ When the optical chopper is in the vertical path we obtain the following detecti
 \caption{$P_{2D_{1}} $ in the second cycle }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probability distributions of detection and absorption of the photon with an optical chopper whose solid material is totally absorbent  placed in the vertical path. In these plots  $\gamma_{2}-\gamma_{1}=0 $ and $\beta=0.5$}
+\begin{subfigure}[b]{0.40\linewidth}
+\includegraphics[width=\linewidth,height=3 cm]{images/p1cabs.png}
+\caption{$P_{2abs}$}
+\label{fig:BS1}
+\end{subfigure}
+\caption{Probability distributions of detection and absorption of the photon with an optical chopper whose solid material is totally absorbent  placed in the vertical path. In these plots  $\gamma_{2}-\gamma_{1}=0 $ and $\beta=0.5$.}
 \label{P4chopper}
 \end{figure}
 
@@ -1449,23 +1452,17 @@ When the optical chopper is in the vertical path we obtain the following detecti
 &P_{2abs}=\abs{\alpha}^2 \sin^2(\theta_{1}).\numberthis{}
 \end{align*}
 
-\chapter[High-efficiency Mach-Zehnder Interferometer]{High-efficiency  Mach- \\ Zehnder interferometer  }
+As explored in this section an optical chopper can be modeled as a square wave, basically, as the evolution of the system in this model is discrete and periodic the probability distribution of the system will be oscillating between the probability distribution of a semitransparent object and that of a transparent object.
+
+\chapter[High-efficiency Mach-Zehnder Interferometer]{High-efficiency  Mach-Zehnder interferometer  }
  
  The notation previously used is not popular when dealing with nested interferometers. To be consistent with the existing literature we will use the same notation as Kwait et al. \cite{5}, where the arrangement shown in Fig. \ref{Nmach}, we see from the figure that we will have $N$ beam splitters and $N-1$ absorbers before the output:
  
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth]{images/nmach.png}
-\caption{Nested Mach-Zehnders interferometer  with identical imperfect absorbers.}
-\label{Nmach}
-\end{figure}
  
 Instead of using the Horizontal-Vertical basis, we will use a path A -path B basis. That is an ``up-down" basis, we will use $\ket{1}$ for path $a$ and $\ket{2}$ for path $b$. The main advantage of using this basis is that the mirror matrices are proportional to the identity because they keep our photon on the same path.
  
  
- In order to use the same beam splitter matrix as before and be consistent with the literature \cite{5}, we choose the reflectivity of the $N$ $BS$ to be modeled by $cos(\theta)$ instead of $i\sin(\theta)$, as a consequence the transmissivity is now $i\sin(\theta)$.  We will model our imperfect absorber using a non-unitary diagonal matrix just as was done by  Azuma \cite{Azuma}.   
- 
- Azuma used a matrix of the form, where $n=\abs{\beta}^{2}$, where $\beta$ is the transmissivity:
+ In order to use the same beam splitter matrix as before and be consistent with the literature \cite{5}, we choose the reflectivity of the $N$ $BS$ to be modeled by $cos(\theta)$ instead of $i\sin(\theta)$, as a consequence the transmissivity is now $i\sin(\theta)$.  We will model our imperfect absorber using a non-unitary diagonal matrix just as was done by  Azuma \cite{Azuma}. Azuma used a matrix of the form, where $n=\abs{\beta}^{2}$, where $\beta$ is the transmissivity:
  
  \begin{equation}
  A_{Azuma}=\begin{pmatrix} \sqrt{n} & 0\\0& 1\end{pmatrix}.
@@ -1478,7 +1475,13 @@ Since we are using a $BS$ as an imperfect absorber a more suitable option would 
 \label{absorber1}
 \end{equation}
 
-The final state can be obtained by applying the operators corresponding to each of the optical elements involved to the initial state which will be $\ket{2}$. We consider both mirrors to be identical so that the phase they induce ends up being a global phase which does not affect the probabilities. First we study the case with no obstacles in any of the arms of the interferometer, then the only operators acting on the state are $BS$ then:
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{images/nmach2.png}
+\caption{Nested Mach-Zehnder interferometer  with identical imperfect absorbers.}
+\label{Nmach}
+\end{figure}
+The final state can be obtained by applying the operators corresponding to each of the optical elements involved to the initial state $\ket{2}$. We consider both mirrors to be identical so that the phase they induce ends up being a global phase which does not affect the probabilities. First, we study the case with no obstacles in any of the arms of the interferometer. The evolution of the initial state $\ket{2}$ can be calculated by applying on it the matrix of each $BS$, but notice that the multiplication of two $BS$ matrices is
 
 \begin{align*}
 BS_{i} \times BS_{i+1}&=\begin{pmatrix} \cos(\theta_{i}) & i \sin(\theta_{i}) \\ i \sin(\theta_{i}) & \cos(\theta_{i}) \end{pmatrix}  
@@ -1486,21 +1489,21 @@ BS_{i} \times BS_{i+1}&=\begin{pmatrix} \cos(\theta_{i}) & i \sin(\theta_{i}) \\
 &=\begin{pmatrix} \cos(\theta_{i}+\theta_{i+1}) & i \sin(\theta_{i}+\theta_{i+1}) \\ i \sin(\theta_{i}+\theta_{i+1}) & \cos(\theta_{i}+\theta_{i+1}) \end{pmatrix}. \numberthis
 \end{align*}
 
-if we assume $N$ $BS$ that are identical:
+Assuming that the interferometer contains $N$ identical beam splitters, then the nested action of all of them can be represented by $N$ $BS$ that are identical:
 
 \begin{equation}
 BS^{N}=\begin{pmatrix} \cos(N\Theta) & i \sin(N\Theta) \\ i \sin(N\Theta) & \cos(N\Theta) \end{pmatrix},
 \end{equation}
 
-Let us assume $\Theta=\frac{\pi}{2N}$ so we have:
+As an importan particular case, we can ask  $\Theta=\frac{\pi}{2N}$ so we have:
 
 \begin{equation}
-BS^{N}=\begin{pmatrix} 0 & i  \\ i  & 0 \end{pmatrix},
+BS^{N}=\begin{pmatrix} 0 & i  \\ i  & 0 \end{pmatrix}.
 \end{equation}
 
- we will always detect the photon in the path that is not the one we sent our photon in.
+If all the mentioned conditions are satisfied, we will  always detect the photon in the path that is not the one we sent our photon in.
  
-  Let us see what happens with this particular $\theta$ when we do have imperfect absorbers. The state first goes through a $BS$, then one of the imperfect absorbers and then another $BS$, it keeps going like that until it encounters the $Nth$ and last $BS$. We have $N$ $BS$ and $N-1$ imperfect absorbers so our final state is:
+  Let us see what happens with this particular $\Theta$ when we do have imperfect absorbers replacing the bombs, see Fig. \ref{Nmach}, all of the absorbers with the same optical properties. Our initial state interacts with the first beam splitter, the state is transformed into a linear superposition of the state representing the photon in path a and the state representing the photon in path b, the photon in path b state interacts with one of the imperfect absorbers, then the system state is recombined in the second beam splitter and undergoes the same process. The process is repeated untill the photon state has evolved through the $N$ beam splitters. We can write the whole process as 
 
 
 \begin{equation}\ket{2}\xrightarrow[\text{interferometers}]{\text{Nested}}(B \times A)^{N-1}B \ket{2}.
@@ -1516,11 +1519,11 @@ Detection probabilities are given by:
 \end{align}
  
  
-To obtain said probabilities as well as the behavior of the system for varying $N$ we will make use of a computer. The program was written in python and yielded the following results:
+To obtain said probabilities, as well as the behavior of the system for varying $N$, we used of a computer. The program was written in python and yielded the results shown in Fig. \ref{Azuma1}
 
 
  
-\begin{figure}[H]
+\begin{figure}[t]
 \centering
 \begin{subfigure}[b]{0.45\linewidth}
 \includegraphics[width=\linewidth,height=5 cm]{images/BS_Azuna.png}
@@ -1537,15 +1540,16 @@ To obtain said probabilities as well as the behavior of the system for varying $
 \caption{$P_{abs}$}
 \label{fig:BS1}
 \end{subfigure}
-\caption{Detection probabilities for an array with $\Theta=\frac{\pi}{2N}$, the detection probability in $D_{1}$(a), $D_{2}$(b) or that the photon will be ``lost'' (c) }
+\caption{Detection probabilities for an array with $\Theta=\frac{\pi}{2N}$, the detection probability in $D_{1}$ (a), $D_{2}$ (b) or that the photon will be ``lost'' (c). }
 \label{Azuma1}
 \end{figure}
 
 
-Fig. \ref{Azuma1} shows different probabilities as we increase $N$. We can see that the probability of detection in $D_{1}$ asymptotically approaches 1 as Azuma had shown \cite{Azuma}, the case of a $BS$ as an absorber shows consistency. The case of a $BS$ is described by the same mathematics that an analyzer and a polarizer \cite{leonhardt}, unlike other absorbers this can be manipulated continually, giving us a way to test these curves experimentally.
+Fig. \ref{Azuma1} shows different probabilities as we increase $N$. We can see that the probability of detection in $D_{1}$ asymptotically approaches one as Azuma had shown \cite{Azuma}. By substituting the bombs with beam splitters, we obtained similar results. Moreover, if we want to perform the experiment varying continuously the transitivity of the obstacle, we can use a polarizer and analyzer \cite{leonhartd}.  The case of a $BS$ is described by the same mathematics that an analyzer and a polarizer \cite{leonhardt}, unlike other absorbers this can be manipulated continually, giving us a way to test these curves experimentally.
+
  \section{Using identical beam splitters for all $N$}
  
-One may wonder how the system behaves for growing $N$ with the same kind of $BS$ for all $N$, maybe we could make the probability of detecting in $D_{1}$ grow as well, but after the analysis. We can see that even though it may grow for low $N$ it soon begins to lower and approaches zero very quickly for most values as we can see below.
+In the previous section, each time we consider a different number $N$ of beam splitters, we needed to change $\Theta = \frac{\pi}{2N}$. But, one may wonder  how the system behaves for growing $N$ but fixed $\Theta$, maybe we could make the probability of detecting in $D_{1}$ grow as well, but after the analysis. We can see that even though it may grow for low $N$ it soon begins to lower and approaches zero very quickly the different values we tested. As Fig. \ref{Azuma2} shows.
 
 
 \begin{figure}[!t]
@@ -1574,19 +1578,19 @@ One may wonder how the system behaves for growing $N$ with the same kind of $BS$
 
 
  
- Fig. \ref{Azuma2} shows the probabilities when we increase the number of interferometers but do not change the $BS$ as $N$ increases, this may seem like a waste of effort since the aim is to maximize the detection probability. However let us assume that we have an absorber that has a very little absorption probability, if we wanted to have it absorbing our photon this scheme would prove useful
+ Fig. \ref{Azuma2} shows the probabilities when we increase the number of $BS$ but do not change the transmitivity of them as $N$ increases. This may seem like a waste of effort since the aim is to maximize the detection probability. However, let us assume that we have an absorber that has a very little absorption probability, if we wanted to have it absorbing our photon this scheme would prove useful
 
 \section{Using different beam splitters}
 
 As we explored at the beginning of this chapter what gives us distinguishability between the case where we have an object in one of the arms of the interferometer and when there is no obstacle is the fact that when the sum of the angles is $\frac{ \pi}{2}$ so that when no object is there the output will be in detected in the opposite path when sent the photon in.
 
-Could we use different angles that sum up to $\frac{\pi}{2}$? and still, enhance the probability of detection in $D_{1}$. The answer is yes to illustrate it let us remember that the probability of detection in $D_{1}$ is given by Eq. \ref{comentatio}
+Could we use different angles that sum up to $\frac{\pi}{2}$? and still, enhance the probability of detection in $D_{1}$. The answer is yes, to illustrate it let us remember that the probability of detection in $D_{1}$ is given by Eq. \ref{comentatio}
 
 \begin{equation*}
 P_{D_{1}}=|\bra{2} (B \times A)^{N-1}B \ket{2}|^2
 \end{equation*}
 
-As we stated in section 2.2 the problem was reduced to matrix multiplication so we can get $P_{D_{1}}$ in this fashion, since manual calculations such as the ones in chapters 3,4 and 5 become tedious when N grows, we will again use a computer, this time using symbolic computation to get this result, to illustrate the point, let us fix $N$, let us use $N=3$ then $P_{D_{1}}$ is given by:
+As we stated in section 2.2 the problem was reduced to matrix multiplication so we can get $P_{D_{1}}$ in this fashion, to illustrate the point, let us fix $N$, let us use $N=3$ then $P_{D_{1}}$ is given by:
 \small
 \begin{align*}
 &P_{D_{1}}=\beta^{4} \sin^{2}{\left(\theta_{1} \right)} \sin^{2}{\left(\theta_{3} \right)} \cos^{2}{\left(\theta_{2} \right)} + 2 \beta^{3} \sin{\left(\theta_{1} \right)} \sin{\left(\theta_{2} \right)} \sin{\left(\theta_{3} \right)} \sin{\left(\theta_{1} + \theta_{3} \right)} \cos{\left(\theta \right)} \cos{\left(\theta_{2} \right)} \\
@@ -1607,36 +1611,37 @@ If we make $\theta_{i}=\frac{\pi}{2N}$ just like at the beginning of this chapte
 P_{D_{1}}=\cos^{6}{\left(\frac{\pi}{6} \right)}=\frac{27}{64}=0.421875
 \end{equation} 
 
-But if instead, we preserve that the sum is $\frac{\pi}{2}$,  but we use different angles we can achieve a higher probability of detection for lower $N$, let us show this by using $\theta_{1}=\frac{\pi}{4}$,$\theta_{2}=\frac{\pi}{6}$ and $\theta_{3}=\frac{\pi}{12}$ then 
+But if instead, we preserve that the sum is $\frac{\pi}{2}$,  but we use different angles we can achieve a lower probability of detection for lower $N$, let us show this by using $\theta_{1}=\frac{\pi}{4}$, $\theta_{2}=\frac{\pi}{6}$ and $\theta_{3}=\frac{\pi}{12}$ then 
 
 \begin{equation}
 P_{D_{1}}=\cos^{2}{\left(\frac{\pi}{4} \right)} \cos^{2}{\left(\frac{\pi}{6} \right)} \cos^{2}{\left(\frac{\pi}{12} \right)}=0.3499
 \end{equation}
 
-Now, What happens for higher $N$? this analysis remains the same, this happens because as Kwait et al \cite{exp} reasoned if the photon is to be detected then it always was reflected so it did not interact with the object and we simply have the product of cosines. If we get analytic answers and set $\beta=0$ then we get the same answer as they did with their reasoning, If we have semitransparent objects then we just as we can see from the curves in the previous section a semitransparent object reduces our probability of detecting in $D_{1}$ as we can also see plotting the analytical answer vs $\beta$ 
+Now, What happens for higher $N$? this analysis remains the same, this happens because as Kwait et al \cite{exp} reasoned if the photon is to be detected then it always was reflected so it did not interact with the object and we simply have the product of cosines. If we get analytic answers and set $\beta=0$ then we get the same answer as they did with their reasoning, If we have semitransparent objects then we just as we can see from the curves in the previous section a semitransparent object reduces our probability of detecting in $D_{1}$ as we can also see plotting the analytical answer vs $\beta$.
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=\linewidth]{images/alonso_idea.png}
+\includegraphics[scale=0.5]{images/alonso_idea.png}
 \caption{Behaviour of the probability when we use different angles as we vary $\beta$ for $N=3$, we used $\theta_{1}=\frac{\pi}{4}$,$\theta_{2}=\frac{\pi}{6}$ and $\theta_{3}=\frac{\pi}{12}$ .}
 \end{figure}
 
 From this analysis, we can conclude that the best bomb detector we could build would be one whose bomb is perfectly absorbent and whose beam splitters use $\Theta=\frac{\pi}{2 N}$. However, in practice, such an object is difficult to obtain and that is why models with semitransparent objects are useful.
  
 \section[Optical chopper]{Optical chopper as imperfect absorber in $N$ interferometers}
-For an optical chopper the following matrix could be used:
+
+In this next section, we will replace the $N-1$ imperfect absorbers by $N-1$ sinchronized identical optical choppers.For an optical chopper the following matrix could be used:
 
 \begin{equation}
 A_{chopper}=\begin{pmatrix} f & 0 \\ 0 & 1 \end{pmatrix}.
 \end{equation}
 
-However as $f$ only varies discretely our matrix will alternate between two values of $n$, between two transparencies ($\beta$ and 1):
+However, as $f$ only varies discretely our matrix will alternate between  two transparencies ($\beta$ and 1):
 
 \begin{equation}
 f=\left(\frac{1-sgn(\sin(wt))}{2} \right)\beta+\frac{1+sgn(\sin(wt))}{2}.
 \end{equation}
 
-In the positive cycle we have $f_{positive}=1$. While on the negative cycle $f_{negative}=\beta$. For convenience, we will redefine $n=\abs{\beta}^{2}$ and write in terms of $n$, this way in the positive cycle we will have the case of the nested interferometer with no object which is the same as  $\beta=1$, but in the negative cycle, we will have  Azuma's case.
+In the positive cycle we have $f=1$. While on the negative cycle $f=\beta$. For convenience, we will rewrite the matrix in Eq. \ref{absorber} in terms of $|\beta|$, this way in the positive cycle we will have the case of the nested interferometer with no object which is the same as  $\beta=1$, but in the negative cycle, we will have  Azuma's case.
 
 
  \begin{figure}[!t]
@@ -1656,7 +1661,7 @@ In the positive cycle we have $f_{positive}=1$. While on the negative cycle $f_{
 \caption{$P_{abs}$}
 \label{fig:BS1}
 \end{subfigure}
-\caption{Behavior for Growing $N$ for optical choppers as imperfect absorbers, (a) shows the probability of detection in $D_{1}$, (b) the probability of detection in $D_{2}$ and (c) the probability of the photon being ``lost''.}
+\caption{Behavior for growing $N$ for optical choppers as imperfect absorbers, (a) shows the probability of detection in $D_{1}$, (b) the probability of detection in $D_{2}$ and (c) the probability of the photon being ``lost''.}
 \label{fig:several_chpper}
 \end{figure}
  
@@ -1665,17 +1670,17 @@ Fig. \ref{fig:several_chpper} shows the probabilities distributions for optical 
 
 \section{Does the phase matter?}
 
-As we saw in the previous section if we put several Mach-Zehnder interferometers in a row we can increase the probability of detecting in $D_{1}$ arbitrarily close to unity, (if we put the semitransparent objects in the other arm the opposite is true). However, neither in the treatment by Azuma \cite{Azuma} nor in the previous section the phase the object induces was considered, only its transmission coefficient. Is it unimportant?
+As we saw in the previous section, if we use nested interferometers we can increase the probability of detecting in $D_{1}$ arbitrarily close to unity, (if we put the semitransparent objects in the other arm the opposite is true). However, neither in the treatment by Azuma \cite{Azuma} nor in the previous section the phase the object induces was considered, only its transmission coefficient. Is it unimportant?
 
-To answer that question we explore how the object inducing a phase would affect our previous calculations. To introduce it one simply modifies Eqs. \ref{absorber} or \ref{absorber1}. by multiplying by a phase (equivalent to considering a phase shifter in the same arm). the resulting matrix is:
+To answer that question we explore how the object inducing a phase would affect our previous calculations. To introduce it, one simply modifies Eqs. \ref{absorber} or \ref{absorber1}. by multiplying $\beta$ by a phase (equivalent to considering a phase shifter in the same arm the object is in). the resulting matrix is:
 
 \begin{equation}
  A=\begin{pmatrix} \beta e^{i \theta}& 0\\0&  1\end{pmatrix}.
  \end{equation}
 
-By doing the same procedure as in section 6.1, we plot $P_{D_{1}},P_{D_{2}},P_{abs}$ v. $\theta$ fixing $N$. 
+By doing the same procedure as in section 6.1, we plot $P_{D_{1}},P_{D_{2}},P_{abs}$ vs. $\theta$ fixing $N$. 
 
-\begin{figure}[H]
+\begin{figure}[!t]
 \centering
 \begin{subfigure}[b]{0.30\linewidth}
 \includegraphics[width=\linewidth]{images/Azuma_phases2.png}
@@ -1700,18 +1705,18 @@ By doing the same procedure as in section 6.1, we plot $P_{D_{1}},P_{D_{2}},P_{a
 \caption{$N=1000$ }
 \label{1000}
 \end{subfigure}
-\caption{Behaviour of probabilities as $N$ grows and we vary $\theta$ for $\beta=0.5$, (a) N=2,(b) N=5,(c) N=10,(d) N=100,(e) N=1000.}
+\caption{Behaviour of probabilities as $N$ grows and we vary $\theta$ for $\beta=0.5$, (a) $N$=2,(b) $N$=5,(c) $N$=10,(d) $N$=100,(e) $N$=1000.}
 \label{con_fase}
 \end{figure}
 
 As we see from Fig. \ref{con_fase} the phase is important when $N$ is small but as $N$  grows the dependence on the phase $\theta$ becomes smaller until we see for example in Fig \ref{1000} when $N$ is big. It is almost constant with the variation of $\theta$.
 
-These kind of plots, allow us to know the phases that would improve our bomb detector for unbalanced interferometers, such as the one developed in \cite{Chao_2018} for any given transparency and number of beam spliters.
+These plots, allow us to know the phases that would improve our bomb detector for unbalanced interferometers (an unbalanced interferometer is one with misalignments), such as the one developed in \cite{Chao_2018} for any given transparency and number of beam spliters.
 
 
 \section{Towards Wheeler's Gedanken experiment}
 
-One of the main reasons the Mach-Zehnder interferometer is so popular is that it allows us to study fundamental facts about quantum theory such as Bohr's complementary principle, this is well explained in \cite{delayed}. It consists in wondering if a photon behaves like a particle or a wave in a Mach-Zehnder interferometer, the idea is better explained by illustrating the Gedanken experiment.
+One of the main reasons the Mach-Zehnder interferometer is so popular is that it allows us to study fundamental facts about quantum theory such as Bohr's complementary principle, this is well explained in \cite{delayed}. It consists in wondering if a photon behaves like a particle or a wave in a Mach-Zehnder interferometer, the idea is better explained with the following the Gedanken experiment.
 
 \begin{figure}[H]
 \centering
@@ -1720,7 +1725,7 @@ One of the main reasons the Mach-Zehnder interferometer is so popular is that it
 \label{wheeler1}
 \end{figure}
 
-Let us picture a Mach-Zehnder interferometer like the one shown in Fig. \ref{wheeler1}, let both $BS$ be 50:50, now let us also imagine that we send in a single photon, from the section on a single photon interferometer we get Eq. \ref{pp_wheler}, if the difference in the optical path is $\gamma_{1}-\gamma_{2}=0$  we get certainty of where the detection will be made ($D_{1}$), however, we have no information of which path the photon took.
+Let us picture a Mach-Zehnder interferometer like the one shown in Fig. \ref{wheeler1}, let both $BS$ be 50:50, now let us also imagine that we send in a single photon, from the section 3.2 we get Eq. \ref{pp_wheler}, if the difference in the optical path is $\gamma_{1}-\gamma_{2}=0$  we get certainty of where the detection will be made ($D_{1}$), however, we have no information of which path the photon took.
 
 \begin{figure}[H]
 \centering
@@ -1729,25 +1734,25 @@ Let us picture a Mach-Zehnder interferometer like the one shown in Fig. \ref{whe
 \label{wheeler2}
 \end{figure}
 
-Now, let us consider this new arrangement as it is shown in Fig. \ref{wheeler2} where we removed the second beam splitter from the interferometer, this time we have no certainty of where the photon detection is going to be made (it is split with equal probability to $D_{1}$ and $D_{2}$ ), however, once we detect the photon we have complete information of which path the photon took.
+Now, let us consider the new arrangement shown in Fig. 6.8, as it is shown in Fig. \ref{wheeler2} where we removed the second beam splitter from the interferometer. This time we have no certainty of where the photon detection is going to be made (it is split with equal probability to $D_{1}$ and $D_{2}$), however, once we detect the photon we have complete information of which path the photon took.
 
 
 
-So in one setting, we have particle-like behavior and in the other, we have wave-like behavior. It seems that before entering the experiment the photon somehow decides whether it is going to behave as a particle or as a wave, which seems to be in accordance with Bohr's complementary principle. This is precisely what Quantum delayed-choice experiments seek to rule out \cite{Ma}, where we choose to have particle or wave behavior or even a continuous transition between these two very different behaviors while the experiment is running.
+In one setting, we have wave-like behavior and in the other, we have partcile-like behavior. In the wheeler Gedanken experiment, the idea is to have the second beam splitter in a superposition of being there or not. It seems that before entering the experiment the photon somehow decides whether it is going to behave as a particle or as a wave, which seems to be in accordance with Bohr's complementary principle. This is precisely what quantum delayed-choice experiments seek to rule out \cite{Ma}, where the photon has particle or wave behavior or even a continuous transition between these two very different behaviors while the experiment is running.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=7.5 cm]{images/wheeler3.png}
-\caption{Mach-Zehnder interferometer with the second $BS$ is a in a superposition of being there and not being there.}
+\caption{Mach-Zehnder interferometer with the second $BS$ is a in a superposition of being and not being.}
 \label{wheeler3}
 \end{figure}
 
-It was recently demonstrated \cite{Peruzzo, Kaiser2012} that there is a smooth transition between particle and wave behaviors thus Bohr's complementary principle seems to be invalid. The way they did this experiment was through a very clever implementation of the original Gedanken experiment where we have a ``Quantum'' $BS$, which is a $BS$ that is in a superposition state of being there and not being there as in Fig. \ref{wheeler3}. The way they achieved this superposition was by implementing a controlled Hadarmard gate \footnote{As was discussed in the beam splitter section a Hadamard gate is equivalent to a 50:50 beam splitter}, acting as an identity gate if a control qubit is in the $0$ state and as a Hadamard gate if the controlled qubit is in the $1$ state.  If the control qubit is in a superposition state so will be the controlled Hadamard gate.
+It was recently demonstrated \cite{Peruzzo, Kaiser2012} that there is a smooth transition between particle and wave behaviors thus Bohr's complementary principle seems to be invalid. The way they did this experiment was through a very clever implementation of the original Gedanken experiment where we have a ``Quantum'' $BS$, which is a $BS$ that is in a superposition state of being there and not being there as in Fig. \ref{wheeler3}. They achieved this superposition was by implementing a controlled Hadarmard gate \footnote{As was discussed in the beam splitter section a Hadamard gate is equivalent to a 50:50 beam splitter}, acting as an identity gate if a control qubit is in the $0$ state and as a Hadamard gate if the control qubit is in the $1$ state.  If the control qubit is in a superposition state, so will be the controlled Hadamard gate.
 
 
 
 
-A similar situation arises through interaction-free measurements, since taking a path means interacting with the object, and taking the other path means no interaction, thus we have some sort of controlled gate. The first $BS$ puts the photon in a superposition of both paths (note that this approach differs significantly from the one taken in \cite{Peruzzo,Kaiser2012} because our $BS$ differ from a Hadamard gate by more than a phase, this approach is more ``controllable" ), and then both paths are recombined in the second $BS$ that is we always have the second beam splitter on as the experiments proposed recently do \cite{Polino}
+A similar situation arises through interaction-free measurements, since taking a path means interacting with the object, and taking the other path means no interaction, thus we have some sort of controlled gate. The first $BS$ puts the photon in a superposition of both paths (note that this approach differs significantly from the one taken in \cite{Peruzzo,Kaiser2012} because our $BS$ differ from a Hadamard gate by more than a phase, this approach is more controllable ), and then both paths are recombined in the second $BS$, recall we always have the second beam splitter on as the experiments proposed recently do \cite{Polino}.
 
 \begin{figure}[H]
 \centering
@@ -1765,12 +1770,11 @@ A similar situation arises through interaction-free measurements, since taking a
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Continuos transition between wave and particle behaviour with 50:50 $BSs$, (a) Shows the probability in $D_{1}$,(b) in $D_{2}$ and (c) the probability the photon is ``lost''.}
+\caption{Continuos transition between wave and particle behaviour with 50:50 $BSs$, (a) shows the probability that the photon is detected at $D_{1}$,(b) at $D_{2}$ and (c) the probability the photon is ``lost''.}
 \label{transzuri}
 \end{figure}
 
-fgpgibfiufiugbi
-But if you have both $BS$ in the setup how can the transition between particle and wave behavior be achieved? The answer is quite simple, the object introduces two new parameters that can be tuned to change the behavior of the photon from particle to wave since these properties change the probabilities at the output as was studied in previous sections. This was done by Zurika Blanco-Garcia and Oscar Rosas-Ortiz in \cite{azuri} for the 50:50 $BS$ case. Those plots are in perfect agreement with the experiments. However, no experimental realization has been done in this setup. Fig. \ref{transzuri} shows the transition from particle to wave behavior in the 50:50 case. (To make it more comparable to experiments we included the effect of misalignment $\gamma_{1},\gamma_{2}$, in the output they end up in a sum with the phase of the object, we included this in a single parameter $\Delta$):
+If, we have both $BS$ in the setup, how can the transition between particle and wave behavior be achieved? The answer is simple, the object introduces two new parameters that can be tuned to change the behavior of the photon from particle to wave since these properties change the probabilities at the output as was studied in previous sections. This was studied by Zurika Blanco-Garcia and Oscar Rosas-Ortiz in \cite{azuri} for the 50:50 $BS$ case. Those plots are in perfect agreement with the experiments. However, no experimental realization has been done in this setup. Fig. \ref{transzuri} shows the transition from particle to wave behavior in the 50:50 case. (To make it more comparable to experiments we included the effect of misalignment $\gamma_{1},\gamma_{2}$, in the output they end up in a sum with the phase of the object, we included this in a single parameter $\Delta$):
 
 \begin{figure}[H]
 \centering
@@ -1825,7 +1829,7 @@ But if you have both $BS$ in the setup how can the transition between particle a
 \label{varias}
 \end{figure}
 
-Now, what happens if we do $N$ interferometers in a row? how does this transition change? The answer is that we get multiple transitions as Fig. \ref{varias} shows, there we can see the plots for $N=3$ and $N=5$, in theses plots we consider all objects in the interferometer to be equal, we also considered all Beam Splitters to be 50:50 and we dropped the general form of the mirrors, so computation times are lower (that is we used $\gamma_{1}=\gamma_{2}=\frac{\pi}{2}$), as we can see we have more than one transition between particle and wave behavior, however, we see that this happens only for $\beta \approx 1$ which may suggest that the transition only happens for almost transparent or transparent objects. However, this is because the absorption probability tends to $1$ as $N$ grows as we showed in section 6.1
+Now, let us consider a high efficiency Mach-Zehnder interferometer with $N$ beam splitters. We get multiple transitions as Fig. \ref{varias} shows, there we can see the plots for $N=3$ and $N=5$, in theses plots we consider all objects in the interferometer to be equal, we also considered all beam splitters to be 50:50 and we dropped the general form of the mirrors, selecting $\gamma_{1}=\gamma_{2}=\frac{\pi}{2}$), as we can see we have more than one transition between particle and wave behavior, however, we see that this happens only for $\beta \approx 1$ which may suggest that the transition only happens for almost transparent or transparent objects. However, this is because the absorption probability tends to $1$ as $N$ grows as we showed in section 6.1
 
 We can circumvent this by using $BS$ with $\Theta=\frac{\pi}{2N}$, exploiting the quantum Zeno effect as explained in the previous section, we could then see more interesting transitions, and we get plots like the ones in Fig. \ref{figvarias2}, all other parameters are maintained.
 
@@ -1874,19 +1878,19 @@ where $V$ is the visibility, $D$ is the distinguishability and are defined as :
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Continuous transition between wave and particle behaviour with $\theta=\frac{\pi}{2N}$ BSs for $N=3$ and $N=5$. The top plots correspond to $N=3$ they show the probability of detection in $D_{1}$ (a),$D_{2}$ (b) and the probability of the photon being ``lost''(c). The botton plots correspond to $N=5$ they show the probability of detection in $D_{1}$ (d),$D_{2}$ (e) and the probability of the photon being ``lost'' (f)}
+\caption{Continuous transition between wave and particle behaviour with $\theta=\frac{\pi}{2N}$ $BS$s for $N=3$ and $N=5$. The top plots correspond to $N=3$ they show the probability of detection in $D_{1}$ (a),$D_{2}$ (b) and the probability of the photon being ``lost''(c). The bottom plots correspond to $N=5$, they show the probability of detection in $D_{1}$ (d),$D_{2}$ (e) and the probability of the photon being ``lost'' (f)}
 \label{figvarias2}
 \end{figure}
 
 
 
 
-where $P_{max}$ and $P_{min}$ refer to the maximal and minimal for recording a photon in a chosen detector when scanning through the phase of the interferometer. The distinguishability or which-path information is defined as $D=D_{1}+D_{2}$ and $p(i,j)$ the probability that the photon travelled the path $i=1,2$ and arrived at detector $j=1,2$
+where $P_{max}$ and $P_{min}$ refer to the maximal and minimal for recording a photon in a chosen detector when scanning through the phase of the interferometer. The distinguishability or which-path information is defined as $D=D_{1}+D_{2}$ and $p(i,j)$ the probability that the photon travelled the path $i=1,2$ and arrived at detector $j=1,2$.
 
 
-In conclusion in this section, we proposed a simpler way to get the transition from wave and particle behavior, as \cite{Kaiser2012,Peruzzo} uses sophisticated equipment to implement a controlled Hadamard gate, we propose a simpler scheme to achieve the same plots both theoretically and experimentally. Besides requiring this complicated implementations a lot of debate has been arising since some claim that the experiments in \cite{Kaiser2012,Peruzzo}  can be explained with a 2-dimensional classical variable \cite{Rossi,Chaves}, recently a proposal and implementation for an experiment that could not be explained in this way was presented in \cite{Polino}.
+In conclusion, we proposed a simpler way to get the transition from wave and particle behavior, as \cite{Kaiser2012,Peruzzo} uses sophisticated equipment to implement a controlled Hadamard gate, we proposed a simpler scheme to achieve the same results both theoretically and experimentally. Besides requiring this complicated implementations a lot of debate has been arising since some claim that the experiments in \cite{Peruzzo,Kaiser2012}  can be explained with a two-dimensional classical variable \cite{Rossi,Chaves}, recently a proposal and implementation for an experiment that could not be explained in this way was presented in \cite{Polino}.
 
-We could have an equivalent to such experiments with interaction-free measurements, instead of having to phase shifters like in \cite{Polino}. we could have a polarizer and analyzer followed by a phase shifter in one of the arms of the interferometer, and we could rotate both of them in the same way they do in \cite{Polino} by implementing random number generators.
+
 
 
 

@@ -1562,21 +1562,27 @@ As seen in this section, an optical chopper can be modeled as a device producing
 
 
 \chapter[High-efficiency Mach-Zehnder Interferometer]{High-efficiency  Mach-Zehnder interferometer  }
- 
- The notation previously used is not popular when dealing with nested interferometers. To be consistent with the existing literature we will use the same notation as Kwait et al. \cite{5}, where the arrangement shown in Fig. \ref{Nmach}, we see from the figure that we will have $N$ beam splitters and $N-1$ absorbers before the output:
- 
- 
-Instead of using the Horizontal-Vertical basis, we will use a path A -path B basis. That is an ``up-down" basis, we will use $\ket{1}$ for path $a$ and $\ket{2}$ for path $b$. The main advantage of using this basis is that the mirror matrices are proportional to the identity because they keep our photon on the same path.
+
+In this section, we will consider a nested Mach-Zehnder interferometer, that is an interferometer whose output goes into other beam splitters. We will place an identical semitransparent object in the upper half of our nested interferometer after each beam splitter except for the last one. Our signal photon will enter the interferometer through the lower half on the nested interferometer, as the arrangement shown in Fig. \ref{Nmach} shows, we see from the figure that we will have $N$ beam splitters and $N-1$ absorbers before the output. The notation previously used is not popular when dealing with nested interferometers. To be consistent with the existing literature and in order to compared our result with those previously reported results we will use the same notation as Kwait et al. \cite{5}.
  
  
- In order to use the same beam splitter matrix as before and be consistent with the literature \cite{5}, we choose the reflectivity of the $N$ $BS$ to be modeled by $cos(\theta)$ instead of $i\sin(\theta)$, as a consequence the transmissivity is now $i\sin(\theta)$.  We will model our imperfect absorber using a non-unitary diagonal matrix just as was done by  Azuma \cite{Azuma}. Azuma used a matrix of the form, where $n=\abs{\beta}^{2}$, where $\beta$ is the transmissivity:
+Instead of using the Horizontal-Vertical basis, we will use a path $a$ -path $b$ basis. That is an ``up-down" basis. We will say that the photon is in the state $\ket{1}$ if it is in path $a$ and in state $\ket{2}$ if it is in path $b$. The main advantage of using this basis is that the mirror matrices are proportional to the identity because they keep the photon on the same path.
+ 
+\begin{comment}
+ In order to use the same beam splitter matrix as before and be consistent with the literature \cite{5}, we choose the reflectivity of the $N$ $BS$ to be modeled by $cos(\theta)$ instead of $i\sin(\theta)$, as a consequence the transmissivity is now $i\sin(\theta)$. 
+ \end{comment}
+ 
+ 
+  We will model the imperfect absorber using a non-unitary diagonal matrix just as was done by  Azuma \cite{Azuma}. Azuma used a matrix of the form:
  
  \begin{equation}
- A_{Azuma}=\begin{pmatrix} \sqrt{n} & 0\\0& 1\end{pmatrix}.
+ A_{Azuma}=\begin{pmatrix} \sqrt{n} & 0\\0& 1\end{pmatrix},
 \label{absorber}
  \end{equation}
+ 
+ where the transmissivity $\beta$  is such that $|\beta|^{2}=n$. In our case, each imperfect absorber is a $BS$. We will then consider that each of the $N$ $BS$ has a reflectivity $\cos(\theta)$ and a transmitivity $i\sin(\theta)$. Thus, in our model the imperfect are modeled by the matrix
+ 
 
-Since we are using a $BS$ as an imperfect absorber a more suitable option would be :
 \begin{equation}
  A_{BS}=\begin{pmatrix} \sin(\theta) & 0\\0& 1\end{pmatrix}.
 \label{absorber1}
@@ -1588,11 +1594,13 @@ Since we are using a $BS$ as an imperfect absorber a more suitable option would 
 \caption{Nested Mach-Zehnder interferometer  with identical imperfect absorbers.}
 \label{Nmach}
 \end{figure}
-The final state can be obtained by applying the operators corresponding to each of the optical elements involved to the initial state $\ket{2}$. We consider both mirrors to be identical so that the phase they induce ends up being a global phase which does not affect the probabilities. First, we study the case with no obstacles in any of the arms of the interferometer. The evolution of the initial state $\ket{2}$ can be calculated by applying on it the matrix of each $BS$, but notice that the multiplication of two $BS$ matrices is
+
+
+We consider that the photon is incident through the path $b$. Thus the initial state of the system is $\ket{2}$. The final state can be obtained by applying the operators corresponding to each of the optical elements involved to the initial state $\ket{2}$. We consider both mirrors to be identical so that the phase they induce ends up being a global phase which does not affect the probabilities. First, we study the case with no obstacles in any of the arms of the interferometer. The evolution of the initial state $\ket{2}$ can be calculated by applying on it the matrix of each $BS$, but notice that the multiplication of two $BS$ matrices is
 
 \begin{align*}
-BS_{i} \times BS_{i+1}&=\begin{pmatrix} \cos(\theta_{i}) & i \sin(\theta_{i}) \\ i \sin(\theta_{i}) & \cos(\theta_{i}) \end{pmatrix}  
-\begin{pmatrix} \cos(\theta_{i+1}) & i \sin(\theta_{i+1}) \\ i \sin(\theta_{i+1}) & \cos(\theta_{i+1}) \end{pmatrix},\\
+BS_{i+1} \cdot BS_{i}&=\begin{pmatrix} \cos(\theta_{i+1}) & i \sin(\theta_{i+1}) \\ i \sin(\theta_{i+1}) & \cos(\theta_{i+1}) \end{pmatrix}  
+\begin{pmatrix} \cos(\theta_{i}) & i \sin(\theta_{i}) \\ i \sin(\theta_{i}) & \cos(\theta_{i}) \end{pmatrix},\\
 &=\begin{pmatrix} \cos(\theta_{i}+\theta_{i+1}) & i \sin(\theta_{i}+\theta_{i+1}) \\ i \sin(\theta_{i}+\theta_{i+1}) & \cos(\theta_{i}+\theta_{i+1}) \end{pmatrix}. \numberthis
 \end{align*}
 
@@ -1602,13 +1610,13 @@ Assuming that the interferometer contains $N$ identical beam splitters, then the
 BS^{N}=\begin{pmatrix} \cos(N\Theta) & i \sin(N\Theta) \\ i \sin(N\Theta) & \cos(N\Theta) \end{pmatrix},
 \end{equation}
 
-As an important particular case, we can ask  $\Theta=\frac{\pi}{2N}$ so we have:
+where $\Theta=\sum_{i=1}^{N}\theta_{i}$. As an important particular case, we can ask  $\Theta=\frac{\pi}{2N}$ so they sum up to $\frac{\pi}{2}$ our restriction from chapter 3, so we have:
 
 \begin{equation}
 BS^{N}=\begin{pmatrix} 0 & i  \\ i  & 0 \end{pmatrix}.
 \end{equation}
 
-If all the mentioned conditions are satisfied, we will  always detect the photon in the path that is not the one we sent our photon in.
+If all the mentioned conditions are satisfied, we will  always detect the photon in the path b detector $D_{1}$.
 
  \begin{figure}[t]
 \centering
@@ -1627,21 +1635,21 @@ If all the mentioned conditions are satisfied, we will  always detect the photon
 \caption{$P_{abs}$}
 \label{fig:BS1}
 \end{subfigure}
-\caption{Detection probabilities for an array with $\Theta=\frac{\pi}{2N}$, the detection probability in $D_{1}$ (a), $D_{2}$ (b) or that the photon will be ``lost'' (c). }
+\caption{Detection probabilities the nested interferometer with $\Theta=\frac{\pi}{2N}$ and the values of $\theta$ indicated in each plot, the detection probability in $P_{D_{1}}$ (a), $P_{D_{2}}$ (b) or that the photon is ``absorbed'' $P_{abs}$ (c). }
 \label{Azuma1}
 \end{figure}
 
-  Let us see what happens with this particular $\Theta$ when we do have imperfect absorbers replacing the bombs, see Fig. \ref{Nmach}, all of the absorbers with the same optical properties. Our initial state interacts with the first beam splitter, the state is transformed into a linear superposition of the state representing the photon in path a and the state representing the photon in path b, the photon in path b state interacts with one of the imperfect absorbers, then the system state is recombined in the second beam splitter and undergoes the same process. The process is repeated untill the photon state has evolved through the $N$ beam splitters. We can write the whole process as 
+  Let us see what happens, for this particular value of $\Theta$ when we introduce imperfect absorbers, see Fig. \ref{Nmach}, all of them with the same optical properties. The incident photon interacts with the first beam splitter and its state is transformed into a linear superposition of the state representing the photon in path $a$ and the state representing the photon in path $b$. The photon in path $b$ state interacts with the first imperfect absorber, and then its state is recombined in the second beam splitter. This process is repeated untill the photon state has crossed through the $N$ beam splitters. We can write the whole process as 
 
 
-\begin{equation}\ket{2}\xrightarrow[\text{interferometers}]{\text{Nested}}(B \times A)^{N-1}B \ket{2}.
+\begin{equation}\ket{2}\xrightarrow[\text{interferometers}]{\text{Nested}}(B \cdot A)^{N-1}B \ket{2}.
 \end{equation}
 
-Detection probabilities are given by:
+The detection probabilities are given by:
 
 \begin{align}
-&P_{D_{1}}=|\bra{2} (B \times A)^{N-1}B \ket{2}|^2,\\
-&P_{D_{2}}=|\bra{1} (B \times A)^{N-1}B \ket{2}|^2,\\
+&P_{D_{1}}=|\bra{2} (B \cdot A)^{N-1}B \ket{2}|^2,\\
+&P_{D_{2}}=|\bra{1} (B \cdot A)^{N-1}B \ket{2}|^2,\\
 &P_{abs}=1-P_{D_{1}}-P_{D_{2}}.
 \label{comentatio}
 \end{align}
@@ -2017,7 +2025,7 @@ To produce a single-photon source we will use the SPDC process described in chap
 
 \begin{itemize}
 
-\item Aluminum rails
+
 \item Infrared filters 810nm $\pm$ 10nm
 \item Violet laser 405nm
 \item Pinholes
@@ -2037,7 +2045,7 @@ To produce a single-photon source we will use the SPDC process described in chap
 \label{single}
 \end{figure}
 
-The first step to achieve a single photon source is to find the most likely light-cone using individual counts in each photo-detector as described in chapter 2 section 2.1 where we explained type-I SPDC, after that, we need to count coincidences to identify spatial correlations as described in chapter 1. We will set the detection window for coincidences based on the procedure of \cite{pearson} at 10ns, this coincidence window is used so we know the pair of photons are created in the nonlinear crystal thus eliminating noise from the environment in the detection counts. It is usually convenient for the propagation direction of the photon to be co-lineal with one of the lines of tapped holes
+The first step to achieve a single photon source is to find the most likely light-cone using individual counts in each photo-detector as described in chapter 1  where we explained type-I SPDC, after that, we need to count coincidences to identify spatial correlations as described in chapter 1. We will set the detection window for coincidences based on the procedure of \cite{pearson} at 10ns, this coincidence window is used so we know the pair of photons are created in the nonlinear crystal thus eliminating noise from the environment in the detection counts. It is usually convenient for the propagation direction of the photon to be co-lineal with one of the lines of tapped holes
 
 In BBO-I crystals both photons have the same energy, from Eq. \ref{conservation} we can see that this implies that both signal and idler photons' direction of propagation makes the same angle with respect to the direction of the laser beam as seen in Fig. \ref{single}.
 
@@ -2052,14 +2060,13 @@ As we previously described in chapter 1, the Mach-Zehnder interferometer is made
 \begin{itemize}
 \item Two 50:50 Beam splitters
 \item Two mirrors
-\item Red laser 700nm
-\item Incandescent white light source
-\item Piezoelectric Thorlabs AE0505D-16F
+\item Red laser He-Ne
+
 \end{itemize}
 
-We aim to get the difference in optical paths to a minimum, that is we wish to achieve $|\gamma_{2}-\gamma_{1}|=0+2\pi n$, this alignment can be quite challenging in the laboratory. To achieve this we will consider the following approach for alignment as discussed in \cite{zuri}. To align the interferometer and reduce $|\gamma_{2}-\gamma_{1}|$ as much as possible, the strategy is to attach a piezoelectric device to one of the mirrors, align it by hand and then varying the voltage applied to the piezoelectric (changing this mirror's orientation) until a minimum is reached.
+We aim to get the difference in optical paths to a minimum, that is we wish to achieve $|\gamma_{2}-\gamma_{1}|=0+2\pi n$, this alignment can be quite challenging in the laboratory. To achieve this we will consider the following approach for alignment as discussed in \cite{zuri}. To align the interferometer and reduce $|\gamma_{2}-\gamma_{1}|$ as much as possible, the strategy is to attach a piezoelectric device to one of the mirrors, align it by hand  until a minimum is reached.
 
-Both $D_{1}$ and $D_{2}$ are APDs placed in the same way as in Fig.1, in the output of  $BS_{2}$, the interference pattern requires special treatment of the counts since unlike the classical case where we inject coherent beams into the interferometer we are injecting single photons. This ``special treatment'' consists in only considering detector clicks when there's a simultaneous coincidence in $D_{idler}$, where $D_{idler}$ is an APD placed in the path of the idler photon as described in the SPDC section, we will use the same temporal window of ``simultaneously'' as described in the previous section that is 10ns. The experimental set up for this section is shown in Fig. \ref{newsingle}.
+Both $D_{1}$ and $D_{2}$ are APDs, in the output of  $BS_{2}$, the interference pattern requires special treatment of the counts since unlike the classical case where we inject coherent beams into the interferometer we are injecting single photons. This ``special treatment'' consists in only considering detector clicks when there's a simultaneous coincidence in $D_{idler}$, where $D_{idler}$ is an APD placed in the path of the idler photon as described in the SPDC section, we will use the same temporal window of ``simultaneously'' as described in the previous section that is 10ns. The experimental set up for this section is shown in Fig. \ref{newsingle}.
 
 
 \begin{figure}[H]
@@ -2172,6 +2179,7 @@ In the lab $N_{max}$ and $N_{min}$ correspond to the maximum and minimum coincid
 
 Visibility counts will vary as we change the difference in optical paths $\delta\phi$ by varying the voltage on the piezoelectric attached to the mirror, the idea is to see how visibility changes with voltage and keep the maximum value that we can achieve to keep going with the rest of the experiments.
   
+ \pagebreak
 
 \chapter{Experimental Results}
 
@@ -2179,7 +2187,28 @@ Visibility counts will vary as we change the difference in optical paths $\delta
 
 The first step taken in the lab was to set up a Mach-Zehnder interferometer using a red laser as the section 7.2.1 describes, once we finished the setup, we varied the optical paths, using the knobs in the mirrors in order to see the interference pattern.
 
-Notice from Fig. \ref{fig:Mach-Clasico} that if we compare it with Eq. \ref{Intensities}, we get interfernce patterns when $\delta \gamma \neq 0$, so ideally we would want to align untill $\delta \gamma=0$, however that is nearly impossible to achieve in experiments, since we can control differences in optical paths up to a certain lenght, which is not enough to achieve perfect alignment. Usually getting a visible interference pattern is enough to consider our interferomenter as aligned. 
+Notice from Fig. \ref{fig:Mach-Clasico} that if we compare it with Eq. \ref{Intensities}, we get interfernce patterns when $\delta \gamma \neq 0$, so ideally we would want to align untill $\delta \gamma=0$, however that is really difficult to achieve in experiments, since we can control differences in optical paths up to a certain lenght, which is not enough to achieve perfect alignment. Usually getting a visible interference pattern is enough to consider our interferomenter as aligned. 
+
+\section{Single-photon source}
+
+After setting up our Mach-Zehnder interferometer, the next step is to setup our  single photon source so we can use it as imput in our Mach-Zehnder. Our single photon source consists of a violet laser (405nm) and a BBO-I crystal wich specifications are given in the table below
+
+\begin{table}[H]
+\center
+\begin{tabular}{|l|l|}
+\hline
+Size                  & 5x5x0.5mm    \\ \hline
+Wavefront distortion: & less than $\lambda$/8 @ 633 nm  \\ \hline
+Clear aperture:       & \textgreater 90\% central area  \\ \hline
+Flatness:             & $\lambda$/8 @ 633 nm            \\ \hline
+Angle tolerance:      & $\Delta \theta\pm 0.25\degree$,     $\Delta \phi\pm 0.25\degree$  \\ \hline
+Coating               & Anti-reflective @405/810 nm \\ \hline
+Half-opening angle    & 3 degrees   \\ \hline
+\end{tabular}
+\caption{Specifications of the BBO-I crystal used}
+\end{table}
+
+The first step is to setup the violet laser so it points in a straight line over the holes of the optical table, we then set our optical fibre couplers for the idler and signal photons on posts at three degrees from this line, we determine the distance from the BBO cystal from the desired separation of the couplers.
 
 \begin{figure}[t!]
 \centering
@@ -2195,7 +2224,45 @@ Notice from Fig. \ref{fig:Mach-Clasico} that if we compare it with Eq. \ref{Inte
 \label{fig:Mach-Clasico}
 \end{figure}
 
+
+
+
+
+Placing the red laser behind the violet laser, we point towards one of the optical fibre couplers, going through the BBO-I crystal. Once we get the red laser on the coupler we see the end of the optical fibre to check that light is indeed entering the fiber. on the end of the fiber we should see a bright red dot, seeing a dim dot as well as seeing rings means we should move the coupler. Once we have aligned our optical fibre coupler such that light comes out of the fiber, we place the infrared filter in front of it, connect the fibre to the APD, which must be turned off at this stage, and repeat this process with the other coupler.
+
+The next step is to turn on the violet laser, turn off the lights as well as mitigate other light sources such as the leds that indicate the laser is on, and the computer used for data adquisition, for data adquisition we used a data adquisition board from National instruments and a labview program to count coincidences, once we turn off the lights, we turn on the APDs and start looking at counts, if they are low we move the fiber couplers until counts go up. we look at coincidences as well beeing careful that they increase as the counts go up.
+
+Once we are happy with our counts (in our case we were satisfied with 25000 thousand counts in one detector and fifty thousand in the other with about a 100 coincidences a second). We now proceed to use a mirror in order to reflect the photons into the input of our Mach-Zehnder interferometer.
+
+To align the mirror that we are going to use to deviate the photons into the input of our Mach-Zehnder interferometer we again use the red laser behind the violet laser and going through the BBO crystal in the same direction that goes into the coupler where we aligned it so that light goes out of the fibre. we now place the mirror in this path and orient it so that light goes into the Mach-Zehnder interferometer. Once, the light is entering our Mach-Zehnder interferometer we check that the interference pattern is still in the output. If not, we aligh the mirror using the bolts in the mount untill the interference pattern is visible again. When we get a visble interference pattern we now move our fibre coupler behind the mirror to the output of the Mach-Zehnder interferometer where we will do measurements $D_{2}$ and orient it so that light goes out of the fibre. 
+
+
+\begin{figure}[t!]
+\center
+\includegraphics[width=8cm,height=6cm]{images/sPDC.png}
+\caption{The configuration of our single-photon source using SPDC in the lab.}
+\end{figure} 
+
+\begin{figure}[t!]
+\centering
+\begin{subfigure}[b]{0.3\linewidth}
+\includegraphics[width=\linewidth,height=5cm]{images/array2.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\includegraphics[width=\linewidth,height=5cm]{images/outfibre.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\includegraphics[width=\linewidth,height=5cm]{images/fibre.jpg}
+\caption{}
+\end{subfigure}
+\caption{Figure (a) shows how we align the red laser behind the violet laser to make sure our fibre couplers are placed correctly and are receiving light, (b) shows the end of the fibre when the coupler is placed correctly, we should see a bright spot, (c) shows the optical fibre coupler array that includes the coupler, an objective, its mount and optical fibre.}
+\label{fig:coupler}
+\end{figure}
+
 \pagebreak
+
  
 \chapter{Conclusions}
 \thispagestyle{plain}

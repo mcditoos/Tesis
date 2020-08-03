@@ -2,7 +2,7 @@
 
 % Set up data if you need to add a package, go here
 \input{setup/packages.tex}
-
+\newfloatcommand{capbtabbox}{table}[][\linewidth]
 \newcommand\blankpage{
     \null
     \thispagestyle{empty}
@@ -88,7 +88,7 @@ Gerardo Suárez\\
 
 \chapter*{Acknowledgements}
 \thispagestyle{plain}
-Most figures were made using svgs from flaticom.com, the component library of Alexander Franzen and the noun project
+Most figures were made using svgs from flaticom.com, the component library of Alexander Franzen and the noun project.
 \addcontentsline{toc}{section}{Acknowledgements}
 
 \pagebreak
@@ -98,7 +98,7 @@ Most figures were made using svgs from flaticom.com, the component library of Al
 \blankpage{}
 \chapter*{Resumen}
 
-La mecánica cuántica contiene fenómenos que son considerados no locales. El ejemplo más famoso es, tal vez, el entrelazamiento propuesto por Einstein, Podolski y Rosen en 1935, pero otro ejemplo con extensa literatura al respecto y que ha estado ganando popularidad a través de la divulgación de la ciencia gracias a su simplicidad, es el detector de bombas de Elitzur y Vaidman. Este detector consiste de un interferómetro de Mach-Zehnder el cual tiene bloqueado uno de sus caminos por una bomba extremadamente sensible que explotaría al entrar en contacto con tan solo un foton. El hecho de que sea posible inferir si el objeto está o no dentro del interferómetro usando luz revela de forma bastante clara la naturaleza no local de la teoría cuántica. En este trabajo estudiamos algunas variantes de este experimento respecto a como fue propuesto por Elitzur y Vaidman, dichas variantes incluyen el uso de objetos semitransparentes tales como un beam splitter y objetos cuya transparencia depende en el tiempo tal como un chopper óptico, también exploramos interferómetros anidados para incrementar la eficiencia del detector de bombas y su relación con el principio de complementariedad de Bohr y los fundamentos de la teoría cuántica. Desarrollamos modelos teóricos y proponemos/realizamos arreglos experimentales para verificarlos.
+La mecánica cuántica contiene fenómenos que son considerados no locales. El ejemplo más famoso es, tal vez, el entrelazamiento propuesto por Einstein, Podolski y Rosen en 1935. Otro ejemplo con extensa literatura al respecto, y que ha estado ganando popularidad a través de la divulgación de la ciencia gracias a su simplicidad, es el detector de bombas de Elitzur y Vaidman. Este detector consiste de un interferómetro  Mach-Zehnder que tiene bloqueado uno de sus caminos por una bomba extremadamente sensible que explotaría al entrar en contacto con tan solo un foton. El hecho de que sea posible inferir si el objeto está o no dentro del interferómetro usando luz revela de forma bastante clara la naturaleza no local de la teoría cuántica. En este trabajo estudiamos algunas variantes de este experimento de Elitzur y Vaidman, remplazando la bomba con objetos semitransparentes tales como un divisor de haz y objetos cuya transparencia depende en el tiempo tal como un chopper óptico. También exploramos interferómetros anidados para incrementar la eficiencia del detector de bombas y su relación con el principio de complementariedad de Bohr y los fundamentos de la teoría cuántica mediante un experimento analogo al gedanken de Wheeler donde un foton puede exhibir propiedades ondulatorias y corpusculares al mismo tiempo. Desarrollamos modelos teóricos y proponemos/realizamos arreglos experimentales para verificarlos.
 \thispagestyle{plain}
 \addcontentsline{toc}{section}{Resumen}
 
@@ -109,7 +109,7 @@ La mecánica cuántica contiene fenómenos que son considerados no locales. El e
 \blankpage{}
 \chapter*{Abstract}
 \thispagestyle{plain}
-Quantum mechanics exhibits phenomena that are considered to be nonlocal. The most famous example is perhaps the entanglement first proposed by Einstein, Podolski, and Rosen in 1935, but another example with extensive literature and which has been earning popularity through science communication thanks to its simplicity, is the Elitzur-Vaidman bomb detector. This detector consists of a Mach-Zehnder interferometer with one of its paths blocked by an extremely sensitive bomb that will explode upon contact with a single photon. The fact that it is possible to infer whether the bomb is there or not using light reveals the nonlocal nature of quantum mechanics straightforwardly. In this work we study some variants of the experiment as proposed by Elitzur and Vaidman, such variants include using semitransparent objects such as beam splitters and objects whose transparency depends on time such as an optical chopper, we also explored nested interferometers to increase the efficiency of the bomb detector and its relation with Bohr's complementarity principle and the foundations of quantum theory. We develop our theoretical models and propose/realize experimental setups to verify them. 
+Quantum mechanics exhibits phenomena that are considered to be nonlocal. The most famous example is perhaps the entanglement first proposed by Einstein, Podolski, and Rosen in 1935. Another example with extensive literature and  popular in science communication thanks to its simplicity, is the Elitzur-Vaidman bomb detector. This detector consists of a Mach-Zehnder interferometer with one of its paths blocked by an extremely sensitive bomb that will explode upon contact with a single photon. The fact that it is possible to infer whether the bomb is there or not using light reveals the nonlocal nature of quantum mechanics straightforwardly. In this work we study some variants of the experiment as proposed by Elitzur and Vaidman, such variants include using semitransparent objects such as beam splitters and objects whose transparency depends on time such as an optical chopper, we also explored nested interferometers to increase the efficiency of the bomb detector and its relation with Bohr's complementarity principle and the foundations of quantum theory by analyzing an analogous experiment to Wheeler's gedanken where a photon exhibits both wave and particle properties. We develop our theoretical models and propose/realize experimental setups to verify them. 
 \addcontentsline{toc}{section}{Abstract}
 
 
@@ -121,19 +121,19 @@ Quantum mechanics exhibits phenomena that are considered to be nonlocal. The mos
 \chapter*{Introduction}
 \thispagestyle{plain}
 
-From the very beginning of quantum theory has been regarded as counter-intuitive and even bizarre, the fact that what the community agrees on is a mathematical model rather than a physical theory (an interpretation of the phenomena) makes matters worse. Resulting in various theories called interpretations that reproduce the results of what we call quantum mechanics \cite{interpre}. Many such interpretations agree that quantum phenomena are nonlocal in this work we aim to exploit that nonlocality to our advantage.
+From its very beginning, quantum theory has been regarded as counterintuitive and even bizarre. The fact tfact the scientific community agrees only on the mathematical model and predictions rather than the interpretation of the phenomena makes matters worse. As a result, we have several interpretations of quantum mechanics, all of them with the same predictions \cite{interpre}. Many of such interpretations agree that quantum phenomena are nonlocal. In this work we aim to exploit that nonlocality to our advantage.
 
-One example of how we can use the nonlocal nature of quantum phenomena to our advantage is ``Interaction-free measurements", in which we aim to measure properties of the system without actually interacting with it. The basis of such measurements come from the Elitzur-Vaidman bomb detector \cite{Elitzur}. Since its publication, many variants of the experiments have been proposed and tested to get better a performance or for usage in different situations \cite{Azuma,exp,QI1,Azuma2018,electronic}.
+One example of how we can use the nonlocal nature of quantum phenomena to our advantage are ``Interaction-free measurements", in which we aim to measure properties of the system without actually interacting with it. The basis of such measurements come from the Elitzur-Vaidman bomb detector, an apparatus that consists on a Mach-Zehnder interferometer with one of its paths block by a totally absorbent object, and allows to dicern if the object is there by measuring photons that could not have interacted with the object  \cite{Elitzur}. Since its publication, many variants of the experiments have been proposed and tested to get better a performance or for usage in different situations \cite{Azuma,exp,QI1,Azuma2018,electronic}.
 
-Perhaps the most popular use of said phenomena lies in what is known as counterfactual communication which is a set of protocols in quantum information theory that allow communication that is not transmitted in the receiving channel and is therefore secure, this was first proposed by Salih et al in 2013 \cite{CComunication} and has received a lot of attention in the last years.
+Perhaps the most popular use of said phenomena lies in what is known as counterfactual communication which is a set of protocols in quantum information theory that allow communication that is not transmitted in the receiving channel and is therefore securesecure. Counterfactual communication was first proposed by Salih et al in 2013 \cite{CComunication} and has received a lot of attention in the last years.
 
 In 1999 Gottesman and Chuang demonstrated that one can construct a C-NOT gate if one can construct certain states \cite{Gottesman}. Since an arbitrary one qubit gate (such as a beam splitter and phase shifters) and a C-NOT gate constitute a universal set of quantum computing operations \cite{chuang} there has been a lot of research about different implementations of C-NOT gates. A C-NOT gate can be implemented using interaction-free measurements as demonstrated by Azuma \cite{AzumaComputation} leading to what is known as Counterfactual quantum computation which is a method to compute without actually running the computer, generally, using quantum interrogation\footnote{The term quantum interrogation is a generalized term for interaction-free measurements when the object is not totally opaque}\cite{Hosten}.
 \pagebreak
 
 \thispagestyle{plain}
-All the previous protocols described above are different applications of interaction-free measurements or quantum interrogation which is the topic of this work. This thesis is structured as follows. Chapter 1 provides an overview of the quantum theory of spontaneous parametric down-conversion which is a method for generating single-photon pairs usually used in experimental quantum optics.
+All the previous protocols described above are different applications of interaction-free measurements or quantum interrogation which is the topic of this work. This thesis is structured as follows. Chapter 1 provides an overview of the quantum theory of spontaneous parametric down-conversion  a method for generating single-photon pairs usually used in experimental quantum optics.
 
-Chapter 2 develops the theory of the most important optical instrument in the setup for interaction-free measurements both in the classical and quantum regimes, which is the beam splitter, we provide a general discussion, unlike most literature which only treats the 50:50 beam splitter. 
+Chapter 2 develops the theory of the most important optical instrument in the setup for interaction-free measurements both in the classical and quantum regimes the beam splitter, we provide a general discussion. 
 
 Chapter 3 deals with the theoretical model that describes a Mach-Zehnder interferometer both in the classical and quantum regimes, again unlike most literature on the topic, we provide a discussion with arbitrary beam splitters and mirrors as opposed to the usual 50:50 beam splitter description.
 
@@ -141,12 +141,9 @@ Chapter 4 describes what interaction-free measurements are, and describes severa
 
 Chapter 5 explains our theoretical model for interaction-free measurements when the properties of the object which we aim to make interaction-free measurements on depend on time. Our model deals with simple time dependence, that of an optical chopper which is periodical and discrete, we model the optical chopper as a semi-transparent object.
 
-Chapter 6 is perhaps the most interesting chapter of this work, and it deals with high-efficiency interaction-free measurements using nested Mach-Zehnder interferometers, our original contribution in this chapter consists on how sensible this setup is to the phase that may be induced by the object and how one can use that to increase the probability of success as well as the relationship between this setup and Bohr's complementarity principle.
+Chapter 6 is perhaps the most interesting chapter of this work, and it deals with high-efficiency interaction-free measurements using nested Mach-Zehnder interferometers with identical semitransparent objects blocking one of its paths after each beam splitters, our original contribution in this chapter consists on studying how sensible this setup is to the phase that may be induced by the semitransparent objects and how one can use that to increase the probability of success of an interaction free measurement . Moreover, we studied the relationship between this setup and Bohr's complementarity principle by studying and analogous experiment to Wheeler's gedanken where a photon exhibits both wave and particle properties.
 
-Chapter 7 describes the experimental setups we use to verify our models in the lab, starting with the generation of single photons and ending with interaction-free measurements.
-
-Finally, Chapter 8 deals with the experimental results we obtained in the lab and its comparison with the theoretical models developed in this work.
-
+Chapter 7 describes the experimental setups we use to verify our models in the lab, starting with the generation of single photons and ending with interaction-free measurements.Finally, the comparison of experiments and theoretical models is presented in the last chapter, chapter 8.
  
   
 \addcontentsline{toc}{section}{Introduction}
@@ -155,7 +152,7 @@ Finally, Chapter 8 deals with the experimental results we obtained in the lab an
 
 \pagenumbering{arabic}
 
-\chapter[SPDC]{Spontaneous parametric down conversion}
+\chapter{Spontaneous parametric down conversion}
 
 
 
@@ -183,7 +180,7 @@ There are three types of SPDC, namely, type-0, type-I, and type-II. Each type of
 \caption{SPDC type II}
 \label{fig:type2}
 \end{subfigure}
-\caption{An illustration of the SPDC type I and II processes, a laser incident on a non-linear crystal and photons coming out of it along cones.}
+\caption{An illustration of the SPDC type I (a) and II (b) processes, a laser incident on a non-linear crystal and photons coming out of it along cones.}
 \label{fig:SPDC}
 \end{figure}
 
@@ -254,7 +251,7 @@ H=\frac{1}{2}\int_{V} d^{3}r \left(\epsilon_{0}\mathbf{E \cdot E}+\mathbf{E \cdo
 As described in \cite{boyd}, while in linear optics polarization is often described by $\mathbf{P}(t)=\epsilon_{0} \chi^{(1)}\mathbf{E}(t)$, in nonlinear optics this equation is generalized by expressing the polarization as a power series of the field strenght:
 
 \begin{equation}
-\mathbf{P}(t)=\epsilon_{0} \left( \chi^{(1)}\mathbf{E}(t)+\chi^{(2)}\mathbf{E}^{2}(t)+\chi^{(3)}\mathbf{E}^{3}(t)+.... \right)=\mathbf{P}^{(1)}(t)+\mathbf{P}^{(2)}(t)+\mathbf{P}^{(3)}(t)+...
+\mathbf{P}(t)=\epsilon_{0} \left( \chi^{(1)}\mathbf{E}(t)+\chi^{(2)}\mathbf{E}^{2}(t)+\chi^{(3)}\mathbf{E}^{3}(t)+ \dots \right)=\mathbf{P}^{(1)}(t)+\mathbf{P}^{(2)}(t)+\mathbf{P}^{(3)}(t)+ \dots
 \end{equation}
 
  We will consider the polarization to have nonlinear components and the linear term to be included in a term we will call $H_{0}$
@@ -279,7 +276,7 @@ P_{i}^{(2)} (\mathbf{r},t)=\int_{0}^{\infty}dt_{1}\int_{0}^{\infty}dt_{2} \chi_{
 and $\chi_{ijk}^{(2')}$ is related to the second-order nonlinear susceptibility and represents the response of the medium to the second power of the electric field. By substituting Eq. \ref{polariza} in  Eq. \ref{Hi} and separating the field operators into its the creation and annihilation components, the interaction Hamiltonian $H_{I}$ turns into (we dropped the dependence of the fields to have a compact expression):
 
 \begin{align*}
-&H_{I}=\frac{1}{2} \int_{V}\int_{0}^{\infty}dt_{1}\int_{0}^{\infty}dt_{2} \chi_{ijk}^{(2')}(t-t_{1},t-t_{2}) \left( E_{i}^{(+)}E_{j}^{(+)}E_{k}^{(+)}+E_{i}^{(-)}E_{j}^{(+)}E_{k}^{(+)}\right.\\
+H_{I}=& \frac{1}{2} \int_{V}\int_{0}^{\infty}dt_{1}\int_{0}^{\infty}dt_{2} \chi_{ijk}^{(2')}(t-t_{1},t-t_{2}) \left( E_{i}^{(+)}E_{j}^{(+)}E_{k}^{(+)}+E_{i}^{(-)}E_{j}^{(+)}E_{k}^{(+)}\right.\\
 &+ E_{i}^{(-)}E_{j}^{(-)}E_{k}^{(+)}+E_{i}^{(+)}E_{j}^{(-)}E_{k}^{(+)}+E_{i}^{(+)}E_{j}^{(+)}E_{k}^{(-)}+E_{i}^{(-)}E_{j}^{(+)}E_{k}^{(-)}\\
 &+ \left.E_{i}^{(-)}E_{j}^{(-)}E_{k}^{(-)}+E_{i}^{(+)}E_{j}^{(-)}E_{k}^{(-)}  \right). \label{muchoscampos} \numberthis
 \end{align*}
@@ -307,7 +304,7 @@ with $t'=t-t_{1}$, $t''=t-t_{2}$ then we may write:
 Replacing the expressions for the fields in Eq. \ref{Hi2}, and now substituting $i, j, k$ for $s, i, p$ respectively, where $s, i, p$ refers to signal, idler and pump respectively, then approximating the sum to an integral (taking $V$ to $\infty$) we take $\sum_{\textbf{k}}\xrightarrow{}\frac{V}{(2\pi)^{3}}\int d^{3}k$ and $\delta_{ \mathbf{k} \mathbf{k}'} \xrightarrow{}\delta(\mathbf{k}-\mathbf{k}')$:
 
 \begin{align*}
-&H_{I}=\int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i} \sum_{\nu_{p},\nu_{s},\nu_{i}}\chi_{ijk}^{(2)}(w_{p},w_{s},w_{i}) (\mathbf{e}_{k_{p},\nu_{p}})_{i} (\mathbf{e}_{k_{s},\nu_{s}})^{*}_{j} (\mathbf{e}_{k_{i},\nu_{i}})^{*}_{k} \\ & \times \mathbf{a}_{\nu_{p}}(\mathbf{k}_{p})\mathbf{a^{\dagger}}_{\nu_{s}}(\mathbf{k}_{s})\mathbf {a^{\dagger}}_{\nu_{i}}(\mathbf{k}_{i})e^{i(w_{s}+w_{i}-w_{p})t} \int_{V}d^{3}r e^{i \Delta\textbf{k} \cdot \textbf{r}}+\mathrm{H.c} , \label{jajaja} \numberthis
+H_{I}= &\int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i} \sum_{\nu_{p},\nu_{s},\nu_{i}}\chi_{ijk}^{(2)}(w_{p},w_{s},w_{i}) (\mathbf{e}_{k_{p},\nu_{p}})_{i} (\mathbf{e}_{k_{s},\nu_{s}})^{*}_{j} (\mathbf{e}_{k_{i},\nu_{i}})^{*}_{k} \\ & \times \mathbf{a}_{\nu_{p}}(\mathbf{k}_{p})\mathbf{a^{\dagger}}_{\nu_{s}}(\mathbf{k}_{s})\mathbf {a^{\dagger}}_{\nu_{i}}(\mathbf{k}_{i})e^{i(w_{s}+w_{i}-w_{p})t} \int_{V}d^{3}r e^{i \Delta\textbf{k} \cdot \textbf{r}}+\mathrm{H.c} , \label{jajaja} \numberthis
 \end{align*}
 
 where $\Delta \mathbf{k}= \mathbf{k}_{p}-\mathbf{k}_{s}-\mathbf{k}_{i}$ and:
@@ -318,7 +315,7 @@ where $\Delta \mathbf{k}= \mathbf{k}_{p}-\mathbf{k}_{s}-\mathbf{k}_{i}$ and:
 As polarizations are fixed in SPDC, each sum in the labels $\nu_{p}, \nu_{s}, \nu_{i}$ contains only one term. Also, we will consider $\chi_{ijk}^{(2)}(w_{p},w_{s},w_{i})$ to vary so slowly (in $\mathbf{k}$ and $\mathbf{r}$) that we can treat it as a constant over the integrals. We will define $\chi= \chi_{ijk}^{(2)}(w_{p},w_{s},w_{i}) (\mathbf{e}_{k_{p},\nu_{p}})_{i} (\mathbf{e}_{k_{s},\nu_{s}})^{*}_{j} (\mathbf{e}_{k_{i},\nu_{i}})^{*}_{k}$ so we can write:
 
 \begin{align*}
-   & H_{I}=\chi \int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i}\int_{V} d^{3}r \mathbf{a}_{\nu_{p}}(\mathbf{k}_{p})\mathbf{a^{\dagger}}_{\nu_{s}}(\mathbf{k}_{s})\mathbf {a^{\dagger}}_{\nu_{i}}(\mathbf{k}_{i})e^{i(w_{s}+w_{i}-w_{p})t} \\& e^{i \Delta\textbf{k} \cdot \textbf{r}}+\mathrm{H.c}. \numberthis{}
+    H_{I}= &\chi \int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i}\int_{V} d^{3}r \mathbf{a}_{\nu_{p}}(\mathbf{k}_{p})\mathbf{a^{\dagger}}_{\nu_{s}}(\mathbf{k}_{s})\mathbf {a^{\dagger}}_{\nu_{i}}(\mathbf{k}_{i})e^{i(w_{s}+w_{i}-w_{p})t} \\& e^{i \Delta\textbf{k} \cdot \textbf{r}}+\mathrm{H.c}. \numberthis{}
 \end{align*}
 
 $H_{0}$ is the electromagnetic field Hamiltonian, which is proportional to the number operator and only adds a global phase to the evolution of this state which we can ignore, that is because coherent states evolve to coherent states \cite{leonhardt} and our initial state is indeed a coherent state.
@@ -374,7 +371,7 @@ where $P_{n}$ is the probability of finding $n$ photons in a measurement of the 
 Thus our initial state can be cast in the form $\ket{\psi(t_{0})}=\ket{\alpha_{p},0_{s},0_{i}}$, where the labels $p, s, i$ stand for the pump, signal and idler channels. Let us analyze the action of the second order term of the Dyson series  $U_{1}$ on the initial state:
 
 \begin{align*}
- &U_{1}\ket{\psi(t_{0})}=\frac{-i \chi}{\hbar}  \int_{t_{0}}^{t} d\tau \int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i}\int_{V} d^{3}r \alpha_{p} (\mathbf{k}_{p},w_{p})\\ &e^{i(w_{s}+w_{i}-w_{p})\tau}e^{i \Delta\textbf{k}.\textbf{r}}\ket{\alpha_{p},1_{s},1_{i}} , \numberthis{}\label{t1}
+ U_{1}\ket{\psi(t_{0})}= &\frac{-i \chi}{\hbar}  \int_{t_{0}}^{t} d\tau \int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i}\int_{V} d^{3}r \alpha_{p} (\mathbf{k}_{p},w_{p})\\ &e^{i(w_{s}+w_{i}-w_{p})\tau}e^{i \Delta\textbf{k}.\textbf{r}}\ket{\alpha_{p},1_{s},1_{i}} , \numberthis{}\label{t1}
 \end{align*}
 
 
@@ -410,8 +407,8 @@ Now that we have presented a quantum mechanical description of the phenomenon, w
   Our final state can be calculated using the first order evolution operator given by \ref{evo}:
 
 \begin{align*}
-\ket{\psi(t)}&=U(t)\ket{\psi(t_{0})},\numberthis{}\\
-&=\ket{\alpha_{p},0_{s},0_{i}}-\frac{i \chi}{\hbar}  \int_{t_{0}}^{t} d\tau \int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i}\int_{V} d^{3}r \alpha_{p} (\mathbf{k}_{p},w_{p})\\ &\times e^{i(w_{s}+w_{i}-w_{p})\tau}e^{i \Delta\textbf{k}.\textbf{r}}\ket{\alpha_{p},1_{s},1_{i}}  \numberthis{}
+\ket{\psi(t)}=& U(t)\ket{\psi(t_{0})},\numberthis{}\\
+=& \ket{\alpha_{p},0_{s},0_{i}}-\frac{i \chi}{\hbar}  \int_{t_{0}}^{t} d\tau \int d^{3}k_{p}\int d^{3}k_{s}\int d^{3}k_{i}\int_{V} d^{3}r \alpha_{p} (\mathbf{k}_{p},w_{p})\\ &\times e^{i(w_{s}+w_{i}-w_{p})\tau}e^{i \Delta\textbf{k}.\textbf{r}}\ket{\alpha_{p},1_{s},1_{i}}  \numberthis{}
 \end{align*}
 
 We will rewrite this as:
@@ -479,29 +476,7 @@ The spatial and spectral sensitivity of the detector are assumed to be given by 
 \mathbb{F}_{s}(\mathbf{q}_{r})=e^{-\abs{\mathbf{\sigma}.\mathbf{q}_{r}}^{2}},\qquad \mathbb{F}_{f}(w_{r})=e^{-(\alpha_{r} w_{r})^{2}}. \label{filter}
 \end{equation}
 
-Here $\mathbf{\sigma}=(\sigma_{rx},\sigma_{ry})$, and $\alpha_{r}$, correspond to the spatial and frequency collection modes respectively, the physical process is modeled by Eq. \ref{true}, however, our detectors and filters are only efficient up to a certain point, in order to account for it we multiply our filter's response Eq. \ref{filter} to our process so we can write:
- 
-\begin{equation}
-\Phi(\mathbf{q}_{i},w_{i},\mathbf{q}_{s},w_{s})=\Phi_{f}(w_{i},w_{s})\Phi_{s}(\mathbf{q}_{i},\mathbf{q}_{s}).
-\end{equation}
-
-That way separating it into two functions, one that tells us about the frequencies  and the other one tells us about the spatial correlations:
-
-\begin{equation}
-\Phi_{f}(w_{s},w_{i})= \eta F_{p}(w_{s}+w_{i}) \mathbb{F}_{f}(w_{i})\mathbb{F}_{f}(w_{s})
-\end{equation}
-
-\begin{equation}
- \Phi_{s}(\mathbf{q}_{i},\mathbf{q}_{s})=e^{-\sigma^{2}\abs{\mathbf{q}_{s}+\mathbf{q}_{i}}^{2}}\mathbb{F}_{s}(\mathbf{q}_{s})\mathbb{F}_{s}(\mathbf{q}_{i}).
-\end{equation}
-
-Since we are in momentum space, we can obtain the spatial correlations by taking the Fourier transform:
-
-\begin{equation}
-\Phi_{s}(\mathbf{x}_{i},\mathbf{x}_{s})=\mathscr{F}(\Phi_{s}(\mathbf{q}_{i},\mathbf{q}_{s}))=N \int d^{2}q_{i} \int d^{2}q_{s} \Phi_{q}(\mathbf{q}_{i},\mathbf{q}_{s}) e^{-i \mathbf{q}_{s}.\mathbf{r}_{s}} e^{-i \mathbf{q}_{i}.\mathbf{r}_{i}}.
-\end{equation}
-
-\begin{figure}[H]
+\begin{figure}[t!]
 
 
 \centering
@@ -525,6 +500,30 @@ Since we are in momentum space, we can obtain the spatial correlations by taking
 \label{SPDC}
 \end{figure}
 
+Here $\mathbf{\sigma}=(\sigma_{rx},\sigma_{ry})$, and $\alpha_{r}$, correspond to the spatial and frequency collection modes respectively, the physical process is modeled by Eq. \ref{true}, however, our detectors and filters are only efficient up to a certain point, in order to account for it we multiply our filter's response Eq. \ref{filter} to our process so we can write:
+ 
+\begin{equation}
+\Phi(\mathbf{q}_{i},w_{i},\mathbf{q}_{s},w_{s})=\Phi_{f}(w_{i},w_{s})\Phi_{s}(\mathbf{q}_{i},\mathbf{q}_{s}).
+\end{equation}
+
+That way separating it into two functions, one that tells us about the frequencies  and the other one tells us about the spatial correlations:
+
+\begin{equation}
+\Phi_{f}(w_{s},w_{i})= \eta F_{p}(w_{s}+w_{i}) \mathbb{F}_{f}(w_{i})\mathbb{F}_{f}(w_{s})
+\end{equation}
+
+\begin{equation}
+ \Phi_{s}(\mathbf{q}_{i},\mathbf{q}_{s})=e^{-\sigma^{2}\abs{\mathbf{q}_{s}+\mathbf{q}_{i}}^{2}}\mathbb{F}_{s}(\mathbf{q}_{s})\mathbb{F}_{s}(\mathbf{q}_{i}).
+\end{equation}
+
+Since we are in momentum space, we can obtain the spatial correlations by taking the Fourier transform:
+
+\begin{equation}
+\Phi_{s}(\mathbf{x}_{i},\mathbf{x}_{s})=\mathscr{F}(\Phi_{s}(\mathbf{q}_{i},\mathbf{q}_{s}))=N \int d^{2}q_{i} \int d^{2}q_{s} \Phi_{q}(\mathbf{q}_{i},\mathbf{q}_{s}) e^{-i \mathbf{q}_{s}.\mathbf{r}_{s}} e^{-i \mathbf{q}_{i}.\mathbf{r}_{i}}.
+\end{equation}
+
+
+
 
 This last equation encodes all spatial correlations between the signal and idler photon channels, allowing us to use this scheme to study single-photon states, by measuring in two positions which are highly correlated and only taking into account measurements where both detectors (one placed in the signal channel and the other in the idler channel) click, ensuring that this process took place and we indeed have single-photon states.
 
@@ -542,7 +541,7 @@ This section is inspired in the beam splitter description presented in \cite{lud
 In describing the behaviour of a laser beam in classical electrodynamics, it is common to consider the study of their corresponded electric fields, if the beams cross through a linear medium, the outgoing fields can be written as linear combinations of the input fields satisfying the proper boundary conditions \cite{jackson}. As in the beam splitter we have two inputs and two outputs, the output fields $E_{1}'$ and $E_{2}'$  can be written in terms of the input fields $E_{1}'$ and $E_{2}'$ as:
 
 \begin{equation}
-\begin{pmatrix} E_{1}' \\ E_{2}' \end{pmatrix}=B\begin{pmatrix} E_{1} \\ E_{2} \end{pmatrix},
+\begin{pmatrix} E_{1}' \\ E_{2}' \end{pmatrix}=B\begin{pmatrix} E_{1} \\ E_{2} \end{pmatrix},\label{rule}
 \end{equation}
 
 the linear transformation $B$ represents the action of the beam splitter on the input fields and is described by a matrix:
@@ -570,10 +569,9 @@ The conditions  that must be fulfilled by the matrix elements $B_{ij}$  $i,j=1,2
 
 where $I_{1}$ and $I_{2}$ are the intensities of the input fields and $I_{1}'$ and $I_{2}'$ are the intensities of the output fields. Recall that the intensity of a given electric field is given by $I=\frac{c n \epsilon_{0}}{2} |E|^{2}$, where $c$ is the speed of light, $n$ the index of refraction of the medium and $\epsilon_{0}$ is the permitivity of free space, in this way the conservation of intensity (energy) leads us to the following relationships:
 
-\begin{align}
-&|B_{12}|^{2}+|B_{22}|^{2}=|B_{21}|^{2}+|B_{11}|^{2}=1,\\
-&B_{21}^{*} B_{22}+B_{11}^{*} B_{12}=0.
-\end{align}
+\begin{equation}
+|B_{12}|^{2}+|B_{22}|^{2}=|B_{21}|^{2}+|B_{11}|^{2}=1,\qquad B_{21}^{*} B_{22}+B_{11}^{*} B_{12}=0.
+\end{equation}
 
 These relations imply that the matrix $B$ is unitary. Yet, from this set of equations, one can derive another constraint on the coefficients, namely, $B_{21}^{*} B_{11}+B_{22}^{*} B_{12}=0$ can be obtained. This is consistent with the fact that $B^{\dagger}B=B^{\dagger}B= \mathbf{1}$. For our purposes it will be convenient to write the matrix $B$ in terms of the reflection $\rho$ and the transmission $\tau$, the transmission coefficient is a measure of how much light is transmitted through a material in relation to the amount of light incident on it, the reflection coefficient is a similar measure for reflection on the material. These coefficients follow the relationship:
 
@@ -588,7 +586,7 @@ These relations imply that the matrix $B$ is unitary. Yet, from this set of equa
  \end{equation}
 
 
-so that
+so then the transformation rule \ref{rule} reads
 
 \begin{equation}
 \begin{pmatrix} E_{1}' \\ E_{2}' \end{pmatrix}=\begin{pmatrix} \tau & \rho \\ -\rho & \tau \end{pmatrix} \begin{pmatrix} E_{1} \\ E_{2} \end{pmatrix}.
@@ -708,8 +706,8 @@ From Eq. \ref{Heisenberg}, Eq. \ref{eq:amplitudes} and Eq. \ref{evolution} we ca
 By writing the original ladder operators in terms of the transformed ladder operators given by Eq. \ref{eq:amplitudes}, and applying Newton's binomial formula (we can do this because the operators commute, in general this cannot be done) we arrive at the expression \footnote{ The binomial coefficient is $\begin{pmatrix} n \\ k \end{pmatrix} =\frac{n!}{\sqrt{k!(n-k)!}}$}:
 
 \begin{align*}
-\ket{n_{1},n_{2}}'& =\frac{1}{\sqrt{n_{1}! n_{2}!}} (B_{11}\mathbf{a}_{1}'^{\dagger}+B_{21}\mathbf{a}_{2}'^{\dagger})^{n_{1}}(B_{12}\mathbf{a}_{1}'^{\dagger}+B_{22}\mathbf{a}_{2}'^{\dagger})^{n_{2}}\ket{0,0}',\\
-\ket{n_{1},n_{2}}'&=\frac{1}{\sqrt{n_{1}! n_{2}!}}\sum^{n_{1},n_{2}}_{k_{1},k_{2}=0}\begin{pmatrix} n_{1} \\ k_{1} \end{pmatrix}\begin{pmatrix} n_{2} \\ k_{2} \end{pmatrix} B_{11}^{n_{1}-k_{1}} B_{21}^{k_{1}} B_{12}^{n_{2}-k_{2}} B_{22}^{k_{2}} \\
+\ket{n_{1},n_{2}}' = &\frac{1}{\sqrt{n_{1}! n_{2}!}} (B_{11}\mathbf{a}_{1}'^{\dagger}+B_{21}\mathbf{a}_{2}'^{\dagger})^{n_{1}}(B_{12}\mathbf{a}_{1}'^{\dagger}+B_{22}\mathbf{a}_{2}'^{\dagger})^{n_{2}}\ket{0,0}',\\
+\ket{n_{1},n_{2}}'= &\frac{1}{\sqrt{n_{1}! n_{2}!}}\sum^{n_{1},n_{2}}_{k_{1},k_{2}=0}\begin{pmatrix} n_{1} \\ k_{1} \end{pmatrix}\begin{pmatrix} n_{2} \\ k_{2} \end{pmatrix} B_{11}^{n_{1}-k_{1}} B_{21}^{k_{1}} B_{12}^{n_{2}-k_{2}} B_{22}^{k_{2}} \\
 \times &\sqrt{(n_{1}+n_{2}-k_{1}-k_{2})!(k_{1}+k_{2})!} \ket{n_{1}+n_{2}-k_{1}-k_{2},k_{1}+k_{2}}' .\numberthis{}
 \end{align*}
 
@@ -846,8 +844,8 @@ and a beam splitter as in Eq. \ref{BS_matrix}. Once we have defined the main ele
 
 
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\xrightarrow{\text{Mirrors}}\cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})e^{i\gamma_{2}}\ket{1} \\ \xrightarrow{\text{BS2}}
- &i\left[\cos(\theta_{1})\sin(\theta_{2})e^{i\gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i\gamma_{2}}\right]\ket{1}+\\&\left[\cos(\theta_{1})\cos(\theta_{2})e^{i\gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i\gamma_{2}}\right]\ket{2}. \numberthis
+\ket{1}&\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\xrightarrow{\text{Mirrors}}\cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})e^{i\gamma_{2}}\ket{1} \\ &\xrightarrow{\text{BS2}}
+ i\left[\cos(\theta_{1})\sin(\theta_{2})e^{i\gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i\gamma_{2}}\right]\ket{1}\\&+\left[\cos(\theta_{1})\cos(\theta_{2})e^{i\gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i\gamma_{2}}\right]\ket{2}. \numberthis
 \end{align*}
 
 The probabilities of detecttion in either $D_{1}$ and $D_{2}$ are now given by
@@ -881,14 +879,14 @@ The interferometer is an instrument quite hard to align experimentally, in most 
 when placed in the horizontal path $k=0$ and when placed in the vertical $c=0$. Let us see the effect of such an optical device in our setup:
 
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow[\text{Retarders}]{\text{Phase}}\cos(\theta_{1})e^{ic}\ket{1}+i\sin(\theta_{1}) e^{ik}\ket{2} \\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i(\frac{\pi}{2}+c)}\ket{2}+i\sin(\theta_{1})\beta e^{i(\frac{\pi}{2}+k)}\ket{1},
+\ket{1}&\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow[\text{Retarders}]{\text{Phase}}\cos(\theta_{1})e^{ic}\ket{1}+i\sin(\theta_{1}) e^{ik}\ket{2} \\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i(\frac{\pi}{2}+c)}\ket{2}+i\sin(\theta_{1})\beta e^{i(\frac{\pi}{2}+k)}\ket{1},
 \end{align*}
 
 we can stop here by noticing that replacing $\frac{\pi}{2}+k\xrightarrow{}\gamma_{2}$ and  $\frac{\pi}{2}+c\xrightarrow{}\gamma_{1}$,  is the same as using the mirror matrix given by Eq. \ref{mirror} so our model that makes use of this matrix  instead of the more popular mirror matrix with a fixed phase $M=\begin{pmatrix} i & 0\\0& i\end{pmatrix}$, where $i=e^{i \frac{\pi}{2}}=e^{i\gamma}$, has the  effect of a phase retarder included, allowing us to study misalignment. 
 
 \afterpage{\blankpage}
 
-\chapter[Interaction-free measurements]{ Interaction-free  measurements}
+\chapter{ Interaction-free  measurements \\ and quantum interrogation}
 
 
 In this chapter, we will explore what is known in the literature as interaction-free measurements. The possibility of performing such kind of measurements was first reported by Elitzur and Vaidman in \cite{Elitzur}. Since then, the topic has awakened a lot of discussion about the non-local nature of quantum theory as well as the philosophical interpretations of quantum mechanics\footnote{ This philosophical discussions will be kept to a minimum in this thesis since they are way more philosophical than physical and highly speculative. Interesting discussions can be found in \cite{paper_vaidman, maudlin}. }. We will now analyze the simplest case proposed by Elitzur and Vaidman.
@@ -908,7 +906,7 @@ Consider a Mach-Zehnder interferometer where we could or could not place  a perf
 To analyze this system, we will consider the Mach-Zehnder model of section 3.2 but this time having a perfect absorber in its vertical arm,  as Fig. \ref{fig:bomb} shows. We will also consider that once the photon is absorbed, the optical elements of the interferometer do not interact with it any longer. We will denote the state corresponding to an absorbed photon by means of the $\ket{abs}$ vector. Assume a single-photon is pumped in the horizontal input channel of the Mach-Zehnder interferometer. First, the initial state of the system is transformed by the beam splitter $BS_{1}$, into a superposition state of the single photon being transmitted to the horizontal output of $BS_{1}$ and being reflected to the vertical one. Then, the photon could either be absorbed by the bomb if it was traveling towards $M_1$ or be reflected by $M_2$ if it was traveling in the other arm. The mirror $M_{2}$, in turn, transforms the state into the state of the photon being redirected to the beam splitter $BS_{2}$, where it is finally split into the linear combination of being transmitted to detector $D_{2}$ or reflected to detector $D_{1}$. We have 
  
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{\text{Bomb}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{abs}\\ &\xrightarrow{\text{Mirrors}}
+\ket{1}&\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{\text{Bomb}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{abs}\\ &\xrightarrow{\text{Mirrors}}
  i\cos(\theta_{1})\ket{2}+i\sin(\theta_{1})\ket{abs} \\ &\xrightarrow{\text{BS2}}i\cos(\theta_{1})\cos(\theta_{2})\ket{2}-\cos(\theta_{1})\sin(\theta_{2})\ket{1}+i\sin(\theta_{1})\ket{abs}, \numberthis
 \end{align*}
 
@@ -959,9 +957,9 @@ In the same Horizontal-Vertical basis, our initial state is $\ket{1}$. We will p
 With this information model the experiment. We start out with a photon state at the horizontal entry port of $BS_1$. Then, the initial state is transformed by $BS_{1}$ into a superposition of $\ket{1}$ and $\ket{2}$. The vertical component interacts with the so called by the imperfect transmitter which decomposes the component $\ket{2}$ into a superposition of $\ket{2}$ and $\ket{abs}$ (being transmited or being absorbed). Afterwards, the mirror in each path interchanges $\ket{1}\rightarrow{}\ket{2}$ and vice versa, in this section we will consider mirrors such that $\gamma=\frac{\pi}{2}$. Finally, the state is recombined in the second beam splitter $BS_{2}$. Mathematically, this process is written as 
 
 \begin{align*}
-& \ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2} \\ &\xrightarrow[\text{Absorber}]{\text{Imperfect }}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})(\alpha \ket{abs} +\beta \ket{2} )
+ \ket{1}&\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2} \\ &\xrightarrow[\text{Absorber}]{\text{Imperfect }}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})(\alpha \ket{abs} +\beta \ket{2} )
 \\ &\xrightarrow{\text{Mirrors}} i\cos(\theta_{1})\ket{2}+i \sin(\theta_{1})\alpha\ket{abs}-\sin(\theta_{1})\beta\ket{1} \\ &\xrightarrow{\text{BS2}} -
-(\cos(\theta_{1})\sin(\theta_{2})+\beta \sin(\theta_{1})\cos(\theta_{2}))\ket{1}+ i \alpha \sin(\theta_{1})\ket{abs} \\ &+i(\cos(\theta_{1})\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\beta)\ket{2}. \numberthis
+(\cos(\theta_{1})\sin(\theta_{2})+\beta \sin(\theta_{1})\cos(\theta_{2}))\ket{1}+ i \alpha \sin(\theta_{1})\ket{abs} \\  & \qquad +i(\cos(\theta_{1})\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\beta)\ket{2}. \numberthis
 \end{align*}
 
 Then, the probabilities of detection at $D_1$, $D_2$ and absorption of the photon are 
@@ -1017,8 +1015,7 @@ where $\cos^{-1}(x)$ is the arccosine of $x$. These equations would allow us  to
 For example, suppose we consider an interferometer such that, if the object is in the horizontal path, then $P_{1D_{2}}=\frac{1}{3} \quad P_{1D_{1}}=\frac{1}{4}$. Correspondingly,  if the object was in the vertical path $P_{2D_{2}}=\frac{1}{4} \quad P_{2D_{1}}=\frac{1}{3}$. Assuming, for instance that the object is characterized by $|\beta|^{2}=0.5$ the expressions \ref{thetasara}-\ref{thetasara1} for the values $\theta_{1},\theta_{2}$ defining the beam splitters' transmitance and reflectance coefficients would yield
 
 \begin{align*}
-\theta_{2} \approx \frac{\pi}{5},\\
-\theta_{1} = \frac{\pi}{4}.
+\theta_{2} \approx \frac{\pi}{5},\qquad \theta_{1} = \frac{\pi}{4}.
 \end{align*}
 
 Thus, expressions \ref{thetasara}-\ref{thetasara1} offer the posibility to design interferometers by means of which we could distinguish between the object being placed in one path or the other by measuments and taking the statistics. From the pratical point of view, one should also consider the technical difficulties in constructing the very specific beam splitter needed to perform the measurements, we also risk exploding the bomb in the process, as for the previous values of detection probabilities we have $P_{det}=\frac{7}{12}$ and $P_{abs}=\frac{5}{12}$ (so it would not be wise to try and tell in which path the object may be).
@@ -1027,7 +1024,7 @@ Thus, expressions \ref{thetasara}-\ref{thetasara1} offer the posibility to desig
 
 
 
-\section[$BS$ as an imperfect transmitter]{Beam splitter as an imperfect trasmitter}
+\section{A beam splitter as an imperfect trasmitter}
 
 We will now study the case where we replaced the bomb discused in section 4.2 with a beam splitter $BS_{o}$. In this case, we will consider imperfect mirrors $M_{1}$ and $M_{2}$ such that $\gamma_{1}$ and $\gamma_{2}$ are arbitrary, i.e, the mirrors, induce arbitrary phases. So we can model misalignments in the interferometer as described in section 3.3.  Likewise  previous cases, we will first consider our imperfect transmitter is placed in the vertical path as shown in Fig. \ref{bs vertical}. As might be infered from the Figure, the event of the photon being absorbed by the object, is now modeled by the photon being reflected by $BS_{o}$ (the photon goes out of the interferometer, and does not interact anylonger with the rest of the optical elements).
 
@@ -1053,19 +1050,19 @@ Assuming the photon enters the interferometer though the horizontal channel, i.e
 
 
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\
+\ket{1}&\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\
 &\xrightarrow{\text{BSo}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\left[\cos(\theta_{o})\ket{2}+i\sin(\theta_{o})\ket{abs}\right]\\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})\cos(\theta_{o})e^{i\gamma_{2}}\ket{1}-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\ &\xrightarrow{\text{BS2}}\cos(\theta_{1})e^{i\gamma_{1}}\left[\cos(\theta_{2})\ket{2}
 +i\sin(\theta_{2})\ket{1}\right]+i\sin(\theta_{1})\cos(\theta_{o})e^{i\gamma_{2}}\\
-&\times \left[\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2}\right]-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\
-&=(\cos(\theta_{1})e^{i\gamma_{1}}\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\cos(\theta_{o})e^{i\gamma_{2}})\ket{2}-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\ &+(i\cos(\theta_{1})\sin(\theta_{2})e^{i\gamma_{1}}+
+& \qquad \times \left[\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2}\right]-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\
+& \qquad =(\cos(\theta_{1})e^{i\gamma_{1}}\cos(\theta_{2})-\sin(\theta_{1})\sin(\theta_{2})\cos(\theta_{o})e^{i\gamma_{2}})\ket{2}-\sin(\theta_{1})\sin(\theta_{o})\ket{abs}\\ & \qquad +(i\cos(\theta_{1})\sin(\theta_{2})e^{i\gamma_{1}}+
  i \sin(\theta_{1})\cos(\theta_{o})\cos(\theta_{2})e^{i\gamma_{2}})\ket{1}.\numberthis
 \end{align*}
 The detection probabilities can now be readily written:
-\begin{align}
+\begin{align*}
  P_{2D_{1}}&=|\cos(\theta_{1})\sin(\theta_{2})+ e^{i(\gamma_{2}-\gamma_{1})}\cos(\theta_{o}) \sin(\theta_{1})\cos(\theta_{2})|^2,\\
  P_{2D_{2}}&=|\cos(\theta_{1})\cos(\theta_{2})- e^{i(\gamma_{2}-\gamma_{1})}\cos(\theta_{o}) \sin(\theta_{1})\sin(\theta_{2})|^2,\\
- P_{2abs}&=|\sin(\theta_{o}) \sin(\theta_{1})|^2.
-\end{align}
+ P_{2abs}&=|\sin(\theta_{o}) \sin(\theta_{1})|^2. \numberthis \label{ajuste}
+\end{align*}
 
 It is worthwhile noting that $P_{2D_{1}}$ and $P_{2D_{2}}$ do not depend on $\gamma_{1}$ and $\gamma_{2}$ independently but only on the difference $\gamma_{2}-\gamma_{1}$ meaning that the detection probabilties are only sensitive to the relative phases introduced by the mirrors. Adittionally, as it might be expected the absortion probability depends only on the parameters of $BS_{1}$ and $BS_{o}$.
 
@@ -1205,8 +1202,8 @@ BS^{N}\ket{1}&=\prod_{i=3}^{N+2} \cos(\theta_{i})\ket{1}+i \sqrt{1-\prod_{i=3}^{
 
 
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{{BS^{N}}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\prod_{i=3}^{N+2} \cos(\theta_{i})\ket{2}-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{Mirrors}}\cos(\theta_{1})  e^{i \gamma_{1}}\ket{2}+i\sin(\theta_{1})\prod_{i=3}^{N+2} \cos(\theta_{i}) e^{i \gamma_{2}}\ket{1}\\
-&-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{BS2}}(\cos(\theta_{1})\cos(\theta_{2})e^{i \gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i \gamma_{2}}\prod_{i=3}^{N+2} \cos(\theta_{i}))\ket{2}\\ &+ i(\cos(\theta_{1})\sin(\theta_{2})e^{i \gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i \gamma_{2}}\prod_{i=3}^{N+2} \cos(\theta_{i}))\ket{1}\\ &-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}\ket{abs}.
+\ket{1}&\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{{BS^{N}}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\prod_{i=3}^{N+2} \cos(\theta_{i})\ket{2}-\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{Mirrors}}\cos(\theta_{1})  e^{i \gamma_{1}}\ket{2}+i\sin(\theta_{1})\prod_{i=3}^{N+2} \cos(\theta_{i}) e^{i \gamma_{2}}\ket{1}\\
+& \qquad -\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}\ket{abs} \\ & \xrightarrow{{BS2}}(\cos(\theta_{1})\cos(\theta_{2})e^{i \gamma_{1}}-\sin(\theta_{1})\sin(\theta_{2})e^{i \gamma_{2}}\prod_{i=3}^{N+2} \cos(\theta_{i}))\ket{2}\\ & \qquad + i(\cos(\theta_{1})\sin(\theta_{2})e^{i \gamma_{1}}+\cos(\theta_{2})\sin(\theta_{1})e^{i \gamma_{2}}\prod_{i=3}^{N+2} \cos(\theta_{i}))\ket{1}\\ & \qquad -\sin(\theta_{1})\sqrt{1-\prod_{i=3}^{N+2}\cos^2(\theta_{i})}\ket{abs}.
 \end{align*}
  
 The probabilities of detection at each of the detectors and the probability of absorption are given by:
@@ -1258,7 +1255,7 @@ As we are modeling the gap in the chopper as a transparent object, the operator 
 Thus $C_{i}$ is a unitary matrix whenever the sine is in the positive semi-cycle, and it becomes null in the negative one. That happens because in the negative semi-cycle we have total absorption of light. The absorption coefficient would  be:  
 
 \begin{align}
- \alpha=1-f,\qquad \alpha=\frac{1-\mathrm{sgn}(\sin(wt))}{2},
+ \alpha=1-f,\qquad \alpha=\frac{1-\mathrm{sgn}(\sin(wt))}{2}.
 \end{align}
 
 Next, we will analyze a Mach-Zehnder interferometer using a chopper as a time-dependent absorber. The chopper will be placed on the vertical path, while the photon enters the interferometer through the horizontal path. The initial state $\ket{\psi}=\ket{1}$ of the pumping photon transforms in the following way:
@@ -1266,9 +1263,9 @@ Next, we will analyze a Mach-Zehnder interferometer using a chopper as a time-de
 
 
 \begin{align*}
-&\ket{1}\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{\text{Chopper}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})f(t)\ket{2}+i\sin(\theta_{1})\alpha\ket{abs}\\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})f(t) e^{i\gamma_{2}}\ket{1}+i\sin(\theta_{1})\alpha\ket{abs}\\& \xrightarrow{\text{BS2}}\cos(\theta_{1})e^{i\gamma_{1}}\left[\cos(\theta_{2})\ket{2}+i\sin(\theta_{2})\ket{1}\right]\\
-&+i\sin(\theta_{1})e^{i\gamma_{2}}f(t)\left[\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2}\right]+i\sin(\theta_{1})\alpha\ket{abs}\\
-& = i\left[e^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+f(t) e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2})\right]\ket{1}+\left[ \cos(\theta_{1})\cos(\theta_{2}) e^{i\gamma_{1}} \right. \\& \left.  -\sin(\theta_{1})\sin(\theta_{2})f(t) e^{i \gamma_{2}} \right]\ket{2}+i\sin(\theta_{1})\alpha\ket{abs}. \numberthis
+\ket{1}&\xrightarrow{\text{BS1}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})\ket{2}\\ &\xrightarrow{\text{Chopper}}\cos(\theta_{1})\ket{1}+i\sin(\theta_{1})f(t)\ket{2}+i\sin(\theta_{1})\alpha\ket{abs}\\ &\xrightarrow{\text{Mirrors}} \cos(\theta_{1})e^{i\gamma_{1}}\ket{2}+i\sin(\theta_{1})f(t) e^{i\gamma_{2}}\ket{1}+i\sin(\theta_{1})\alpha\ket{abs}\\& \xrightarrow{\text{BS2}}\cos(\theta_{1})e^{i\gamma_{1}}\left[\cos(\theta_{2})\ket{2}+i\sin(\theta_{2})\ket{1}\right]\\
+&\qquad +i\sin(\theta_{1})e^{i\gamma_{2}}f(t)\left[\cos(\theta_{2})\ket{1}+i\sin(\theta_{2})\ket{2}\right]+i\sin(\theta_{1})\alpha\ket{abs}\\
+&\qquad  = i\left[e^{i\gamma_{1}}\cos(\theta_{1})\sin(\theta_{2})+f(t) e^{i\gamma_{2}}\sin(\theta_{1})\cos(\theta_{2})\right]\ket{1}+\left[ \cos(\theta_{1})\cos(\theta_{2}) e^{i\gamma_{1}} \right. \\&\qquad  \left.  -\sin(\theta_{1})\sin(\theta_{2})f(t) e^{i \gamma_{2}} \right]\ket{2}+i\sin(\theta_{1})\alpha\ket{abs}. \numberthis
 \end{align*}
 
 
@@ -1396,9 +1393,9 @@ Previously we considered the ``material" part of the chopper as a perfect absorb
  
 
 \begin{align}
-f_{hole}&=\frac{1+\mathrm{sgn}(\sin(wt))}{2},\\
-f_{material}&=\left(\frac{1-\mathrm{sgn}(\sin(wt))}{2} \right)\beta,\\
-f&=f_{material}+f_{hole},
+f_{hole}&=\frac{1+\mathrm{sgn}(\sin(wt))}{2},\label{beta111}\\
+f_{material}&=\left(\frac{1-\mathrm{sgn}(\sin(wt))}{2} \right)\beta,\label{beta11}\\
+f&=f_{material}+f_{hole}, \label{beta1}
 \end{align}
 
 
@@ -1410,7 +1407,7 @@ a=\left(\frac{1-sgn(\sin(wt))}{2}\right) \alpha,
 \end{equation}
 
 
-\begin{figure}[t]
+\begin{figure}[t!]
 \centering
 \begin{subfigure}[b]{0.4\linewidth}
 \includegraphics[width=\linewidth]{images/PD1_h.png}
@@ -1427,7 +1424,7 @@ a=\left(\frac{1-sgn(\sin(wt))}{2}\right) \alpha,
 \caption{$P_{1abs}$}
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probability distributions of detection and absorption of the photon with the optical chopper placed in the horizontal path. In these plots $\theta_{2}=\frac{\pi}{2}-\theta_{1}$ and $\gamma_{2}-\gamma_{1}=0$, subfigure (a) corresponds to $P_{1D_{1}}$, (b) to $P_{1D_{2}}$ and (c) to $P_{1abs}$. As explained in the section when the sine is in the positive cycle we have $\beta=1$, otherwise we get the arbitrary $\beta$ so the system alternates between the probabilities given by those values periodically.}
+\caption{Probability distributions of detection and absorption of the photon with the optical chopper placed in the horizontal path. In these plots $\theta_{2}=\frac{\pi}{2}-\theta_{1}$ and $\gamma_{2}-\gamma_{1}=0$, subfigure (a) corresponds to $P_{1D_{1}}$, (b) to $P_{1D_{2}}$ and (c) to $P_{1abs}$. When the sine is in the positive cycle (see Eqs. \ref{beta111}, \ref{beta11}, \ref{beta1})  the transmission coefficient is $\beta=1$ (there is no obstacle), otherwise we get the transmission coefficient is $\beta$ (the transmission coefficient of the material the chopper is made of) so the system alternates between the probabilities given by those values periodically.}
 \label{P3chopper}
 \end{figure}
 
@@ -1449,7 +1446,7 @@ In this form:
 |f|^2=  \frac{\abs{\alpha}^2}{2} \mathrm{sgn}(\sin(wt)) +\frac{1+\abs{\beta}^2}{2}.
 \end{equation}
 
-\begin{figure}[t]
+\begin{figure}[t!]
 \centering
 \begin{subfigure}[b]{0.4\linewidth}
 \includegraphics[width=\linewidth]{images/PD1_h.png}
@@ -1466,7 +1463,7 @@ In this form:
 \caption{$P_{2abs}$}
 \label{fig:BS1}
 \end{subfigure}
-\caption{Probability distributions of detection and absorption of the photon with the optical chopper placed in the horizontal path. In these plots $\theta_{2}=\frac{\pi}{2}-\theta_{1}$ and $\gamma_{2}-\gamma_{1}=0$, subfigure (a) corresponds to $P_{2D_{1}}$, (b) to $P_{2D_{2}}$ and (c) to $P_{2abs}$. As explained in the section when the sine is in the positive cycle we have $\beta=1$, otherwise we get the arbitrary $\beta$ so the system alternates between the probabilities given by those values periodically.}
+\caption{Probability distributions of detection and absorption of the photon with the optical chopper placed in the horizontal path. In these plots $\theta_{2}=\frac{\pi}{2}-\theta_{1}$ and $\gamma_{2}-\gamma_{1}=0$, subfigure (a) corresponds to $P_{2D_{1}}$, (b) to $P_{2D_{2}}$ and (c) to $P_{2abs}$. When the sine is in the positive cycle (see Eqs. \ref{beta111}, \ref{beta11}, \ref{beta1}) the transmission coefficient is $\beta=1$ (there is no obstacle), otherwise we get the transmission coefficient is $\beta$ (the transmission coefficient of the material the chopper is made of) so the system alternates between the probabilities given by those values periodically.}
 \label{P4chopper}
 \end{figure}
 
@@ -1507,11 +1504,11 @@ Substituting these expressions in the results of the previous section yields the
 \end{comment}
 
 \begin{align*}
-&P_{1D_{1}}=\cos^2(\theta_{1})\sin^2(\theta_{2})\abs{f}^2+ \sin^2(\theta_{1})\cos^2(\theta_{2}) \label{sara1}\\
+P_{1D_{1}}=&\cos^2(\theta_{1})\sin^2(\theta_{2})\abs{f}^2+ \sin^2(\theta_{1})\cos^2(\theta_{2}) \label{sara1}\\
 &+\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
-&P_{1D_{2}}=\cos^2(\theta_{1})\cos^2(\theta_{2})\abs{f}^2+ \sin^2(\theta_{1})\sin^2(\theta_{2})\\
+P_{1D_{2}}=&\cos^2(\theta_{1})\cos^2(\theta_{2})\abs{f}^2+ \sin^2(\theta_{1})\sin^2(\theta_{2})\\
 &-\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
-&P_{1abs}=\abs{\alpha}^2 \cos^2(\theta_{1}), \label{sara2}\numberthis{}
+P_{1abs}=&\abs{\alpha}^2 \cos^2(\theta_{1}), \label{sara2}\numberthis{}
 \end{align*}
 
 when the chopper is in the horizontal path. For the case that it is in the vertical one we obtain the following results. The probability distributions (\ref{sara1}-\ref{sara2}) and (\ref{sara3}-\ref{sara4})are shown in Fig. \ref{P3chopper} and \ref{P4chopper}:
@@ -1550,20 +1547,25 @@ when the chopper is in the horizontal path. For the case that it is in the verti
 \end{figure}
 \end{comment}
 \begin{align*}
-&P_{2D_{1}}=\cos^2(\theta_{1})\sin^2(\theta_{2})+\abs{f}^2 \sin^2(\theta_{1})\cos^2(\theta_{2})\label{sara3}\\
+P_{2D_{1}}=&\cos^2(\theta_{1})\sin^2(\theta_{2})+\abs{f}^2 \sin^2(\theta_{1})\cos^2(\theta_{2})\label{sara3}\\
 &+\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
-&P_{2D_{2}}=\cos^2(\theta_{1})\cos^2(\theta_{2})+ \abs{f}^2 \sin^2(\theta_{1})\sin^2(\theta_{2})\\
+P_{2D_{2}}=&\cos^2(\theta_{1})\cos^2(\theta_{2})+ \abs{f}^2 \sin^2(\theta_{1})\sin^2(\theta_{2})\\
 &-\frac{\Re{f} \sin(2\theta_{1})\sin(2\theta_{2})\cos(\gamma_{1}-\gamma_{2})}{2},\numberthis{}\\
-&P_{2abs}=\abs{\alpha}^2 \sin^2(\theta_{1}).\label{sara4}\numberthis{}
+P_{2abs}=&\abs{\alpha}^2 \sin^2(\theta_{1}).\label{sara4}\numberthis{}
 \end{align*}
 
 
 As seen in this section, an optical chopper can be modeled as a device producing a square wave signal. As the time evolution of the system in this model is piecewise and periodic the probability distribution of the system will be oscillating between the probability distribution of a semitransparent object ($0<\beta<1$) and that of a transparent object ($\beta=1$).
 
+\pagebreak
+\chapter{High-efficiency  Mach-Zehnder interferometer  }
 
-\chapter[High-efficiency Mach-Zehnder Interferometer]{High-efficiency  Mach-Zehnder interferometer  }
+In the previous section we discussed a technique to confirm the presence of an object without interacting with it. In that procedure we  demonstrate that we can verify the presence of the object with a maximum probability of $\frac{1}{2}$ for the Elitzur-Vaidman case.
 
-In this section, we will consider a nested Mach-Zehnder interferometer, that is an interferometer whose output goes into other beam splitters. We will place an identical semitransparent object in the upper half of our nested interferometer after each beam splitter except for the last one. Our signal photon will enter the interferometer through the lower half on the nested interferometer, as the arrangement shown in Fig. \ref{Nmach} shows, we see from the figure that we will have $N$ beam splitters and $N-1$ absorbers before the output. The notation previously used is not popular when dealing with nested interferometers. To be consistent with the existing literature and in order to compared our result with those previously reported results we will use the same notation as Kwait et al. \cite{5}.
+
+In this section, we will explore the posibility of improving that probability by considering a nested Mach-Zehnder interferometer, which is an interferometer whose outputs go into subsequent beam splitters. Our proposal is inspired in the experiments discussed by Kwait et al \cite{5} and Azuma \cite{Azuma}. In their works the authors state that the probability of interaction-free measuremens can be arbitrarily close to one when considering a series of connected interferometers, each one with an absorbent or semitransparent object, see Fig. \ref{Nmach}. The presence of an object in the upper path of each interferometer can be thought as a series of measurements addressed to determine which path (upper or lower) the photon is travelling in. These interrogations will inhibit the transference from the lower (incident) path to the upper one, thus increasing the probability that the photon is detected in the lower path detector $D_{1}$ in a kind of discrete Zeno effect \cite{5}.
+
+  We will place an identical semitransparent object in the upper path of our nested interferometer after each beam splitter except for the last one. Our signal photon will enter the interferometer through the lower path, as shown in Fig. \ref{Nmach}. We have $N$ beam splitters and $N-1$ absorbers before the output. To be consistent with the existing literature and in order to compared our result with those previously reported results we will use the same notation as Kwait et al. \cite{5}.
  
  
 Instead of using the Horizontal-Vertical basis, we will use a path $a$ -path $b$ basis. That is an ``up-down" basis. We will say that the photon is in the state $\ket{1}$ if it is in path $a$ and in state $\ket{2}$ if it is in path $b$. The main advantage of using this basis is that the mirror matrices are proportional to the identity because they keep the photon on the same path.
@@ -1610,7 +1612,7 @@ Assuming that the interferometer contains $N$ identical beam splitters, then the
 BS^{N}=\begin{pmatrix} \cos(N\Theta) & i \sin(N\Theta) \\ i \sin(N\Theta) & \cos(N\Theta) \end{pmatrix},
 \end{equation}
 
-where $\Theta=\sum_{i=1}^{N}\theta_{i}$. As an important particular case, we can ask  $\Theta=\frac{\pi}{2N}$ so they sum up to $\frac{\pi}{2}$ our restriction from chapter 3, so we have:
+where $\Theta=\theta_{i}$. As an important particular case, we can ask  $\Theta=\frac{\pi}{2N}$ so they sum up to $\frac{\pi}{2}$ our restriction from chapter 3, so we have:
 
 \begin{equation}
 BS^{N}=\begin{pmatrix} 0 & i  \\ i  & 0 \end{pmatrix}.
@@ -1700,7 +1702,7 @@ In the previous section, each time we consider a different number $N$ of beam sp
 
 As we explored at the beginning of this chapter what gives us distinguishability between the case where we have an object in one of the arms of the interferometer and when there is no obstacle is the fact that when the sum of the angles is $\frac{ \pi}{2}$ so that when no object is there the output will be in detected in the opposite path when sent the photon in.
 
-Could we use different angles that sum up to $\frac{\pi}{2}$? and still, enhance the probability of detection in $D_{1}$. The answer is yes, to illustrate it let us remember that the probability of detection in $D_{1}$ is given by Eq. \ref{comentatio}
+Could we use different angles that sum up to $\frac{\pi}{2}$ and still, enhance the probability of detection in $D_{1}$? The answer is yes, to illustrate it let us remember that the probability of detection in $D_{1}$ is given by Eq. \ref{comentatio}
 
 \begin{equation*}
 P_{D_{1}}=|\bra{2} (B \times A)^{N-1}B \ket{2}|^2
@@ -1711,26 +1713,26 @@ As we stated in section 2.2 the problem was reduced to matrix multiplication so 
 \begin{align*}
 &P_{D_{1}}=\beta^{4} \sin^{2}{\left(\theta_{1} \right)} \sin^{2}{\left(\theta_{3} \right)} \cos^{2}{\left(\theta_{2} \right)} + 2 \beta^{3} \sin{\left(\theta_{1} \right)} \sin{\left(\theta_{2} \right)} \sin{\left(\theta_{3} \right)} \sin{\left(\theta_{1} + \theta_{3} \right)} \cos{\left(\theta \right)} \cos{\left(\theta_{2} \right)} \\
  & - 2 \beta^{2} \sin{\left(\theta_{1} \right)} \sin{\left(\theta_{3} \right)} \cos{\left(2 \theta \right)} \cos{\left(\theta_{1} \right)} \cos^{2}{\left(\theta_{2} \right)} \cos{\left(\theta_{3} \right)} + \beta^{2} \sin^{2}{\left(\theta_{2} \right)} \sin^{2}{\left(\theta_{1} + \theta_{3} \right)} \\
- & - 2 \beta \sin{\left(\theta_{2} \right)} \sin{\left(\theta_{1} + \theta_{3} \right)} \cos{\left(\theta \right)} \cos{\left(\theta_{1} \right)} \cos{\left(\theta_{2} \right)} \cos{\left(\theta_{3} \right)} + \cos^{2}{\left(\theta_{1} \right)} \cos^{2}{\left(\theta_{2} \right)} \cos^{2}{\left(\theta_{3} \right)}
+ & - 2 \beta \sin{\left(\theta_{2} \right)} \sin{\left(\theta_{1} + \theta_{3} \right)} \cos{\left(\theta \right)} \cos{\left(\theta_{1} \right)} \cos{\left(\theta_{2} \right)} \cos{\left(\theta_{3} \right)} + \cos^{2}{\left(\theta_{1} \right)} \cos^{2}{\left(\theta_{2} \right)} \cos^{2}{\left(\theta_{3} \right)},
 \end{align*}
 \normalsize
 
 where $\beta$ is the transparency of the object and $\theta$ the phase it induces, now let us see what happens in the case we expect the most absorption ($\beta=0$) 
 
 \begin{equation}
-P_{D_{1}}=\cos^{2}{\left(\theta_{1} \right)} \cos^{2}{\left(\theta_{2} \right)} \cos^{2}{\left(\theta_{3} \right)}
+P_{D_{1}}=\cos^{2}{\left(\theta_{1} \right)} \cos^{2}{\left(\theta_{2} \right)} \cos^{2}{\left(\theta_{3} \right)}.
 \end{equation}
 
 If we make $\theta_{i}=\frac{\pi}{2N}$ just like at the beginning of this chapter then
 
 \begin{equation}
-P_{D_{1}}=\cos^{6}{\left(\frac{\pi}{6} \right)}=\frac{27}{64}=0.421875
+P_{D_{1}}=\cos^{6}{\left(\frac{\pi}{6} \right)}=\frac{27}{64}=0.421875.
 \end{equation} 
 
 But if instead, we preserve that the sum is $\frac{\pi}{2}$,  but we use different angles we can achieve a lower probability of detection for lower $N$, let us show this by using $\theta_{1}=\frac{\pi}{4}$, $\theta_{2}=\frac{\pi}{6}$ and $\theta_{3}=\frac{\pi}{12}$ then 
 
 \begin{equation}
-P_{D_{1}}=\cos^{2}{\left(\frac{\pi}{4} \right)} \cos^{2}{\left(\frac{\pi}{6} \right)} \cos^{2}{\left(\frac{\pi}{12} \right)}=0.3499
+P_{D_{1}}=\cos^{2}{\left(\frac{\pi}{4} \right)} \cos^{2}{\left(\frac{\pi}{6} \right)} \cos^{2}{\left(\frac{\pi}{12} \right)}=0.3499.
 \end{equation}
 
 Now, What happens for higher $N$? this analysis remains the same, this happens because as Kwait et al \cite{exp} reasoned if the photon is to be detected then it always was reflected so it did not interact with the object and we simply have the product of cosines. If we get analytic answers and set $\beta=0$ then we get the same answer as they did with their reasoning, If we have semitransparent objects then we just as we can see from the curves in the previous section a semitransparent object reduces our probability of detecting in $D_{1}$ as we can also see plotting the analytical answer vs $\beta$.
@@ -1839,25 +1841,40 @@ As we see from Fig. \ref{con_fase} the phase is important when $N$ is small but 
 These plots, allow us to know the phases that would improve our bomb detector for unbalanced interferometers (an unbalanced interferometer is one with misalignments), such as the one developed in \cite{Chao_2018} for any given transparency and number of beam spliters.
 
 
-\section{Towards Wheeler's Gedanken experiment}
+\section{Towards Wheeler's gedanken experiment}
 
 One of the main reasons the Mach-Zehnder interferometer is so popular is that it allows us to study fundamental facts about quantum theory such as Bohr's complementary principle, this is well explained in \cite{delayed}. It consists in wondering if a photon behaves like a particle or a wave in a Mach-Zehnder interferometer, the idea is better explained with the following the Gedanken experiment.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth,height=6.5 cm]{images/wheeler1.png}
-\caption{Mach-Zehnder interferometer with both $BS$ being 50:50, we always detect on $D_{1}$.}
+
+\begin{figure}[t!]
+\begin{subfigure}{0.45\linewidth}
+  \centering
+  % include first image
+\includegraphics[width=\linewidth]{images/wheeler1.png}
+\caption{}
 \label{wheeler1}
-\end{figure}
-
-Let us picture a Mach-Zehnder interferometer like the one shown in Fig. \ref{wheeler1}, let both $BS$ be 50:50, now let us also imagine that we send in a single photon, from the section 3.2 we get Eq. \ref{pp_wheler}, if the difference in the optical path is $\gamma_{1}-\gamma_{2}=0$  we get certainty of where the detection will be made ($D_{1}$), however, we have no information of which path the photon took.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth,height=6.5 cm]{images/wheeler2.png}
-\caption{Mach-Zehnder interferometer without the second $BS$.}
+\end{subfigure}
+\begin{subfigure}{0.45\linewidth}
+  \centering
+  % include second image
+\includegraphics[width=\linewidth]{images/wheeler2.png}
+\caption{}
 \label{wheeler2}
+\end{subfigure}
+\begin{subfigure}{0.45\linewidth}
+  \centering
+  % include second image
+\includegraphics[width=\linewidth]{images/wheeler3.png}
+\caption{}
+\label{wheeler3}
+\end{subfigure}
+\caption{Subfigure (a) shows a Mach-Zehnder interferometer with both $BS$ being 50:50, in this setting we always detect on $D_{1}$. Subfigure (b) shows a Mach-Zehnder interferometer without the second $BS$ and subfigure (c) shows a Mach-Zehnder interferometer with the second $BS$ is a in a superposition of being and not being.}
+\label{fig:fig}
 \end{figure}
+
+Let us picture a Mach-Zehnder interferometer like the one shown in Fig. \ref{wheeler1}, with both $BS$ being 50:50 beam splitters, also imagine that we send in a single photon, from the section 3.2 we get Eq. \ref{pp_wheler}, if the difference in the optical path is $\gamma_{1}-\gamma_{2}=0$  we get certainty of where the detection will be made ($D_{1}$), however, we have no information of which path the photon took.
+
+
 
 Now, let us consider the new arrangement shown in Fig. 6.8, as it is shown in Fig. \ref{wheeler2} where we removed the second beam splitter from the interferometer. This time we have no certainty of where the photon detection is going to be made (it is split with equal probability to $D_{1}$ and $D_{2}$), however, once we detect the photon we have complete information of which path the photon took.
 
@@ -1865,12 +1882,6 @@ Now, let us consider the new arrangement shown in Fig. 6.8, as it is shown in Fi
 
 In one setting, we have wave-like behavior and in the other, we have partcile-like behavior. In the wheeler Gedanken experiment, the idea is to have the second beam splitter in a superposition of being there or not. It seems that before entering the experiment the photon somehow decides whether it is going to behave as a particle or as a wave, which seems to be in accordance with Bohr's complementary principle. This is precisely what quantum delayed-choice experiments seek to rule out \cite{Ma}, where the photon has particle or wave behavior or even a continuous transition between these two very different behaviors while the experiment is running.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth,height=7.5 cm]{images/wheeler3.png}
-\caption{Mach-Zehnder interferometer with the second $BS$ is a in a superposition of being and not being.}
-\label{wheeler3}
-\end{figure}
 
 It was recently demonstrated \cite{Peruzzo, Kaiser2012} that there is a smooth transition between particle and wave behaviors thus Bohr's complementary principle seems to be invalid. The way they did this experiment was through a very clever implementation of the original Gedanken experiment where we have a ``quantum'' $BS$, which is a $BS$ that is in a superposition state of being there and not being there as in Fig. \ref{wheeler3}. They achieved this superposition was by implementing a controlled Hadarmard gate \footnote{As was discussed in the beam splitter section a Hadamard gate is equivalent to a 50:50 beam splitter}, acting as an identity gate if a control qubit is in the $0$ state and as a Hadamard gate if the control qubit is in the $1$ state.  If the control qubit is in a superposition state, so will be the controlled Hadamard gate.
 
@@ -1879,7 +1890,7 @@ It was recently demonstrated \cite{Peruzzo, Kaiser2012} that there is a smooth t
 
 A similar situation arises through interaction-free measurements, since taking a path means interacting with the object, and taking the other path means no interaction, thus we have some sort of controlled gate. The first $BS$ puts the photon in a superposition of both paths (note that this approach differs significantly from the one taken in \cite{Peruzzo,Kaiser2012} because our $BS$ differ from a Hadamard gate by more than a phase, this approach is more controllable), and then both paths are recombined in the second $BS$, recall we always have the second beam splitter on as the experiments proposed recently do \cite{Polino}.
 
-\begin{figure}[H]
+\begin{figure}[t!]
 \centering
 \begin{subfigure}[b]{0.40\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_2.png}
@@ -1901,7 +1912,7 @@ A similar situation arises through interaction-free measurements, since taking a
 
 If, we have both $BS$ in the setup, how can the transition between particle and wave behavior be achieved? The answer is simple, the object introduces two new parameters that can be tuned to change the behavior of the photon from particle to wave, since these properties change the probabilities at the output as was studied in previous sections. This was studied by Zurika Blanco-Garcia and Oscar Rosas-Ortiz in \cite{azuri} for the 50:50 $BS$ case. Those plots are in perfect agreement with the experiments. However, no experimental realization has been done in this setup. Fig. \ref{transzuri} shows the transition from particle to wave behavior in the 50:50 case. (To make it more comparable to experiments we included the effect of misalignment $\gamma_{1},\gamma_{2}$, in the output they end up in a sum with the phase of the object, we included this in a single parameter $\Delta$):
 
-\begin{figure}[H]
+\begin{figure}[t!]
 \centering
 \begin{subfigure}[b]{0.40\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_2_pi3.png}
@@ -1912,7 +1923,7 @@ If, we have both $BS$ in the setup, how can the transition between particle and 
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Continuous transition between wave and particle behavior with 25:75 BSs the probability of detection in $D_{1}$ is shown in (a) and for $D_{2}$ in (b)}
+\caption{Continuous transition between wave and particle behavior with 25:75 BSs the probability of detection in $D_{1}$ (a) and in $D_{2}$ (b)}
 \label{pi/3}
 \end{figure}
 
@@ -1921,7 +1932,7 @@ If, we have both $BS$ in the setup, how can the transition between particle and 
 
 Now, let us consider a high efficiency Mach-Zehnder interferometer with $N$ beam splitters. We get a more obvious transition as Fig. \ref{varias} shows, there we can see the plots for $N=3$ and $N=5$, in theses plots we consider all objects in the interferometer to be equal, we also considered all beam splitters to be 50:50 and we dropped the general form of the mirrors, selecting $\gamma_{1}=\gamma_{2}=\frac{\pi}{2}$), as we can see the transition between particle and wave behavior happens only for $\beta \approx 1$ which may suggest that the transition only happens for almost transparent or transparent objects. However, this is because the absorption probability tends to $1$ as $N$ grows as we showed in section 6.1. 
 
-\begin{figure}[H]
+\begin{figure}[t!]
 \centering
 \begin{subfigure}[b]{0.3\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_3_pi4.png}
@@ -1952,7 +1963,7 @@ Now, let us consider a high efficiency Mach-Zehnder interferometer with $N$ beam
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Continuous transition between wave and particle behaviour with 50:50 $BSs$ for $N=3$ and $N=5$. The top plots correspond to $N=3$ they show the probability of detection in $D_{1}$ (a), $D_{2}$ (b) and the probability of the photon being ``lost''(c). The botton plots correspond to $N=$ they show the probability of detection in $D_{1}$ (d),  $D_{2}$ (e) and the probability of the photon being ``lost'' (f)}
+\caption{Continuous transition between wave and particle behaviour with 50:50 $BSs$ for $N=3$ and $N=5$. Plots in the top row correspond to $N=3$, they show the probability of detection at $D_{1}$ (a), $D_{2}$ (b) and the probability of the photon being ``lost''(c). Plotsin the bottom row correspond to $N=5$, they show the probability of detection at $D_{1}$ (d),  $D_{2}$ (e) and the probability of the photon being ``lost'' (f).}
 \label{varias}
 \end{figure}
 
@@ -1968,50 +1979,50 @@ A more general complementary principle is formulated with regard to this experim
 where $V$ is the visibility, $D$ is the distinguishability and are defined as :
 
 \begin{align}
- V= \frac{P_{max}-P_{min}}{P_{max}+P_{min}}\\
- D_{i}=|p(i,1)-p(i,2)|
+ V&= \frac{P_{max}-P_{min}}{P_{max}+P_{min}}\\
+ D_{i}&=|p(i,1)-p(i,2)|
 \end{align}
 
 where $P_{max}$ and $P_{min}$ refer to the maximal and minimal for recording a photon in a chosen detector when scanning through the phase of the interferometer. The distinguishability or which-path information is defined as $D=D_{1}+D_{2}$ and $p(i,j)$ the probability that the photon travelled the path $i=1,2$ and arrived at detector $j=1,2$.
 
-In conclusion, we proposed a simpler way to get the transition from wave and particle behavior, as \cite{Kaiser2012,Peruzzo} uses sophisticated equipment to implement a controlled Hadamard gate, we proposed a simpler scheme to achieve the same results both theoretically and experimentally. Besides requiring this complicated implementations a lot of debate has been arising since some claim that the experiments in \cite{Peruzzo,Kaiser2012}  can be explained with a two-dimensional classical variable \cite{Rossi,Chaves}, recently a proposal and implementation for an experiment that could not be explained in this way was presented in \cite{Polino}.
+
 
 \begin{figure}[H]
 \centering
-\begin{subfigure}[b]{0.45\linewidth}
+\begin{subfigure}[b]{0.3\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_3.png}
 \caption{$P_{D_{1}}$}
 \end{subfigure}
-\begin{subfigure}[b]{0.45\linewidth}
+\begin{subfigure}[b]{0.3\linewidth}
 \includegraphics[width=\linewidth]{images/pd2_3.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.45\linewidth}
+\begin{subfigure}[b]{0.3\linewidth}
 \includegraphics[width=\linewidth]{images/pabs_3.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.45\linewidth}
+\begin{subfigure}[b]{0.3\linewidth}
 \includegraphics[width=\linewidth]{images/pd1_5.png}
 \caption{$P_{D_{1}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.45\linewidth}
+\begin{subfigure}[b]{0.3\linewidth}
 \includegraphics[width=\linewidth]{images/pd2_5.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\begin{subfigure}[b]{0.45\linewidth}
+\begin{subfigure}[b]{0.3\linewidth}
 \includegraphics[width=\linewidth]{images/pabs_5.png}
 \caption{$P_{D_{2}}$ }
 \label{fig:BS1}
 \end{subfigure}
-\caption{Continuous transition between wave and particle behaviour with $\theta=\frac{\pi}{2N}$ $BS$s for $N=3$ and $N=5$. The top plots correspond to $N=3$ they show the probability of detection in $D_{1}$ (a),$D_{2}$ (b) and the probability of the photon being ``lost''(c). The bottom plots correspond to $N=5$, they show the probability of detection in $D_{1}$ (d),$D_{2}$ (e) and the probability of the photon being ``lost'' (f)}
+\caption{Continuous transition between wave and particle behaviour with $\theta=\frac{\pi}{2N}$ $BS$s for $N=3$ and $N=5$. Plots in the top row correspond to $N=3$, they show the probability of detection at $D_{1}$ (a), $D_{2}$ (b) and the probability of the photon being ``lost''(c). Plotsin the bottom row correspond to $N=5$, they show the probability of detection at $D_{1}$ (d),  $D_{2}$ (e) and the probability of the photon being ``lost'' (f).}
 \label{figvarias2}
 \end{figure}
 
-
+In conclusion, we proposed a simpler way to get the transition from wave and particle behavior, as \cite{Kaiser2012,Peruzzo} uses sophisticated equipment to implement a controlled Hadamard gate, we proposed a simpler scheme to achieve the same results both theoretically and experimentally. Besides requiring this complicated implementations a lot of debate has been arising since some claim that the experiments in \cite{Peruzzo,Kaiser2012}  can be explained with a two-dimensional classical variable \cite{Rossi,Chaves}, recently a proposal and implementation for an experiment that could not be explained in this way was presented in \cite{Polino}.
 
 \chapter{Experimental Setup}
 In this chapter, we will describe the necessary materials and steps to realize all of the previous content of this thesis experimentally. All of the work from this section on took place at the laboratory for quantum and electromagnetic phenomena at UPIITA. We will begin by generating a single photon source using SPDC, we will follow the approach taken in \cite{maestria_procopio}. We will then replicate the Elitzur-Vaidman ``bomb detector''. Finally, we will study variations of this ``bomb detector'' with semitransparent objects.
@@ -2019,7 +2030,7 @@ In this chapter, we will describe the necessary materials and steps to realize a
 \section{Single-photon source}
 
 
-To produce a single-photon source we will use the SPDC process described in chapter 1, to do this experimentally we will follow the method described in \cite{maestria_procopio}. The experimental setup can be seen .in Fig. \ref{single}.  We will use the following materials:
+To produce a single-photon source we will use the SPDC process described in chapter 1, to do this experimentally we will follow the method described in \cite{maestria_procopio}. The experimental setup can be seen in Fig. \ref{single}.  We will use the following materials:
 
 
 
@@ -2030,22 +2041,79 @@ To produce a single-photon source we will use the SPDC process described in chap
 \item Violet laser 405nm
 \item Pinholes
 \item BBO-I crystal
+
+$\beta$-Barium borate (BBO) is a nonlinear optical cystal, depending on how it is cut it can satisfy different phase-matching conditions, in particular, we will use a type-I crystal, so we have type I SPDC as explained in chapter one, these kind of crystals must be used in non humid environments since they are a little hygroscopic. Some of the most important characteristics of the crystal used are shown in the table bellow.
+ 
+\end{itemize}
+
+\begin{figure}[H]
+\begin{floatrow}
+\ffigbox{%
+\includegraphics[width=4cm,height=4cm]{images/cristal.jpg}
+}{%
+  \caption{A picture of the BBO-I crystal.}%
+}
+\capbtabbox{%
+\scalebox{0.8}{
+\begin{tabular}{|l|l|}
+\hline
+Size                  & 5x5x0.5mm    \\ \hline
+Wavefront distortion: & less than $\lambda$/8 @ 633 nm  \\ \hline
+Clear aperture:       & \textgreater 90\% central area  \\ \hline
+Flatness:             & $\lambda$/8 @ 633 nm            \\ \hline
+Angle tolerance:      & $\Delta \theta\pm 0.25\degree$,     $\Delta \phi\pm 0.25\degree$  \\ \hline
+Coating               & Anti-reflective @405/810 nm \\ \hline
+Half-opening angle    & 3 degrees   \\ \hline
+\end{tabular}}
+}{%
+\center
+  \caption{Specifications of the BBO-I crystal.}%
+}
+\end{floatrow}
+\end{figure}
+
+\begin{itemize}
 \item Multimode optical fiber
-\item APDs(Avalanche photo-diodes)
+\item APDs(Avalanche photodiodes)
+
+An avalanche photodiode (APD) is a semiconductor base photodetector that operates at relative high voltages (typycally tens of volts), just below breakdown. In this regime, electrons or holes excited by photons via the photoelectric effect are strongly accelerated, so that they generate secondary carriers in an ''avalanche" process, this allows these devices to be very sensitive detectors
+
+APD modules are kits that in adition to the photodiode inclued additional electronic components such as current amplifiers, optical fibre coupling.. etc, in this work we will use one of said modules, namely the SPCM-AQ4C module from excelitas technologies, which is a four-channel single photon counting card, capable of detecting single photons whose wavelenght ranges from 400 $nm$ to 1060 $nm$. Single photon counting modules are extremely sensitive and a lot of care must be taken when working with them, in particular one needs to isolate them from all  light sources but the one intended to detect so one does not overexcite the photodetectors and breaks the module.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{images/effiency.png}
+\caption{A plot for the photon detection efficiency of our detector versus wavelenght taken from the module manual.}
+\label{module}
+\end{figure}
+
+We aim to detect photons at 810 nm for which this detector works at nearly $48\%$ efficiency as the Fig. \ref{module} shows. The manual for the module \cite{manual} reports that the average dark counts are about $500\pm 50$, however when measured in the lab we got on average $ 1001 \pm 101$ for the idler detector and $391 \pm 47$ for the signal detector.
+
+\end{itemize}
+
+\begin{itemize}
+
 \item National instruments' data acquisition board
 \item Newport posts
 \item Optical Table
 
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[t!]
 \centering
 \includegraphics[width=\linewidth]{images/SPDC_exp.png}
-\caption{Experimental setup of single photon source}
+\caption{Experimental setup of single photon source.}
 \label{single}
 \end{figure}
 
-The first step to achieve a single photon source is to find the most likely light-cone using individual counts in each photo-detector as described in chapter 1  where we explained type-I SPDC, after that, we need to count coincidences to identify spatial correlations as described in chapter 1. We will set the detection window for coincidences based on the procedure of \cite{pearson} at 10ns, this coincidence window is used so we know the pair of photons are created in the nonlinear crystal thus eliminating noise from the environment in the detection counts. It is usually convenient for the propagation direction of the photon to be co-lineal with one of the lines of tapped holes
+
+
+
+
+
+
+The first step to achieve a single photon source is to find the most likely light-cone using individual counts in each photo-detector as described in chapter 1  where we explained type-I SPDC, after that, we need to count coincidences to identify spatial correlations as described in chapter 1. We will set the detection window for coincidences at 15ns, this coincidence window is used so we know the pair of photons are created in the nonlinear crystal thus eliminating noise from the environment in the detection counts. It is usually convenient for the propagation direction of the photon to be co-lineal with one of the lines of tapped holes
 
 In BBO-I crystals both photons have the same energy, from Eq. \ref{conservation} we can see that this implies that both signal and idler photons' direction of propagation makes the same angle with respect to the direction of the laser beam as seen in Fig. \ref{single}.
 
@@ -2066,13 +2134,13 @@ As we previously described in chapter 1, the Mach-Zehnder interferometer is made
 
 We aim to get the difference in optical paths to a minimum, that is we wish to achieve $|\gamma_{2}-\gamma_{1}|=0+2\pi n$, this alignment can be quite challenging in the laboratory. To achieve this we will consider the following approach for alignment as discussed in \cite{zuri}. To align the interferometer and reduce $|\gamma_{2}-\gamma_{1}|$ as much as possible, the strategy is to attach a piezoelectric device to one of the mirrors, align it by hand  until a minimum is reached.
 
-Both $D_{1}$ and $D_{2}$ are APDs, in the output of  $BS_{2}$, the interference pattern requires special treatment of the counts since unlike the classical case where we inject coherent beams into the interferometer we are injecting single photons. This ``special treatment'' consists in only considering detector clicks when there's a simultaneous coincidence in $D_{idler}$, where $D_{idler}$ is an APD placed in the path of the idler photon as described in the SPDC section, we will use the same temporal window of ``simultaneously'' as described in the previous section that is 10ns. The experimental set up for this section is shown in Fig. \ref{newsingle}.
+Both $D_{1}$ and $D_{2}$ are APDs, in the output of  $BS_{2}$, the interference pattern requires special treatment of the counts since unlike the classical case where we inject coherent beams into the interferometer we are injecting single photons. This ``special treatment'' consists in only considering detector clicks when there's a simultaneous coincidence in $D_{idler}$, where $D_{idler}$ is an APD placed in the path of the idler photon as described in the SPDC section, we will use the same temporal window of ``simultaneously'' as described in the previous section that is 15ns. The experimental set up for this section is shown in Fig. \ref{newsingle}.
 
 
-\begin{figure}[H]
+\begin{figure}[t!]
 \centering
 \includegraphics[width=\linewidth]{images/machzehnder_single.png}
-\caption{Experimental setup of a single photon Mach-Zehnder Interferometer}
+\caption{Experimental setup of a single photon Mach-Zehnder interferometer.}
 \label{newsingle}
 \end{figure}
 
@@ -2082,7 +2150,7 @@ In this section, we will describe in detail the procedure used to align the Mach
 
 To align the interferometer we begin by placing a red laser(HeNe) in such a way that the beam goes through the same path as the signal photon did in Fig. \ref{single}. To do this two collimators are needed. One is placed as close as possible to the BBO-I crystal, and the other one is placed near the $D_{signal}$ from the SPDC array. All alignment of our Mach-Zehnder interferometer is done using this red laser. In Fig.19 (a-d) all the steps we are going to take to align the interferometer are shown.
 
-\begin{figure}[H]
+\begin{figure}[t!]
 \centering
 \begin{subfigure}[b]{0.55\linewidth}
 \includegraphics[width=8cm,height=4 cm]{images/first_step.png}
@@ -2104,7 +2172,7 @@ To align the interferometer we begin by placing a red laser(HeNe) in such a way 
 \caption{}
 \label{fig:westminster_aerea}
 \end{subfigure}
-\caption{Steps to align the Mach-Zehnder interferometer, subfigure (a) shows the first step, subfigure (b) the second, subfigure (c) the third and (d) the fourth and last step}
+\caption{Steps to align the Mach-Zehnder interferometer, subfigure (a) shows the first step, subfigure (b) the second, subfigure (c) the third and (d) the fourth and last step.}
 \label{steps}
 \end{figure}
 
@@ -2114,7 +2182,7 @@ The first step is to place $BS_{1}$ at $\theta=45\degree$ with respect to the in
 
 The second step is to place one of the mirrors $M_{2}$ in the path of the transmitted beam, the idea is to place $M_{2}$ in such a way that the reflected beam is co-lineal with the tapped holes of the optical table, and then mark on the screen the place where the beam goes, as is shown in Fig. \ref{steps}(b).
 
-The third step is to dismount $M_{2}$(Only the mirror it isn't necessary to take out the post) and to place $M_{1}$ and repeat the step to using $M_{1}$ instead of $M_{2}$. We will place one of the mirrors in a ¿post? with a micro-metric screw and piezoelectric device to obtain vertical mobility, We will choose $M_{1}$, after completing this step we place $M_{2}$ once again, the expected result so far is shown in Fig. \ref{steps}(c).
+The third step is to dismount $M_{2}$(Only the mirror it isn't necessary to take out the post) and to place $M_{1}$ and repeat the step to using $M_{1}$ instead of $M_{2}$. We will place one of the mirrors in a post with a micro-metric screw and piezoelectric device to obtain vertical mobility, We will choose $M_{1}$, after completing this step we place $M_{2}$ once again, the expected result so far is shown in Fig. \ref{steps}(c).
 
 The fourth and last step is to place $BS_{2}$ as it is shown in Fig. \ref{steps}(d), the reflected and transmitted beam should reach the marks done in step three, since we are working with a coherent beam we will see the interference pattern achieved on the screen. Once we have achieved the desired interference pattern, this same setup should be tested with white light from an incandescent source, that is because the coherence-length of the red laser is very long, so it is relatively easy to get red interference, therefore, using red light and getting an interference pattern is not such a precise test of alignment. When using white light it is way harder to get interference patterns visible, it requires a much finer alignment. After we have tested with white light, we will place the APDs on the marks that correspond to the mirrors' reflected beams.
 
@@ -2147,8 +2215,8 @@ The behavior of a $BS$ is analogous to that of an analyzer and polarizer(same tr
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{images/polarizeranalogy.png}
-\caption{Polarizer and analyzer analogy}
+\includegraphics[scale=0.3]{images/polarizeranalogy.png}
+\caption{Polarizer and analyzer analogy.}
 \label{BS and polarizer}
 \end{figure}
 
@@ -2175,53 +2243,105 @@ In quantum mechanics the intensity is proportional to the expected value of the 
 V=\frac{N_{max}-N_{min}}{N_{max}+N_{min}},
 \end{equation}
 
-In the lab $N_{max}$ and $N_{min}$ correspond to the maximum and minimum coincidences $D_{1}-D_{idler}$ as we vary the voltage on the piezoelectric device.
+In the lab $N_{max}$ and $N_{min}$ correspond to the maximum and minimum coincidences $D_{1}-D_{idler}$ as we turn the micrometer screw
 
-Visibility counts will vary as we change the difference in optical paths $\delta\phi$ by varying the voltage on the piezoelectric attached to the mirror, the idea is to see how visibility changes with voltage and keep the maximum value that we can achieve to keep going with the rest of the experiments.
+Visibility counts will vary as we change the difference in optical paths $\delta\phi$ by turning the micrometer screw attached to the mirror, the idea is to see how visibility changes with voltage and keep the maximum value that we can achieve to keep going with the rest of the experiments.
   
  \pagebreak
+ \blankpage
 
 \chapter{Experimental Results}
 
-\section{Mach-Zehnder Interferometer}
+\section{Mach-Zehnder interferometer}
 
 The first step taken in the lab was to set up a Mach-Zehnder interferometer using a red laser as the section 7.2.1 describes, once we finished the setup, we varied the optical paths, using the knobs in the mirrors in order to see the interference pattern.
 
-Notice from Fig. \ref{fig:Mach-Clasico} that if we compare it with Eq. \ref{Intensities}, we get interfernce patterns when $\delta \gamma \neq 0$, so ideally we would want to align untill $\delta \gamma=0$, however that is really difficult to achieve in experiments, since we can control differences in optical paths up to a certain lenght, which is not enough to achieve perfect alignment. Usually getting a visible interference pattern is enough to consider our interferomenter as aligned. 
+Notice from Fig. \ref{intensities2222} that if we compare it with Eq. \ref{Intensities}, we get interfernce patterns when $\delta \gamma \neq 0$, so ideally we would want to align untill $\delta \gamma=0$, however that is really difficult to achieve in experiments, since we can control differences in optical paths up to a certain lenght, which is not enough to achieve perfect alignment. Usually getting a visible interference pattern is enough to consider our interferomenter as aligned. 
+
+We then proceeded to measure the change in the interference patter when one semitransparent object is placed on one of the arms of the interferometer, by taking pictures of the interference pattern produced by the red laser. We used a polarizer as a semitransparent object, the polarization of our HeNe laser is horizontal, and so what we did was to place the polarizer with an angle of $0\degree$ with respect to the laser's and increase that angle by ten each measurement untill we reach $90\degree$ where the polarizer acts as a totally absorbent object, we repeated said measurements several times and kept the best results. The recorded interference patterns are shown in Fig. \ref{intensities2222}.
 
 \section{Single-photon source}
 
-After setting up our Mach-Zehnder interferometer, the next step is to setup our  single photon source so we can use it as imput in our Mach-Zehnder. Our single photon source consists of a violet laser (405nm) and a BBO-I crystal wich specifications are given in the table below
-
-\begin{table}[H]
-\center
-\begin{tabular}{|l|l|}
-\hline
-Size                  & 5x5x0.5mm    \\ \hline
-Wavefront distortion: & less than $\lambda$/8 @ 633 nm  \\ \hline
-Clear aperture:       & \textgreater 90\% central area  \\ \hline
-Flatness:             & $\lambda$/8 @ 633 nm            \\ \hline
-Angle tolerance:      & $\Delta \theta\pm 0.25\degree$,     $\Delta \phi\pm 0.25\degree$  \\ \hline
-Coating               & Anti-reflective @405/810 nm \\ \hline
-Half-opening angle    & 3 degrees   \\ \hline
-\end{tabular}
-\caption{Specifications of the BBO-I crystal used}
-\end{table}
+After setting up our Mach-Zehnder interferometer, the next step is to setup our  single photon source so we can use it as imput in our Mach-Zehnder. Our single photon source consists of a violet laser (405nm) and a BBO-I crystal.
 
 The first step is to setup the violet laser so it points in a straight line over the holes of the optical table, we then set our optical fibre couplers for the idler and signal photons on posts at three degrees from this line, we determine the distance from the BBO cystal from the desired separation of the couplers.
 
 \begin{figure}[t!]
 \centering
-\begin{subfigure}[b]{0.48\linewidth}
-\includegraphics[width=5cm,height=5cm]{images/array1.jpg}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=4cm,height=3cm]{images/array1.jpg}
 \caption{}
 \end{subfigure}
-\begin{subfigure}[b]{0.48\linewidth}
-\includegraphics[width=5cm,height=5cm]{images/interference.jpg}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/11.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/112.jpg}
 \caption{}
 \end{subfigure}
-\caption{Figure (a) shows the setup of the Mach-Zehnder interferometer in the lab, while (b) shows the interference pattern obtained with this setup using a He-Ne laser for alignment.}
-\label{fig:Mach-Clasico}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/21.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/102.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/31.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/92.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/41.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/82.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/51.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/72.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/61.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/62.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/71.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/52.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/81.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/42.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/91.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/32.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/101.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/22.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.3\linewidth}
+\centering
+\includegraphics[width=2cm,height=3cm]{images/fotos/111.jpg}
+\includegraphics[width=2cm,height=3cm]{images/fotos/12.jpg}
+\caption{}
+\end{subfigure}
+
+\caption{ Subfigure (a) shows the setup for the Mach-Zehnder interferometer in the lab. On all other figures the image on the left corresponds to the output of the vertical path ant the image on the right the output of the horizontal path. Subfigure (b) shows the interference pattern when no object is placed in the vertical path of the interferometer, (c) when a polarizer at $0\degree$ is placed, (d) polarizer at $10\degree$, (e) polarizer at $20\degree$, (f) polarizer at $30\degree$, (g) polarizer at $40\degree$, (h) polarizer at $50\degree$,(i) polarizer at $60\degree$, (j) polarizer at $70\degree$,(k) polarizer at $80\degree$,(l) polarizer at $90\degree$,}
+\label{intensities2222}
 \end{figure}
 
 
@@ -2232,16 +2352,17 @@ Placing the red laser behind the violet laser, we point towards one of the optic
 
 The next step is to turn on the violet laser, turn off the lights as well as mitigate other light sources such as the leds that indicate the laser is on, and the computer used for data adquisition, for data adquisition we used a data adquisition board from National instruments and a labview program to count coincidences, once we turn off the lights, we turn on the APDs and start looking at counts, if they are low we move the fiber couplers until counts go up. we look at coincidences as well beeing careful that they increase as the counts go up.
 
-Once we are happy with our counts (in our case we were satisfied with 25000 thousand counts in one detector and fifty thousand in the other with about a 100 coincidences a second). We now proceed to use a mirror in order to reflect the photons into the input of our Mach-Zehnder interferometer.
-
-To align the mirror that we are going to use to deviate the photons into the input of our Mach-Zehnder interferometer we again use the red laser behind the violet laser and going through the BBO crystal in the same direction that goes into the coupler where we aligned it so that light goes out of the fibre. we now place the mirror in this path and orient it so that light goes into the Mach-Zehnder interferometer. Once, the light is entering our Mach-Zehnder interferometer we check that the interference pattern is still in the output. If not, we aligh the mirror using the bolts in the mount untill the interference pattern is visible again. When we get a visble interference pattern we now move our fibre coupler behind the mirror to the output of the Mach-Zehnder interferometer where we will do measurements $D_{2}$ and orient it so that light goes out of the fibre. 
-
+Once we are happy with our counts. We now proceed to use a mirror in order to reflect the photons into the input of our Mach-Zehnder interferometer.
 
 \begin{figure}[t!]
 \center
 \includegraphics[width=8cm,height=6cm]{images/sPDC.png}
 \caption{The configuration of our single-photon source using SPDC in the lab.}
 \end{figure} 
+
+To align the mirror that we are going to use to deviate the photons into the input of our Mach-Zehnder interferometer we again use the red laser behind the violet laser and going through the BBO crystal in the same direction that goes into the coupler where we aligned it so that light goes out of the fibre. we now place the mirror in this path and orient it so that light goes into the Mach-Zehnder interferometer. Once, the light is entering our Mach-Zehnder interferometer we check that the interference pattern is still in the output. If not, we aligh the mirror using the bolts in the mount untill the interference pattern is visible again. When we get a visble interference pattern we now move our fibre coupler behind the mirror to the output of the Mach-Zehnder interferometer where we will do measurements $D_{2}$ and orient it so that light goes out of the fibre. 
+
+
 
 \begin{figure}[t!]
 \centering
@@ -2260,6 +2381,69 @@ To align the mirror that we are going to use to deviate the photons into the inp
 \caption{Figure (a) shows how we align the red laser behind the violet laser to make sure our fibre couplers are placed correctly and are receiving light, (b) shows the end of the fibre when the coupler is placed correctly, we should see a bright spot, (c) shows the optical fibre coupler array that includes the coupler, an objective, its mount and optical fibre.}
 \label{fig:coupler}
 \end{figure}
+\section{First measurements}
+
+\begin{figure}[t!]
+\centering
+\begin{subfigure}[b]{0.45\linewidth}
+\includegraphics[width=\linewidth,height=5cm]{images/ajuste_miercoles_11.png}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.45\linewidth}
+\includegraphics[width=\linewidth,height=5cm]{images/ajuste_miercoles_21.png}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.45\linewidth}
+\includegraphics[width=\linewidth,height=5cm]{images/ajuste_miercoles_12.png}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.45\linewidth}
+\includegraphics[width=\linewidth,height=5cm]{images/ajuste_miercoles_22.png}
+\caption{}
+\end{subfigure}
+\caption{Figure (a) shows the fit of the model to the data for $P_{1D_{1}}$ (b) shows the fit for $P_{1D_{2}}$, (c) fit for $P_{2D_{1}}$, (d) fit for $P_{2D_{2}}$.}
+\label{ajustes}
+\end{figure}
+
+Sadly, we were not able to obtain such precise aligment as to have a dark port as explained in chapter 3, so we need to compare with the analysis using phase retarders to account for misaligment, also, eventhough the SPCM-AQ4C module has four channels, two of them were broken so we  can only measure one of the ouputs of the interferometer each time. The approached we took regarding the lack of detectors was to compare the mean counts of the outputs with no object (performing one measurement with the detector in one position and then on the other), with the mean counts when there is an object.
+
+Other difficulty we encountered was that performing aligment by hand, we could not see appreciable change in the counts when working with single photons, it was suggested perhaps a piezoelectric and other equipment may be needed to achieve a better aligned Mach-Zehnder interferometer. There is also the issue that we were not able to align the interferometer with white light due to lack of time, so the alignment might not be as good as needed to perform single photon experiments. 
+
+In the first run we measured counts on $D_{2}$, again we used a polarizer as a semitransparent object, as specified by the supplier down converted photons have vertical polarization. We started  by measuring the coincidence counts when no object is in the paths of the interferometer, then we measured counts with the polarizer on the horizontal path and fixed at an angle of $0\degree$ with respect to the down-converted photons and increased that angle by ten each measurement untill we reach $90\degree$ where the polarizer acts as a totally absorbent object, next, we did the same set of measurements this time placing the polarizer on the vertical path od the interferometer. We then repeated the same procedure with the detector on $D_{1}$. In each case, we took 100 samples of one second measurements.
+
+When analizing the data, used nonlinear regression to fit the data to Eqns. \ref{ajuste}, for $50:50$ beam splitters, so only one parameter was due to be fitted $\delta\gamma=\gamma_{1}-\gamma_{2}$, the results are shown in Fig. \ref{ajustes}
+
+
+
+\section{Second measurements}
+
+
+We performed measurements for the semitransparent object in the horizontal path a second time, the results are shown below
+
+\begin{figure}[t!]
+\centering
+\begin{subfigure}[b]{0.45\linewidth}
+\includegraphics[width=\linewidth,height=5cm]{images/ajuste_jueves_11_50:50.png}
+\caption{}
+\end{subfigure}
+\begin{subfigure}[b]{0.45\linewidth}
+\includegraphics[width=\linewidth,height=5cm]{images/ajuste_jueves_21_50:50.png}
+\caption{}
+\end{subfigure}
+\caption{Figure (a) shows the fit of the model to the data for $P_{1D_{1}}$ (b) shows the fit for $P_{1D_{2}}$}
+\label{fig:segunda}
+\end{figure}
+
+
+Looking at the overall results from the measurements, we can see that the data we obtained matched the theoretical model only when the object and the detector are not placed on the same path of the interferometer. Furthermore, we see that eventhough we are performing the same experiment in the same setting the data we obtained have different behaviours when the object and the detector are on the same path, with no dicernible pattern. 
+
+
+While we are not sure what caused this behaviour, we encountered a few issues when running the experiment that may be the cause of it. As previously explained  we only had two detectors so the measurements of $D_{1}$ and $D_{2}$ were not simultaneous, they are different runs from the same experiment, we used two different runs with no object to normalize the probabilities, we did several of those runs and there is a considerable amount of variability on the coincidence counts, it seems that when the laser was recently turned on the counts were low and increased to a stable number with time. so the counts we used to normalize may not be appropiate and the data we took for both detectors may not be compatible. The one that worries us the most and to which we have no explanation is that turning the micrometer bolt attached to the mirror did not seem to have any consecuence on the count number. at first we thought light was not going through the interferometer and all we were measuring was noise, but when we did a run blocking the light that enters the interferometer we got on average seven coincidence counts agaisnt  more than two thousand five hundred when the light entering the interferometer was not blocked so we discarted this assumption, however that was a clear indicator that something was off regarding our interferometer.
+
+
+Eventhough we do not exactly match the theory with our data we get fairly good results considering all the setbacks we encountered, such as the COVID-19 outbreak which drastically reduced our time in the lab and the lack of equipment such as a piezoelectric and one more APD.
+
+
 
 \pagebreak
 

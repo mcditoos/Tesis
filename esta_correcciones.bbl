@@ -1,5 +1,79 @@
 \begin{thebibliography}{10}
 
+\bibitem{balentine}
+L.~Ballentine.
+\newblock {\em {Quantum mechanics: a modern development; 2nd ed.}}
+\newblock World Scientific, Hackensack, NJ, 2014.
+
+\bibitem{interpre}
+M.~Schlosshauer.
+\newblock Decoherence, the measurement problem, and interpretations of quantum
+  mechanics.
+\newblock {\em Rev. Mod. Phys.}, 76:1267--1305, 2005.
+
+\bibitem{Elitzur}
+L.~Vaidman~and A.~C.~Elitzur.
+\newblock Quantum mechanical interaction-free measurements.
+\newblock {\em L. Found Phys}, 23:987, 1993.
+
+\bibitem{Azuma}
+H.~Azuma.
+\newblock Interaction-free measurement with an imperfect absorber.
+\newblock {\em Phys. Rev. A}, 74:054301, 2006.
+
+\bibitem{exp}
+P.~Kwiat, H.~Weinfurter, T.~Herzog, A.~Zeilinger, and M.~Kasevich.
+\newblock Experimental realization of interaction-free measurementsa.
+\newblock {\em Annals of the New York Academy of Sciences}, 755(1):383--393,
+  1995.
+
+\bibitem{QI1}
+P.~G. Kwiat, A.~G. White, J.~R. Mitchell, O.~Nairz, G.~Weihs, H.~Weinfurter,
+  and A.~Zeilinger.
+\newblock High-efficiency quantum interrogation measurements via the quantum
+  zeno effect.
+\newblock {\em Phys. Rev. Lett.}, 83:4725--4728, 1999.
+
+\bibitem{Azuma2018}
+H.~Azuma.
+\newblock Interaction-free measurement with mesoscopic devices on a gaas/algaas
+  heterostructure.
+\newblock {\em Physica E: Low-dimensional Systems and Nanostructures}, 97:290
+  -- 295, 2018.
+
+\bibitem{electronic}
+L.~Chirolli, E.~Strambini, V.~Giovannetti, F.~Taddei, V.~Piazza, R.~Fazio,
+  F.~Beltram, and G.~Burkard.
+\newblock Electronic implementations of interaction-free measurements.
+\newblock {\em Phys. Rev. B}, 82:045403, 2010.
+
+\bibitem{CComunication}
+H.~Salih, Z.~Li, M.~Al-Amri, and M.~Zubairy.
+\newblock Protocol for direct counterfactual quantum communication.
+\newblock {\em Phys. Rev. Lett.}, 110:170502, 2013.
+
+\bibitem{Gottesman}
+D.~Gottesman and I.~Chuang.
+\newblock Demonstrating the viability of universal quantum computation using
+  teleportation and single-qubit operations.
+\newblock {\em Nature}, 402(6760):390--393, 1999.
+
+\bibitem{chuang}
+M.~Nielsen and I.~Chuang.
+\newblock {\em Quantum Computation and Quantum Information: 10th Anniversary
+  Edition}.
+\newblock Cambridge University Press, USA, 10th edition, 2011.
+
+\bibitem{AzumaComputation}
+H.~Azuma.
+\newblock Interaction-free quantum computation.
+\newblock {\em Phys. Rev. A}, 70:012318, 2004.
+
+\bibitem{Hosten}
+O.~Hosten, M.~Rakher, J.~Barreiro, N.~Peters, and P.~Kwiat.
+\newblock Counterfactual quantum computation through quantum interrogation.
+\newblock {\em Nature}, 439(7079):949--952, 2006.
+
 \bibitem{procopio}
 L.~M. Procopio, O.~Rosas-Ortiz, and V.~Velázquez.
 \newblock On the geometry of spatial biphoton correlation in spontaneous
@@ -36,30 +110,30 @@ U.~Leonhardt.
 \bibitem{zettili}
 N.~Zettili.
 \newblock {\em Quantum Mechanics: Concepts and Applications, 2nd Edition}.
-\newblock Wiley, feb 2009.
+\newblock Wiley, 2009.
 
 \bibitem{minardi}
 G.~Molina-Terriza, S.~Minardi, Y.~Deyanova, C.~Osorio, M.~Hendrych, and
   J.~Torres.
 \newblock Control of the shape of the spatial mode function of photons
   generated in noncollinear spontaneous parametric down-conversion.
-\newblock {\em Phys. Rev. A}, 72:065802, Dec 2005.
+\newblock {\em Phys. Rev. A}, 72:065802, 2005.
 
 \bibitem{ludon}
 R.~Loudon.
 \newblock {\em The {Quantum} {Theory} of {Light}}.
-\newblock OUP Oxford, Oxford ; New York, edición: 3 edition, November 2000.
+\newblock OUP Oxford, Oxford ; New York, edición: 3 edition, 2000.
 
 \bibitem{10}
 R.~Chevalerias, Y.~Latron, and C.~Veret.
 \newblock Methods of interferometry applied to the visualization of flows in
   wind tunnels.
-\newblock {\em J. Opt. Soc. Am.}, 47(8):703--706, Aug 1957.
+\newblock {\em J. Opt. Soc. Am.}, 47(8):703--706, 1957.
 
 \bibitem{11}
 P.~Hariharan.
 \newblock {\em Basics of {Interferometry}}.
-\newblock Elsevier, Boston, October 1991.
+\newblock Elsevier, Boston, 1991.
 
 \bibitem{ackerman}
 E.~Ackerman.
@@ -78,15 +152,10 @@ J.~Capmany and D.~Novak.
 \newblock Microwave photonics combines two worlds.
 \newblock {\em Nature photonics}, 1(6):319, 2007.
 
-\bibitem{Elitzur}
-L.~Vaidman~and A.~C.~Elitzur.
-\newblock Quantum mechanical interaction-free measurements.
-\newblock {\em L. Found Phys}, 23:987, (1993).
-
 \bibitem{paper_vaidman}
 L.~Vaidman.
 \newblock The meaning of the interaction-free measurements.
-\newblock {\em Foundations of Physics}, 33(3):491--510, Mar 2003.
+\newblock {\em Foundations of Physics}, 33(3):491--510, 2003.
 
 \bibitem{maudlin}
 T.~Maudlin.
@@ -96,41 +165,28 @@ T.~Maudlin.
 \bibitem{5}
 P.~Kwiat, H.~Weinfurter, T.~Herzog, A.~Zeilinger, and M.~A. Kasevich.
 \newblock Interaction-free measurement,.
-\newblock {\em Phys. Rev. Lett.}, 74:4763--4766, (1995).
+\newblock {\em Phys. Rev. Lett.}, 74:4763--4766, 1995.
 
 \bibitem{zuri}
 Z.~Blanco-García.
 \newblock Mediciones no destructivas en mecánica cuántica.
-\newblock M.Sc. Thesis(Advisors: O. Rosas-Ortiz , V. M. Velázquez) (2014).
+\newblock M.Sc. Thesis (Advisors: O. Rosas-Ortiz , V. M. Velázquez) 2014.
 
 \bibitem{azuri}
 Z.~Blanco-García and O.~Rosas-Ortiz.
 \newblock Interaction-free measurements of optical semitransparent objects.
-\newblock {\em J.Phys.Conf.Ser.}, (2016) 01213.
-
-\bibitem{Azuma}
-H.~Azuma.
-\newblock Interaction-free measurement with an imperfect absorber.
-\newblock {\em Phys. Rev. A}, 74:054301, Nov 2006.
-
-\bibitem{QI1}
-P.~G. Kwiat, A.~G. White, J.~R. Mitchell, O.~Nairz, G.~Weihs, H.~Weinfurter,
-  and A.~Zeilinger.
-\newblock High-efficiency quantum interrogation measurements via the quantum
-  zeno effect.
-\newblock {\em Phys. Rev. Lett.}, 83:4725--4728, Dec 1999.
+\newblock {\em J.Phys.Conf.Ser.}, 2016.
 
 \bibitem{QI2}
-Paul~G. Kwiat.
+P.~Kwiat.
 \newblock Quantum interrogation.
 \newblock In {\em Compendium of Quantum Physics}, pages 591--595. Springer
   Berlin Heidelberg, 2009.
 
-\bibitem{exp}
-P.~Kwiat, H.~Weinfurter, T.~Herzog, A.~Zeilinger, and M.~Kasevich.
-\newblock Experimental realization of interaction-free measurementsa.
-\newblock {\em Annals of the New York Academy of Sciences}, 755(1):383--393,
-  1995.
+\bibitem{nosirve}
+U.~Leonhardt.
+\newblock Quantum physics of simple optical instruments.
+\newblock {\em Reports on Progress in Physics}, 66(7):1207--1249, jun 2003.
 
 \bibitem{Chao_2018}
 L.~Chao, L.~Jinhong, Z.~Junxiang, and Z.~Shiyao.
@@ -164,6 +220,11 @@ E.~Polino, I.~Agresti, D.~Poderini, G.~Carvacho, G.~Milani, G.~Lemos,
 \newblock {Device-independent test of a delayed choice experiment}.
 \newblock {\em Physical Review A}, 100(2):22111, 2019.
 
+\bibitem{variable}
+J.~Flórez, N.~Carlson, C.~Nacke, L.~Giner, and J.~Lundeen.
+\newblock A variable partially polarizing beam splitter.
+\newblock {\em Review of Scientific Instruments}, 89(2):023108, 2018.
+
 \bibitem{Rossi}
 R.~Rossi.
 \newblock {Restrictions for the causal inferences in an interferometric
@@ -179,32 +240,41 @@ R.~Chaves, G.~Lemos, and J.~Pienaar.
 L.M. Procopio.
 \newblock Estudio teórico y experimental de la correlacion espacial de fotones
   como un primer paso al cómputo cuántico.
-\newblock M.Sc. Thesis(Advisors: O. Rosas-Ortiz , V. M. Velázquez) (2009).
-
-\bibitem{pearson}
-B.~Pearson and D.~Jackson.
-\newblock A hands-on introduction to single photons and quantum mechanics for
-  undergraduates.
-\newblock {\em American Journal of Physics}, 78(5):471--484, 2010.
+\newblock M.Sc. Thesis(Advisors: O. Rosas-Ortiz , V. M. Velázquez) 2009.
 
 \bibitem{hecht}
 E.~Hecht.
 \newblock {\em Optics}.
 \newblock Pearson, Boston, edición: 5th revised ed. edition, 2016.
 
-\bibitem{malus}
-K.~W\'odkiewicz.
-\newblock Classical and quantum malus laws.
-\newblock {\em Phys. Rev. A}, 51:2785--2788, Apr 1995.
-
-\bibitem{zeno}
-B.~Misra and E.~C.~G. Sudarshan.
-\newblock The zeno’s paradox in quantum theory.
-\newblock {\em Journal of Mathematical Physics}, 18(4):756--763, 1977.
-
 \bibitem{glauber}
 R.J Glauber.
 \newblock Optical coherence and photon statistics.
 \newblock {\em Quantum Optics and Electronics}, 1, 1965.
+
+\bibitem{bachor}
+H.~Bachor and T.~Ralph.
+\newblock {\em A guide to experiments in quantum optics}.
+\newblock Wiley-VCH, Weinheim, 2019.
+
+\bibitem{manual}
+Excelitas technologies.
+\newblock Datasheet for the spcm-aq4c module rev. 2017-02.
+
+\bibitem{malus}
+K.~W\'odkiewicz.
+\newblock Classical and quantum malus laws.
+\newblock {\em Phys. Rev. A}, 51:2785--2788, 1995.
+
+\bibitem{computacion}
+H.~Azuma.
+\newblock Interaction-free quantum computation.
+\newblock {\em Phys. Rev. A}, 70:012318, 2004.
+
+\bibitem{Ferrie}
+C.~Ferrie, C.~Granade, and D.~G. Cory.
+\newblock How to best sample a periodic probability distribution, or on the
+  accuracy of hamiltonian finding strategies.
+\newblock {\em Quantum Information Processing}, 12(1):611--623, 2013.
 
 \end{thebibliography}

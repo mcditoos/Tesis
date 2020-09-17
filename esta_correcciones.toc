@@ -3,35 +3,47 @@
 \contentsline {section}{Acknowledgements}{I}{Doc-Start}%
 \contentsline {section}{Resumen}{III}{Doc-Start}%
 \contentsline {section}{Abstract}{V}{Doc-Start}%
-\contentsline {section}{Introduction}{VII}{Doc-Start}%
-\contentsline {chapter}{\numberline {1}SPDC}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}First order joint amplitude function}{8}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Spatial correlations}{8}{section.1.2}%
-\contentsline {chapter}{\numberline {2}The lossless beam splitter}{12}{chapter.2}%
-\contentsline {section}{\numberline {2.1}The classical lossless beam splitter}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}The quantum lossless beam splitter}{14}{section.2.2}%
-\contentsline {chapter}{\numberline {3}The Mach-Zehnder interferometer }{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Classical Mach-Zehnder interferometer}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Single-photon Mach-Zehnder interferometer}{21}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Analysis with phase retarders}{23}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Interaction-free measurements}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Elitzur-Vaidman's bomb detector}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Replacing the bomb with an imperfect transmitter}{28}{section.4.2}%
-\contentsline {section}{\numberline {4.3}$BS$ as an imperfect transmitter}{31}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Replacing the bomb with $N$ beam splitters }{35}{section.4.4}%
-\contentsline {chapter}{\numberline {5}A time-dependent transmitter}{39}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Replacing the bomb with an optical chopper }{39}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Optical chopper as imperfect absorber}{43}{section.5.2}%
-\contentsline {chapter}{\numberline {6}High-efficiency Mach-Zehnder Interferometer}{46}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Using identical beam splitters for all $N$}{50}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Using different beam splitters}{51}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Optical chopper}{53}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Does the phase matter?}{53}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Towards Wheeler's Gedanken experiment}{55}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Experimental Setup}{64}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Single-photon source}{64}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Single-photon Mach-Zehnder interferometer}{66}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Alignment of the Interferometer}{67}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Single-photon interference}{69}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Varying optical paths}{72}{subsection.7.2.3}%
-\contentsline {chapter}{Conclusions}{74}{equation.7.2.3}%
+\contentsline {section}{Introduction}{IX}{Doc-Start}%
+\contentsline {chapter}{\numberline {1}Preliminaries}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Spontaneous parametric down conversion}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}First order joint amplitude function}{8}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Spatial correlations}{9}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}The lossless beam splitter}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}The classical lossless beam splitter}{11}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}The quantum lossless beam splitter}{13}{subsection.1.2.2}%
+\contentsline {chapter}{\numberline {2}The Mach-Zehnder interferometer }{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Classical Mach-Zehnder interferometer}{20}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Single-photon Mach-Zehnder interferometer}{21}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Analysis with phase retarders}{23}{section.2.3}%
+\contentsline {chapter}{\numberline {3} Interaction-free measurements}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Elitzur-Vaidman's bomb detector}{25}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Replacing the bomb with an imperfect transmitter}{28}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Replacing the bomb with a beam splitter}{31}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Replacing the bomb with $N$ beam splitters }{35}{section.3.4}%
+\contentsline {section}{\numberline {3.5}A time-dependent transmitter}{37}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Replacing the bomb with an optical chopper }{38}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Replacing the bomb with a semitransparent optical chopper }{41}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {4}High-efficiency Mach-Zehnder interferometer }{45}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Case of identical beam splitters when $\DOTSB \sum@ \slimits@ _{i=1}^{N}\theta _{i}=\frac {\pi }{2}$}{47}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Case of identical beam splitters $\theta _{i}=\theta $}{48}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Case $\theta _{i} \neq \theta _{j}$ and $\DOTSB \sum@ \slimits@ _{i=1}^{N}\theta _{i}=\frac {\pi }{2}$}{49}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Does the phase matter?}{51}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Optical choppers case}{52}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Towards Wheeler's gedanken experiment}{53}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Experimental setup}{60}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Mach-Zehnder interferometer}{60}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Materials}{60}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Setup and alignment of the interferometer}{61}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Varying optical paths}{63}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Single-photon source}{64}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Materials}{64}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}BBO-I crystal}{65}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Avalanche photodiodes}{65}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Single photon source assembly}{66}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Single-photon interference}{68}{subsection.5.2.5}%
+\contentsline {chapter}{\numberline {6}Experimental results}{70}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Mach-Zehnder interferometer}{70}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Single-photon source}{73}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Single-photon measurements}{75}{section.6.3}%
+\contentsline {chapter}{Conclusions}{80}{figure.caption.113}%
+\contentsline {chapter}{Bibliography}{81}{figure.caption.113}%
